@@ -17,6 +17,7 @@ const config: Config = {
         prussianBlue: "rgba(0,35,96,1)",
         cobaltBlue: "rgba(0,35,96,1)",
         athsSpecial: "#DAD2B8",
+        lightBlue: "#B5CAEC80",
       },
     },
   },
