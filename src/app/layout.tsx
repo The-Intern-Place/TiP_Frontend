@@ -1,9 +1,11 @@
-import type { Metadata } from "next";
+"use client";
+
 import localFont from "next/font/local";
 import { Epilogue } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
+import { usePathname } from "next/navigation";
 
 const epilogue = Epilogue({ subsets: ["latin"], variable: "--font-epilogue" });
 
@@ -30,25 +32,22 @@ const clash = localFont({
       style: "italic",
     },
   ],
-  variable: "--font--clash"
+  variable: "--font--clash",
 });
-
-export const metadata: Metadata = {
-  title: "The Intern Place",
-  description: "The Intern Place",
-};
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const pathname = usePathname();
   return (
     <html lang="en">
-      <body className={`${clash.className} ${epilogue.className}`}>
-        <Navbar/>
+      <body className={`${clash.variable} ${epilogue.className}`}>
+        {pathname !== "/login" && pathname !== "/sign-up" && <Navbar />}
+
         {children}
-        <Footer />
+        {pathname !== "/login" && pathname !== "/sign-up" && <Footer />}
       </body>
     </html>
   );

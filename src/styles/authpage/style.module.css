@@ -1,0 +1,5 @@
+.sideImage {
+  background: url("../../assets/images/auth-page-images/signup-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
