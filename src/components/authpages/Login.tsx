@@ -32,34 +32,34 @@ const Login = () => {
         </div>
       </form>
 
-      <div className="relative w-full border border-athsSpecial max-w-[400px] mt-8 mx-auto">
+      <div className="relative w-full border border-athsSpecial max-w-[200px] sm:max-w-[300px] lg:max-w-[400px] mt-8 mx-auto">
         <p className="w-fit absolute p-[5px] uppercase bg-white left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] text-sm">
           {" "}
           or
         </p>
       </div>
 
-      <section className="flex flex-col sm:flex-row justify-between items center gap-8 w-full mt-8">
-        <div className="border-2 border-athsSpecial w-full sm:max-w-[274px] rounded-lg h-[60px] overflow-hidden">
+      <section className="flex brandAuthBtns w-full mt-8">
+        <div className="border-2 border-athsSpecial w-full lg:max-w-[274px] rounded-lg h-[60px] overflow-hidden">
           <button
             className="w-full h-full flex gap-4 text-sm md:text-base items-center justify-center"
             aria-label="company-logo"
           >
             <FcGoogle className="text-xl md:text-2xl" />{" "}
             <span className="text-[rgba(27,27,27,0.6)]">
-              Sign up with Google
+              Sign in with Google
             </span>
           </button>
         </div>
 
-        <div className="border-2 border-athsSpecial w-full sm:max-w-[274px] rounded-lg h-[60px] overflow-hidden">
+        <div className="border-2 border-athsSpecial w-full lg:max-w-[274px] rounded-lg h-[60px] overflow-hidden">
           <button
             className="w-full h-full flex gap-4 text-sm md:text-base items-center justify-center"
             aria-label="company-logo"
           >
             <IoLogoApple className="text-xl md:text-2xl" />{" "}
             <span className="text-[rgba(27,27,27,0.6)]">
-              Sign up with Google
+              Sign in with Apple
             </span>
           </button>
         </div>
