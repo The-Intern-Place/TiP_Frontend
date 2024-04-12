@@ -1,5 +1,11 @@
-.sideImage {
-  background: url("../../assets/images/auth-page-images/signup-image.png");
+.signUpsideImage {
+  background: url("../../assets/images/auth-page-images/signup-image.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.loginSideImage {
+  background: url("../../assets/images/auth-page-images/login-image.svg");
   background-repeat: no-repeat;
   background-size: cover;
 }
