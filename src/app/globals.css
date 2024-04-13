@@ -7,9 +7,23 @@
     text-wrap: balance;
   }
 }
-h1 {
+h1,
+h2 {
   font-family: var(--font--clash);
 }
+
 body {
   font-family: var(--font-epilogue);
+}
+
+.brandAuthBtns {
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+}
+
+@media (min-width: 1200px) {
+  .brandAuthBtns {
+    flex-direction: row;
+  }
 }
