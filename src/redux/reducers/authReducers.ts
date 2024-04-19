@@ -8,7 +8,6 @@ export interface IAuthState {
   signUpStatus: any;
   signUpSuccess: any;
   signUpError: any;
-
   isLoggedIn: boolean;
   userProfile: any;
 }
