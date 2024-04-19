@@ -1,12 +1,14 @@
 "use client";
 
 import localFont from "next/font/local";
+import { Provider as ReduxProvider } from "react-redux";
 import { Epilogue } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
 import { usePathname } from "next/navigation";
 import Home from "./page";
+import { store } from "@/redux/store";
 
 const epilogue = Epilogue({ subsets: ["latin"], variable: "--font-epilogue" });
 
@@ -45,10 +47,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${clash.variable} ${epilogue.className}`}>
-        {pathname !== "/login" && pathname !== "/sign-up" && <Navbar />}
+        <ReduxProvider store={store}>
+          {pathname !== "/login" && pathname !== "/sign-up" && <Navbar />}
 
-        {children}
-        {pathname !== "/login" && pathname !== "/sign-up" && <Footer />}
+          {children}
+          {pathname !== "/login" && pathname !== "/sign-up" && <Footer />}
+        </ReduxProvider>
       </body>
     </html>
   );

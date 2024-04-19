@@ -1,6 +1,7 @@
+"use client";
 import Image from "next/image";
 import type { Metadata } from "next";
-export const metadata: Metadata = {
+const metadata: Metadata = {
   title: "The Intern Place",
   description: "The Intern Place",
 };

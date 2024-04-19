@@ -11,8 +11,12 @@ import Button from "../button/Button";
 import { FcGoogle } from "react-icons/fc";
 import { IoLogoApple } from "react-icons/io5";
 import Link from "next/link";
+import { useAppDispatch } from "@/redux/store";
+import { signUpAction } from "@/redux/actions/authActions";
+import { ISignUpData } from "@/utilities/types/types";
 
 const SignUp = () => {
+  const dispatch = useAppDispatch();
   const [isLoading, setIsLoading] = useState(false);
   const [countries, setCountries] = useState([]);
   const [isError, setIsError] = useState("");
@@ -72,6 +76,24 @@ const SignUp = () => {
 
     handleGetAllCountries();
   }, []);
+
+  const handleSubmit = async () => {
+    // Dummy Data
+    const payload: ISignUpData = {
+      fname: "John",
+      lname: "Doe",
+      email: "john.doe@example.com",
+      password: "1234567890",
+      dateOfBirth: "1990-05-15T08:00:00",
+      gender: "male",
+      location: "Nigeria",
+      countryCode: "+234",
+      phoneNumber: "99999999999",
+    };
+
+    dispatch(signUpAction(payload));
+  };
+
   return (
     <AuthPageLayout heading="Get Started">
       <form className="w-full py-2 mt-5" onSubmit={handleSubmitForm}>
@@ -166,7 +188,7 @@ const SignUp = () => {
         </div>
 
         <div className="w-full mt-5">
-          <Button title="Continue" />
+          <Button title="Continue" onClick={handleSubmit} />
         </div>
       </form>
 
