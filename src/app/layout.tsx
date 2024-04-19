@@ -6,7 +6,6 @@ import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
 import { usePathname } from "next/navigation";
-import Home from "./page";
 
 const epilogue = Epilogue({ subsets: ["latin"], variable: "--font-epilogue" });
 
@@ -45,8 +44,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${clash.variable} ${epilogue.className}`}>
-        {pathname !== "/login" && pathname !== "/sign-up" && <Navbar />}
-
         {children}
         {pathname !== "/login" && pathname !== "/sign-up" && <Footer />}
       </body>

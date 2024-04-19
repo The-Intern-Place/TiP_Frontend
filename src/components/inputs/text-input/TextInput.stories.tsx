@@ -13,7 +13,8 @@ export const DefaultStory: TextInputStory = {
     args: {
         label: "Your Name",
         placeholder: "Let's know your name",
-        type:"text"
+        type:"text",
+        onChange: () => {}
     },
     name: "Text Input"
 }
@@ -22,7 +23,8 @@ export const DefaultStory2: TextInputStory = {
     args: {
         label: "",
         type:"text",
-        iconRight: (<Button>Subscribe</Button>)
+        iconRight: (<Button>Subscribe</Button>),
+        onChange: () => {}
     },
     name: "Right Icon Input"
 }

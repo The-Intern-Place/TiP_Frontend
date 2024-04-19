@@ -6,9 +6,9 @@ export type ButtonProps = Omit<
   ButtonHTMLAttributes<HTMLButtonElement>,
   "className"
 > & {
-  variant?: "primary" | "outlined" | "secondary";
+  variant?: "primary" | "outlined" | "secondary" | "transparent";
+  overideStyles?: string;
   fit?: boolean;
-  title?: string;
 };
 
 export type ButtonStory = StoryObj<typeof ButtonMeta>;

@@ -1,35 +1,32 @@
-import React, { useState } from "react";
+import React from "react";
 import { SelectInputProps } from "./SelectInput.types";
-import TextInput from "../text-input/TextInput";
-import { ArrowDown } from "public";
-import Image from "next/image";
+import styles from "@/styles/inputs/selectInput.module.css";
 
-
-const SelectInput = (props: SelectInputProps) => {
-  const [showOptions, toggleShowOptions] = useState(false);
+const SelectInput = ({
+  label,
+  name,
+  optionsData,
+  placeholder,
+  ...props
+}: SelectInputProps) => {
   return (
-    <div
-      className="relative h-min cursor-pointer w-full"
-      onClick={() => toggleShowOptions(!showOptions)}
-    >
-      <TextInput
-        readOnly
-        style={{ cursor: props.disabled ? "not-allowed" : "pointer" }}
-        {...props}
-      />
-      {showOptions && (
-        <ul className="bg-white absolute right-0 top-full min-w-[200px] w-full shadow-md rounded z-[10] max-h-[200px] overflow-auto">
-          {props.options.map((el) => (
-            <li
-              key={el.id}
-              className="text-xs border-b last:border-none py-2.5 px-3 border-[#fafafa] bg-white rounded cursor-pointer hover:bg-gray-50"
-              onClick={() => {}}
-            >
-              {el.name}
-            </li>
-          ))}
-        </ul>
-      )}
+    <div className="w-full">
+      <label
+        htmlFor={name}
+        className="text-sm md:text-base capitalize text-[rgba(27,27,27,1)]"
+      >
+        {label}
+      </label>
+      <div className="bg-white flex rounded-lg h-[60px] border-2 border-athsSpecial mt-1 mb-5">
+        <select
+          {...props}
+          name={name}
+          className={`bg-white flex-grow h-full px-4 border-none rounded-lg focus:outline-none focus:ring-0 placeholder:text-[#575757] placeholder:text-[16px] w-full text-sm md:text-base ${styles.customSelect}`}
+        >
+          <option value="">{placeholder}</option>
+          {optionsData}
+        </select>
+      </div>
     </div>
   );
 };

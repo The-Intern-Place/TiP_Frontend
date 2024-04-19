@@ -14,21 +14,24 @@ const Login = () => {
   };
   return (
     <AuthPageLayout heading="Welcome Back!">
-      <form className="w-full py-2 mt-5" onSubmit={handleSubmitForm}>
+      <form className="w-full py-2 mt-5 space-y-5" onSubmit={handleSubmitForm}>
         <TextInput
           label="email address"
           placeholder="user@example.com"
           type="email"
+          overideStyles="rouned-lg"
+          onChange={() => {}}
         />
 
         <TextInput
           label="create password"
           placeholder="Password(8 or more characters)"
           type="password"
+          onChange={() => {}}
         />
 
         <div className="w-full mt-5">
-          <Button title="Login" />
+          <Button>Login</Button>
         </div>
       </form>
 
