@@ -1,7 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
 import { persistReducer } from "redux-persist";
 import { useDispatch, TypedUseSelectorHook, useSelector } from "react-redux";
-import authReducer from "./reducers/authReducers";
 
 import AppReducers from "./reducers/index";
 

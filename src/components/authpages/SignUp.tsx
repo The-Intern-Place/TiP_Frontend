@@ -96,19 +96,21 @@ const SignUp = () => {
 
   return (
     <AuthPageLayout heading="Get Started">
-      <form className="w-full py-2 mt-5" onSubmit={handleSubmitForm}>
-        <div className="flex flex-col sm:flex-row justify-between items center sm:gap-8 w-full">
+      <form className="w-full py-2 mt-5 space-y-5" onSubmit={handleSubmitForm}>
+        <div className="flex flex-col sm:flex-row justify-between items center sm:gap-8 gap-6 w-full">
           <TextInput
             label="first name"
             placeholder="Jane"
             type="text"
             name="firstName"
+            onChange={() => {}}
           />
           <TextInput
             label="last name"
             placeholder="Doe"
             type="text"
             name="lastName"
+            onChange={() => {}}
           />
         </div>
         <TextInput
@@ -116,6 +118,7 @@ const SignUp = () => {
           placeholder="user@example.com"
           type="email"
           name="emailAddress"
+          onChange={() => {}}
         />
 
         <TextInput
@@ -124,6 +127,7 @@ const SignUp = () => {
           type="password"
           iconRight={<div></div>}
           name="password"
+          onChange={() => {}}
         />
 
         <CustomDatePicker
@@ -131,7 +135,7 @@ const SignUp = () => {
           dateValue={dateOfBirth}
         />
 
-        <div className="flex flex-col sm:flex-row justify-between items center sm:gap-8 w-full">
+        <div className="flex flex-col sm:flex-row justify-between items center sm:gap-8 gap-6 w-full">
           <SelectInput
             label="gender"
             name="gender"
@@ -170,7 +174,7 @@ const SignUp = () => {
           />
         </div>
 
-        <div className="flex flex-col sm:flex-row justify-between items center sm:gap-8 w-full">
+        <div className="flex flex-col sm:flex-row justify-between items center sm:gap-8 gap-6 w-full">
           <TextInput
             label="country code"
             placeholder="Nigeria (+234)"
@@ -178,17 +182,19 @@ const SignUp = () => {
             name="firstName"
             value={countryCode && `${country} (${countryCode})`}
             readOnly
+            onChange={() => {}}
           />
           <TextInput
             label="mobile number"
             placeholder="080XXXXXXXXX"
             type="text"
             name="mobileNumber"
+            onChange={() => {}}
           />
         </div>
 
         <div className="w-full mt-5">
-          <Button title="Continue" onClick={handleSubmit} />
+          <Button>Continue</Button>
         </div>
       </form>
 

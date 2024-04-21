@@ -2,9 +2,19 @@
 import React, { useState } from "react";
 import { TextInputProps } from "./TextInput.types";
 import { FaEye, FaEyeSlash } from "react-icons/fa6";
+import { useTextInput } from "./useTextInput";
 
 const TextInput = (props: TextInputProps) => {
-  const { name, type, label, iconRight, ...inputProps } = props;
+  const {
+    name,
+    type,
+    label,
+    iconRight,
+    iconLeft,
+    overideStyles,
+    ...inputProps
+  } = props;
+  const {handleChange}  = useTextInput(props);
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
   return (
     <div className="w-full">
@@ -14,11 +24,21 @@ const TextInput = (props: TextInputProps) => {
       >
         {label}
       </label>
-      <div className="bg-white flex rounded-lg h-[60px] border-2 border-athsSpecial mt-1 mb-5">
+      <div
+        className={`bg-white flex relative rounded-lg h-[60px] border-2 border-athsSpecial ${overideStyles}`}
+      >
+        {iconLeft && (
+          <div
+            className={`my-auto flex px-1.5 h-full items-center justify-center text-xs text-gray-500 disabled:bg-gray-100 flex-shrink-0`}
+          >
+            {iconLeft}
+          </div>
+        )}
         <input
           {...inputProps}
+          onChange={handleChange}
           type={type === "password" && isPasswordVisible ? "text" : type}
-          className="bg-white flex-grow h-full px-4 border-none rounded-lg focus:outline-none focus:ring-0 placeholder:text-[#575757] placeholder:text-sm md:placeholder:text-base w-full text-sm md:text-base"
+          className={`bg-white flex-grow h-full px-4 border-none rounded-lg focus:outline-none focus:ring-0 placeholder:text-[#575757] placeholder:text-sm md:placeholder:text-base w-full text-sm md:text-base ${overideStyles}`}
         />
 
         {iconRight &&
@@ -33,7 +53,7 @@ const TextInput = (props: TextInputProps) => {
             </button>
           ) : (
             <div
-              className={`my-auto flex px-1.5 h-full items-center justify-center text-xs text-gray-500 disabled:bg-gray-100 flex-shrink-0`}
+              className={`my-auto flex absolute right-0 px-1.5 h-full items-center justify-center text-xs text-gray-500 disabled:bg-gray-100 flex-shrink-0`}
             >
               {iconRight}
             </div>

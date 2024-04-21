@@ -19,7 +19,7 @@ const CustomDatePicker = ({ onChange, dateValue }: customDateTypes) => {
       >
         date <span className="lowercase">of</span> birth
       </label>
-      <div className="mt-1 grid sm:grid-cols-3 sm:gap-8">
+      <div className="mt-1 grid sm:grid-cols-3 sm:gap-8 gap-6">
         <SelectInput
           onChange={onChange}
           label=""

@@ -1,4 +1,7 @@
-import { ReactNode, SelectHTMLAttributes } from "react";
+import { StoryObj } from "@storybook/react";
+import { TextInputProps } from "../text-input/TextInput.types";
+import SelectInputMeta from "./SelectInput.stories";
+import { SelectHTMLAttributes, ReactNode } from "react";
 
 export type SelectInputProps = Omit<
   SelectHTMLAttributes<HTMLSelectElement>,
@@ -15,3 +18,9 @@ export type SelectCountryProps = {
   code: string;
   dial_code: string;
 };
+
+export type SelectInput2Props = TextInputProps & {
+    options: {id: string, name: string}[],
+    clickOutSide?: boolean;
+}
+export type SelectInputStory = StoryObj<typeof SelectInputMeta>

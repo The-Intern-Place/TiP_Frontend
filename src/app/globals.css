@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 @layer utilities {
   .text-balance {
     text-wrap: balance;
@@ -26,4 +31,10 @@ body {
   .brandAuthBtns {
     flex-direction: row;
   }
+}
+
+.job-opening {
+  background-image: url(../../public/pngs/job-openings-background.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%; 
 }

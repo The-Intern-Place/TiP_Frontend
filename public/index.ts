@@ -1,4 +1,33 @@
 import TIP_Logo from "./tip-logo.svg";
 import TipLogo from "./TIP-Logo.png";
+import ArrowDown from "./arrow-down.svg";
+import LocationIcon from "./location.svg";
+import SearchIcon from "./search.svg";
+import HeroImg from "./pngs/hero-img.png";
+import BlueArrowRight from "./blue-arrow-right.svg";
+import TechTalents from "./pngs/talents.png";
+import JobOpeningsBackground from "./pngs/job-openings-background.png";
+import BrandDesigner from "./brand-designer.svg";
+import GraphicDesigner from "./graphic-designer.svg";
+import FrontendDeveloper from "./frontend-developer.svg";
+import SocialMediaManager from "./social-media-manager.svg";
+import ProductDesigner from "./product-designer.svg";
+import UiUxDesigner from "./ui-ux-designer.svg";
 
-export { TIP_Logo, TipLogo };
+export {
+  SearchIcon,
+  BrandDesigner,
+  GraphicDesigner,
+  FrontendDeveloper,
+  SocialMediaManager,
+  ProductDesigner,
+  UiUxDesigner,
+  TIP_Logo,
+  TipLogo,
+  ArrowDown,
+  HeroImg,
+  LocationIcon,
+  BlueArrowRight,
+  TechTalents,
+  JobOpeningsBackground
+};

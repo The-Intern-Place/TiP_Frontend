@@ -4,6 +4,7 @@ import styles from "@/styles/authpage/style.module.css";
 import Image from "next/image";
 import { TipLogo } from "public";
 import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 type signUpProps = {
   children: React.ReactNode;
@@ -18,7 +19,7 @@ const AuthPageLayout = ({ children, heading }: signUpProps) => {
         className={`hidden lg:block fixed top-0 left-0 bottom-0 lg:max-w-[650px] xl:max-w-[704px] w-full 2xl:max-w-[800px] p-10 ${pathname === "/sign-up" ? styles.signUpsideImage : styles.loginSideImage}`}
       >
         <figure className="m-0 p-0 relative w-[100px] h-[91px] overflow-hidden">
-          <Image src={TipLogo} alt="tip-logo" fill />
+          <Link href={"/"}><Image src={TipLogo} alt="tip-logo" fill /></Link>
         </figure>
       </div>
       <div className="lg:ml-auto w-full lg:max-w-[calc(100%-650px)] xl:max-w-[calc(100%-704px)] 2xl:max-w-[calc(100%-800px)]">
