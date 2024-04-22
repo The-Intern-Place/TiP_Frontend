@@ -18,8 +18,9 @@ const JobOpeningsSection = () => {
             </p>
           </div>
           <div className="flex flex-wrap md:grid grid-flow-col grid-cols-2 grid-rows-3 gap-7">
-            {jobs.map((j: JobCardProps) => (
+            {jobs.map((j: JobCardProps, i: number) => (
               <JobCard
+                key={i}
                 image={j.image}
                 title={j.title}
                 company={j.company}

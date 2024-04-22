@@ -48,8 +48,8 @@ const CategorySection = () => {
           </p>
         </div>
         <div className="flex flex-wrap md:grid grid-flow-row lg:grid-cols-4 md:grid-cols-2 md:gap-4 gap-10 w-full">
-          {categories.map((c) => (
-            <CategoryCard openPositions={c.openPositions} icon={c.icon}>
+          {categories.map((c, i) => (
+            <CategoryCard key={i} openPositions={c.openPositions} icon={c.icon}>
               {c.title}
             </CategoryCard>
           ))}
