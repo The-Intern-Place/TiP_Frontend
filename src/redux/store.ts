@@ -7,7 +7,7 @@ import AppReducers from "./reducers/index";
 const persistConfig = {
   key: "root",
   version: 1,
-  storage: localStorage,
+  storage: localStorage ?? null,
 };
 
 const persistedReducer = persistReducer(persistConfig, AppReducers);
