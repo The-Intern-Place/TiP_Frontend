@@ -13,7 +13,7 @@ const SelectInput = ({
     <div className="w-full">
       <label
         htmlFor={name}
-        className="text-sm md:text-base capitalize text-[rgba(27,27,27,1)]"
+        className="text-sm md:text-base capitalize text-[rgba(27,27,27,1)] font-semibold"
       >
         {label}
       </label>
@@ -21,9 +21,11 @@ const SelectInput = ({
         <select
           {...props}
           name={name}
-          className={`bg-white flex-grow h-full px-4 border-none rounded-lg focus:outline-none focus:ring-0 placeholder:text-[#575757] placeholder:text-[16px] w-full text-sm md:text-base ${styles.customSelect}`}
+          className={`text-[#575757] bg-white flex-grow h-full px-4 border-none rounded-lg focus:outline-none focus:ring-0 placeholder:text-[#575757] placeholder:text-[16px] w-full text-sm md:text-base ${styles.customSelect}`}
         >
-          <option value="">{placeholder}</option>
+          <option value="" className="text-[#575757]">
+            {placeholder}
+          </option>
           {optionsData}
         </select>
       </div>

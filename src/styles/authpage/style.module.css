@@ -1,11 +1,6 @@
-.signUpsideImage {
-  background: url("../../assets/images/auth-page-images/signup-image.svg");
+.customBg {
+  background: url("../../assets/images/auth-page-images/Frame.png");
   background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.loginSideImage {
-  background: url("../../assets/images/auth-page-images/login-image.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 160px;
+  background-position: 40px 210px;
 }
