@@ -21,24 +21,25 @@ const config: Config = {
         lightBlue: "#B5CAEC80",
         blue: "#0046BF",
         "light-blue": "#1976D2",
-        grey: "#1B1B1B"
+        grey: "#1B1B1B",
+        pictonBlue: "rgba(82,151,219,0.2)",
       },
       screens: {
-        'sm': '640px',
+        sm: "640px",
         // => @media (min-width: 640px) { ... }
-  
-        'md': '768px',
+
+        md: "768px",
         // => @media (min-width: 768px) { ... }
-  
-        'lg': '1024px',
+
+        lg: "1024px",
         // => @media (min-width: 1024px) { ... }
-  
-        'xl': '1480px',
+
+        xl: "1480px",
         // => @media (min-width: 1280px) { ... }
-  
-        '2xl': '1536px',
+
+        "2xl": "1536px",
         // => @media (min-width: 1536px) { ... }
-      }
+      },
     },
   },
   plugins: [],

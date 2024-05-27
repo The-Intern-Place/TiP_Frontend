@@ -9,11 +9,11 @@ import axios from "axios";
 import { SelectCountryProps } from "../inputs/select-input/SelectInput.types";
 import Button from "../button/Button";
 import { FcGoogle } from "react-icons/fc";
-import { IoLogoApple } from "react-icons/io5";
 import Link from "next/link";
 import { useAppDispatch } from "@/redux/store";
 import { signUpAction } from "@/redux/actions/authActions";
 import { ISignUpData } from "@/utilities/types/types";
+import { FaLinkedinIn } from "react-icons/fa6";
 
 const SignUp = () => {
   const dispatch = useAppDispatch();
@@ -22,31 +22,6 @@ const SignUp = () => {
   const [isError, setIsError] = useState("");
   const [countryCode, setCountryCode] = useState<string>("");
   const [country, setCountry] = useState("");
-  const [dateOfBirth, setDateOfBirth] = useState({
-    day: "",
-    month: "",
-    year: "",
-  });
-
-  const handleSelectCountry = (e: {
-    target: { value: SetStateAction<string> };
-  }) => {
-    setCountry(e.target.value);
-
-    const countryExists = countries.find((country: SelectCountryProps) => {
-      return country?.name === e.target.value;
-    });
-
-    if (countryExists)
-      setCountryCode((countryExists as SelectCountryProps).dial_code);
-  };
-
-  const handleSelectDateOfBirth = (e: {
-    target: { name: string; value: string };
-  }) => {
-    const { name, value } = e.target;
-    setDateOfBirth((prev) => ({ ...prev, [name]: value }));
-  };
 
   const handleSubmitForm = (e: { preventDefault: () => void }) => {
     e.preventDefault();
@@ -130,60 +105,65 @@ const SignUp = () => {
           onChange={() => {}}
         />
 
-        <CustomDatePicker
-          onChange={handleSelectDateOfBirth}
-          dateValue={dateOfBirth}
-        />
-
         <div className="flex flex-col sm:flex-row justify-between items center sm:gap-8 gap-6 w-full">
-          <SelectInput
-            label="gender"
-            name="gender"
-            placeholder="Select"
-            optionsData={
-              <>
-                <option value="Male">Male</option>
-                <option value="Female">Female</option>
-                <option value="Prefer not to say">Prefer not to say</option>
-              </>
-            }
-          />
-          <SelectInput
-            label="location"
-            name="location"
-            placeholder="Select"
-            value={country}
-            onChange={handleSelectCountry}
-            optionsData={
-              <>
-                {isLoading ? (
-                  <option value="Loading...">Loading...</option>
-                ) : (
-                  <>
-                    {countries.map((country: SelectCountryProps, i) => {
-                      return (
-                        <option value={country.name} key={i}>
-                          {country.name}
-                        </option>
-                      );
-                    })}
-                  </>
-                )}
-              </>
-            }
-          />
-        </div>
+          <div className="hidden md:block">
+            <SelectInput
+              label="code"
+              name="code"
+              placeholder="Nigeria (+234)"
+              optionsData={
+                <>
+                  {isLoading ? (
+                    <option value="Loading...">Loading...</option>
+                  ) : (
+                    <>
+                      {countries.map((country: any, i) => {
+                        return (
+                          <option
+                            value={country.dial_code}
+                            key={i}
+                            className="text-[#575757]"
+                          >
+                            {country.name} ({country.dial_code})
+                          </option>
+                        );
+                      })}
+                    </>
+                  )}
+                </>
+              }
+            />
+          </div>
 
-        <div className="flex flex-col sm:flex-row justify-between items center sm:gap-8 gap-6 w-full">
-          <TextInput
-            label="country code"
-            placeholder="Nigeria (+234)"
-            type="text"
-            name="firstName"
-            value={countryCode && `${country} (${countryCode})`}
-            readOnly
-            onChange={() => {}}
-          />
+          <div className="md:hidden max-w-[100px] w-full">
+            <SelectInput
+              label="code"
+              name="code"
+              placeholder="+234"
+              optionsData={
+                <>
+                  {isLoading ? (
+                    <option value="Loading...">Loading...</option>
+                  ) : (
+                    <>
+                      {countries.map((country: any, i) => {
+                        return (
+                          <option
+                            value={country.dial_code}
+                            key={i}
+                            className="text-[#575757]"
+                          >
+                            {country.dial_code}
+                          </option>
+                        );
+                      })}
+                    </>
+                  )}
+                </>
+              }
+            />
+          </div>
+
           <TextInput
             label="mobile number"
             placeholder="080XXXXXXXXX"
@@ -197,14 +177,12 @@ const SignUp = () => {
           <Button>Continue</Button>
         </div>
       </form>
-
-      <div className="relative w-full border border-athsSpecial max-w-[200px] sm:max-w-[300px] lg:max-w-[400px] mt-8 mx-auto">
+      <div className="relative w-full border border-athsSpecial max-w-[200px] sm:max-w-[250px] md:max-w-[300px] lg:max-w-[350px] xl:max-w-[400px] mt-8 mx-auto">
         <p className="w-fit absolute p-[5px] uppercase bg-white left-[50%] translate-x-[-50%] top-[50%] translate-y-[-50%] text-sm">
           {" "}
           or
         </p>
       </div>
-
       <section className="flex brandAuthBtns w-full mt-8">
         <div className="border-2 border-athsSpecial w-full sm:max-w-[274px] rounded-lg h-[60px] overflow-hidden">
           <button
@@ -223,19 +201,33 @@ const SignUp = () => {
             className="w-full h-full flex gap-4 text-sm md:text-base items-center justify-center"
             aria-label="company-logo"
           >
-            <IoLogoApple className="text-xl md:text-2xl" />{" "}
+            <span className="w-[32px] flex justify-center items-center h-[32px] rounded-[50%] bg-light-blue text-white overflow-hidden">
+              <FaLinkedinIn className="text-xl" />
+            </span>{" "}
             <span className="text-[rgba(27,27,27,0.6)]">
-              Sign up with Apple
+              Sign up with LinkedIn
             </span>
           </button>
         </div>
       </section>
-
-      <div className="mt-8 text-center">
-        <p className="font-medium text-sm">
+      <div className="mt-6 text-center">
+        <p className="font-medium text-sm text-[rgba(27,27,27,0.6)]">
           Already have an account?{" "}
           <Link href="/login" className="text-[#0046BF]">
             Login
+          </Link>
+        </p>
+      </div>
+      <div className="mt-6 text-center">
+        <p className="font-medium text-sm text-[rgba(27,27,27,0.6)]">
+          By clicking &apos;Continue&apos;, you acknowledge that you have read
+          and accept the{" "}
+          <Link href="#" className="text-[#0046BF]">
+            Terms of Service
+          </Link>{" "}
+          and{" "}
+          <Link href="#" className="text-[#0046BF]">
+            Privacy Policy.
           </Link>
         </p>
       </div>

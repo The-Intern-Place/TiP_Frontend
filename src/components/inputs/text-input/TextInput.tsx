@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { TextInputProps } from "./TextInput.types";
-import { FaEye, FaEyeSlash } from "react-icons/fa6";
+import { BsEye, BsEyeSlash } from "react-icons/bs";
 import { useTextInput } from "./useTextInput";
 
 const TextInput = (props: TextInputProps) => {
@@ -14,13 +14,13 @@ const TextInput = (props: TextInputProps) => {
     overideStyles,
     ...inputProps
   } = props;
-  const {handleChange}  = useTextInput(props);
+  const { handleChange } = useTextInput(props);
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
   return (
     <div className="w-full">
       <label
         htmlFor={name}
-        className="text-sm md:text-base capitalize text-[rgba(27,27,27,1)]"
+        className="text-sm md:text-base capitalize text-[rgba(27,27,27,1)] font-semibold"
       >
         {label}
       </label>
@@ -46,10 +46,10 @@ const TextInput = (props: TextInputProps) => {
             <button
               type="button"
               aria-label="toggle-password"
-              className="text-[#575757] px-4"
+              className="text-[#575757] px-4 text-xl"
               onClick={() => setIsPasswordVisible(!isPasswordVisible)}
             >
-              {isPasswordVisible ? <FaEyeSlash /> : <FaEye />}
+              {isPasswordVisible ? <BsEyeSlash /> : <BsEye />}
             </button>
           ) : (
             <div
