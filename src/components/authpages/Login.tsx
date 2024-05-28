@@ -5,7 +5,7 @@ import AuthPageLayout from "./AuthPageLayout";
 import TextInput from "../inputs/text-input/TextInput";
 import Button from "../button/Button";
 import { FcGoogle } from "react-icons/fc";
-import { IoLogoApple } from "react-icons/io5";
+import { FaLinkedinIn } from "react-icons/fa6";
 import Link from "next/link";
 
 const Login = () => {
@@ -24,11 +24,21 @@ const Login = () => {
         />
 
         <TextInput
-          label="create password"
+          label="password"
           placeholder="Password(8 or more characters)"
           type="password"
+          iconRight={<div></div>}
           onChange={() => {}}
         />
+
+        <div className="w-full mt-4 md:mt-5 mb-7 md:mb-10 flex justify-end">
+          <Link
+            href="#"
+            className="text-base md:text-lg text-light-blue capitalize"
+          >
+            forgot password?
+          </Link>
+        </div>
 
         <div className="w-full mt-5">
           <Button>Login</Button>
@@ -60,9 +70,11 @@ const Login = () => {
             className="w-full h-full flex gap-4 text-sm md:text-base items-center justify-center"
             aria-label="company-logo"
           >
-            <IoLogoApple className="text-xl md:text-2xl" />{" "}
+            <span className="w-[32px] flex justify-center items-center h-[32px] rounded-[50%] bg-light-blue text-white overflow-hidden">
+              <FaLinkedinIn className="text-xl" />
+            </span>{" "}
             <span className="text-[rgba(27,27,27,0.6)]">
-              Sign in with Apple
+              Sign in with LinkedIn
             </span>
           </button>
         </div>
