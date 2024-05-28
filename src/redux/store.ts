@@ -11,6 +11,7 @@ class DummyStorage implements Storage {
     key(index: number): string | null { return null; }
     removeItem(key: string): void {}
     setItem(key: string, value: string): void {}
+    
 }
 
 const persistConfig = {
