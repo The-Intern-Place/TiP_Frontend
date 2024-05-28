@@ -8,5 +8,6 @@ export const setAuthToken = (token: string): void => {
 
 // Function to get the token from localStorage
 export const getAuthToken = (): string | null => {
+  if (typeof window === "undefined") return null
   return localStorage.getItem(TOKEN_KEY);
 };
