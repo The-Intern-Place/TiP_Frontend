@@ -7,6 +7,7 @@ import Navbar from "@/components/navbar/Navbar";
 import CategorySection from "@/partials/home/CategorySection";
 import HeroSection from "@/partials/home/HeroSection";
 import JobOpeningsSection from "@/partials/home/JobOpeningsSection";
+import ShortListingSection from "@/partials/home/ShortListingSection"
 import TalentsSection from "@/partials/home/TalentsSection";
 import Image from "next/image";
 import { ArrowDown, HeroImg, LocationIcon } from "public";
@@ -27,6 +28,7 @@ export default function Home() {
         <CategorySection />
         <TalentsSection />
         <JobOpeningsSection />
+        <ShortListingSection />
       </div>
     </div>
   );
