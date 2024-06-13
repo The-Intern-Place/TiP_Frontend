@@ -11,7 +11,7 @@ export type TextInputProps = Omit<
   "className" | "onChange"
 > & {
   label: string;
-  overideStyles?: string;
+  overrideStyles?: string;
   iconLeft?: ReactNode;
   iconRight?: ReactNode;
   onChange: (payload: InputChangePayload) => void;

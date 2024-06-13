@@ -34,7 +34,7 @@ const HeroSection = () => {
               label=""
               placeholder="Location"
               options={[{ id: "business", name: "Business" }]}
-              overideStyles="border-none rounded-3xl bg-transparent"
+              overrideStyles="border-none rounded-r-full bg-transparent w-full"
               iconLeft={<Image src={LocationIcon} alt="" />}
               onChange={() => {}}
               iconRight={
