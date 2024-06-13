@@ -12,7 +12,6 @@ const Login = () => {
   const handleSubmitForm = (e: { preventDefault: () => void }) => {
     e.preventDefault();
   };
-  console.log("blossom")
   return (
     <AuthPageLayout heading="Welcome Back!">
       <form className="w-full py-2 mt-5 space-y-5" onSubmit={handleSubmitForm}>
@@ -20,7 +19,7 @@ const Login = () => {
           label="email address"
           placeholder="user@example.com"
           type="email"
-          overrideStyles="rouned-lg"
+          overideStyles="rouned-lg"
           onChange={() => {}}
         />
 
