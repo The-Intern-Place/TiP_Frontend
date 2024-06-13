@@ -13,7 +13,7 @@ function ShortListingSection() {
           selection, saving you time and ensuring you find the perfect match for
           your internship positions
         </p>
-        <Button overideStyles="border-0 rounded-none w-4/6 sm:w-44 align-items-center">
+        <Button overideStyles="border-0 rounded-none w-44 sm:w-44 align-items-center">
           Contact Us
         </Button>
       </div>
