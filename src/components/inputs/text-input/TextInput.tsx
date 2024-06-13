@@ -11,7 +11,7 @@ const TextInput = (props: TextInputProps) => {
     label,
     iconRight,
     iconLeft,
-    overideStyles,
+    overrideStyles,
     ...inputProps
   } = props;
   const { handleChange } = useTextInput(props);
@@ -25,7 +25,7 @@ const TextInput = (props: TextInputProps) => {
         {label}
       </label>
       <div
-        className={`bg-white flex relative rounded-lg h-[60px] border-2 border-athsSpecial ${overideStyles}`}
+        className={`bg-white flex relative rounded-lg h-[60px] border-2 border-athsSpecial ${overrideStyles}`}
       >
         {iconLeft && (
           <div
@@ -38,7 +38,7 @@ const TextInput = (props: TextInputProps) => {
           {...inputProps}
           onChange={handleChange}
           type={type === "password" && isPasswordVisible ? "text" : type}
-          className={`bg-white flex-grow h-full px-4 border-none rounded-lg focus:outline-none focus:ring-0 placeholder:text-[#575757] placeholder:text-sm md:placeholder:text-base w-full text-sm md:text-base ${overideStyles}`}
+          className={`bg-white flex-grow h-full px-4 border-none rounded-lg focus:outline-none focus:ring-0 placeholder:text-[#575757] placeholder:text-sm md:placeholder:text-base w-full text-sm md:text-base ${overrideStyles}`}
         />
 
         {iconRight &&
