@@ -19,7 +19,7 @@ const Login = () => {
           label="email address"
           placeholder="user@example.com"
           type="email"
-          overideStyles="rouned-lg"
+          overrideStyles="rounded-lg"
           onChange={() => {}}
         />
 

@@ -13,17 +13,17 @@ export const IC_Finance = (props: { className?: string  }) => {
       <path
         d="M2 2V38H38"
         stroke={ "#1976D2"}
-        stroke-width="2.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
         className={props.className}
       />
       <path
         d="M34 14L24 24L16 16L10 22"
         stroke={"#1976D2"}
-        stroke-width="2.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
         className={props.className}
       />
     </svg>
