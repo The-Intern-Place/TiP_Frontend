@@ -1,14 +1,17 @@
 "use client";
-
 import localFont from "next/font/local";
 import { Provider as ReduxProvider } from "react-redux";
 import { Epilogue } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
 import { usePathname } from "next/navigation";
-import Home from "./page";
 import { store } from "@/redux/store";
+import { Metadata } from "next/types";
+
+const metadata: Metadata = {
+  title: "The Intern Place",
+  description: "The Intern Place",
+};
 
 const epilogue = Epilogue({ subsets: ["latin"], variable: "--font-epilogue" });
 
@@ -44,9 +47,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const pathname = usePathname();
+
   return (
     <html lang="en">
-      <body className={`${clash.variable} ${epilogue.className}`}>
+      <body className={`${clash.variable} ${epilogue.className} relative`}>
         <ReduxProvider store={store}>
           {children}
           {pathname !== "/login" && pathname !== "/sign-up" && <Footer />}

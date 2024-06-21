@@ -6,7 +6,7 @@ const Button = (props: ButtonProps) => {
   const { variant = "primary", fit, children, overideStyles, ...buttonProps } = props;
   return (
     <button
-      className={`text-sm md:text-base font-bold flex items-center justify-center w-full h-[60px] gap-2 rounded-lg py-5 px-6 ${
+      className={`text-sm md:text-base font-bold flex items-center justify-center w-full gap-2 rounded-lg py-3 px-6 ${
         fit ? "max-w-max" : "w-full"
       } ${
         variant === "primary"

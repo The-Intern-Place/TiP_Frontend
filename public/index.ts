@@ -13,8 +13,16 @@ import FrontendDeveloper from "./frontend-developer.svg";
 import SocialMediaManager from "./social-media-manager.svg";
 import ProductDesigner from "./product-designer.svg";
 import UiUxDesigner from "./ui-ux-designer.svg";
+import EyeIcon from "./eye-icon.svg";
+import Calendar from "./calendar.svg";
+import Underline from "./pngs/underLine.png";
+import SearchBlue from "./search-blue.svg";
 
 export {
+  SearchBlue,
+  Underline,
+  EyeIcon,
+  Calendar,
   SearchIcon,
   BrandDesigner,
   GraphicDesigner,
