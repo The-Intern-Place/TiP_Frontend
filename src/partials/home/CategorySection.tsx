@@ -34,7 +34,7 @@ const CategorySection = () => {
     },
   ];
   return (
-    <div className="flex justify-between items-center w-full h-full max-w-[1350px] mx-auto px-16 xl:px-0">
+    <div className="flex justify-between items-center w-full h-full max-w-[1350px] mx-auto px-12 md:px-16 xl:px-0">
       <div className="mt-14 w-full space-y-4">
         <h1 className="text-5xl font-semibold leading-10">
           Search by <span className="text-[#1976D2]">Category</span>{" "}

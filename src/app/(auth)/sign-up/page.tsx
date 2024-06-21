@@ -1,4 +1,4 @@
-import SignUp from "@/components/authpages/SignUp";
+import SignUp from "@/partials/authpages/SignUp";
 import React from "react";
 import type { Metadata } from "next";
 export const metadata: Metadata = {
