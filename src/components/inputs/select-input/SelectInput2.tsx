@@ -1,9 +1,13 @@
+
+"use client"
 import React, { useState } from "react";
 import { SelectInput2Props, SelectInputProps } from "./SelectInput.types";
 import TextInput from "../text-input/TextInput";
 
+
 const SelectInput2 = (props: SelectInput2Props) => {
   const [showOptions, toggleShowOptions] = useState(false);
+
   return (
     <div
       className="relative h-min cursor-pointer w-full"

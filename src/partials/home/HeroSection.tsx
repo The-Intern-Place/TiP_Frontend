@@ -22,13 +22,16 @@ const HeroSection = () => {
           mission is to ensure equal access to internships and entry-level jobs
           for students and graduates worldwide.
         </p>
-        <div className="flex bg-white w-fit rounded-full w-[490px]">
+        
+        <div className="flex bg-white  rounded-full w-[490px]">
           <input
             type="text"
             placeholder="Search Job or Keyword"
             className="border-none bg-transparent rounded-none pl-6 focus:outline-none focus:ring-0"
           />
           <div className="border border-[#1976D2] opacity-20 my-2" />
+
+
           <div>
             <SelectInput2
               label=""
@@ -44,15 +47,19 @@ const HeroSection = () => {
                     alt=""
                     className="absolute top -left-[5.5rem] w-6 h-6"
                   />
-                  <button className="rounded-full bg-[#002360] text-white p-3">
+                  <button className="rounded-full bg-[#002360] text-white p-3" aria-label="Search">
                     <IC_Search className="w-5 h-5" />
                   </button>
                 </div>
               }
             />
           </div>
+
         </div>
+
+        
       </div>
+
       <Image
         src={HeroImg}
         width={450}

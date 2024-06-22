@@ -5,7 +5,9 @@ const config: Config = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/partials/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/companieshiring/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    
   ],
   theme: {
     extend: {
@@ -23,6 +25,7 @@ const config: Config = {
         "light-blue": "#1976D2",
         grey: "#1B1B1B",
         pictonBlue: "rgba(82,151,219,0.2)",
+      
       },
       screens: {
         sm: "640px",
