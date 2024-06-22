@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+/** @type {import('tailwindcss').Config} */
 
 const config: Config = {
   content: [
@@ -11,6 +12,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        clash: ['var(--font--clash)'],
+        epilogue: ['var(--font-epilogue)'],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

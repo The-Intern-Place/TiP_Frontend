@@ -2,12 +2,12 @@
 
 import { SetStateAction, useEffect, useState } from "react";
 import AuthPageLayout from "./AuthPageLayout";
-import TextInput from "../inputs/text-input/TextInput";
-import CustomDatePicker from "../inputs/select-date-picker/CustomDatePicker";
-import SelectInput from "../inputs/select-input/SelectInput";
+import TextInput from "../../components/inputs/text-input/TextInput";
+import CustomDatePicker from "../../components/inputs/select-date-picker/CustomDatePicker";
+import SelectInput from "../../components/inputs/select-input/SelectInput";
 import axios from "axios";
-import { SelectCountryProps } from "../inputs/select-input/SelectInput.types";
-import Button from "../button/Button";
+import { SelectCountryProps } from "../../components/inputs/select-input/SelectInput.types";
+import Button from "../../components/button/Button";
 import { FcGoogle } from "react-icons/fc";
 import Link from "next/link";
 import { useAppDispatch } from "@/redux/store";

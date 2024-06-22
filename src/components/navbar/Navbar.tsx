@@ -5,10 +5,18 @@ import React from "react";
 import Button from "../button/Button";
 import Link from "next/link";
 
-const Navbar = () => {
+type NavbarProps = {
+  bgcolor?: string;
+};
+
+const Navbar = (props: NavbarProps) => {
   return (
-    <div className="flex justify-between items-center w-full h-full max-w-[1350px] mx-auto lg:px-16 xl:px-0 py-3">
-      <Image src={TIP_Logo} width={70} height={70} alt="TIP Logo" />
+    <div
+      className={`flex justify-between items-center w-full h-full max-w-[1350px] mx-auto lg:px-16 xl:px-0 py-3 bg-[${props.bgcolor ?? "#B5CAEC"}]`}
+    >
+      <Link href={"/"}>
+        <Image src={TIP_Logo} width={70} height={70} alt="TIP Logo" />
+      </Link>
       <div className="flex gap-10 w-fit">
         <p>Find Jobs</p>
         <p>Find Talents</p>
