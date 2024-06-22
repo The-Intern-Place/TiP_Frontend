@@ -31,11 +31,14 @@ const HeroSection = () => {
               className="border-none bg-transparent rounded-none pl-6 focus:outline-none focus:ring-0 placeholder:text-sm md:placeholder:text-base w-full md:w-fit h-[54px] md:h-full"
             />
             <div
-              className={`my-auto flex absolute right-0 px-1.5 h-full items-center justify-center text-xs text-gray-500 disabled:bg-gray-100 flex-shrink-0 flex md:hidden`}
+              className={`my-auto flex absolute right-0 px-1.5 h-full items-center justify-center text-xs text-gray-500 disabled:bg-gray-100 flex-shrink-0 md:hidden`}
             >
-              <button className="rounded-full bg-[#002360] text-white p-3">
-                <IC_Search className="w-5 h-5" />
-              </button>
+          <button 
+  className="rounded-full bg-[#002360] text-white p-3" 
+  aria-label="Search"
+>
+  <IC_Search className="w-5 h-5" />
+</button>
             </div>
           </div>
           <div className="border border-[#1976D2] opacity-20 my-2 hidden md:flex" />

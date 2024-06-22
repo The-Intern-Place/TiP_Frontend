@@ -18,7 +18,7 @@ const HiringHero = () => {
 
         {/* hero components */}
         <div className="flex flex-col  items-center justify-center">
-          <div className="flex  flex-col  pt-[2rem]  gap-2 items-center">
+          <div className="flex  flex-col  pt-[3.5rem]  gap-2 items-center">
             <div className="flex  flex-col md:flex-row items-center justify-center gap-3">
               <h1 className="md:text-[48px] text-[30px] font-[600] ">
                 Find your{" "}
