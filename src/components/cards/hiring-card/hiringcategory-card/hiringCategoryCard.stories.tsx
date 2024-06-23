@@ -3,7 +3,7 @@ import { title } from "process";
 import HiringCategoryCard from "./hiringCategoryCard";
 import { Meta } from "@storybook/react";
 import { HiringCategoryCardStory } from "./hiringCategoryCard.types";
-import Design_Icon from "public/hiringimage/Hiring_Design";
+import Design_Icon from "public/icons/Hiring_Design"
 
 const HiringCategoryCardMeta = {
   title: "Components/Cards/HiringCategoryCard",

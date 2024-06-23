@@ -1,9 +1,9 @@
-import Nomad from "public/hiringimage/Nomad.svg";
-import Discord from "public/hiringimage/discord.svg";
-import Maze from "public/hiringimage/maze.svg";
-import Udacity from "public/hiringimage/udacity.svg";
-import Webflow from "public/hiringimage/webflow.svg";
-import Foundation from "public/hiringimage/foundation.png";
+import Nomad from "public/Nomad.svg";
+import Discord from "public/discord.svg";
+import Maze from "public/maze.svg";
+import Udacity from "public/udacity.svg";
+import Webflow from "public/webflow.svg";
+import Foundation from "public/foundation.png";
 
 export const recommendedData = [
   {
@@ -63,13 +63,13 @@ export const recommendedData = [
   },
 ];
 
-import pentagram from "public/hiringimage/pentagram.svg";
-import wolff from "public/hiringimage/wolff.svg";
-import clay from "public//hiringimage/clay.svg";
-import mediamonks from "public/hiringimage/mediamonks.svg";
-import packer from "public/hiringimage/packer.svg";
-import square from "public/hiringimage/square.svg";
-import divy from "public/hiringimage/divy.svg";
+import pentagram from "public/pentagram.svg";
+import wolff from "public/wolff.svg";
+import clay from "public/clay.svg";
+import mediamonks from "public/mediamonks.svg";
+import packer from "public/packer.svg";
+import square from "public/square.svg";
+import divy from "public/divy.svg";
 
 export const resultdata = [
   {

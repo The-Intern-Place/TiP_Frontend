@@ -1,6 +1,6 @@
 import { title } from "process";
-import { HiringCardStory } from "./hiringCard.type";
-import HiringCard from "./hiringCard";
+import { HiringCardStory } from "./HiringCard.type";
+import HiringCard from "./HiringCard";
 import { Meta } from "@storybook/react";
 
 import Nomad from "public/Nomad.svg";

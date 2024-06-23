@@ -1,4 +1,5 @@
-import Hiring from '@/partials/companieshiring/hiringLayout'
+
+import HiringLayout from '@/partials/companieshiring/HiringLayout';
 import  type { Metadata } from 'next'
 import React from 'react'
 
@@ -12,7 +13,7 @@ export const metadata: Metadata ={
 
 const page = () => {
   return (
-    <Hiring />
+    <HiringLayout />
   )
 }
 

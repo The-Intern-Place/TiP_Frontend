@@ -1,18 +1,21 @@
 import Navbar from "@/components/navbar/Navbar";
 import React from "react";
-import HiringHero from "./hiringHero";
-import HiringRecommend from "./hiringRecommend";
-import HiringCategory from "./hiringCategory";
-import HiringResult from "./hiringResult";
+import HiringHero from "./HiringHero";
+import HiringRecommend from "./HiringRecommend";
+import HiringCategory from "./HiringCategory";
+import HiringResult from "./HiringResult";
+
+
 
 const HiringLayout = () => {
   return (
     <section>
-      <div className="overflow-x-hidden">
+      <div className="overflow-x-hidden relative">
         <HiringHero />
-        <HiringRecommend />
+        <HiringRecommend/>
         <HiringCategory />
         <HiringResult />
+
       </div>
     </section>
   );

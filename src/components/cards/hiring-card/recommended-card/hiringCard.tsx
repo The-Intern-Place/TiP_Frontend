@@ -5,7 +5,7 @@ import { HiringCardProps } from "./hiringCard.type";
 const HiringCard = (props: HiringCardProps) => {
   return (
     <section className="">
-      <div className="md:w-[376px] h-[354px] w-[100%] border-2 border-[##D6DDEB]  p-[1.5rem] items-start justify-center flex flex-col mt-[2rem]">
+      <div className="md:w-[360px] h-[354px] w-[100%] border-2 border-[##D6DDEB]  p-[1.5rem] items-start justify-center flex flex-col mt-[2rem]">
         <div className="flex justify-between w-[100%]">
           <Image
             src={props.img}
