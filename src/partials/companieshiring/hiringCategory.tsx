@@ -14,7 +14,7 @@ const HiringCategory = () => {
   const hiringcategorydata = [
     {
       icon: (
-        <Hiring_Design className="group-hover:stroke-white group-hover:fill-white" />
+        <Hiring_Design className="group-hover:stroke-white stroke-[#1976D2] group-hover:fill-white" />
       ),
       title: "Design",
     },

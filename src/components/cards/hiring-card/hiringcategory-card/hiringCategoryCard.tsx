@@ -4,15 +4,8 @@ import { HiringCategoryCardProps } from "./hiringCategoryCard.types";
 const HiringCategoryCard = (props: HiringCategoryCardProps) => {
   return (
     <section>
-      <div
-        className="flex justify-center md:items-start items-center flex-col 
-        w-[274px]  relative h-[184px]   
-     hover:bg-light-blue hover:text-white  px-1
-     border-2 border-[#D6DDEB]  mt-[2rem] p-2 md:px-[2rem]"
-      >
-        <div className="group-hover:stroke-white group-hover:fill-white">
-          <p>{props.icon}</p>
-        </div>
+      <div className="group flex justify-center md:items-start items-center flex-col w-[274px] relative h-[184px] hover:bg-light-blue hover:text-white px-1 border-2 border-[#D6DDEB]  mt-[2rem] p-2 md:px-[2rem]">
+        <p>{props.icon}</p>
 
         <h1 className="pt-[2rem]  text-[24px] font-[600] leading-[40px]">
           {props.title}

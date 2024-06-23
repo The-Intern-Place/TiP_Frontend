@@ -22,7 +22,7 @@ const HeroSection = () => {
           mission is to ensure equal access to internships and entry-level jobs
           for students and graduates worldwide.
         </p>
-        
+
         <div className="flex bg-white  rounded-full w-full md:w-[450px]">
           <div className="flex relative w-full md:w-fit">
             <input
@@ -33,16 +33,15 @@ const HeroSection = () => {
             <div
               className={`my-auto flex absolute right-0 px-1.5 h-full items-center justify-center text-xs text-gray-500 disabled:bg-gray-100 flex-shrink-0 md:hidden`}
             >
-          <button 
-  className="rounded-full bg-[#002360] text-white p-3" 
-  aria-label="Search"
->
-  <IC_Search className="w-5 h-5" />
-</button>
+              <button
+                className="rounded-full bg-[#002360] text-white p-3"
+                aria-label="Search"
+              >
+                <IC_Search className="w-5 h-5" />
+              </button>
             </div>
           </div>
           <div className="border border-[#1976D2] opacity-20 my-2 hidden md:flex" />
-
 
           <div>
             <SelectInput2
@@ -59,17 +58,17 @@ const HeroSection = () => {
                     alt=""
                     className="absolute top lg:-left-[4rem] -left-[2.5rem] w-6 h-6"
                   />
-                  <button className="rounded-full bg-[#002360] text-white p-3" aria-label="Search">
+                  <button
+                    className="rounded-full bg-[#002360] text-white p-3"
+                    aria-label="Search"
+                  >
                     <IC_Search className="w-5 h-5" />
                   </button>
                 </div>
               }
             />
           </div>
-
         </div>
-
-        
       </div>
 
       <Image
