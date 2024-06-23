@@ -25,7 +25,7 @@ const Navbar = (props: NavbarProps) => {
         <Button variant="transparent" fit>
           <Link href={"/login"}>Log in</Link>{" "}
         </Button>
-        <Button overideStyles="rounded-none" fit>
+        <Button overrideStyles="rounded-none" fit>
           <Link href={"/sign-up"}>Sign Up</Link>
         </Button>
       </div>

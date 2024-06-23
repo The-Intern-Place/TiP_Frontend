@@ -51,7 +51,7 @@ const HeroSection = () => {
                   <Image
                     src={ArrowDown}
                     alt=""
-                    className="absolute top lg:-left-[4rem] -left-[2.5rem] w-6 h-6"
+                    className="absolute top lg:-left-[3.5rem] -left-[2.5rem] w-6 h-6"
                   />
                   <button className="rounded-full bg-[#002360] text-white p-3">
                     <IC_Search className="w-5 h-5" />

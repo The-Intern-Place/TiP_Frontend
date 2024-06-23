@@ -56,7 +56,7 @@ const Footer = () => {
                 placeholder="Email Address"
                 onChange={() => {}}
               />
-              <Button overideStyles="border-0 rounded-none" fit>
+              <Button overrideStyles="border-0 rounded-none" fit>
                 Subscribe
               </Button>
             </div>
