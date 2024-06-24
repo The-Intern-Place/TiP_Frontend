@@ -1,7 +1,7 @@
 import { Component } from "react";
-import HiringResultCard from "./hiringResultCard";
+import HiringResultCard from "./HiringResultCarHd";
 import { Meta } from "@storybook/react";
-import { HiringResultStory } from "./hiringResultCard.types";
+import { HiringResultStory } from "./HiringResultCard.types";
 import pentagram from "public/pentagram.svg";
 
 const HiringResultMeta = {

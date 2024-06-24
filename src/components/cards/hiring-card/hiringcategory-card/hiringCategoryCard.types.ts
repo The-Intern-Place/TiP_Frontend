@@ -1,6 +1,6 @@
 import { StoryObj } from "@storybook/react";
 
-import HiringCategoryCardMeta from "./hiringCategoryCard.stories";
+import HiringCategoryCardMeta from "./HiringCategoryCard.stories";
 import { ReactNode } from "react";
 
 export type HiringCategoryCardProps = {

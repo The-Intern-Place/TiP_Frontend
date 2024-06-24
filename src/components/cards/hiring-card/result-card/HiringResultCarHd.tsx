@@ -1,13 +1,13 @@
 import Image from "next/image";
 import React from "react";
-import { HiringResultProps } from "./hiringResultCard.types";
+import { HiringResultProps } from "./HiringResultCard.types";
 
 const HiringResultCard = (props: HiringResultProps) => {
   return (
     <section className="">
       <div
-        className="md:w-[274px]  bg-[#FFFFFF] h-[255px] w-[100%] border-2 border-[##D6DDEB]
-      p-2 items-center justify-center flex flex-col mt-[2rem]"
+        className="md:w-[234px] lg:w-[274px] bg-[#FFFFFF] h-[255px]  w-[100%] border-2 border-[##D6DDEB]
+      p-2 items-center justify-center flex flex-col mt-[2rem] "
       >
         <div className="flex justify-center w-[100%]">
           <Image

@@ -1,11 +1,11 @@
 import Image from "next/image";
 import React from "react";
-import { HiringCardProps } from "./hiringCard.type";
+import { HiringCardProps } from "./HiringCard.type";
 
 const HiringCard = (props: HiringCardProps) => {
   return (
     <section className="">
-      <div className="md:w-[360px] h-[354px] w-[100%] border-2 border-[##D6DDEB]  p-[1.5rem] items-start justify-center flex flex-col mt-[2rem]">
+      <div className="md:w-[360px] h-[364px] w-[100%] border-2 border-[#D6DDEB]   p-[1rem] items-start justify-center flex flex-col mt-[2rem]">
         <div className="flex justify-between w-[100%]">
           <Image
             src={props.img}
@@ -23,7 +23,7 @@ const HiringCard = (props: HiringCardProps) => {
           {props.description}
         </p>
 
-        <div className="flex pt-[1rem] gap-2">
+        <div className="flex flex-col md:flex-row pt-[1rem] gap-2">
           <button className="w-[140px] h-[34px] border-2 border-[#FFB836] flex-wrap rounded-[80px] text-[14px] font-[600] leading-[22px] text-[#FFB836]">
             {props.trackOne}
           </button>
@@ -43,6 +43,7 @@ const HiringCard = (props: HiringCardProps) => {
             </button>
           )}
         </div>
+
       </div>
     </section>
   );

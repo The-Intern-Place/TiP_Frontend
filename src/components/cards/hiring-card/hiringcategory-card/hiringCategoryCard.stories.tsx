@@ -1,8 +1,8 @@
 import { title } from "process";
 
-import HiringCategoryCard from "./hiringCategoryCard";
+import HiringCategoryCard from "./HiringCategoryCard";
 import { Meta } from "@storybook/react";
-import { HiringCategoryCardStory } from "./hiringCategoryCard.types";
+import { HiringCategoryCardStory } from "./HiringCategoryCard.types";
 import Design_Icon from "public/icons/Hiring_Design"
 
 const HiringCategoryCardMeta = {

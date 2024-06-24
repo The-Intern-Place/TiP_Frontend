@@ -7,6 +7,7 @@ import HiringResult from "./HiringResult";
 
 
 
+
 const HiringLayout = () => {
   return (
     <section>
@@ -15,6 +16,7 @@ const HiringLayout = () => {
         <HiringRecommend/>
         <HiringCategory />
         <HiringResult />
+     
 
       </div>
     </section>

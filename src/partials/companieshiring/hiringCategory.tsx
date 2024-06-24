@@ -1,5 +1,6 @@
-import HiringCategoryCard from "@/components/cards/hiring-card/hiringcategory-card/hiringCategoryCard";
-import { HiringCategoryCardProps } from "@/components/cards/hiring-card/hiringcategory-card/hiringCategoryCard.types";
+'use client'
+import HiringCategoryCard from "@/components/cards/hiring-card/hiringcategory-card/HiringCategoryCard";
+import { HiringCategoryCardProps } from "@/components/cards/hiring-card/hiringcategory-card/HiringCategoryCard.types";
 import React from "react";
 
 import Hiring_Design from "public/icons/Hiring_Design";
@@ -10,61 +11,114 @@ import Developer_Icon from  "public/icons/Hiring_Developer";
 
 import IC_Design from "public/icons/IC_Design";
 
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+
+
+
+import { Navigation, Pagination } from 'swiper/modules';
+
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+
 const HiringCategory = () => {
   const hiringcategorydata = [
     {
       icon: (
-        <Hiring_Design className="group-hover:stroke-white group-hover:fill-white" />
+        <Hiring_Design className="hover:stroke-white stroke-[#1976D2] group-hover:fill-white  " />
       ),
       title: "Design",
     },
 
     {
       icon: (
-        <Fintech_Icon className="group-hover:stroke-white group-hover:fill-white" />
+        <Fintech_Icon className="hover:stroke-white stroke-[#1976D2] hover:fill-white group-hover:fill-white" />
       ),
-
+ 
       title: "Fintech",
     },
 
     {
       icon: (
-        <Hosting_Icon className="group-hover:stroke-white  group-hover:fill-white" />
+        <Hosting_Icon className="hover:stroke-white hover:fill-white stroke-[#1976D2]  group-hover:fill-white" />
       ),
       title: "Hosting",
     },
 
     {
       icon: (
-        <Business_Icon className="group-hover:stroke-white group-hover:fill-white " />
+        <Business_Icon className="hover:stroke-white hover:fill-white stroke-[#1976D2] group-hover:fill-white " />
       ),
       title: "Business Service",
     },
 
     {
       icon: (
-        <Developer_Icon className="group-hover:stroke-white group-hover:fill-white" />
+        <Developer_Icon className="hover:stroke-white hover:fill-white stroke-[#1976D2] group-hover:fill-white" />
       ),
       title: "Developer",
     },
   ];
 
   return (
-    <section className="bg-[#F8F8FD] md:p-[2rem] mt-[5rem] p-2 justify-center items-center 
-    flex mx-auto">
+    <section className="bg-[#F8F8FD] 
+    flex justify-center items-center w-full h-full
+     ">
       <div className="flex flex-col">
         {/* heading text */}
 
-        <h1 className="text-grey text-[32px] font-[600]  items-start justify-start leading-[38px] pt-2">
+        <h1 className="text-grey text-[32px] font-[600]   leading-[38px] pt-[2rem]   ">
           Companies by Category
         </h1>
+        
 
         {/* body */}
-        <div className="flex md:flex-row flex-wrap items-center ml-[10rem] md:justify-between justify-center lg:flex-nowrap flex-col w-[100%] gap-[1rem]  ">
+        <div className="w-[340px] ssm:w-[850px] md:w-[740px] lg:w-[1208px] mx-0">
+        <Swiper
+      // install Swiper modules
+      modules={[Navigation, Pagination]}
+      spaceBetween={10}
+      slidesPerView={2}
+      loop={true}
+      navigation
+      pagination={{ clickable: true,
+        el: '.custom-pagination' 
+       }}
+      breakpoints={{
+        // when window width is >= 640px
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        // when window width is >= 768px
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        // when window width is >= 1024px
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 10,
+        },
+      }}scrollbar={{ draggable: true }}
+
+
+
+    >
+
           {hiringcategorydata.map((h, i) => (
+  <SwiperSlide className="flex flex-col md:flex-row items-center gap-[5px] lg:gap-[32px] justify-center my-[3rem] w-[350px] h-full">
             <HiringCategoryCard key={i} title={h.title} icon={h.icon} />
+            </SwiperSlide>
           ))}
+
+</Swiper>
         </div>
+
       </div>
     </section>
   );

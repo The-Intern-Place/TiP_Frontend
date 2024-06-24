@@ -3,7 +3,7 @@ import Discord from "public/discord.svg";
 import Maze from "public/maze.svg";
 import Udacity from "public/udacity.svg";
 import Webflow from "public/webflow.svg";
-import Foundation from "public/foundation.png";
+import Foundation from "public/foundation.svg";
 
 export const recommendedData = [
   {
