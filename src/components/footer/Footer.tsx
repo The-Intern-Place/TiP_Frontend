@@ -3,6 +3,7 @@ import { TIP_Logo } from "public";
 import React from "react";
 import Button from "@/components/button/Button";
 import TextInput from "../inputs/text-input/TextInput";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -14,8 +15,8 @@ const Footer = () => {
           <div>
             <ul className="space-y-3">
               <li className="text-lg font-semibold">About</li>
-              <li>Founders</li>
-              <li>Contact Us </li>
+              <li className="pb-3">Founders</li>
+              <Link href="/contact-us" >Contact Us</Link>
               <li>Terms</li>
               <li>Privacy Policy</li>
             </ul>
@@ -37,7 +38,7 @@ const Footer = () => {
                 label=""
                 overideStyles="border-none mb-0"
                 placeholder="Email Address"
-                onChange={() => {}}
+                onChange={() => { }}
               />
               <Button overideStyles="border-0 rounded-none" fit>
                 Subscribe

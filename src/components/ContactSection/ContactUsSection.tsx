@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from 'react';
 import styles from "../../styles/ContactSection/ContactSection.module.css";
 import Link from 'next/link';
@@ -24,7 +26,7 @@ const ContactUsSection: React.FC = () => {
 
     return (
         <main className="w-full h-full max-w-[1350px] mx-auto">
-            <div className="grid justify-items-center mb-10">
+            <div className="grid justify-items-center mt-10 mb-3">
                 <h1 className="lg:text-[3.5rem] md:text-[45px] text-4xl font-semibold leading-10 mb-4 ml-8">
                     Contact Us
                 </h1>

@@ -48,6 +48,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${clash.variable} ${epilogue.className}`}>
         <ReduxProvider store={store}>
+          <Navbar />
           {children}
           {pathname !== "/login" && pathname !== "/sign-up" && <Footer />}
         </ReduxProvider>
