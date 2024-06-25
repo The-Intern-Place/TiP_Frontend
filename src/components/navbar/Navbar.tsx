@@ -12,7 +12,7 @@ type NavbarProps = {
 const Navbar = (props: NavbarProps) => {
   return (
     <div
-      className={`flex justify-between items-center w-full h-full
+      className={`flex sticky justify-between items-center w-full h-full
          max-w-[1350px] mx-auto lg:px-16 xl:px-0 py-3 bg-[${props.bgcolor ?? "#B5CAEC"}]`}
     >
       <Link href={"/"}>

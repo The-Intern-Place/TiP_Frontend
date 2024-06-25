@@ -1,11 +1,11 @@
 import Image from "next/image";
 import React from "react";
-import { HiringCardProps } from "./HiringCard.type";
+import { RecommendedCompaniesCardProps } from "./RecommendedCompaniesCard.types";
 
-const HiringCard = (props: HiringCardProps) => {
+const RecommendedCompaniesCard = (props: RecommendedCompaniesCardProps) => {
   return (
     <section className="">
-      <div className="md:w-[360px] h-[364px] w-[100%] border-2 border-[#D6DDEB]   p-[1rem] items-start justify-center flex flex-col mt-[2rem]">
+      <div className="md:w-[360px] lg:w-full h-[364px] w-full border-2 border-[#D6DDEB]   p-[1rem] items-start justify-center flex flex-col mt-[2rem]">
         <div className="flex justify-between w-[100%]">
           <Image
             src={props.img}
@@ -49,4 +49,4 @@ const HiringCard = (props: HiringCardProps) => {
   );
 };
 
-export default HiringCard;
+export default RecommendedCompaniesCard;

@@ -1,9 +1,7 @@
-import { title } from "process";
-
-import HiringCategoryCard from "./HiringCategoryCard";
 import { Meta } from "@storybook/react";
+import Design_Icon from "public/icons/Hiring_Design";
+import HiringCategoryCard from "./HiringCategoryCard";
 import { HiringCategoryCardStory } from "./HiringCategoryCard.types";
-import Design_Icon from "public/icons/Hiring_Design"
 
 const HiringCategoryCardMeta = {
   title: "Components/Cards/HiringCategoryCard",

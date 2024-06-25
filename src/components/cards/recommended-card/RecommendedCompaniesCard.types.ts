@@ -1,8 +1,8 @@
 import { StoryObj } from "@storybook/react";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
-import HiringCardMeta from "./HringCard.stories";
+import RecommendedCompaniesCardMeta from "./RecommendedCompaniesCard.stories";
 
-export type HiringCardProps = {
+export type RecommendedCompaniesCardProps = {
   img: string | StaticImport;
   title: string;
   description: string;
@@ -11,4 +11,4 @@ export type HiringCardProps = {
   trackThree?: string;
 };
 
-export type HiringCardStory = StoryObj<typeof HiringCardMeta>;
+export type RecommendedCompaniesCardStory = StoryObj<typeof RecommendedCompaniesCardMeta>;

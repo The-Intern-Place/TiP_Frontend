@@ -1,8 +1,8 @@
 import { Component } from "react";
-import HiringResultCard from "./HiringResultCarHd";
+import HiringResultCard from "./HiringResultCard";
 import { Meta } from "@storybook/react";
-import { HiringResultStory } from "./HiringResultCard.types";
 import pentagram from "public/pentagram.svg";
+import { HiringResultStory } from "./HiringResultCard.types";
 
 const HiringResultMeta = {
   title: "Components/Cards/HiringResultCard",
@@ -15,6 +15,7 @@ export const DefaultStory: HiringResultStory = {
     img: pentagram,
     jobs: "3 Jobs",
   },
+  name: "Hiring Result Card"
 };
 
 export default HiringResultMeta;

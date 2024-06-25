@@ -1,7 +1,7 @@
-import HiringCard from "@/components/cards/hiring-card/recommended-card/HiringCard";
-import { HiringCardProps } from "@/components/cards/hiring-card/recommended-card/HiringCard.type";
 import { recommendedData } from "@/utilities/data/hiring";
 import React from "react";
+import RecommendedCompaniesCard from "@/components/cards/recommended-card/RecommendedCompaniesCard";
+import { RecommendedCompaniesCardProps } from "@/components/cards/recommended-card/RecommendedCompaniesCard.types";
 
 const HiringRecommend = () => {
   return (
@@ -22,8 +22,8 @@ const HiringRecommend = () => {
 
         {/* body */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full h-full gap-[32px]">
-          {recommendedData.map((h: HiringCardProps, i: number) => (
-            <HiringCard
+          {recommendedData.map((h: RecommendedCompaniesCardProps, i: number) => (
+            <RecommendedCompaniesCard
               key={i}
               img={h.img}
               title={h.title}
