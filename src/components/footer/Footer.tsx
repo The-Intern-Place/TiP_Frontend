@@ -16,7 +16,7 @@ const Footer = () => {
         <Image src={TIP_Logo} alt="Logo" className="md:hidden" />
         <div className="flex flex-wrap md:grid md:grid-flow-col lg:gap-7 gap-5 w-full">
           <Image src={TIP_Logo} alt="Logo" className="hidden md:block" />
-          <div className="flex gap-4 md:block w-full">
+          <div className="flex flex-col gap-4 w-full">
             <div>
               <ul className="space-y-3">
                 <li className="text-lg font-semibold">Candidates</li>
@@ -35,7 +35,7 @@ const Footer = () => {
                 <li>Post A Job</li>
                 <li>Shortlisting Services</li>
                 <li>Candidate Search</li>
-                <li>Advertise</li>
+                <li>Advertise</li>c
               </ul>
             </div>
           </div>
