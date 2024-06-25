@@ -9,10 +9,6 @@ import IC_CardsOption from "public/icons/IC_CardsOption";
 import IC_TilesOption from "public/icons/IC_TilesOption";
 import React, { useState } from "react";
 
-type ICardStyleProps = {
-  color?: string;
-  type?: string;
-};
 const page = () => {
   const [cardType, setCardType] = useState<string>("tiles");
 
@@ -36,7 +32,7 @@ const page = () => {
               </span>{" "}
               advice
             </h1>
-            <p className="text-center py-4 text-[#1B1B1B]">
+            <p className="text-center px-10 lg:px-0 text-center py-4 text-[#1B1B1B]">
               Discover helpful articles, videos, and webinars to guide you in
               your job search and career growth. Dive in and find the advice you
               need to succeed!
@@ -77,7 +73,7 @@ const page = () => {
             </section>
           </div>
           <div
-            className={`grid ${cardType === "tiles" ? " grid-cols-3" : "grid-cols-2"} gap-5`}
+            className={`grid ${cardType === "tiles" ? "lg:grid-cols-3 md:grid-cols-2 grid-cols-1" : "md:grid-cols-2 grid-cols-1"} gap-5`}
           >
             {advices.map((advice, key) => (
               <div key={key}>

@@ -11,37 +11,33 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#002360] text-white">
+    <footer className="bg-[#002360] text-white w-full">
       <div className="w-full h-full max-w-[1350px] mx-auto lg:px-16 md:px-10 px-6 py-8 space-y-6 lg:space-y-0 xl:px-0">
         <Image src={TIP_Logo} alt="Logo" className="md:hidden" />
-        <div className="flex flex-wrap md:grid md:grid-flow-col lg:gap-7 gap-5 w-full">
+        <div className="flex flex-wrap md:grid md:grid-flow-col lg:gap-7 gap-3 w-full">
           <Image src={TIP_Logo} alt="Logo" className="hidden md:block" />
           <div className="flex flex-col gap-4 w-full">
-            <div>
-              <ul className="space-y-3">
-                <li className="text-lg font-semibold">Candidates</li>
-                <li>Job Listings</li>
-                <li>Skills Assessment </li>
-                <li>
-                  {" "}
-                  <Link href={"/hiring"}>Companies Hiring</Link>
-                </li>
-                <li>CV Services</li>
-                <li>
-                  <Link href={"/career-advice"}>Career Tips</Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <ul className="space-y-3">
-                <li className="text-lg font-semibold">Employer</li>
-                <li>Post A Job</li>
-                <li>Shortlisting Services</li>
-                <li>Candidate Search</li>
-                <li>Advertise</li>c
-              </ul>
-            </div>
+            <ul className="space-y-3">
+              <li className="text-lg font-semibold">Candidates</li>
+              <li>Job Listings</li>
+              <li>Skills Assessment </li>
+              <li>Companies Hiring</li>
+              <li>CV Services</li>
+              <li>
+                <Link href={"/career-advice"}>Career Tips</Link>
+              </li>
+            </ul>
           </div>
+          <div>
+            <ul className="space-y-3">
+              <li className="text-lg font-semibold">Employer</li>
+              <li>Post A Job</li>
+              <li>Shortlisting Services</li>
+              <li>Candidate Search</li>
+              <li>Advertise</li>
+            </ul>
+          </div>
+
           <div>
             <ul className="space-y-3">
               <li className="text-lg font-semibold">About</li>
@@ -51,6 +47,7 @@ const Footer = () => {
               <li>Privacy Policy</li>
             </ul>
           </div>
+
           <div className="space-y-4 w-full">
             <h1 className="text-lg font-semibold">Get Notifications</h1>
             <p>The latest job news and articles will be sent to your inbox. </p>
