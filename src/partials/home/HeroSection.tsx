@@ -6,7 +6,7 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <div className="lg:flex justify-around gap-5 items-center w-full h-full max-w-[1350px] mx-auto px-12 md:px-16 xl:px-0 pt-10">
+    <div className="lg:flex justify-around gap-5 items-center w-full h-full max-w-[1350px] mx-auto px-6 md:px-10 lg:px-16 xl:px-0 pt-10">
       <div className="lg:space-y-6 space-y-3">
         <div className="lg:space-y-8 space-y-2">
           <h1 className="lg:text-[3.5rem] md:text-[45px] text-4xl font-semibold leading-10">
@@ -56,7 +56,7 @@ const HeroSection = () => {
                   <Image
                     src={ArrowDown}
                     alt=""
-                    className="absolute top lg:-left-[4rem] -left-[2.5rem] w-6 h-6"
+                    className="absolute top lg:-left-[3.5rem] -left-[2.5rem] w-6 h-6"
                   />
                   <button
                     className="rounded-full bg-[#002360] text-white p-3"

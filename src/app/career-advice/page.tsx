@@ -9,18 +9,11 @@ import IC_CardsOption from "public/icons/IC_CardsOption";
 import IC_TilesOption from "public/icons/IC_TilesOption";
 import React, { useState } from "react";
 
-type ICardStyleProps = {
-  color?: string;
-  type?: string;
-};
 const page = () => {
-  const [cardStyle, setCardStyle] = useState<ICardStyleProps>({});
+  const [cardType, setCardType] = useState<string>("tiles");
 
   const handleCardStyleChange = (type: string) => {
-    setCardStyle({
-      color: "#4640DE",
-      type: type,
-    });
+    setCardType(type);
   };
 
   return (
@@ -39,7 +32,7 @@ const page = () => {
               </span>{" "}
               advice
             </h1>
-            <p className="text-center py-4 text-[#1B1B1B]">
+            <p className="text-center px-10 lg:px-0 text-center py-4 text-[#1B1B1B]">
               Discover helpful articles, videos, and webinars to guide you in
               your job search and career growth. Dive in and find the advice you
               need to succeed!
@@ -52,7 +45,7 @@ const page = () => {
                 className="border-b border-[#D6DDEB] h-12 placeholder:text-epilogue placeholder:pl-2 focus:outline-none focus:ring-0 "
                 placeholder="Search keyword"
               />
-              <Button overideStyles="rounded-none border-0 fit">Search</Button>
+              <Button overrideStyles="rounded-none border-0 fit">Search</Button>
             </div>
           </div>
         </div>
@@ -69,17 +62,19 @@ const page = () => {
             <section className="flex gap-3 items-center">
               <div className="" onClick={() => handleCardStyleChange("tiles")}>
                 <IC_TilesOption
-                  color={cardStyle?.type === "tiles" ? "#4640DE" : "#1B1B1B"}
+                  className={`cursor-pointer ${cardType === "tiles" ? "fill-[#4640DE] stroke-[#4640DE] opacity-1" : "fill-[#1B1B1B] opacity-[0.6]"}`}
                 />
               </div>
               <div className="" onClick={() => handleCardStyleChange("cards")}>
                 <IC_CardsOption
-                  color={cardStyle?.type === "cards" ? "#4640DE" : "#1B1B1B"}
+                  className={`cursor-pointer ${cardType === "cards" ? "fill-[#4640DE] stroke-[#4640DE] opacity-1" : "fill-[#1B1B1B] opacity-[0.6]"}`}
                 />
               </div>
             </section>
           </div>
-          <div className="grid grid-cols-3 gap-5 ">
+          <div
+            className={`grid ${cardType === "tiles" ? "lg:grid-cols-3 md:grid-cols-2 grid-cols-1" : "md:grid-cols-2 grid-cols-1"} gap-5`}
+          >
             {advices.map((advice, key) => (
               <div key={key}>
                 <ArticleCard
@@ -87,7 +82,7 @@ const page = () => {
                   description={advice.description}
                   title={advice.title}
                   views={advice.views}
-                  cardType={cardStyle?.type}
+                  cardType={cardType}
                 />
               </div>
             ))}

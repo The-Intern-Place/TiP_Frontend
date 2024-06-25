@@ -5,8 +5,8 @@ import Image from "next/image";
 const JobCard = (props: JobCardProps) => {
   return (
     <div className="bg-white text-[#1B1B1B] rounded-[10px] shadow-lg p-6 w-full">
-      <div className="flex items-center gap-3">
-        <Image src={props.image} alt="" />
+      <div className="flex md:flex-row flex-col md:items-center gap-3">
+        <Image src={props.image} className="w-[50px]" alt="" />
         <div className="space-y-1 w-full">
           <p className="lg:text-[20px] md:text-lg font-semibold">{props.title}</p>
           <div className="flex items-center gap-3">
