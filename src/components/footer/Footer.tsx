@@ -21,7 +21,10 @@ const Footer = () => {
               <li className="text-lg font-semibold">Candidates</li>
               <li>Job Listings</li>
               <li>Skills Assessment </li>
-              <li>Companies Hiring</li>
+              <li>
+                {" "}
+                <Link href={"/hiring"}>Companies Hiring</Link>
+              </li>
               <li>CV Services</li>
               <li>
                 <Link href={"/career-advice"}>Career Tips</Link>
