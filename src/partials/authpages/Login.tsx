@@ -2,8 +2,8 @@
 
 import React from "react";
 import AuthPageLayout from "./AuthPageLayout";
-import TextInput from "../inputs/text-input/TextInput";
-import Button from "../button/Button";
+import TextInput from "../../components/inputs/text-input/TextInput";
+import Button from "../../components/button/Button";
 import { FcGoogle } from "react-icons/fc";
 import { FaLinkedinIn } from "react-icons/fa6";
 import Link from "next/link";

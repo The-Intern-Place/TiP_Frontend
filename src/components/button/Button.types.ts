@@ -7,7 +7,7 @@ export type ButtonProps = Omit<
   "className"
 > & {
   variant?: "primary" | "outlined" | "secondary" | "transparent";
-  overideStyles?: string;
+  overrideStyles?: string;
   fit?: boolean;
 };
 

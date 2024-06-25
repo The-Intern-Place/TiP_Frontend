@@ -1,4 +1,4 @@
-import Login from "@/components/authpages/Login";
+import Login from "@/partials/authpages/Login";
 import React from "react";
 import type { Metadata } from "next";
 export const metadata: Metadata = {
