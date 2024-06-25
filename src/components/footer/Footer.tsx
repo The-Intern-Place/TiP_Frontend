@@ -22,7 +22,10 @@ const Footer = () => {
                 <li className="text-lg font-semibold">Candidates</li>
                 <li>Job Listings</li>
                 <li>Skills Assessment </li>
-                <li>Companies Hiring</li>
+                <li>
+                  {" "}
+                  <Link href={"/hiring"}>Companies Hiring</Link>
+                </li>
                 <li>CV Services</li>
                 <li>
                   <Link href={"/career-advice"}>Career Tips</Link>
@@ -58,10 +61,16 @@ const Footer = () => {
                 placeholder="Email Address"
                 onChange={() => {}}
               />
-              <Button overrideStyles="border-0 rounded-none hidden md:block" fit>
+              <Button
+                overrideStyles="border-0 rounded-none hidden md:block"
+                fit
+              >
                 Subscribe
               </Button>
-              <Button overrideStyles="border-0 p-0 rounded-none block md:hidden" fit>
+              <Button
+                overrideStyles="border-0 p-0 rounded-none block md:hidden"
+                fit
+              >
                 <Image src="/send.svg" alt="" width="30" height="30" />
               </Button>
             </div>

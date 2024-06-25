@@ -38,3 +38,8 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 100%; 
 }
+
+.custom-pagination {
+  display: flex;
+  border-bottom: 0px;
+}
