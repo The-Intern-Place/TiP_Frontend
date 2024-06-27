@@ -13,7 +13,7 @@ const ArticleCard = ({
 }: ArticleCardProps) => {
   return (
     <div
-      className={`border border-[#DAD2B8] rounded-lg lg:min-w-[376px] ${cardType === "tiles" ? "" : "flex justify-between items-center"} h-full w-full p-6`}
+      className={`border border-[#DAD2B8] rounded-lg lg:min-w-[376px] ${cardType === "tiles" ? "" : "flex justify-between items-center"} h-full w-full py-3 px-4 lg:p-6`}
     >
       <div>
         <h2 className="text-[20px] mb-2 text-blue font-semibold">{title}</h2>

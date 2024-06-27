@@ -14,15 +14,17 @@ const Footer = () => {
   return (
     <footer className="bg-[#002360] text-white w-full">
       <div className="w-full h-full max-w-[1350px] mx-auto lg:px-16 md:px-10 px-6 py-8 space-y-6 lg:space-y-0 xl:px-0">
-        <Image src={TIP_Logo} alt="Logo" className="md:hidden" />
+        <Image src={TIP_Logo} alt="Logo" className="lg:hidden" />
         <div className="flex flex-wrap md:grid md:grid-flow-col lg:gap-7 gap-3 w-full">
-          <Image src={TIP_Logo} alt="Logo" className="hidden md:block" />
-          <div className="flex flex-col gap-4 w-full">
+          <Image src={TIP_Logo} alt="Logo" className="hidden lg:block" />
+          <div className="flex flex-col gap-4">
             <ul className="space-y-3">
               <li className="text-lg font-semibold">Candidates</li>
               <li>Job Listings</li>
               <li>Skills Assessment </li>
-              <li>Companies Hiring</li>
+              <li>
+                <Link href={"/hiring"}>Companies Hiring</Link>
+              </li>
               <li>CV Services</li>
               <li>
                 <Link href={"/career-advice"}>Career Tips</Link>
@@ -39,7 +41,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div>
+          <div className="flex flex-col gap-4 w-full mt-2 md:mt-0">
             <ul className="space-y-3">
               <li className="text-lg font-semibold">About</li>
               <li className="pb-3">Founders</li>
@@ -49,7 +51,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="space-y-4 w-full">
+          <div className="flex flex-col gap-4 w-full">
             <h1 className="text-lg font-semibold">Get Notifications</h1>
             <p>The latest job news and articles will be sent to your inbox. </p>
             <div className="flex gap-3 justify-center items-center">
