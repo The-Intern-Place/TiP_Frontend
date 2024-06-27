@@ -8,7 +8,6 @@ import IC_Facebook from "public/icons/IC_Facebook";
 import IC_Instagram from "public/icons/IC_Instagram";
 import IC_LinkedIn from "public/icons/IC_LinkedIn";
 import IC_Twitter from "public/icons/IC_Twitter";
-import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -34,8 +33,8 @@ const Footer = () => {
           <div>
             <ul className="space-y-3">
               <li className="text-lg font-semibold">Employer</li>
-              <li>Post A Job</li>
-              <li>Shortlisting Services</li>
+              <li className="pb-3">Post A Job</li>
+              <Link href="/short-listing">Shortlisting Services</Link>
               <li>Candidate Search</li>
               <li>Advertise</li>
             </ul>
