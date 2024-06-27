@@ -29,7 +29,7 @@ const TextInput = (props: TextInputProps) => {
       >
         {iconLeft && (
           <div
-            className={`my-auto flex px-1.5 h-full items-center justify-center text-xs text-gray-500 disabled:bg-gray-100 flex-shrink-0`}
+            className={`my-auto flex pl-3 h-full items-center justify-center text-xs text-gray-500 disabled:bg-gray-100 flex-shrink-0`}
           >
             {iconLeft}
           </div>
