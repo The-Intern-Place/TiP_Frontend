@@ -30,7 +30,7 @@ const ArticleCard = ({
         </div>
       </div>
         <Button fit overrideStyles="ml-auto" variant="outlined">
-          Read More
+          Read More 
         </Button>
  
     </div>
