@@ -3,9 +3,7 @@ import Navbar from "@/components/navbar/Navbar";
 import CategorySection from "@/partials/home/CategorySection";
 import HeroSection from "@/partials/home/HeroSection";
 import JobOpeningsSection from "@/partials/home/JobOpeningsSection";
-import ShortListingSection from "@/partials/home/ShortListingSection"
 import TalentsSection from "@/partials/home/TalentsSection";
-import ContactUsSection from "@/partials/home/ContactUsSection";
 import Image from "next/image";
 import { ArrowDown, HeroImg, LocationIcon } from "public";
 import type { Metadata } from "next";
@@ -19,7 +17,7 @@ export default function Home() {
   return (
     <div>
       <section className="bg-[#B5CAEC] pb-10">
-        <Navbar />
+        {/* <Navbar /> */}
         <HeroSection />
       </section>
       <div>
@@ -27,8 +25,6 @@ export default function Home() {
         <TalentsSection />
         <JobOpeningsSection />
         {/* <ShortListingSection /> */}
-        <ShortListingSection />
-        <ContactUsSection />
       </div>
     </div>
   );

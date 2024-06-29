@@ -3,7 +3,7 @@ import Button from "@/components/button/Button";
 
 function ShortListingSection() {
   return (
-    <main className="w-full h-full max-w-[1350px] mx-auto mb-6">
+    <main className="w-full h-full max-w-[1350px] mt-10 mx-auto mb-6">
       <div className="grid justify-items-center mb-12">
         <h1 className="lg:text-[3.5rem] md:text-[45px] text-4xl font-semibold leading-10 mb-4 ml-8">
           TiP <span className="text text-[#26A4FF]">Shortlisting</span> Service

@@ -3,11 +3,11 @@ import { TIP_Logo } from "public";
 import React from "react";
 import Button from "@/components/button/Button";
 import TextInput from "../inputs/text-input/TextInput";
+import Link from "next/link";
 import IC_Facebook from "public/icons/IC_Facebook";
 import IC_Instagram from "public/icons/IC_Instagram";
 import IC_LinkedIn from "public/icons/IC_LinkedIn";
 import IC_Twitter from "public/icons/IC_Twitter";
-import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -33,8 +33,8 @@ const Footer = () => {
           <div>
             <ul className="space-y-3">
               <li className="text-lg font-semibold">Employer</li>
-              <li>Post A Job</li>
-              <li>Shortlisting Services</li>
+              <li className="pb-3">Post A Job</li>
+              <Link href="/short-listing">Shortlisting Services</Link>
               <li>Candidate Search</li>
               <li>Advertise</li>
             </ul>
@@ -43,8 +43,8 @@ const Footer = () => {
           <div className="flex flex-col gap-4 w-full mt-2 md:mt-0">
             <ul className="space-y-3">
               <li className="text-lg font-semibold">About</li>
-              <li>Founders</li>
-              <li>Contact Us </li>
+              <li className="pb-3">Founders</li>
+              <Link href="/contact-us" >Contact Us</Link>
               <li>Terms</li>
               <li>Privacy Policy</li>
             </ul>
@@ -58,7 +58,7 @@ const Footer = () => {
                 label=""
                 overrideStyles="border-none mb-0"
                 placeholder="Email Address"
-                onChange={() => {}}
+                onChange={() => { }}
               />
               <Button
                 overrideStyles="border-0 rounded-none hidden md:block"
