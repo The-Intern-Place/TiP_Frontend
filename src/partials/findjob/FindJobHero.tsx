@@ -1,6 +1,5 @@
 "use client";
-import MobileNavbar from "@/components/navbar/MobileNavbar";
-import Navbar from "@/components/navbar/Navbar";
+
 
 import Image from "next/image";
 import React from "react";
@@ -12,14 +11,10 @@ import searchicon from "public/searchicon.svg";
 const FindJobHero = () => {
   return (
     <section>
-      <div className="bg-[#f8f8f8]  md:h-[514px] ">
-        <div>
-          <Navbar />
-          <MobileNavbar />
-        </div>
+      <div className="bg-[#f8f8f8]  md:h-[460px] ">
 
         {/* hero components */}
-        <div className="flex flex-col  items-center justify-center">
+        <div className="flex flex-col  items-center justify-center md:pt-2">
           <div className="flex  flex-col  pt-[3.5rem]  gap-2 items-center  ">
             <div className="flex  flex-col md:flex-row items-center justify-center gap-3">
               <h1 className="md:text-[48px] text-[30px] font-[600] ">
