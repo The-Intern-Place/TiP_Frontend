@@ -42,16 +42,16 @@ const ContactUsSection: React.FC = () => {
                                     <div className="max-w-3xl mx-auto mt-8 space-y-4 md:mt-16">
                                         {qaData.map(({ id, question, answer }) => (
                                             <div key={id} className="transition-all duration-200 bg-white shadow-lg cursor-pointer hover:bg-gray-50">
-                                                <button type="button" onClick={() => handleToggle(id)} className="flex items-center justify-between w-full px-4 py-5 sm:p-6">
-                                                    <span className="flex text-lg font-semibold text-[#1976D2]">{question}</span>
-                                                    <svg className={`w-6 h-6 text-gray-400 ${visibleId === id ? styles.rotate : ''}`} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-                                                    </svg>
-                                                </button>
-                                                <div className={`px-4 pb-5 sm:px-6 sm:pb-6 ${visibleId === id ? 'block' : 'hidden'}`}>
-                                                    <p>{answer}</p>
-                                                </div>
-                                            </div>
+                       <button type="button" onClick={() => handleToggle(id)} className="flex items-center justify-between w-full px-4 py-5 sm:p-6">
+            <span className="flex text-lg font-semibold text-[#1976D2]">{question}</span>
+                 <svg className={`w-6 h-6 text-gray-400 ${visibleId === id ? styles.rotate : ''}`} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                       </svg>
+                               </button>
+                              <div className={`px-4 pb-5 sm:px-6 sm:pb-6 ${visibleId === id ? 'block' : 'hidden'}`}>
+                               <p>{answer}</p>
+                               </div>
+                   </div>
                                         ))}
                                     </div>
                                 </dl>

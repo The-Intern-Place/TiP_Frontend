@@ -1,14 +1,15 @@
 "use client";
+import MobileNavbar from "@/components/navbar/MobileNavbar";
 import Navbar from "@/components/navbar/Navbar";
+
 import Image from "next/image";
 import React from "react";
 import headline from "public/headline.svg";
 import SelectInput2 from "@/components/inputs/select-input/SelectInput2";
 import { LocationIcon, ArrowDown } from "public";
 import searchicon from "public/searchicon.svg";
-import MobileNavbar from "@/components/navbar/MobileNavbar";
 
-const HiringHero = () => {
+const FindJobHero = () => {
   return (
     <section>
       <div className="bg-[#f8f8f8]  md:h-[514px] ">
@@ -16,6 +17,7 @@ const HiringHero = () => {
           <Navbar />
           <MobileNavbar />
         </div>
+
         {/* hero components */}
         <div className="flex flex-col  items-center justify-center">
           <div className="flex  flex-col  pt-[3.5rem]  gap-2 items-center  ">
@@ -23,16 +25,23 @@ const HiringHero = () => {
               <h1 className="md:text-[48px] text-[30px] font-[600] ">
                 Find your{" "}
               </h1>
-              <div className="flex flex-col  md:h-[66px] md:w-[437px] h-[44px]  w-[300px]  items-center justify-center mt-0 md:mt-[1rem]">
+              <div
+                className="flex flex-col  md:h-[66px] md:w-[255px] h-[44px]  w-[300px]
+                md:items-start items-center justify-center mt-0 md:mt-[0.9rem] mx-0"
+              >
                 <h1 className="text-[#26A4FF]  md:text-[48px] text-[30px] font-[600]">
-                  dream companies
+                  dream job
                 </h1>
-                <Image src={headline} alt="background_pics" className="" />
+                <Image
+                  src={headline}
+                  alt="background_pics"
+                  className="md:w-[100%] w-[150px] relative h-[94px] md:h-full"
+                />
               </div>
             </div>
 
             <p className="font-[400] text-[18px] text-[#1B1B1B99] leading-[32px] text-center pt-[2rem] px-1">
-              Find the dream companies you dream work for
+              Find your next career at companies like HubSpot,Nike and Dropbox
             </p>
           </div>
 
@@ -70,9 +79,7 @@ const HiringHero = () => {
               <div className="border-[1px] border-gray my-1 md:h-[66px] mx-3  hidden  md:flex" />
 
               {/* florence,italy  */}
-              <div
-                className=" md:w-[555px] w-[120px] h-[69px] bg-transparent hidden md:flex  mt-[1rem]"
-              >
+              <div className=" md:w-[555px] w-[120px] h-[69px] bg-transparent hidden md:flex  mt-[1rem]">
                 <SelectInput2
                   label=""
                   placeholder="Florence, Italy"
@@ -111,11 +118,9 @@ const HiringHero = () => {
             </div>
           </div>
         </div>
-
-
       </div>
     </section>
   );
 };
 
-export default HiringHero;
+export default FindJobHero;

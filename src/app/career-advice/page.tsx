@@ -32,7 +32,7 @@ const page = () => {
               </span>{" "}
               advice
             </h1>
-            <p className="text-center px-10 lg:px-0 text-center py-4 text-[#1B1B1B]">
+            <p className="text-center px-10 lg:px-0  py-4 text-[#1B1B1B]">
               Discover helpful articles, videos, and webinars to guide you in
               your job search and career growth. Dive in and find the advice you
               need to succeed!
