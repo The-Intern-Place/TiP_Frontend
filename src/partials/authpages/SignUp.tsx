@@ -1,28 +1,21 @@
 "use client";
-
-import { SetStateAction, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import AuthPageLayout from "./AuthPageLayout";
 import TextInput from "../../components/inputs/text-input/TextInput";
-import CustomDatePicker from "../../components/inputs/select-date-picker/CustomDatePicker";
 import SelectInput from "../../components/inputs/select-input/SelectInput";
 import axios from "axios";
-import { SelectCountryProps } from "../../components/inputs/select-input/SelectInput.types";
 import Button from "../../components/button/Button";
 import { FcGoogle } from "react-icons/fc";
 import Link from "next/link";
-import { useAppDispatch } from "@/redux/store";
-import { signUpAction } from "@/redux/actions/authActions";
-import { ISignUpData } from "@/utilities/types/types";
+// import { useAppDispatch } from '@/redux/store';
+// import { signUpAction } from '@/redux/actions/authActions';
+// import { ISignUpData } from '@/utilities/types/types';
 import { FaLinkedinIn } from "react-icons/fa6";
 
 const SignUp = () => {
-  const dispatch = useAppDispatch();
+  // const dispatch = useAppDispatch();
   const [isLoading, setIsLoading] = useState(false);
   const [countries, setCountries] = useState([]);
-  const [isError, setIsError] = useState("");
-  const [countryCode, setCountryCode] = useState<string>("");
-  const [country, setCountry] = useState("");
-
   const handleSubmitForm = (e: { preventDefault: () => void }) => {
     e.preventDefault();
   };
@@ -32,7 +25,7 @@ const SignUp = () => {
       try {
         setIsLoading(true);
         const request = await axios.get(
-          `${process.env.NEXT_PUBLIC_COUNTRIES_API}`
+          `${process.env.NEXT_PUBLIC_COUNTRIES_API}`,
         );
 
         const res = await request.data;
@@ -42,32 +35,32 @@ const SignUp = () => {
         }
 
         if (res.error) {
-          setIsError("Failed to load data.");
+          // setIsError('Failed to load data.');
         }
       } catch (error) {
-        console.log(error);
+        // console.log(error);
       }
     };
 
     handleGetAllCountries();
   }, []);
 
-  const handleSubmit = async () => {
-    // Dummy Data
-    const payload: ISignUpData = {
-      fname: "John",
-      lname: "Doe",
-      email: "john.doe@example.com",
-      password: "1234567890",
-      dateOfBirth: "1990-05-15T08:00:00",
-      gender: "male",
-      location: "Nigeria",
-      countryCode: "+234",
-      phoneNumber: "99999999999",
-    };
+  // const handleSubmit = async () => {
+  //   // Dummy Data
+  //   const payload: ISignUpData = {
+  //     fname: 'John',
+  //     lname: 'Doe',
+  //     email: 'john.doe@example.com',
+  //     password: '1234567890',
+  //     dateOfBirth: '1990-05-15T08:00:00',
+  //     gender: 'male',
+  //     location: 'Nigeria',
+  //     countryCode: '+234',
+  //     phoneNumber: '99999999999',
+  //   };
 
-    dispatch(signUpAction(payload));
-  };
+  //   dispatch(signUpAction(payload));
+  // };
 
   return (
     <AuthPageLayout heading="Get Started">

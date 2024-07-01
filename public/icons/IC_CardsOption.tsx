@@ -1,6 +1,12 @@
 import React from "react";
 
-const IC_CardsOption = ({ color, className }: { color?: string, className?:string }) => {
+const IC_CardsOption = ({
+  color,
+  className,
+}: {
+  color?: string;
+  className?: string;
+}) => {
   return (
     <svg
       width="24"

@@ -33,7 +33,7 @@ const CategorySection = () => {
       title: "Design",
     },
   ];
-  
+
   return (
     <div className="flex justify-between items-center w-full h-full max-w-[1350px] mx-auto px-6 md:px-10 lg:px-16 xl:px-0">
       <div className="mt-14 w-full space-y-4">

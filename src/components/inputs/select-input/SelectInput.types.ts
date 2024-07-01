@@ -20,7 +20,7 @@ export type SelectCountryProps = {
 };
 
 export type SelectInput2Props = TextInputProps & {
-    options: {id: string, name: string}[],
-    clickOutSide?: boolean;
-}
-export type SelectInputStory = StoryObj<typeof SelectInputMeta>
+  options: { id: string; name: string }[];
+  clickOutSide?: boolean;
+};
+export type SelectInputStory = StoryObj<typeof SelectInputMeta>;

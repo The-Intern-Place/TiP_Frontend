@@ -1,6 +1,6 @@
 import React from "react";
 
-export const IC_Finance = (props: { className?: string  }) => {
+export const IC_Finance = (props: { className?: string }) => {
   return (
     <svg
       width="40"
@@ -12,7 +12,7 @@ export const IC_Finance = (props: { className?: string  }) => {
     >
       <path
         d="M2 2V38H38"
-        stroke={ "#1976D2"}
+        stroke={"#1976D2"}
         strokeWidth="2.5"
         strokeLinecap="round"
         strokeLinejoin="round"

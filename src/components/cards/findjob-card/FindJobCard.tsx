@@ -2,17 +2,17 @@ import React from "react";
 import { FindJobCardProps } from "./FindJobCard.types";
 import Image from "next/image";
 
-interface Props {
-  img: string;
-  title: string;
-  company: string;
-  location: string;
-  duration: string;
-  sector1: string;
-  sector2: string;
-  applied: number;
-  capacity: number;
-}
+// interface Props {
+//   img: string;
+//   title: string;
+//   company: string;
+//   location: string;
+//   duration: string;
+//   sector1: string;
+//   sector2: string;
+//   applied: number;
+//   capacity: number;
+// }
 
 const FindJobCard = (props: FindJobCardProps) => {
   const appliedPercentage =

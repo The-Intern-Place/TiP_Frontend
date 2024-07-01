@@ -5,6 +5,6 @@ type dateValueProps = {
 };
 
 export type customDateTypes = {
-  onChange: (e: any) => void;
+  onChange: (_e: any) => void;
   dateValue: dateValueProps;
 };

@@ -1,6 +1,5 @@
 "use client";
 
-
 import Image from "next/image";
 import React from "react";
 import headline from "public/headline.svg";
@@ -12,7 +11,6 @@ const FindJobHero = () => {
   return (
     <section>
       <div className="bg-[#f8f8f8]  md:h-[460px] ">
-
         {/* hero components */}
         <div className="flex flex-col  items-center justify-center md:pt-2">
           <div className="flex  flex-col  pt-[3.5rem]  gap-2 items-center  ">

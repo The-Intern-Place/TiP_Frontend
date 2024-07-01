@@ -8,13 +8,12 @@ const config: Config = {
     "./src/partials/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/companieshiring/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-    
   ],
   theme: {
     extend: {
       fontFamily: {
-        clash: ['var(--font--clash)'],
-        epilogue: ['var(--font-epilogue)'],
+        clash: ["var(--font--clash)"],
+        epilogue: ["var(--font-epilogue)"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -30,7 +29,6 @@ const config: Config = {
         "light-blue": "#1976D2",
         grey: "#1B1B1B",
         pictonBlue: "rgba(82,151,219,0.2)",
-      
       },
       screens: {
         sm: "640px",

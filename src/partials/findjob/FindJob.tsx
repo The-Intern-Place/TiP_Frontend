@@ -70,10 +70,6 @@ const filterData: JOBFILTER[] = [
 ];
 
 const FindJob = () => {
-
-
-  
-
   const [iconToggle, setIconToggle] = useState<boolean>(false);
 
   const [cardType, setCardType] = useState<string | null>(null);
@@ -87,7 +83,7 @@ const FindJob = () => {
     setVisibleId((prevVisibleIds) =>
       prevVisibleIds.includes(id)
         ? prevVisibleIds.filter((visibleId) => visibleId !== id)
-        : [...prevVisibleIds, id]
+        : [...prevVisibleIds, id],
     );
   };
   // pagination
@@ -212,20 +208,19 @@ const FindJob = () => {
               </button>
             </div>
 
-            <div className="flex gap-3 items-center" >
-            <div className="" onClick={handleCardStyleChange('tile')}>
+            <div className="flex gap-3 items-center">
+              <div className="" onClick={handleCardStyleChange("tile")}>
                 <IC_TilesOption
-                  className={`cursor-pointer w-[24px] h-[24px]  ${cardType === 'tile' ? "fill-[#4640DE] stroke-[#4640DE] opacity-1" : "fill-[white] opacity-[0.6]"}`}
+                  className={`cursor-pointer w-[24px] h-[24px]  ${cardType === "tile" ? "fill-[#4640DE] stroke-[#4640DE] opacity-1" : "fill-[white] opacity-[0.6]"}`}
                 />
               </div>
 
-              <div className=""  onClick={handleCardStyleChange('card')}>
+              <div className="" onClick={handleCardStyleChange("card")}>
                 <IC_CardsOption
-                  className={`cursor-pointer w-[24px] h-[24px] ${cardType === 'card' ? "fill-[#4640DE] stroke-[#4640DE] opacity-1" : "fill-[#1B1B1B] opacity-[0.6]"}`}
+                  className={`cursor-pointer w-[24px] h-[24px] ${cardType === "card" ? "fill-[#4640DE] stroke-[#4640DE] opacity-1" : "fill-[#1B1B1B] opacity-[0.6]"}`}
                 />
               </div>
             </div>
-
           </div>
         </div>
 

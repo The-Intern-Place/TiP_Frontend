@@ -10,7 +10,7 @@ import IC_CardsOption from "public/icons/IC_CardsOption";
 import IC_TilesOption from "public/icons/IC_TilesOption";
 import React, { useState } from "react";
 
-const page = () => {
+const CareerAdvice = () => {
   const [cardType, setCardType] = useState<string>("tiles");
 
   const handleCardStyleChange = (type: string) => {
@@ -111,4 +111,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default CareerAdvice;

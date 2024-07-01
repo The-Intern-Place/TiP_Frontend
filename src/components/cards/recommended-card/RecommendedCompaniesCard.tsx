@@ -43,7 +43,6 @@ const RecommendedCompaniesCard = (props: RecommendedCompaniesCardProps) => {
             </button>
           )}
         </div>
-
       </div>
     </section>
   );

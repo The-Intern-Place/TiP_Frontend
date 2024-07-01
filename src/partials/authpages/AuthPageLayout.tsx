@@ -4,7 +4,6 @@ import styles from "@/styles/authpage/style.module.css";
 import Image from "next/image";
 import { TipLogo } from "public";
 import Link from "next/link";
-import { HiOutlineEnvelope } from "react-icons/hi2";
 import {
   FaFacebookF,
   FaInstagram,

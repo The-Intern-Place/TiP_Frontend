@@ -8,15 +8,13 @@ const JobCard = (props: JobCardProps) => {
       <div className="flex md:flex-row flex-col md:items-center gap-3">
         <Image src={props.image} className="w-[50px]" alt="" />
         <div className="space-y-1 w-full">
-          <p className="lg:text-[20px] md:text-lg font-semibold">{props.title}</p>
+          <p className="lg:text-[20px] md:text-lg font-semibold">
+            {props.title}
+          </p>
           <div className="flex items-center gap-3">
-            <p className="text-base">
-              {props.company}
-            </p>
+            <p className="text-base">{props.company}</p>
             <div className="w-1 h-1 bg-black rounded-full" />
-            <p className="text-base">
-              {props.location}
-            </p>
+            <p className="text-base">{props.location}</p>
           </div>
           <div className="flex gap-3 items-center">
             <div className="bg-[#99B5E5] opacity-30 rounded-[40px] lg:px-5 px-3 py-1 lg:text-sm text-xs font-semibold">

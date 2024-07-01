@@ -8,7 +8,7 @@ interface Props {
   totalItems: number;
   itemsPerPage: number;
   currentPage: number;
-  paginate: (pageNumber: number) => void;
+  paginate: (_pageNumber: number) => void;
 }
 
 const FindjobPagination = ({

@@ -57,12 +57,16 @@ const Design_Icon = (props: { className?: string }) => {
           stroke-linecap="round"
           stroke-linejoin="round"
           className={props.className}
-         
         />
       </g>
       <defs>
         <clipPath id="clip0_757_2460">
-          <rect width="48" height="48" fill="white" className={props.className}/>
+          <rect
+            width="48"
+            height="48"
+            fill="white"
+            className={props.className}
+          />
         </clipPath>
       </defs>
     </svg>

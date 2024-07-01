@@ -15,7 +15,7 @@ export const DefaultStory: JobCardStory = {
     company: "Urban Tech",
     location: "Port Harcourt, Nigeria",
     duration: "Full-Time",
-    sector: "Design"
+    sector: "Design",
   },
   name: "Job Card",
 };
