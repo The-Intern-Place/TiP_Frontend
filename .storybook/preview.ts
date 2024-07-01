@@ -5,7 +5,7 @@ const preview: Preview = {
   parameters: {
     actions: { argTypesRegex: "^on[A-Z].*" },
     nextjs: {
-      appDirectory: true
+      appDirectory: true,
     },
     controls: {
       matchers: {

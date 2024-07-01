@@ -6,12 +6,13 @@ import "./globals.css";
 import Footer from "@/components/footer/Footer";
 import { usePathname } from "next/navigation";
 import { store } from "@/redux/store";
-import { Metadata } from "next/types";
+// import { Metadata } from 'next/types';
+import Navbar from "@/components/navbar/Navbar";
 
-const metadata: Metadata = {
-  title: "The Intern Place",
-  description: "The Intern Place",
-};
+// export const metadata: Metadata = {
+//   title: 'The Intern Place',
+//   description: 'The Intern Place',
+// };
 
 const epilogue = Epilogue({ subsets: ["latin"], variable: "--font-epilogue" });
 

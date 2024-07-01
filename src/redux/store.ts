@@ -5,13 +5,16 @@ import { useDispatch, TypedUseSelectorHook, useSelector } from "react-redux";
 import AppReducers from "./reducers/index";
 
 class DummyStorage implements Storage {
-    length: number = 0;
-    clear(): void {}
-    getItem(key: string): string | null { return null; }
-    key(index: number): string | null { return null; }
-    removeItem(key: string): void {}
-    setItem(key: string, value: string): void {}
-    
+  length: number = 0;
+  clear(): void {}
+  getItem(_key: string): string | null {
+    return null;
+  }
+  key(_index: number): string | null {
+    return null;
+  }
+  removeItem(_key: string): void {}
+  setItem(_key: string, _value: string): void {}
 }
 
 const persistConfig = {

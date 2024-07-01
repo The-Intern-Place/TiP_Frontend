@@ -9,7 +9,7 @@ const FooterMeta = {
 type FooterStory = StoryObj<typeof Footer>;
 
 export const Story: FooterStory = {
-    args: {},
-    name: "Footer"
-}
+  args: {},
+  name: "Footer",
+};
 export default FooterMeta;

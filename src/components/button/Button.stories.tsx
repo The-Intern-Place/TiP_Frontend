@@ -8,7 +8,7 @@ const ButtonMeta = {
 } satisfies Meta<typeof Button>;
 
 export const Story: ButtonStory = {
-    args: { variant: "primary", fit: true, children: "Sign up" },
-    name: "Button"
-}
+  args: { variant: "primary", fit: true, children: "Sign up" },
+  name: "Button",
+};
 export default ButtonMeta;

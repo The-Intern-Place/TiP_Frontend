@@ -37,5 +37,5 @@ export {
   LocationIcon,
   BlueArrowRight,
   TechTalents,
-  JobOpeningsBackground
+  JobOpeningsBackground,
 };

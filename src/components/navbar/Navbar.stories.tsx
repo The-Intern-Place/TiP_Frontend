@@ -9,8 +9,8 @@ const ButtonMeta = {
 type NavbarStory = StoryObj<typeof Navbar>;
 
 export const Story: NavbarStory = {
-    args: {},
-    name: "Navbar"
-}
+  args: {},
+  name: "Navbar",
+};
 
 export default ButtonMeta;

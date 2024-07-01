@@ -1,6 +1,6 @@
 import React from "react";
 
-const IC_Search = ({className}: {className?:string}) => {
+const IC_Search = ({ className }: { className?: string }) => {
   return (
     <svg
       width="20"

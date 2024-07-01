@@ -11,4 +11,6 @@ export type RecommendedCompaniesCardProps = {
   trackThree?: string;
 };
 
-export type RecommendedCompaniesCardStory = StoryObj<typeof RecommendedCompaniesCardMeta>;
+export type RecommendedCompaniesCardStory = StoryObj<
+  typeof RecommendedCompaniesCardMeta
+>;

@@ -1,6 +1,6 @@
 import SelectInput2 from "@/components/inputs/select-input/SelectInput2";
 import Image from "next/image";
-import { LocationIcon, ArrowDown, HeroImg, SearchIcon } from "public";
+import { LocationIcon, ArrowDown, HeroImg } from "public";
 import IC_Search from "public/icons/IC_Search";
 import React from "react";
 

@@ -68,9 +68,7 @@ const HiringHero = () => {
               <div className="border-[1px] border-gray my-1 md:h-[66px] mx-3  hidden  md:flex" />
 
               {/* florence,italy  */}
-              <div
-                className=" md:w-[555px] w-[120px] h-[69px] bg-transparent hidden md:flex  mt-[1rem]"
-              >
+              <div className=" md:w-[555px] w-[120px] h-[69px] bg-transparent hidden md:flex  mt-[1rem]">
                 <SelectInput2
                   label=""
                   placeholder="Florence, Italy"

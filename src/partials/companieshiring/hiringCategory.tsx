@@ -96,9 +96,11 @@ const HiringCategory = () => {
             scrollbar={{ draggable: true }}
           >
             {hiringcategorydata.map((h, i) => (
-              <SwiperSlide className="flex flex-col md:flex-row items-center gap-[5px] lg:gap-[32px] justify-center my-[3rem] w-[350px] h-full">
-                <HiringCategoryCard key={i} title={h.title} icon={h.icon} />
-              </SwiperSlide>
+              <div key={i}>
+                <SwiperSlide className="flex flex-col md:flex-row items-center gap-[5px] lg:gap-[32px] justify-center my-[3rem] w-[350px] h-full">
+                  <HiringCategoryCard key={i} title={h.title} icon={h.icon} />
+                </SwiperSlide>
+              </div>
             ))}
           </Swiper>
         </div>

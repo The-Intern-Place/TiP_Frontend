@@ -44,7 +44,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="text-lg font-semibold">About</li>
               <li className="pb-3">Founders</li>
-              <Link href="/contact-us" >Contact Us</Link>
+              <Link href="/contact-us">Contact Us</Link>
               <li>Terms</li>
               <li>Privacy Policy</li>
             </ul>
@@ -58,7 +58,7 @@ const Footer = () => {
                 label=""
                 overrideStyles="border-none mb-0"
                 placeholder="Email Address"
-                onChange={() => { }}
+                onChange={() => {}}
               />
               <Button
                 overrideStyles="border-0 rounded-none hidden md:block"

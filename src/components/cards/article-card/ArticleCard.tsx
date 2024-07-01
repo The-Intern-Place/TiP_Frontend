@@ -29,10 +29,9 @@ const ArticleCard = ({
           </div>
         </div>
       </div>
-        <Button fit overrideStyles="ml-auto" variant="outlined">
-          Read More
-        </Button>
- 
+      <Button fit overrideStyles="ml-auto" variant="outlined">
+        Read More
+      </Button>
     </div>
   );
 };

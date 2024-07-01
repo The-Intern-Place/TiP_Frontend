@@ -1,6 +1,6 @@
 import React from "react";
 
-const IC_ArrowRight = (props: {className?: string }) => {
+const IC_ArrowRight = (props: { className?: string }) => {
   return (
     <svg
       width="30"
