@@ -6,10 +6,12 @@ import headline from "public/headline.svg";
 import SelectInput2 from "@/components/inputs/select-input/SelectInput2";
 import { LocationIcon, ArrowDown } from "public";
 import searchicon from "public/searchicon.svg";
+import Navbar from "@/components/navbar/Navbar";
 
 const FindJobHero = () => {
   return (
     <section>
+      <Navbar />
       <div className="bg-[#f8f8f8]  md:h-[460px] ">
         {/* hero components */}
         <div className="flex flex-col  items-center justify-center md:pt-2">

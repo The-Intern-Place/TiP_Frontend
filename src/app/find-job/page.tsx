@@ -1,5 +1,3 @@
-
-
 import type { Metadata } from "next";
 import FindJobHero from "@/partials/findjob/FindJobHero";
 import FindJob from "@/partials/findjob/FindJob";
