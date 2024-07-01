@@ -7,7 +7,6 @@ import Footer from "@/components/footer/Footer";
 import { usePathname } from "next/navigation";
 import { store } from "@/redux/store";
 // import { Metadata } from 'next/types';
-import Navbar from "@/components/navbar/Navbar";
 
 // export const metadata: Metadata = {
 //   title: 'The Intern Place',
@@ -53,7 +52,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${clash.variable} ${epilogue.className} relative`}>
         <ReduxProvider store={store}>
-          <Navbar />
           {children}
           {pathname !== "/login" && pathname !== "/sign-up" && <Footer />}
         </ReduxProvider>
