@@ -1,9 +1,7 @@
-
-"use client"
+"use client";
 import React, { useState } from "react";
-import { SelectInput2Props, SelectInputProps } from "./SelectInput.types";
+import { SelectInput2Props } from "./SelectInput.types";
 import TextInput from "../text-input/TextInput";
-
 
 const SelectInput2 = (props: SelectInput2Props) => {
   const [showOptions, toggleShowOptions] = useState(false);

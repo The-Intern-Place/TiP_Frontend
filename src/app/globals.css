@@ -36,7 +36,7 @@ body {
 .job-opening {
   background-image: url(../../public/pngs/job-openings-background.png);
   background-repeat: no-repeat;
-  background-size: 100% 100%; 
+  background-size: 100% 100%;
 }
 
 .custom-pagination {

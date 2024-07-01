@@ -22,17 +22,19 @@ const HiringRecommend = () => {
 
         {/* body */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full h-full gap-[32px]">
-          {recommendedData.map((h: RecommendedCompaniesCardProps, i: number) => (
-            <RecommendedCompaniesCard
-              key={i}
-              img={h.img}
-              title={h.title}
-              description={h.description}
-              trackOne={h.trackOne}
-              trackTwo={h.trackTwo}
-              trackThree={h.trackThree}
-            />
-          ))}
+          {recommendedData.map(
+            (h: RecommendedCompaniesCardProps, i: number) => (
+              <RecommendedCompaniesCard
+                key={i}
+                img={h.img}
+                title={h.title}
+                description={h.description}
+                trackOne={h.trackOne}
+                trackTwo={h.trackTwo}
+                trackThree={h.trackThree}
+              />
+            ),
+          )}
         </div>
       </div>
     </section>

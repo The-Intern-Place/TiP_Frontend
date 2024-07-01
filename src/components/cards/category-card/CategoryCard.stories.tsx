@@ -10,7 +10,7 @@ const CategoryCardMeta = {
 
 export const DefaultStory: CategoryCardStory = {
   args: { icon: <IC_Manager />, children: "Manager", openPositions: 75 },
-  name: "Category Card"
+  name: "Category Card",
 };
 
 export default CategoryCardMeta;

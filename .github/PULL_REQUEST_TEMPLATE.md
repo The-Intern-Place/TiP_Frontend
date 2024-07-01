@@ -1,6 +1,6 @@
 ## Description
 
-Please include a summary of the changes and the related issue. 
+Please include a summary of the changes and the related issue.
 
 Fixes # (issue)
 
@@ -25,4 +25,3 @@ Please delete options that are not relevant.
 - [ ] Any dependent changes have been merged and published in downstream modules
 
 ## Screenshots (if applicable):
-

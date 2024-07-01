@@ -29,7 +29,7 @@ export const authSlice = createSlice({
   name: "auth",
   initialState,
   reducers: {
-    clearSignInStatus: (state, action: PayloadAction<any>) => {
+    clearSignInStatus: (state, _action: PayloadAction<any>) => {
       state.signInStatus = "idle";
       state.signInSuccess = "";
       state.signInError = "";
@@ -40,11 +40,11 @@ export const authSlice = createSlice({
       .addCase(signUpAction.pending, (state) => {
         state.signUpStatus = "loading";
       })
-      .addCase(signUpAction.fulfilled, (state, { payload }) => {
-        console.log("\n\n sign up payload --> ", payload);
+      .addCase(signUpAction.fulfilled, (state) => {
+        // console.log('\n\n sign up payload --> ', payload);
         state.signUpStatus = "completed";
       })
-      .addCase(signUpAction.rejected, (state, { payload }) => {
+      .addCase(signUpAction.rejected, (state) => {
         state.signUpStatus = "failed";
       });
   },

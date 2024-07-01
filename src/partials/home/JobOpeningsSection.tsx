@@ -14,8 +14,8 @@ const JobOpeningsSection = () => {
               Latest <span className="text-[#1976D2]">jobs open</span>
             </h1>
             <p className="flex gap-2 items-center text-blue md:flex hidden">
-            Show all <IC_ArrowRight />{" "}
-          </p>
+              Show all <IC_ArrowRight />{" "}
+            </p>
           </div>
           <div className="flex flex-wrap md:grid grid-flow-col grid-cols-2 grid-rows-3 gap-7">
             {jobs.map((j: JobCardProps, i: number) => (
@@ -31,8 +31,8 @@ const JobOpeningsSection = () => {
             ))}
           </div>
           <p className="flex gap-2 items-center justify-end text-blue flex md:hidden">
-          Show all <IC_ArrowRight />{" "}
-        </p>
+            Show all <IC_ArrowRight />{" "}
+          </p>
         </div>
       </div>
     </div>

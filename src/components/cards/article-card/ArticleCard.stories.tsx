@@ -1,5 +1,4 @@
 import { Meta } from "@storybook/react";
-import IC_Manager from "public/icons/IC_Manager";
 import ArticleCard from "./ArticleCard";
 import { ArticleCardStory } from "./ArticleCard.types";
 
