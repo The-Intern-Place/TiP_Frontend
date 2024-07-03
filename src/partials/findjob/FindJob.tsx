@@ -9,18 +9,18 @@ import IC_CardsOption from "public/icons/IC_CardsOption";
 import IC_TilesOption from "public/icons/IC_TilesOption";
 import FindjobPagination from "@/components/pagination/FindjobPagination";
 
-type JobDescription = {
+type IJobDescription = {
   duration: string;
   jobs: number;
 };
 
-type JOBFILTER = {
+type IJobFilter = {
   id: number;
   title: string;
-  description: JobDescription[];
+  description: IJobDescription[];
 };
 
-const filterData: JOBFILTER[] = [
+const filterData: IJobFilter[] = [
   {
     id: 1,
     title: "Types of Employment",

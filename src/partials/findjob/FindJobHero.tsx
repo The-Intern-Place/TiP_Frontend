@@ -1,5 +1,4 @@
 "use client";
-
 import Image from "next/image";
 import React from "react";
 import headline from "public/headline.svg";
@@ -37,7 +36,7 @@ const FindJobHero = () => {
             </div>
 
             <p className="font-[400] text-[18px]  font-epilogue text-[#1B1B1B99] leading-[32px] text-center pt-1 px-1">
-              Find your next career at companies like HubSpot,Nike and Dropbox
+              Find your next career at companies like HubSpot, Nike and Dropbox
             </p>
           </div>
 
