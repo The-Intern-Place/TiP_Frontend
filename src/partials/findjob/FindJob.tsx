@@ -83,7 +83,7 @@ const FindJob = () => {
     setVisibleId((prevVisibleIds) =>
       prevVisibleIds.includes(id)
         ? prevVisibleIds.filter((visibleId) => visibleId !== id)
-        : [...prevVisibleIds, id]
+        : [...prevVisibleIds, id],
     );
   };
 
