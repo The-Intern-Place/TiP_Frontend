@@ -4,13 +4,7 @@ import React from "react";
 import Faq from "../FAQ/Faq";
 import Form from "../Form/Form";
 
-
-
-
-
 const ContactUsSection: React.FC = () => {
-
-
   return (
     <main className="w-full h-full max-w-[1350px] mx-auto">
       <div className="grid justify-items-center mt-10 mb-3">
@@ -28,7 +22,6 @@ const ContactUsSection: React.FC = () => {
             <Faq />
 
             <Form />
-
           </div>
         </div>
       </div>
