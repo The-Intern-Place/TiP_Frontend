@@ -56,23 +56,23 @@ const HiringCategory = () => {
   return (
     <section
       className="bg-[#F8F8FD] 
-    flex justify-center items-center w-full h-full
+    flex justify-center items-center w-full h-full mx-auto
      "
     >
       <div className="flex flex-col">
         {/* heading text */}
 
-        <h1 className="text-grey text-[32px] font-[600]   leading-[38px] pt-[2rem]   ">
+        <h1 className="text-grey text-[32px] font-[600]   leading-[38px] pt-[2rem]   p-1">
           Companies by Category
         </h1>
 
         {/* body */}
-        <div className="w-[340px] ssm:w-[850px] md:w-[740px] lg:w-[1208px] mx-0">
+        <div className="w-[360px] sm:w-[850px] md:w-[740px] lg:w-[1218px] mx-0 items-center flex justify-center">
           <Swiper
             // install Swiper modules
             modules={[Navigation, Pagination]}
             spaceBetween={10}
-            slidesPerView={2}
+            slidesPerView={1}
             loop={true}
             navigation
             pagination={{ clickable: true, el: ".custom-pagination" }}
@@ -96,11 +96,13 @@ const HiringCategory = () => {
             scrollbar={{ draggable: true }}
           >
             {hiringcategorydata.map((h, i) => (
-              <div key={i}>
-                <SwiperSlide className="flex flex-col md:flex-row items-center gap-[5px] lg:gap-[32px] justify-center my-[3rem] w-[350px] h-full">
-                  <HiringCategoryCard key={i} title={h.title} icon={h.icon} />
-                </SwiperSlide>
-              </div>
+              <SwiperSlide
+                key={i}
+                className="flex flex-col md:flex-row items-center gap-[5px] 
+                lg:gap-[32px] justify-center my-[3rem] w-[350px] h-full"
+              >
+                <HiringCategoryCard key={i} title={h.title} icon={h.icon} />
+              </SwiperSlide>
             ))}
           </Swiper>
         </div>

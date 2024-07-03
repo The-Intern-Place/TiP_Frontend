@@ -5,7 +5,7 @@ import { RecommendedCompaniesCardProps } from "@/components/cards/recommended-ca
 
 const HiringRecommend = () => {
   return (
-    <section className="bg-[#ffffff] overflow-x-hidden px-[2rem] flex justify-center items-center">
+    <section className="bg-[#ffffff] overflow-x-hidden lg:px-[2rem] flex justify-center md:items-center items-start">
       <div
         className="flex flex-col w-full h-full max-w-[1350px] p-2 mx-0 xl:px-0
    items-start justify-left pt-[2rem]"
