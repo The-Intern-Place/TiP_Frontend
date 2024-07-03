@@ -6,7 +6,6 @@ import headline from "public/headline.svg";
 import SelectInput2 from "@/components/inputs/select-input/SelectInput2";
 import { LocationIcon, ArrowDown } from "public";
 import searchicon from "public/searchicon.svg";
-import MobileNavbar from "@/components/navbar/MobileNavbar";
 
 const HiringHero = () => {
   return (
@@ -14,7 +13,6 @@ const HiringHero = () => {
       <div className="bg-[#f8f8f8]  md:h-[514px] ">
         <div>
           <Navbar />
-          <MobileNavbar />
         </div>
         {/* hero components */}
         <div className="flex flex-col  items-center justify-center">
@@ -70,31 +68,34 @@ const HiringHero = () => {
               <div className="border-[1px] border-gray my-1 md:h-[66px] mx-3  hidden  md:flex" />
 
               {/* florence,italy  */}
-              <div className=" md:w-[555px] w-[120px] h-[69px] bg-transparent hidden md:flex  mt-[1rem]">
+              <div className=" md:w-[555px] w-[120px] h-[69px] bg-transparent hidden md:flex  mt-[1rem]  ">
                 <SelectInput2
                   label=""
                   placeholder="Florence, Italy"
                   options={[{ id: "Country", name: "City, Country" }]}
-                  overrideStyles="border-r-0 border-l-0 border-t-0 rounded-r-full bg-transparent md:w-full w-[60px] h-[56px] border-b-[1px] border-gray  "
+                  overrideStyles="border-r-0 border-l-0 border-t-0 rounded-r-full bg-transparent md:w-full w-[60px] h-[56px] border-b-[1px] border-gray rounded-bl-none rounded-br-none  "
                   iconLeft={<Image src={LocationIcon} alt="" />}
                   onChange={() => {}}
                   iconRight={
-                    <div className="flex relative items-center justify-between gap-3 border-none border-b-0">
+                    <div className="w-[16px] h-[16px] opacity-[50%]">
                       <Image
                         src={ArrowDown}
                         alt=""
-                        className="absolute top -left-[5.5rem] w-6 h-6 "
+                        className="absolute  w-[16px] h-[16px]  text-[#25324B]"
                       />
-                      <button
-                        className=" bg-[#0046BF] text-white p-3 
-               md:w-[107px] h-[50px] w-[60px]"
-                        aria-label="Search"
-                      >
-                        Search
-                      </button>
                     </div>
                   }
                 />
+              </div>
+              {/* button */}
+              <div className="hidden lg:block">
+                <button
+                  className=" bg-[#0046BF] text-white p-3 
+ md:w-[107px] h-[50px] w-[60px] mx-3 mt-[0.8rem]"
+                  aria-label="Search"
+                >
+                  Search
+                </button>
               </div>
             </div>
 

@@ -86,6 +86,7 @@ const FindJob = () => {
         : [...prevVisibleIds, id],
     );
   };
+
   // pagination
 
   const ITEMS_PER_PAGE = 7;
@@ -97,10 +98,10 @@ const FindJob = () => {
   const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
 
   return (
-    <section className="w-[100%]  gap-[10px] flex flex-col md:flex-row  justify-center mx-auto  overflow-x-hidden">
+    <section className="w-[100%] px-2 gap-[20px] flex flex-col md:flex-row  justify-center mx-auto  overflow-x-hidden  ">
       {/* find job filter */}
 
-      <div className="p-1  top-[75px] ">
+      <div className="p-1  top-[75px] gap-[20px] ">
         {filterData.map(({ id, title, description }) => (
           <div
             key={id}
@@ -109,9 +110,9 @@ const FindJob = () => {
             <button
               type="button"
               onClick={() => handleToggle(id)}
-              className="flex w-full justify-between gap-6 pb-3  mt-[1.5rem]"
+              className="flex w-full justify-between  pb-3  mt-[1.3rem]"
             >
-              <span className="flex font-[700] text-[16px] leading-[24px] text-[#25324B]">
+              <span className="flex font-[700] text-[16px] leading-[24px] text-[#25324B]  font-epilogue">
                 {title}
               </span>
 
@@ -135,7 +136,7 @@ const FindJob = () => {
 
             {/* checkbox */}
             <div
-              className={` pb-5  sm:pb-6 flex gap-2 items-start flex-col justify-start ${visibleId.includes(id) ? "block" : "hidden"}`}
+              className={` pb-5  sm:pb-6 flex gap-[16px] items-start flex-col justify-start ${visibleId.includes(id) ? "hidden" : "block"}`}
             >
               {description.map((desc, index) => (
                 <div
@@ -146,10 +147,10 @@ const FindJob = () => {
                     type="checkbox"
                     className="w-[24px] h-[24px] border-[#D6DDEB] border-[2px] accent-[#4640DE] checked:bg-[#4640DE] "
                   />
-                  <p className="font-[400] text-[16px] leading-[25px] pl-[1rem]">
+                  <p className="font-[400] text-[16px] leading-[25px] lg:pl-[1rem] pl-[0.5rem] font-epilogue text-[#1B1B1B]">
                     {desc.duration}
                   </p>
-                  <p className="font-[400] text-[16px] leading-[25px]">
+                  <p className="font-[400] text-[16px] leading-[25px]  font-epilogue text-[#1B1B1B]">
                     ({desc.jobs})
                   </p>
                 </div>
@@ -160,7 +161,7 @@ const FindJob = () => {
       </div>
 
       {/* find jobs */}
-      <div className="lg:w-[919px] md:w-[519px] w-[100%]  pt-[1.4rem] px-2">
+      <div className="pt-[1.4rem] lg:px-2  lg:w-[919px] ">
         {/* heading */}
         <div className="flex flex-col md:flex-row justify-between md:items-center items-start  pb-[1rem]">
           <div>
@@ -243,6 +244,8 @@ const FindJob = () => {
               />
             ))}
           </div>
+
+          {/* pagination */}
 
           <div className="flex items-center justify-center my-[3rem]">
             <FindjobPagination
