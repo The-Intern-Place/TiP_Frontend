@@ -46,8 +46,8 @@ const FindJobHero = () => {
               className="flex bg-white items-center md:w-[600px]  lg:w-[1086px] md:h-[104px] w-[100%] mx-2 h-[80px]
              mt-[2rem] gap-3 relative "
             >
-              {/* placeholder and search icon */}
-              <div className="flex items-center md:w-[485px] w-[100%] px-1 gap-[16px] pt-0  pb-0 pl-[16px]">
+              {/* placeholder and search icon for medium screen*/}
+              <div className="flex items-center lg:w-[485px] w-[100%] px-1 gap-[16px] pt-0  pb-0 pl-[16px]">
                 <Image
                   src={searchicon}
                   alt="searchIcon"
@@ -62,7 +62,7 @@ const FindJobHero = () => {
                 />
 
                 <button
-                  className="md:hidden flex bg-[#0046BF] text-white p-3 
+                  className="lg:hidden flex bg-[#0046BF] text-white p-3 
                md:w-[107px] h-[45px] w-[60px] mr-[1rem] text-center justify-center items-cente mt-[1rem]"
                   aria-label="Search"
                 >
@@ -71,10 +71,10 @@ const FindJobHero = () => {
               </div>
 
               {/* divider */}
-              <div className="border-[1px] border-gray my-1 md:h-[66px] mx-3  hidden  md:flex" />
+              <div className="border-[1px] border-gray my-1 md:h-[66px] mx-3  hidden  lg:flex" />
 
               {/* florence,italy  */}
-              <div className=" md:w-[555px] w-[120px] h-[69px] bg-transparent hidden md:flex rounded-0  mt-[1rem] rounded-bl-none rounded-br-none">
+              <div className=" md:w-[555px] w-[120px] h-[69px] bg-transparent hidden lg:flex rounded-0  mt-[1rem] rounded-bl-none rounded-br-none">
                 <SelectInput2
                   label=""
                   placeholder="Florence, Italy"
