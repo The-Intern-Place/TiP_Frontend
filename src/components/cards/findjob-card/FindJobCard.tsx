@@ -32,13 +32,13 @@ const FindJobCard = (props: FindJobCardProps) => {
           </h1>
 
           {/* company and location */}
-          <div className="flex flex-wrap items-center lg:gap-[8px]   ">
+          <div className="flex flex-wrap items-center lg:gap-[8px]  gap-8px  ">
             <p className="text-[16px] text-[#7C8493] font-epilogue font-[400] leding-[25px] ">
               {" "}
               {props.company}{" "}
             </p>
 
-            <div className="w-[4px] h-[4px] bg-[#7C8493]"></div>
+            <div className="w-[4px] h-[4px] bg-[#7C8493] mx-2  md:mx-1"></div>
 
             <p className="text-[16px] text-[#7C8493] font-epilogue font-[400] leding-[25px]  ">
               {" "}
