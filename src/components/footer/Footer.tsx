@@ -35,8 +35,8 @@ const Footer = () => {
               <li className="text-lg font-semibold">Employer</li>
               <li className="pb-3">Post A Job</li>
               <Link href="/short-listing">Shortlisting Services</Link>
-              <li>Candidate Search</li>
-              <li>Advertise</li>
+              <li className="pb-3">Candidate Search</li>
+              <Link href="/advertise">Advertise</Link>
             </ul>
           </div>
 
@@ -58,7 +58,7 @@ const Footer = () => {
                 label=""
                 overrideStyles="border-none mb-0"
                 placeholder="Email Address"
-                onChange={() => {}}
+                onChange={() => { }}
               />
               <Button
                 overrideStyles="border-0 rounded-none hidden md:block"
