@@ -19,6 +19,8 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "div-custom":
+          "linear-gradient(180deg, #0046BF 0%, #25324B 51.5%, #FFFFFF 100%)",
       },
       colors: {
         prussianBlue: "rgba(0,35,96,1)",

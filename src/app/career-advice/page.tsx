@@ -71,6 +71,7 @@ const CareerAdvice = () => {
       <div className="flex justify-between items-center w-full h-full max-w-[1350px] mx-auto md:px-12 px-8 lg:px-16 xl:px-0 overflow-auto">
         <div className="pb-14 w-full space-y-4">
           <div className="flex justify-between">
+            {/* Dive in */}
             <section>
               <h2 className="font-semibold text-[#1B1B1B] text-[32px]">
                 Articles
