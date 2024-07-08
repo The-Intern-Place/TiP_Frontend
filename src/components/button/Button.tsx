@@ -11,11 +11,11 @@ const Button = (props: ButtonProps) => {
   } = props;
   return (
     <button
-      className={`text-sm md:text-base font-bold flex items-center justify-center w-full gap-2 py-3 px-6 h-fit ${
+      className={`text-sm md:text-base font-bold flex items-center justify-center w-full gap-2 py-3 px-6 h-fit rounded-lg cursor-pointer ${
         fit ? "max-w-max" : "w-full"
       } ${
         variant === "primary"
-          ? "bg-[#0046BF] text-white"
+          ? "bg-[#0046BF] text-white disabled:opacity-50"
           : variant === "transparent"
             ? "bg-transparent  text-[#0046BF]"
             : variant === "outlined"

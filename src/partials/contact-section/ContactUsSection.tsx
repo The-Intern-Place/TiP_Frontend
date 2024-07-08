@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import Faq from "../FAQ/Faq";
-import Form from "../Form/Form";
+import Faq from "./Faq";
+import Form from "./Form";
 
 const ContactUsSection: React.FC = () => {
   return (

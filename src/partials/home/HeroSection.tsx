@@ -1,3 +1,4 @@
+"use client";
 import SelectInput2 from "@/components/inputs/select-input/SelectInput2";
 import Image from "next/image";
 import { LocationIcon, ArrowDown, HeroImg } from "public";
@@ -23,7 +24,7 @@ const HeroSection = () => {
           for students and graduates worldwide.
         </p>
 
-        <div className="flex bg-white  rounded-full w-full md:w-[450px]">
+        <div className="flex bg-white  rounded-full w-full md:w-[450px] pr-2">
           <div className="flex relative w-full md:w-fit">
             <input
               type="text"
@@ -42,13 +43,12 @@ const HeroSection = () => {
             </div>
           </div>
           <div className="border border-[#1976D2] opacity-20 my-2 hidden md:flex" />
-
           <div>
             <SelectInput2
               label=""
               placeholder="Location"
               options={[{ id: "business", name: "Business" }]}
-              overrideStyles="border-none rounded-r-full bg-transparent w-full hidden md:flex"
+              overrideStyles="border-none rounded-r-full bg-transparent w-full hidden md:flex focus:outline-0"
               iconLeft={<Image src={LocationIcon} alt="" />}
               onChange={() => {}}
               iconRight={
@@ -56,7 +56,7 @@ const HeroSection = () => {
                   <Image
                     src={ArrowDown}
                     alt=""
-                    className="absolute top lg:-left-[3.5rem] -left-[2.5rem] w-6 h-6"
+                    className="absolute top lg:-left-[3rem] -left-[2.5rem] w-6 h-6"
                   />
                   <button
                     className="rounded-full bg-[#002360] text-white p-3"

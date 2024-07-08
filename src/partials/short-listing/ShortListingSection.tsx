@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "@/components/button/Button";
-import Navbar from "../navbar/Navbar";
+import Navbar from "../../components/navbar/Navbar";
 
 function ShortListingSection() {
   return (

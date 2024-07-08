@@ -22,8 +22,8 @@
     "paths": {
       "@/*": ["./src/*"],
       "@assets/*": ["./public/*"],
-
-      "@components/*": ["./src/components/*"]
+      "@components/*": ["./src/components/*"],
+      "@services/interfaces/*": ["./src/services/interfaces/*"]
     }
   },
   "include": [

@@ -1,7 +1,7 @@
-import HiringCategory from "@/partials/companieshiring/hiringCategory";
-import HiringHero from "@/partials/companieshiring/hiringHero";
-import HiringRecommend from "@/partials/companieshiring/hiringRecommend";
-import HiringResult from "@/partials/companieshiring/hiringResult";
+import HiringCategory from "@/partials/companies-hiring/hiringCategory";
+import HiringHero from "@/partials/companies-hiring/hiringHero";
+import HiringRecommend from "@/partials/companies-hiring/hiringRecommend";
+import HiringResult from "@/partials/companies-hiring/hiringResult";
 import type { Metadata } from "next";
 import React from "react";
 

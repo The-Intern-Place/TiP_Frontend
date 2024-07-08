@@ -1,11 +1,11 @@
 "use client";
 import localFont from "next/font/local";
-import { Provider as ReduxProvider } from "react-redux";
+import { Provider } from "react-redux";
 import { Epilogue } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/footer/Footer";
 import { usePathname } from "next/navigation";
-import { store } from "@/redux/store";
+import { store } from "@/store";
 // import { Metadata } from 'next/types';
 
 // export const metadata: Metadata = {
@@ -51,10 +51,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${clash.variable} ${epilogue.className} relative`}>
-        <ReduxProvider store={store}>
+        <Provider store={store}>
           {children}
           {pathname !== "/login" && pathname !== "/sign-up" && <Footer />}
-        </ReduxProvider>
+        </Provider>
       </body>
     </html>
   );

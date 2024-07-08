@@ -1,5 +1,5 @@
 import React from "react";
-import ShortListingSection from "@/components/ShortListing/ShortListingSection";
+import ShortListingSection from "@/partials/short-listing/ShortListingSection";
 import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "The Intern Place | Login ",

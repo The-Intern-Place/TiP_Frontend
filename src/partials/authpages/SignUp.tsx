@@ -1,173 +1,144 @@
 "use client";
 import { useEffect, useState } from "react";
 import AuthPageLayout from "./AuthPageLayout";
-import TextInput from "../../components/inputs/text-input/TextInput";
-import SelectInput from "../../components/inputs/select-input/SelectInput";
 import axios from "axios";
 import Button from "../../components/button/Button";
 import { FcGoogle } from "react-icons/fc";
 import Link from "next/link";
-// import { useAppDispatch } from '@/redux/store';
-// import { signUpAction } from '@/redux/actions/authActions';
-// import { ISignUpData } from '@/utilities/types/types';
 import { FaLinkedinIn } from "react-icons/fa6";
+import ControlledInput from "@/components/inputs/text-input/ControlledInput";
+import { useForm } from "react-hook-form";
+import { ListItem } from "@/components/inputs/select-input/SelectInput.types";
+import ControlledSelect from "@/components/inputs/select-input/ControlledSelect";
+import { signUpResolver } from "@/validation/auth.schema";
+import { useSignUpMutation } from "@/services/auth.service";
+import { ISignUpInput } from "@/interfaces/user.interface";
+import { setToken } from "@/helpers/auth";
 
 const SignUp = () => {
-  // const dispatch = useAppDispatch();
-  const [isLoading, setIsLoading] = useState(false);
   const [countries, setCountries] = useState([]);
-  const handleSubmitForm = (e: { preventDefault: () => void }) => {
-    e.preventDefault();
-  };
+  const [handleSignUpSubmit] =
+    useSignUpMutation();
+
+  const {
+    control,
+    handleSubmit,
+    formState: { isValid },
+  } = useForm<ISignUpInput>({
+    defaultValues: {
+      firstName: "",
+      lastName: "",
+      email: "",
+      password: "",
+      phone: "",
+      code: "",
+    },
+    mode: "onChange",
+    resolver: signUpResolver,
+  });
+
+  const countryOptions: ListItem[] =
+    countries?.map((country: any) => {
+      return {
+        id: country.dial_code as string,
+        name: `${country.name} (${country.dial_code})`,
+      };
+    }) ?? [];
 
   useEffect(() => {
     const handleGetAllCountries = async () => {
       try {
-        setIsLoading(true);
         const request = await axios.get(
           `${process.env.NEXT_PUBLIC_COUNTRIES_API}`,
         );
 
         const res = await request.data;
-        setIsLoading(false);
         if (res.data) {
           setCountries(res.data);
         }
-
-        if (res.error) {
-          // setIsError('Failed to load data.');
-        }
-      } catch (error) {
-        // console.log(error);
-      }
+      } catch (error) {}
     };
 
     handleGetAllCountries();
   }, []);
 
-  // const handleSubmit = async () => {
-  //   // Dummy Data
-  //   const payload: ISignUpData = {
-  //     fname: 'John',
-  //     lname: 'Doe',
-  //     email: 'john.doe@example.com',
-  //     password: '1234567890',
-  //     dateOfBirth: '1990-05-15T08:00:00',
-  //     gender: 'male',
-  //     location: 'Nigeria',
-  //     countryCode: '+234',
-  //     phoneNumber: '99999999999',
-  //   };
-
-  //   dispatch(signUpAction(payload));
-  // };
+  const handleSignup = async (data: ISignUpInput) => {
+    try {
+      const payload = {
+        fname: data.firstName,
+        lname: data.lastName,
+        email: data.email,
+        password: data.password,
+        dateOfBirth: "1990-05-15T08:00:00",
+        gender: "female",
+        location: "Nigeria",
+        countryCode: data.code,
+        phoneNumber: data.phone,
+      };
+      const res = await handleSignUpSubmit(payload).unwrap();
+      if (res?.status === "success") {
+        setToken(res?.token);
+      }
+    } catch (error) {}
+  };
 
   return (
     <AuthPageLayout heading="Get Started">
-      <form className="w-full py-2 mt-5 space-y-5" onSubmit={handleSubmitForm}>
+      <form
+        className="w-full py-2 mt-5 space-y-5"
+        onSubmit={handleSubmit(handleSignup)}
+      >
         <div className="flex flex-col sm:flex-row justify-between items center sm:gap-8 gap-6 w-full">
-          <TextInput
+          <ControlledInput
             label="first name"
             placeholder="Jane"
+            control={control}
             type="text"
             name="firstName"
-            onChange={() => {}}
           />
-          <TextInput
+          <ControlledInput
             label="last name"
             placeholder="Doe"
+            control={control}
             type="text"
             name="lastName"
-            onChange={() => {}}
           />
         </div>
-        <TextInput
+        <ControlledInput
           label="email address"
+          control={control}
           placeholder="user@example.com"
           type="email"
-          name="emailAddress"
-          onChange={() => {}}
+          name="email"
         />
 
-        <TextInput
+        <ControlledInput
           label="create password"
-          placeholder="Password(8 or more characters)"
+          placeholder="Password (8 or more characters)"
+          control={control}
           type="password"
-          iconRight={<div></div>}
           name="password"
-          onChange={() => {}}
         />
 
         <div className="flex flex-col sm:flex-row justify-between items center sm:gap-8 gap-6 w-full">
-          <div className="hidden md:block">
-            <SelectInput
-              label="code"
-              name="code"
-              placeholder="Nigeria (+234)"
-              optionsData={
-                <>
-                  {isLoading ? (
-                    <option value="Loading...">Loading...</option>
-                  ) : (
-                    <>
-                      {countries.map((country: any, i) => {
-                        return (
-                          <option
-                            value={country.dial_code}
-                            key={i}
-                            className="text-[#575757]"
-                          >
-                            {country.name} ({country.dial_code})
-                          </option>
-                        );
-                      })}
-                    </>
-                  )}
-                </>
-              }
-            />
-          </div>
-
-          <div className="md:hidden max-w-[100px] w-full">
-            <SelectInput
-              label="code"
-              name="code"
-              placeholder="+234"
-              optionsData={
-                <>
-                  {isLoading ? (
-                    <option value="Loading...">Loading...</option>
-                  ) : (
-                    <>
-                      {countries.map((country: any, i) => {
-                        return (
-                          <option
-                            value={country.dial_code}
-                            key={i}
-                            className="text-[#575757]"
-                          >
-                            {country.dial_code}
-                          </option>
-                        );
-                      })}
-                    </>
-                  )}
-                </>
-              }
-            />
-          </div>
-
-          <TextInput
+          <ControlledSelect
+            label="code"
+            name="code"
+            placeholder="Nigeria (+234)"
+            control={control}
+            options={countryOptions}
+          />
+          <ControlledInput
             label="mobile number"
             placeholder="080XXXXXXXXX"
             type="text"
-            name="mobileNumber"
-            onChange={() => {}}
+            name="phone"
+            control={control}
           />
         </div>
 
         <div className="w-full mt-5">
-          <Button>Continue</Button>
+          <Button disabled={!isValid}>Continue</Button>
         </div>
       </form>
       <div className="relative w-full border border-athsSpecial max-w-[200px] sm:max-w-[250px] md:max-w-[300px] lg:max-w-[350px] xl:max-w-[400px] mt-8 mx-auto">

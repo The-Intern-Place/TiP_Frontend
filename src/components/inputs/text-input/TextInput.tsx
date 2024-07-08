@@ -1,10 +1,11 @@
 "use client";
-import React, { useState } from "react";
-import { TextInputProps } from "./TextInput.types";
+import React from "react";
+import { ITextInputProps } from "./TextInput.types";
 import { BsEye, BsEyeSlash } from "react-icons/bs";
 import { useTextInput } from "./useTextInput";
+import FieldHelperText from "@/components/field-helper-text/FieldHelperText";
 
-const TextInput = (props: TextInputProps) => {
+const TextInput = (props: ITextInputProps) => {
   const {
     name,
     type,
@@ -14,8 +15,8 @@ const TextInput = (props: TextInputProps) => {
     overrideStyles,
     ...inputProps
   } = props;
-  const { handleChange } = useTextInput(props);
-  const [isPasswordVisible, setIsPasswordVisible] = useState(false);
+  const { handleChange, onIconClick, isPasswordVisible } = useTextInput(props);
+
   return (
     <div className="w-full">
       <label
@@ -25,7 +26,7 @@ const TextInput = (props: TextInputProps) => {
         {label}
       </label>
       <div
-        className={`bg-white flex relative rounded-lg h-[60px] border-2 border-athsSpecial ${overrideStyles}`}
+        className={`bg-white flex relative rounded-lg h-[60px] border-2 ${props.error ? "border-[#D24444]" : "border-[#D6DDEB]"}  ${overrideStyles}`}
       >
         {iconLeft && (
           <div
@@ -38,16 +39,15 @@ const TextInput = (props: TextInputProps) => {
           {...inputProps}
           onChange={handleChange}
           type={type === "password" && isPasswordVisible ? "text" : type}
-          className={`bg-white flex-grow h-full px-4 border-none rounded-lg focus:outline-none focus:ring-0 placeholder:text-[#575757] placeholder:text-sm md:placeholder:text-base w-full text-sm md:text-base ${overrideStyles}`}
+          className={`bg-white flex-grow h-full px-4 rounded-lg ${props.error ? "focus:outline-0" : "focus:outline-[#1976D2]"} focus:ring-0 placeholder:text-[#575757] placeholder:text-sm md:placeholder:text-base w-full text-sm md:text-base ${overrideStyles}`}
         />
-
-        {iconRight &&
+        {iconRight ||
           (type === "password" ? (
             <button
               type="button"
               aria-label="toggle-password"
               className="text-[#575757] px-4 text-xl"
-              onClick={() => setIsPasswordVisible(!isPasswordVisible)}
+              onClick={onIconClick}
             >
               {isPasswordVisible ? <BsEyeSlash /> : <BsEye />}
             </button>
@@ -59,6 +59,7 @@ const TextInput = (props: TextInputProps) => {
             </div>
           ))}
       </div>
+      <FieldHelperText error={props.error} helperText={props.helperText} />
     </div>
   );
 };

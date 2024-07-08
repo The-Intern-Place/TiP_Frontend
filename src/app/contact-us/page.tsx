@@ -1,5 +1,5 @@
 import React from "react";
-import ContactUsSection from "@/components/ContactSection/ContactUsSection";
+import ContactUsSection from "@/partials/contact-section/ContactUsSection";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
