@@ -1,5 +1,5 @@
 import { Meta } from "@storybook/react";
-import Nomad from "public/Nomad.svg";
+import Nomad from "public/images/Nomad.svg";
 import RecommendedCompaniesCard from "./RecommendedCompaniesCard";
 import { RecommendedCompaniesCardStory } from "./RecommendedCompaniesCard.types";
 

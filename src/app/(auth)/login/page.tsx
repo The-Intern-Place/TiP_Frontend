@@ -1,13 +1,8 @@
-import Login from "@/partials/authpages/Login";
 import React from "react";
-import type { Metadata } from "next";
-export const metadata: Metadata = {
-  title: "The Intern Place | Login ",
-  description: "The Intern Place",
+import LogInTemplateChunk from "@/chunks/auth-template-chunk/log-in-template-chunk/LoginTemplateChunk";
+
+const Login = () => {
+  return <LogInTemplateChunk />;
 };
 
-const page = () => {
-  return <Login />;
-};
-
-export default page;
+export default Login;

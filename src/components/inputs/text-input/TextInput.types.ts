@@ -1,20 +1,32 @@
 import { StoryObj } from "@storybook/react";
 import { InputHTMLAttributes, ReactNode } from "react";
 import TextInputMeta from "./TextInput.stories";
+import { Control, FieldErrorsImpl, FieldValues, Path } from "react-hook-form";
+import { IFieldHelperTextProps } from "@/_misc/field-helper-text/FieldHelperText.types";
 
-type InputChangePayload = {
-  field: string | undefined;
-  value: string;
-};
-export type TextInputProps = Omit<
+export type ITextInputProps = Omit<
   InputHTMLAttributes<HTMLInputElement>,
   "className" | "onChange"
-> & {
-  label: string;
-  overrideStyles?: string;
-  iconLeft?: ReactNode;
-  iconRight?: ReactNode;
-  onChange: (_payload: InputChangePayload) => void;
-};
+> &
+  IFieldHelperTextProps & {
+    label: string;
+    overrideStyles?: string;
+    iconLeft?: ReactNode;
+    iconRight?: ReactNode;
+    onChange?: (
+      // eslint-disable-next-line no-unused-vars
+      e: React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>,
+      // eslint-disable-next-line no-unused-vars
+      value: string,
+    ) => void;
+  };
+export interface IBaseControlledField<TFieldValues extends FieldValues> {
+  name: Path<TFieldValues>;
+  control: Control<TFieldValues>;
+  errors?: Partial<FieldErrorsImpl<TFieldValues>>;
+}
+
+export type IControlledInput<TFieldValues extends FieldValues> =
+  IBaseControlledField<TFieldValues> & Omit<ITextInputProps, "value" | "name">;
 
 export type TextInputStory = StoryObj<typeof TextInputMeta>;

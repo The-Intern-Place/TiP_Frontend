@@ -1,5 +1,6 @@
 import React from "react";
 import { ButtonProps } from "./Button.types";
+import CircularProgress from "../../_misc/circular-progress/CircularProgress";
 
 const Button = (props: ButtonProps) => {
   const {
@@ -7,15 +8,16 @@ const Button = (props: ButtonProps) => {
     fit,
     children,
     overrideStyles,
+    loading,
     ...buttonProps
   } = props;
   return (
     <button
-      className={`text-sm md:text-base font-bold flex items-center justify-center w-full gap-2 py-3 px-6 h-fit ${
+      className={`text-sm md:text-base font-bold flex items-center justify-center w-full gap-2 py-3 px-6 h-fit rounded-lg cursor-pointer ${
         fit ? "max-w-max" : "w-full"
       } ${
         variant === "primary"
-          ? "bg-[#0046BF] text-white"
+          ? "bg-[#0046BF] text-white disabled:opacity-50"
           : variant === "transparent"
             ? "bg-transparent  text-[#0046BF]"
             : variant === "outlined"
@@ -26,7 +28,11 @@ const Button = (props: ButtonProps) => {
       } ${overrideStyles}`}
       {...buttonProps}
     >
-      {children}
+      {loading ? (
+        <CircularProgress color="inherit" size={20} className="" />
+      ) : (
+        children
+      )}
     </button>
   );
 };

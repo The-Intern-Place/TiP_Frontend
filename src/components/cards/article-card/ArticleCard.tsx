@@ -1,6 +1,6 @@
 import React from "react";
 import { ArticleCardProps } from "./ArticleCard.types";
-import { Calendar, EyeIcon } from "public";
+import { Calendar, EyeIcon } from "@assets/images";
 import Image from "next/image";
 import Button from "@/components/button/Button";
 

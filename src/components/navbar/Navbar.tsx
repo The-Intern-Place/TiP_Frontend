@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { TIP_Logo } from "public";
+import { TIP_Logo } from "@assets/images";
 import React from "react";
 import Button from "../button/Button";
 import Link from "next/link";
