@@ -9,6 +9,13 @@ import { FaLinkedinIn } from "react-icons/fa6";
 import { FcGoogle } from "react-icons/fc";
 import useSignupTemplateChunk from "./useSignupTemplateChunk";
 import { Toaster } from "react-hot-toast";
+import { Metadata } from "next/types";
+
+export const metadata: Metadata = {
+  title: "The Intern Place | Sign Up ",
+  description: "The Intern Place",
+};
+
 
 const SignupTemplateChunk = () => {
   const {
