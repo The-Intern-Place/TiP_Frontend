@@ -3,7 +3,7 @@ import React from "react";
 import { ISelectInputProps } from "./SelectInput.types";
 import TextInput from "../text-input/TextInput";
 import { useSelectInput } from "./useSelectInput";
-import { ArrowDown } from "@assets/index";
+import { ArrowDown } from "@assets/images/index";
 import Image from "next/image";
 
 const SelectInput2 = (props: ISelectInputProps) => {

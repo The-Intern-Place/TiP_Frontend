@@ -1,5 +1,6 @@
 import React from "react";
 import { ButtonProps } from "./Button.types";
+import CircularProgress from "../../_misc/circular-progress/CircularProgress";
 
 const Button = (props: ButtonProps) => {
   const {
@@ -7,6 +8,7 @@ const Button = (props: ButtonProps) => {
     fit,
     children,
     overrideStyles,
+    loading,
     ...buttonProps
   } = props;
   return (
@@ -26,7 +28,11 @@ const Button = (props: ButtonProps) => {
       } ${overrideStyles}`}
       {...buttonProps}
     >
-      {children}
+      {loading ? (
+        <CircularProgress color="inherit" size={20} className="" />
+      ) : (
+        children
+      )}
     </button>
   );
 };

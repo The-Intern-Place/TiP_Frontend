@@ -14,6 +14,8 @@ const HiringResultCard = (props: HiringResultProps) => {
             src={props.img}
             alt="recommended_Pics"
             className="w-[80px] h-[80px]"
+            width={50}
+            height={50}
           />
         </div>
         <h1 className="pt-[1rem] text-[#1B1B1B] font-[600] text-[24px] leading-[40px]">

@@ -1,4 +1,4 @@
-import { configuredApi } from "@/config/createApi-common";
+import { configuredApi } from "@/utils/config/createApi";
 import { configureStore } from "@reduxjs/toolkit";
 import { setupListeners } from "@reduxjs/toolkit/query";
 import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";

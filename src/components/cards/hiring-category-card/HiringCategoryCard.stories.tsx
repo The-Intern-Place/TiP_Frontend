@@ -1,7 +1,7 @@
 import { Meta } from "@storybook/react";
-import Design_Icon from "public/icons/Hiring_Design";
 import HiringCategoryCard from "./HiringCategoryCard";
 import { HiringCategoryCardStory } from "./HiringCategoryCard.types";
+import IC_HiringDesign from "@assets/icons/IC_HiringDesign";
 
 const HiringCategoryCardMeta = {
   title: "Components/Cards/HiringCategoryCard",
@@ -11,7 +11,7 @@ const HiringCategoryCardMeta = {
 export const DefaultStory: HiringCategoryCardStory = {
   args: {
     icon: (
-      <Design_Icon className="group-hover:stroke-white group-hover:fill-white" />
+      <IC_HiringDesign className="group-hover:stroke-white group-hover:fill-white" />
     ),
     title: "Design",
   },

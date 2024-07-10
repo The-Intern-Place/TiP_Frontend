@@ -33,4 +33,26 @@ export const signUpSchema = yup.object({
       },
     }),
 });
+
+export const loginSchema = yup.object({
+  email: yup
+    .string()
+    .required("Email is required")
+    .test({
+      test: (values) => validator.isEmail(values as string),
+      message() {
+        return `Invalid email`;
+      },
+    }),
+  password: yup
+    .string()
+    .required("Password is required")
+    .min(6, "Password must be at least 8 character long")
+    .matches(
+      /^(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*()_+{}[\]:;<>,.?~\\-]).{8,}$/,
+      "Password must contain at least one uppercase letter, one lowercase letter, one special character",
+    ),
+});
+
 export const signUpResolver = yupResolver(signUpSchema);
+export const loginResolver = yupResolver(loginSchema);

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import FindJobHero from "@/partials/findjob/FindJobHero";
-import FindJob from "@/partials/findjob/FindJob";
+import FindJobsHeroTemplateChunk from "@/chunks/find-jobs-template-chunk/find-jobs-hero-section-chunk/FindJobsHeroTemplateChunk";
+import FindAllJobsTemplateChunk from "@/chunks/find-jobs-template-chunk/find-all-jobs-template-chunk/FindAllJobsTemplateChunk";
 
 export const metadata: Metadata = {
   title: "The Intern Place | Find Job",
@@ -9,8 +9,8 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <div className="w-full overflow-x-hidden">
-      <FindJobHero />
-      <FindJob />
+      <FindJobsHeroTemplateChunk />
+      <FindAllJobsTemplateChunk />
     </div>
   );
 };

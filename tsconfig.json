@@ -31,7 +31,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/utilities/db.js"
+    "src/utilities/db.js",
+    "public/fonts/index.ts"
   ],
   "exclude": ["node_modules"]
 }

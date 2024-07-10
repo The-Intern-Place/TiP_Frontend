@@ -3,7 +3,7 @@ import React from "react";
 import { ITextInputProps } from "./TextInput.types";
 import { BsEye, BsEyeSlash } from "react-icons/bs";
 import { useTextInput } from "./useTextInput";
-import FieldHelperText from "@/components/field-helper-text/FieldHelperText";
+import FieldHelperText from "@/_misc/field-helper-text/FieldHelperText";
 
 const TextInput = (props: ITextInputProps) => {
   const {

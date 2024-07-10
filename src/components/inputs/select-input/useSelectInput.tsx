@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import { ISelectInputProps, ListItem } from "./SelectInput.types";
-import { useDetectClickOutside } from "@/hooks/useDetectClickOutside";
+import { useDetectClickOutside } from "@/utils/hooks/useDetectClickOutside";
 
 export const useSelectInput = (props: ISelectInputProps) => {
   const [showOptions, setShowOptions] = useState(false);

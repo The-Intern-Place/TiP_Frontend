@@ -16,7 +16,8 @@ const ControlledSelect = <TFieldValue extends FieldValues>(
           {...fields}
           {...rest}
           value={
-            props.options.find((option) => option.id === fields.value)?.name
+            props.options.find((option) => option.id === fields.value)?.name ??
+            ""
           }
           onChange={(el) => {
             fields.onChange((el as ListItem)?.id);

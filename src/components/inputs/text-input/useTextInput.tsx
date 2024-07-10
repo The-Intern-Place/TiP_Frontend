@@ -2,7 +2,7 @@ import { ChangeEvent, useState } from "react";
 import { ITextInputProps } from "./TextInput.types";
 
 export const useTextInput = (props: ITextInputProps) => {
-  const [isPasswordVisible, setIsPasswordVisible] = useState(true);
+  const [isPasswordVisible, setIsPasswordVisible] = useState(false);
   const [outline, setOutline] = useState(false);
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {

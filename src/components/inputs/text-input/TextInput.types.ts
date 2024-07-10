@@ -2,7 +2,7 @@ import { StoryObj } from "@storybook/react";
 import { InputHTMLAttributes, ReactNode } from "react";
 import TextInputMeta from "./TextInput.stories";
 import { Control, FieldErrorsImpl, FieldValues, Path } from "react-hook-form";
-import { IFieldHelperTextProps } from "@/components/field-helper-text/FieldHelperText.types";
+import { IFieldHelperTextProps } from "@/_misc/field-helper-text/FieldHelperText.types";
 
 export type ITextInputProps = Omit<
   InputHTMLAttributes<HTMLInputElement>,

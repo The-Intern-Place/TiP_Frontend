@@ -1,7 +1,7 @@
-import HiringCategory from "@/partials/companies-hiring/hiringCategory";
-import HiringHero from "@/partials/companies-hiring/hiringHero";
-import HiringRecommend from "@/partials/companies-hiring/hiringRecommend";
-import HiringResult from "@/partials/companies-hiring/hiringResult";
+import CompaniesCategoryChunk from "@/chunks/hiring-template-chunk/companies-category-template-chunk/CompaniesCategoryChunk";
+import FindDreamCompaniesHeroTemplateChunk from "@/chunks/hiring-template-chunk/find-dream-companies-hero-template-chunk/FindDreamCompaniesHeroTemplateChunk";
+import HiringResultTemplateChunk from "@/chunks/hiring-template-chunk/hiring-result-template-chunk/HiringResultTemplateChunk";
+import RecommendedCompaniesTemplateChunk from "@/chunks/hiring-template-chunk/recommended-companies-template-chunk/RecommendedCompaniesTemplateChunk";
 import type { Metadata } from "next";
 import React from "react";
 
@@ -13,10 +13,10 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <div className="overflow-x-hidden relative">
-      <HiringHero />
-      <HiringRecommend />
-      <HiringCategory />
-      <HiringResult />
+      <FindDreamCompaniesHeroTemplateChunk />
+      <RecommendedCompaniesTemplateChunk />
+      <CompaniesCategoryChunk />
+      <HiringResultTemplateChunk />
     </div>
   );
 };
