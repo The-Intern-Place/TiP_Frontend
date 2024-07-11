@@ -1,17 +1,16 @@
 import React from "react";
-import type { Metadata } from "next";
 import Navbar from "@/components/navbar/Navbar";
 import ContactFaqTemplateChunk from "@/chunks/contact-template-chunk/contact-faq-template-chunk/ContactFaqTemplateChunk";
 import ContactFormTemplateChunk from "@/chunks/contact-template-chunk/contact-form-template-chunk/ContactFormTemplateChunk";
-
-export const metadata: Metadata = {
-  title: "The Intern Place | Login ",
-  description: "The Intern Place",
-};
+import Head from "next/head";
 
 function ContactUs() {
   return (
     <div>
+      <Head>
+        <title>The Intern Place | Login</title>
+        <meta name="description" content={"The Intern Place"} />
+      </Head>
       <Navbar />
       <main className="w-full h-full max-w-[1350px] mx-auto">
         <div className="grid justify-items-center mt-10 mb-3">

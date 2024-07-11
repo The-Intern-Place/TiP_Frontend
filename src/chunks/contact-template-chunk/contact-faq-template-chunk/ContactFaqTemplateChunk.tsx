@@ -1,3 +1,4 @@
+"use client";
 import { qaData } from "@/utils/data/qa-data";
 import { IC_Arrow } from "@assets/icons/IC_Arrow";
 import IC_Facebook from "@assets/icons/IC_Facebook";
