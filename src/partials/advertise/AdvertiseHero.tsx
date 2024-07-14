@@ -2,8 +2,6 @@ import React from "react";
 import Image from "next/image";
 import { Underline } from "@assets/images";
 
-
-
 const AdvertiseHero = () => {
   return (
     <section className="bg-[#FAFBFC]">
