@@ -71,7 +71,7 @@ const ContactFaqTemplateChunk = () => {
               theinternplacejobs@gmail.com
             </span>
           </Link>
-          <Link className="flex justify-center items-center" href={"#"}>
+          <Link className="flex justify-center items-center mr-32" href={"#"}>
             <IC_Phone />
 
             <span className="text-sm text-[#1976D2] ml-3">09032884485</span>

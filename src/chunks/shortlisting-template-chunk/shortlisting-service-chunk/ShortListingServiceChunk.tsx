@@ -8,7 +8,7 @@ const ShortListingServiceChunk = () => {
       <Navbar />
       <main className="w-full h-full max-w-[1350px] mt-10 mx-auto mb-6">
         <div className="grid justify-items-center mb-12">
-          <h1 className="lg:text-[3.5rem] md:text-[45px] text-4xl font-semibold leading-10 mb-4 ml-8">
+          <h1 className="lg:text-[3.5rem] md:text-[45px] text-3xl w-54 font-semibold leading-10 mb-4 ml-2">
             TiP <span className="text text-[#26A4FF]">Shortlisting</span>{" "}
             Service
           </h1>
@@ -17,7 +17,7 @@ const ShortListingServiceChunk = () => {
             selection, saving you time and ensuring you find the perfect match
             for your internship positions
           </p>
-          <Button overrideStyles="border-0 rounded-none w-44 sm:w-44 align-items-center">
+          <Button overrideStyles="border-0 rounded-none w-32 sm:w-44 align-items-center">
             Contact Us
           </Button>
         </div>
@@ -27,7 +27,7 @@ const ShortListingServiceChunk = () => {
               How It Works
             </h5>
 
-            <p className="mb-3">
+            <p className="mb-6">
               Our goal is to empower you with help you make informed hiring
               decisions swiftly and effectively, ultimately helping you build a
               talented team that drives your organization forward.
@@ -38,8 +38,8 @@ const ShortListingServiceChunk = () => {
                 See FAQs
               </Button>
 
-              <Button overrideStyles="border-2 rounded-none w-44 bg-white text-[#0046BF] sm:text-[#0046BF]">
-                Reach Us
+              <Button overrideStyles="border-2 rounded-none w-44 bg-white  sm:text-[#0046BF]">
+                <p className="text-[#0046BF]">Reach Us</p>
               </Button>
             </div>
           </div>
