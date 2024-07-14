@@ -40,7 +40,6 @@ function ShortListingSection() {
 
               <Button overrideStyles="border-2 rounded-none w-44 bg-white ">
                 <p className="text-[#0046BF]">Reach Us</p>
-
               </Button>
             </div>
           </div>
