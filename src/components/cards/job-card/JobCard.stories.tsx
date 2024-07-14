@@ -1,7 +1,7 @@
 import { Meta } from "@storybook/react";
 import JobCard from "./JobCard";
 import { JobCardStory } from "./JobCard.types";
-import { BrandDesigner } from "public";
+import { BrandDesigner } from "@assets/images";
 
 const JobCardMeta = {
   title: "Components/Cards/JobCard",

@@ -1,6 +1,6 @@
 import React from "react";
 import { SelectInputProps } from "./SelectInput.types";
-import styles from "@/styles/inputs/selectInput.module.css";
+import styles from "@/styles/selectInput.module.css";
 
 const SelectInput = ({
   label,

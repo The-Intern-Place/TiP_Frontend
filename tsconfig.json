@@ -22,8 +22,8 @@
     "paths": {
       "@/*": ["./src/*"],
       "@assets/*": ["./public/*"],
-
-      "@components/*": ["./src/components/*"]
+      "@components/*": ["./src/components/*"],
+      "@services/interfaces/*": ["./src/services/interfaces/*"]
     }
   },
   "include": [
@@ -31,7 +31,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/utilities/db.js"
+    "src/utilities/db.js",
+    "public/fonts/index.ts"
   ],
   "exclude": ["node_modules"]
 }
