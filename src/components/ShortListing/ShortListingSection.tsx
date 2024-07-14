@@ -7,8 +7,8 @@ function ShortListingSection() {
     <>
       <Navbar />
       <main className="w-full h-full max-w-[1350px] mt-10 mx-auto mb-6">
-        <div className="grid justify-items-center mb-12">
-          <h1 className="lg:text-[3.5rem] md:text-[45px] text-4xl font-semibold leading-10 mb-4 ml-8">
+        <div className="grid justify-items-center mb-8">
+          <h1 className="lg:text-[3.5rem] md:text-[45px] text-3xl font-semibold leading-10 mb-4 ml-2 w-54">
             TiP <span className="text text-[#26A4FF]">Shortlisting</span>{" "}
             Service
           </h1>
@@ -17,7 +17,7 @@ function ShortListingSection() {
             selection, saving you time and ensuring you find the perfect match
             for your internship positions
           </p>
-          <Button overrideStyles="border-0 rounded-none w-44 sm:w-44 align-items-center">
+          <Button overrideStyles="border-0 rounded-none w-32 sm:w-44 align-items-center">
             Contact Us
           </Button>
         </div>
@@ -27,19 +27,20 @@ function ShortListingSection() {
               How It Works
             </h5>
 
-            <p className="mb-3">
+            <p className="mb-5">
               Our goal is to empower you with help you make informed hiring
               decisions swiftly and effectively, ultimately helping you build a
               talented team that drives your organization forward.
             </p>
 
             <div className="flex flex-row">
-              <Button overrideStyles="border-0 rounded-none w-44  mr-5">
+              <Button overrideStyles="border-0 rounded-none w-44 mr-5">
                 See FAQs
               </Button>
 
-              <Button overrideStyles="border-2 rounded-none w-44 bg-white text-[#0046BF] sm:text-[#0046BF]">
-                Reach Us
+              <Button overrideStyles="border-2 rounded-none w-44 bg-white ">
+                <p className="text-[#0046BF]">Reach Us</p>
+
               </Button>
             </div>
           </div>

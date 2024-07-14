@@ -101,14 +101,17 @@ const Faq: React.FC = () => {
             Our Links
           </p>
           <Link className="flex justify-center items-center mb-4" href={"#"}>
-            <Mail />
+            <span className="w-10 h-10">
+              <Mail />
+            </span>
             <span className="text-sm text-[#1976D2] ml-3">
               theinernplacejobs@gmail.com
             </span>
           </Link>
-          <Link className="flex justify-center items-center" href={"#"}>
-            <Phone />
-
+          <Link className="flex justify-center items-center mr-28" href={"#"}>
+            <span className="w-10 h-10 ">
+              <Phone />
+            </span>
             <span className="text-sm text-[#1976D2] ml-3">09032884485</span>
           </Link>
           <ul className="flex justify-center mt-5 space-x-4">
