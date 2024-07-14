@@ -9,6 +9,7 @@ export type ButtonProps = Omit<
   variant?: "primary" | "outlined" | "secondary" | "transparent";
   overrideStyles?: string;
   fit?: boolean;
+  loading?: boolean;
 };
 
 export type ButtonStory = StoryObj<typeof ButtonMeta>;

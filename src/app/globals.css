@@ -34,7 +34,7 @@ body {
 }
 
 .job-opening {
-  background-image: url(../../public/pngs/job-openings-background.png);
+  background-image: url(../../public/images/job-openings-background.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -42,4 +42,8 @@ body {
 .custom-pagination {
   display: flex;
   border-bottom: 0px;
+}
+
+.icon-loading:before {
+  content: "\e90a";
 }
