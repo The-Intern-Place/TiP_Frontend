@@ -1,7 +1,8 @@
+import AdvertiseBenefitChunk from "@/chunks/advertise-template-chunk/advertise-benefit-template-chunk/AdvertiseBenefitChunk";
+import AdvertiseHeroChunk from "@/chunks/advertise-template-chunk/advertise-hero-section-chunk/AdvertiseHeroChunk";
+import AdvertisePriceChunk from "@/chunks/advertise-template-chunk/advertise-price-template-chunnk/AdvertisePriceChunk";
 import Navbar from "@/components/navbar/Navbar";
-import AdvertiseBenefit from "@/partials/advertise/AdvertiseBenefit";
-import AdvertiseHero from "@/partials/advertise/AdvertiseHero";
-import AdvertisePrice from "@/partials/advertise/AdvertisePrice";
+
 import { Metadata } from "next";
 import React from "react";
 
@@ -14,9 +15,9 @@ const page = () => {
   return (
     <div className="w-full overflow-x-hidden">
       <Navbar bgcolor="#FAFBFC" />
-      <AdvertiseHero />
-      <AdvertiseBenefit />
-      <AdvertisePrice />
+      <AdvertiseHeroChunk />
+      <AdvertiseBenefitChunk />
+      <AdvertisePriceChunk />
     </div>
   );
 };

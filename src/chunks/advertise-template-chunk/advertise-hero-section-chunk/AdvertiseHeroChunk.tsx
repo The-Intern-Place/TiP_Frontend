@@ -1,8 +1,9 @@
 import React from "react";
 import Image from "next/image";
+
 import { Underline } from "@assets/images";
 
-const AdvertiseHero = () => {
+const AdvertiseHeroChunk = () => {
   return (
     <section className="bg-[#FAFBFC]">
       <div className="flex justify-center items-center mx-auto flex-col gap-5 py-9">
@@ -40,4 +41,4 @@ const AdvertiseHero = () => {
   );
 };
 
-export default AdvertiseHero;
+export default AdvertiseHeroChunk;
