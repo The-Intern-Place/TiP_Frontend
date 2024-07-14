@@ -30,7 +30,7 @@ const JobOpeningTemplateChunk = () => {
               />
             ))}
           </div>
-          <p className="flex gap-2 items-center justify-end text-blue flex md:hidden">
+          <p className="flex gap-2 items-center justify-end text-blue md:hidden">
             Show all <IC_ArrowRight />{" "}
           </p>
         </div>

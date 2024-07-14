@@ -1,7 +1,8 @@
 import React from "react";
 import Image from "next/image";
+import { Underline } from "@assets/images";
 
-import { Underline } from "public";
+
 
 const AdvertiseHero = () => {
   return (
