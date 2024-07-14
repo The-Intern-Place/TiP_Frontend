@@ -3,6 +3,7 @@ import JobCategoryTemplateChunk from "@/chunks/home-template-chunk/job-category-
 import JobOpeningTemplateChunk from "@/chunks/home-template-chunk/job-opening-template-chunk/JobOpeningTemplateChunk";
 import TalentSectionTemplateChunk from "@/chunks/home-template-chunk/talent-section-template-chunk/TalentSectionTemplateChunk";
 import Navbar from "@/components/navbar/Navbar";
+
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -10,9 +11,16 @@ export const metadata: Metadata = {
   description: "The Intern Place",
 };
 
+import Head from "next/head";
+
+
 export default function Home() {
   return (
     <div>
+      <Head>
+        <title>The Intern Place</title>
+        <meta name="description" content={"The Intern Place"} />
+      </Head>
       <section className="bg-[#B5CAEC] pb-10">
         <Navbar />
         <HeroSectionTemplateChunk />
