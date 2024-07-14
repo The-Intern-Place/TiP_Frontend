@@ -1,6 +1,7 @@
 import AdvertiseBenefitCard from "@/components/cards/advertisebenefit-card/AdvertiseBenefitCard";
 import { AdvertiseBenefitCardProps } from "@/components/cards/advertisebenefit-card/AdvertiseBeneiftCard.types";
-import { benefitdata } from "@/utilities/data/adveertise";
+import { benefitdata } from "@/utils/data/adveertise";
+
 import React from "react";
 
 const AdvertiseBenefit = () => {
