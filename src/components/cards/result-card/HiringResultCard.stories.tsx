@@ -1,6 +1,6 @@
 import HiringResultCard from "./HiringResultCard";
 import { Meta } from "@storybook/react";
-import pentagram from "public/pentagram.svg";
+import pentagram from "public/images/pentagram.svg";
 import { HiringResultStory } from "./HiringResultCard.types";
 
 const HiringResultMeta = {

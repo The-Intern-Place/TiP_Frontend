@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { TIP_Logo } from "public";
+import { TIP_Logo } from "@assets/images";
 import React from "react";
 import Button from "@/components/button/Button";
 import TextInput from "../inputs/text-input/TextInput";

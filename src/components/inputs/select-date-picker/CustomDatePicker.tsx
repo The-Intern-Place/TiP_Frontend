@@ -1,11 +1,6 @@
 "use client";
-
+import { daysData, handleReturnYear, monthData } from "@/utils/helpers/date";
 import SelectInput from "../select-input/SelectInput";
-import {
-  daysData,
-  handleReturnYear,
-  monthData,
-} from "@/utilities/functions/date";
 import { customDateTypes } from "./CustomDatePicker.types";
 
 const CustomDatePicker = ({ onChange, dateValue }: customDateTypes) => {
