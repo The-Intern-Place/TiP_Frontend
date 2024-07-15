@@ -3,6 +3,8 @@ import awareness from "public/images/awareness.svg";
 import affordable from "public/images/affordable.svg";
 import analytics from "public/images/analytics.svg";
 
+import good from "public/images/tip-good.svg";
+
 export const benefitdata = [
   {
     id: "1",
@@ -34,5 +36,39 @@ export const benefitdata = [
     title: "Enhanced Engagement",
     description:
       "Reach an audience that's eager to learn about your brand and what you offer. This means more meaningful interactions and higher rates.",
+  },
+];
+
+export const priceImpression = [
+  {
+    id: "1",
+    img: good,
+    text: "  Up to 10,000 impressions",
+  },
+
+  {
+    id: "2",
+    img: good,
+    text: "  Up to 10,000 impressions",
+  },
+  {
+    id: "3",
+    img: good,
+    text: "  Up to 10,000 impressions",
+  },
+  {
+    id: "4",
+    img: good,
+    text: "  Up to 10,000 impressions",
+  },
+  {
+    id: "5",
+    img: good,
+    text: "  Up to 10,000 impressions",
+  },
+  {
+    id: "6",
+    img: good,
+    text: "  Up to 10,000 impressions",
   },
 ];

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import good from "public/images/tip-good.svg";
+
+import { priceImpression } from "@/utils/data/adveertise";
 
 const AdvertisePriceChunk = () => {
   return (
@@ -23,54 +24,31 @@ const AdvertisePriceChunk = () => {
               <h1 className="font-clash font-[600] text-[24px] leading-[40px]  text-[#002360]">
                 Basic Plan
               </h1>
-              <p>Perfect for small businesses </p>
+              <p className="font-[500] text-[16px] leading-[32px] font-epilogue text-[#1B1B1B99] ">
+                Perfect for small businesses{" "}
+              </p>
             </div>
 
             {/* first divider */}
             <div className="w-[320px]  border-[1px] border-[#D6DDEB] mx-[0.7rem]"></div>
 
-            <ul className="flex flex-col gap-[22px]  p-[1rem] mx-[0.5rem]">
-              <li className="gap-[6px] flex items-center ">
-                <Image src={good} alt="good" className="w-[32px] h-[32px] " />{" "}
-                <h1 className="font-[600] font-epilogue text-[#1B1B1B] text-[14px] leading-[22px]">
-                  Up to 10,000 impressions
-                </h1>
-              </li>
-              <li className="gap-[6px] flex items-center ">
-                <Image src={good} alt="good" className="w-[32px] h-[32px] " />{" "}
-                <h1 className="font-[600] font-epilogue text-[#1B1B1B] text-[14px] leading-[22px]">
-                  Up to 10,000 impressions
-                </h1>
-              </li>
-
-              <li className="gap-[6px] flex items-center ">
-                <Image src={good} alt="good" className="w-[32px] h-[32px] " />{" "}
-                <h1 className="font-[600] font-epilogue text-[#1B1B1B] text-[14px] leading-[22px]">
-                  Up to 10,000 impressions
-                </h1>
-              </li>
-
-              <li className="gap-[6px] flex items-center ">
-                <Image src={good} alt="good" className="w-[32px] h-[32px] " />{" "}
-                <h1 className="font-[600] font-epilogue text-[#1B1B1B] text-[14px] leading-[22px]">
-                  Up to 10,000 impressions
-                </h1>
-              </li>
-
-              <li className="gap-[6px] flex items-center ">
-                <Image src={good} alt="good" className="w-[32px] h-[32px] " />{" "}
-                <h1 className="font-[600] font-epilogue text-[#1B1B1B] text-[14px] leading-[22px]">
-                  Up to 10,000 impressions
-                </h1>
-              </li>
-
-              <li className="gap-[6px] flex items-center ">
-                <Image src={good} alt="good" className="w-[32px] h-[32px] " />{" "}
-                <h1 className="font-[600] font-epilogue text-[#1B1B1B] text-[14px] leading-[22px]">
-                  Up to 10,000 impressions
-                </h1>
-              </li>
-            </ul>
+            {priceImpression.map((p) => (
+              <ul
+                key={p.id}
+                className="flex flex-col gap-[22px]  p-[1rem] mx-[0.5rem]"
+              >
+                <li className="gap-[6px] flex items-center ">
+                  <Image
+                    src={p.img}
+                    alt="good"
+                    className="w-[32px] h-[32px] "
+                  />{" "}
+                  <h1 className="font-[600] font-epilogue text-[#1B1B1B] text-[14px] leading-[22px]">
+                    {p.text}
+                  </h1>
+                </li>
+              </ul>
+            ))}
 
             {/* second divider */}
             <div className="w-[320px]  border-[1px] border-[#D6DDEB] mx-[0.7rem]"></div>
@@ -96,54 +74,30 @@ md:leading-[22px] md:text-[14px] font-[700] font-epilogue md:pt-[10px] md:pr-[10
               <h1 className="font-clash font-[600] text-[24px] leading-[40px]  text-[#002360]">
                 Premium Plan
               </h1>
-              <p>Perfect for small businesses </p>
+              <p className="font-[500] text-[16px] leading-[32px] font-epilogue text-[#1B1B1B99]">
+                Ideal for large businesses{" "}
+              </p>
             </div>
 
             {/* first divider */}
             <div className="w-[320px]  border-[1px] border-[#D6DDEB] mx-[0.7rem]"></div>
-
-            <ul className="flex flex-col gap-[22px]  p-[1rem] mx-[0.5rem]">
-              <li className="gap-[6px] flex items-center ">
-                <Image src={good} alt="good" className="w-[32px] h-[32px] " />{" "}
-                <h1 className="font-[600] font-epilogue text-[#1B1B1B] text-[14px] leading-[22px]">
-                  Up to 10,000 impressions
-                </h1>
-              </li>
-              <li className="gap-[6px] flex items-center ">
-                <Image src={good} alt="good" className="w-[32px] h-[32px] " />{" "}
-                <h1 className="font-[600] font-epilogue text-[#1B1B1B] text-[14px] leading-[22px]">
-                  Up to 10,000 impressions
-                </h1>
-              </li>
-
-              <li className="gap-[6px] flex items-center ">
-                <Image src={good} alt="good" className="w-[32px] h-[32px] " />{" "}
-                <h1 className="font-[600] font-epilogue text-[#1B1B1B] text-[14px] leading-[22px]">
-                  Up to 10,000 impressions
-                </h1>
-              </li>
-
-              <li className="gap-[6px] flex items-center ">
-                <Image src={good} alt="good" className="w-[32px] h-[32px] " />{" "}
-                <h1 className="font-[600] font-epilogue text-[#1B1B1B] text-[14px] leading-[22px]">
-                  Up to 10,000 impressions
-                </h1>
-              </li>
-
-              <li className="gap-[6px] flex items-center ">
-                <Image src={good} alt="good" className="w-[32px] h-[32px] " />{" "}
-                <h1 className="font-[600] font-epilogue text-[#1B1B1B] text-[14px] leading-[22px]">
-                  Up to 10,000 impressions
-                </h1>
-              </li>
-
-              <li className="gap-[6px] flex items-center ">
-                <Image src={good} alt="good" className="w-[32px] h-[32px] " />{" "}
-                <h1 className="font-[600] font-epilogue text-[#1B1B1B] text-[14px] leading-[22px]">
-                  Up to 10,000 impressions
-                </h1>
-              </li>
-            </ul>
+            {priceImpression.map((p) => (
+              <ul
+                key={p.id}
+                className="flex flex-col gap-[22px]  p-[1rem] mx-[0.5rem]"
+              >
+                <li className="gap-[6px] flex items-center ">
+                  <Image
+                    src={p.img}
+                    alt="good"
+                    className="w-[32px] h-[32px] "
+                  />{" "}
+                  <h1 className="font-[600] font-epilogue text-[#1B1B1B] text-[14px] leading-[22px]">
+                    {p.text}
+                  </h1>
+                </li>
+              </ul>
+            ))}
 
             {/* second divider */}
             <div className="w-[320px]  border-[1px] border-[#D6DDEB] mx-[0.7rem]"></div>
