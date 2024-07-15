@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
-import good from "public/tip-good.svg";
+import good from "public/images/tip-good.svg";
 
 const AdvertisePriceChunk = () => {
   return (
-    <section className="flex flex-col items-center justify-center mt-[2rem] mb-[8rem]">
+    <section className="flex flex-col items-center justify-center md:mt-[2rem] mb-[3rem] md:mb-[8rem]">
       {/*top heading */}
       <div className="flex items-center justify-center  gap-[10px] mt-[3rem]  mb-[1rem]  md:my-[2rem]">
         <h1
@@ -17,7 +17,7 @@ const AdvertisePriceChunk = () => {
 
       <div className="flex  flex-col md:flex-row justify-center items-center gap-[20px]  lg:gap-[25px]">
         {/* Basic Plan */}
-        <div className="bg-[#F9FDFF] w-[87%]  border-[2px]   rounded-[20px]">
+        <div className="bg-[#F9FDFF] w-[87%]   rounded-[20px]">
           <div className="lg:w-[350px] rounded-[20px] border-[1px] bg-[#FFFFFF] border-[#D6DDEB] mx-[1rem] my-[1rem]">
             <div className="flex flex-col gap-[10px] p-[1.5rem] mx-[0.3rem]">
               <h1 className="font-clash font-[600] text-[24px] leading-[40px]  text-[#002360]">
@@ -77,20 +77,22 @@ const AdvertisePriceChunk = () => {
 
             <div className="flex flex-col items-center justify-center  p-[10px]">
               <h1 className="font-[700] text-[#002360] text-[30px] leading-[48px] font-epilogue">
-                #20, 000
+                #20,000
               </h1>
               <button
-                className="bg-[#0046BF] w-[147px] h-[42px] gap-[10px] text-[#FFFFFF] 
-leading-[22px] text-[14px] font-[700] font-epilogue  "
+                className="bg-[#0046BF] md:w-[147px] md:h-[42px] gap-[10px] text-[#FFFFFF] 
+md:leading-[22px] md:text-[14px] font-[700] font-epilogue md:pt-[10px] md:pr-[10px] md:pb-[10px] md:pl-[10px] "
               >
                 Make a Payment
               </button>
             </div>
+            
+
           </div>
         </div>
 
         {/* Premium Plan */}
-        <div className="bg-div-custom w-[87%] border-[2px]  rounded-[20px]">
+        <div className="bg-div-custom w-[87%]   rounded-[20px]">
           <div className="lg:w-[350px] rounded-[20px] border-[1px] bg-[#FFFFFF] border-[#D6DDEB] mx-[1rem] my-[1rem]">
             <div className="flex flex-col gap-[10px] p-[1.5rem] mx-[0.3rem]">
               <h1 className="font-clash font-[600] text-[24px] leading-[40px]  text-[#002360]">
@@ -149,18 +151,20 @@ leading-[22px] text-[14px] font-[700] font-epilogue  "
             <div className="w-[320px]  border-[1px] border-[#D6DDEB] mx-[0.7rem]"></div>
 
             <div className="flex flex-col items-center justify-center  p-[10px]">
-              <h1 className="font-[700] text-[#002360] text-[30px] leading-[48px] font-epilogue">
-                #50, 000
+              <h1 className="font-[700] text-[#002360] md:text-[30px] md:leading-[48px] font-epilogue">
+                #50,000
               </h1>
               <button
-                className="bg-[#0046BF] w-[147px] h-[42px] gap-[10px] text-[#FFFFFF] 
-leading-[22px] text-[14px] font-[700] font-epilogue  "
+                className="bg-[#0046BF] md:w-[147px] md:h-[42px] gap-[10px] text-[#FFFFFF] 
+md:leading-[22px] md:text-[14px] font-[700] font-epilogue md:pt-[10px] md:pr-[10px] md:pb-[10px] md:pl-[10px] "
               >
                 Make a Payment
               </button>
             </div>
+
           </div>
         </div>
+
       </div>
     </section>
   );

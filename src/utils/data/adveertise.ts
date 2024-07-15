@@ -1,7 +1,7 @@
-import enhanced from "public/enhanced.svg";
-import awareness from "public/awareness.svg";
-import affordable from "public/affordable.svg";
-import analytics from "public/analytics.svg";
+import enhanced from "public/images/enhanced.svg";
+import awareness from "public/images/awareness.svg";
+import affordable from "public/images/affordable.svg";
+import analytics from "public/images/analytics.svg";
 
 export const benefitdata = [
   {

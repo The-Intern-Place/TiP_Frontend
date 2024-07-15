@@ -1,5 +1,5 @@
-import AdvertiseBenefitCard from "@/components/cards/advertisebenefit-card/AdvertiseBenefitCard";
-import { AdvertiseBenefitCardProps } from "@/components/cards/advertisebenefit-card/AdvertiseBeneiftCard.types";
+import AdvertiseBenefitCard from "@/components/cards/advertise-benefit-card/AdvertiseBenefitCard";
+import { AdvertiseBenefitCardProps } from "@/components/cards/advertise-benefit-card/AdvertiseBeneiftCard.types";
 import { benefitdata } from "@/utils/data/adveertise";
 import React from "react";
 
@@ -9,11 +9,11 @@ const AdvertiseBenefitChunk = () => {
       {/* heading */}
       <div
         className="flex md:items-center md:justify-center items-start justify-start
-         mt-[3rem]  md:mb-[3rem] mb-[1rem]  md:my-[2rem] w-[82%]  md:w-[100%]"
+         mt-[3rem]  md:mb-[3rem] mb-[1rem]  md:my-[2rem] w-[100%] ml-[1.9rem] mdd:ml-0"
       >
         <h1
           className="font-[600] text-[#1B1B1B] md:text-[32px] md:leading-[38px]  text-[20px] leading-[38px]
- font-clash "
+ font-clash"
         >
           Benefits of Advertising
         </h1>
@@ -21,18 +21,20 @@ const AdvertiseBenefitChunk = () => {
 
       {/* mapping through with data */}
       <div
-        className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 
-        md:gap-[30px] max-w-[1292px] w-[93%] md:items-center justify-center space-y-[0.6rem]"
+        className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4  rounded-[6px]
+        md:gap-[30px] max-w-[1292px] w-[93%] md:items-center justify-center gap-[20px] space-y-[0.6rem]"
       >
         {benefitdata.map((a: AdvertiseBenefitCardProps, i: number) => (
           <AdvertiseBenefitCard
             key={i}
+            id={a.id}
             description={a.description}
             title={a.title}
             image={a.image}
           />
         ))}
       </div>
+      
     </section>
   );
 };
