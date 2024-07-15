@@ -3,7 +3,6 @@ import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import AdvertiseBenefitCardMeta from "./AdvertiseBenefitCard.stories";
 
 export type AdvertiseBenefitCardProps = {
-
   id: string;
   image: string | StaticImport;
   title: string;
@@ -13,6 +12,3 @@ export type AdvertiseBenefitCardProps = {
 export type AdvertiseBenefitCardStory = StoryObj<
   typeof AdvertiseBenefitCardMeta
 >;
-
-
-

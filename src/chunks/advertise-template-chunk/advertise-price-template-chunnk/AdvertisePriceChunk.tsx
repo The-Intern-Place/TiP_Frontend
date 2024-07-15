@@ -75,7 +75,7 @@ const AdvertisePriceChunk = () => {
             {/* second divider */}
             <div className="w-[320px]  border-[1px] border-[#D6DDEB] mx-[0.7rem]"></div>
 
-            <div className="flex flex-col items-center justify-center  p-[10px]">
+            <div className="flex flex-col items-center justify-center  gap-[10px] my-[2rem]  ">
               <h1 className="font-[700] text-[#002360] text-[30px] leading-[48px] font-epilogue">
                 #20,000
               </h1>
@@ -86,8 +86,6 @@ md:leading-[22px] md:text-[14px] font-[700] font-epilogue md:pt-[10px] md:pr-[10
                 Make a Payment
               </button>
             </div>
-            
-
           </div>
         </div>
 
@@ -150,7 +148,7 @@ md:leading-[22px] md:text-[14px] font-[700] font-epilogue md:pt-[10px] md:pr-[10
             {/* second divider */}
             <div className="w-[320px]  border-[1px] border-[#D6DDEB] mx-[0.7rem]"></div>
 
-            <div className="flex flex-col items-center justify-center  p-[10px]">
+            <div className="flex flex-col items-center justify-center  gap-[10px] my-[2rem]">
               <h1 className="font-[700] text-[#002360] md:text-[30px] md:leading-[48px] font-epilogue">
                 #50,000
               </h1>
@@ -161,10 +159,8 @@ md:leading-[22px] md:text-[14px] font-[700] font-epilogue md:pt-[10px] md:pr-[10
                 Make a Payment
               </button>
             </div>
-
           </div>
         </div>
-
       </div>
     </section>
   );
