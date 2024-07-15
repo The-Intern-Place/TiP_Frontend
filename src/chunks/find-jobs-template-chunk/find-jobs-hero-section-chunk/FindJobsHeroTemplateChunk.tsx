@@ -51,7 +51,11 @@ const FindJobsHeroTemplateChunk = () => {
                 <Image
                   src={searchicon}
                   alt="searchIcon"
+
                   className=" md:w-[24px] w-[20px] md:h-[24px] h-[20px] "
+
+                  className=" md:w-[24px] w-[20px] md:h-[24px] h-20px]    "
+
                 />
 
                 <input
