@@ -1,20 +1,15 @@
 import Image from "next/image";
 import React from "react";
 
-import ceo from "public/images/Ibunkun Amosu.svg";
-import linkdin from "public/images/LinkedIn.svg";
-import x from "public/images/X.svg";
+
 
 import mission_gilf from "/public/images/tip_gilf.gif";
 import story_gilf from "/public/images/tip_gilf1.gif";
 import vision_gilf from "/public/images/tip_gilf3.gif";
-import { FounderOfferData } from "@/utils/data/founders";
-import { FoundersOfferCardProps } from "@/components/cards/founders-offer-card/FoundersOfferCard.type";
-import FoundersOfferCard from "@/components/cards/founders-offer-card/FoundersOfferCard";
 
 const FoundersAllTemplateChunk = () => {
   return (
-    <section className="w-full flex flex-col items-center justify-center mb-[3rem]">
+    <section className="w-full flex flex-col items-center justify-center">
       {/* vission,story section */}
       <div className="flex flex-col justify-center items-center  max-w-[1084px]  w-full mt-[3rem] p-2  lg:px-[4rem] md:pl-[4rem] lg:pl-[15rem] ">
         {/* story section */}
@@ -133,70 +128,9 @@ const FoundersAllTemplateChunk = () => {
         </div>
       </div>
 
-      {/*What we offer */}
-      <div className="flex flex-col items-center lg:my-[5rem] mt-[4rem] md:mt-auto md:my-[3rem]">
-        {/* Heading */}
-        <div className="gap-[10px] py-[3rem]">
-          <h1 className="font-clash font-[600] text-[32px] leading-[38px] text-[#1B1B1B]">
-            What We Offer
-          </h1>
-        </div>
 
-        {/* mapping through */}
-        <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-[30px]  ">
-          {FounderOfferData.map((o: FoundersOfferCardProps, i: number) => (
-            <FoundersOfferCard
-              key={i}
-              img={o.img}
-              secondimg={o.secondimg}
-              thirdimg={o.thirdimg}
-              fourthimg={o.fourthimg}
-              title={o.title}
-              description={o.description}
-            />
-          ))}
-        </div>
-      </div>
 
-      {/* About CEO */}
-      <div className="flex md:flex-row flex-col md:justify-evenly items-center md:gap-[30px] py-[5rem] md:py-[3rem]   max-w-[1095px]">
-        {/* Image */}
-
-        <div className="md:w-[350px] md:h-[350px] w-[300px] h-[300px]">
-          <Image src={ceo} alt="ibunkun_pics" className="w-full h-full" />
-        </div>
-
-        {/* text */}
-        <div className="gap-[30px] max-w-[715px] max-h-[324px]  text-center md:text-start  my-2 md:my-0 w-full">
-          <h1 className="font-clash font-[600] text-[24px] leading-[40px] text-light-blue">
-            Founder
-          </h1>
-          <p className="font-clash font-[400] text-[18px] leading-[32px] md:my-[2.2rem] text-grey gap-[10px]">
-            Ibunkun Amosu is the visionary founder behind The Intern Place. With
-            a passion for empowering young professionals and a deep
-            understanding of the African job market, Ibunkun has dedicated his
-            career to bridging the gap between emerging talent and top
-            employers. His mission is to make The Intern Place the go-to talent
-            partner for businesses looking to access a diverse and highly
-            skilled workforce.
-          </p>
-
-          <ul className="gap-[24px] md:max-w-[88px] w-[100%] flex items-center justify-center">
-            <li className="w-[32px] h-[32px]">
-              {" "}
-              <Image
-                src={linkdin}
-                alt="ibunkun_pics"
-                className="w-full h-full"
-              />
-            </li>
-            <li className="w-[32x] h-[32px]">
-              {" "}
-              <Image src={x} alt="ibunkun_pics" className="w-full h-full" />
-            </li>
-          </ul>
-        </div>
-      </div>
+  
     </section>
   );
 };

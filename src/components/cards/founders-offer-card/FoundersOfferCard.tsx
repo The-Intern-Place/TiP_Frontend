@@ -5,7 +5,7 @@ import Image from "next/image";
 const FoundersOfferCard = (props: FoundersOfferCardProps) => {
   return (
     <section
-      className="flex flex-col border-[1px] rounded-[20px] border-light-blueb bg-[#FFFFFF]
+      className="flex flex-col border-[1px] rounded-[20px] border-light-blue bg-[#FFFFFF]
      lg:w-[578px] lg:h-[440px] justify-between items-center w-[100%] "
     >
       <div className="flex-grow gap-[12px] m-[2rem]">

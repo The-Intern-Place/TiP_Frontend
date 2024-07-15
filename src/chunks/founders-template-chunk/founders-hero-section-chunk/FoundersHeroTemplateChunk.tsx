@@ -33,7 +33,7 @@ const FoundersHeroTemplateChunk = () => {
             </div>
 
             <p
-              className="font-[400] text-[18px] w-full font-epilogue text-[#1B1B1B99]
+              className="font-[400] text-[18px] w-full font-epilogue text-[#1B1B1B]
            leading-[32px] text-center pt-1 px-1 lg:px-0 lg:w-[782px]"
             >
               Join us at The Intern Place, and let's build a brighter future
@@ -44,15 +44,15 @@ const FoundersHeroTemplateChunk = () => {
           </div>
 
           {/* button */}
-          <div className="">
+    
             <button
-              className=" bg-[#0046BF] text-white p-3 
-             md:w-[139px] h-[50px]  mx-3 mt-[1rem]"
+              className=" bg-[#0046BF] text-white p-3  w-[122px] h-[42px]
+             md:w-[139px] md:h-[50px]  mx-3 mt-[1rem] text-[14px] leading-[22px] font-epilogue"
               aria-label="Search"
             >
               Contact Us
             </button>
-          </div>
+       
         </div>
       </div>
     </section>
