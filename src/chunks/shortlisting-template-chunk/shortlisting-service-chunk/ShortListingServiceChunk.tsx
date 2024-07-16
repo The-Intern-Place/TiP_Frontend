@@ -13,7 +13,9 @@ const ShortListingServiceChunk = () => {
           <div className="flex flex-row justify-center lg:text-[3.5rem] md:text-[45px] text-3xl w-44 sm:w-96 font-semibold leading-10 mb-4 sm:mb-10">
             <h1>TiP</h1>
             <div className="flex flex-col md:h-[66px] md:w-[437px] h-[44px] w-[300px] items-center justify-center gap-2 ml-2 mt-1 sm:mt-1 mr-2">
-              <span className="text text-[#26A4FF] -mb-2 sm:mb-1">Shortlisting</span>{" "}
+              <span className="text text-[#26A4FF] -mb-2 sm:mb-1">
+                Shortlisting
+              </span>{" "}
               <Image src={headline} alt="background_pics" className="" />
             </div>
 

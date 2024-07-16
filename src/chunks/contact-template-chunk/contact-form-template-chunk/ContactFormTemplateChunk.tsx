@@ -1,7 +1,6 @@
 import React from "react";
 import TextInput from "@/components/inputs/text-input/TextInput";
 
-
 const ContactFormTemplateChunk = () => {
   return (
     <div className="shadow-lg w-full h-full sm:w-4/5 sm:mt-10">
@@ -23,7 +22,9 @@ const ContactFormTemplateChunk = () => {
                 id="name"
                 name="name"
                 required
-                className=" w-full bg-white rounded border border-gray-200 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-900 py-1 px-1 leading-8 transition-colors duration-200 ease-in-out " label={""} />
+                className=" w-full bg-white rounded border border-gray-200 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-900 py-1 px-1 leading-8 transition-colors duration-200 ease-in-out "
+                label={""}
+              />
             </div>
           </div>
           <div className="p-2 w-full sm:mb-5">
@@ -39,7 +40,9 @@ const ContactFormTemplateChunk = () => {
                 id="email"
                 name="email"
                 required
-                className=" w-full bg-white rounded border border-gray-200 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-900 py-1 px-1 leading-8 transition-colors duration-200 ease-in-out" label={""} />
+                className=" w-full bg-white rounded border border-gray-200 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-900 py-1 px-1 leading-8 transition-colors duration-200 ease-in-out"
+                label={""}
+              />
             </div>
           </div>
           <div className="p-2 w-full sm:mb-5">
@@ -55,7 +58,9 @@ const ContactFormTemplateChunk = () => {
                 id="name"
                 name="company name"
                 required
-                className=" w-full bg-white rounded border border-gray-200 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-900 py-1 px-1 leading-8 transition-colors duration-200 ease-in-out" label={""} />
+                className=" w-full bg-white rounded border border-gray-200 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-900 py-1 px-1 leading-8 transition-colors duration-200 ease-in-out"
+                label={""}
+              />
             </div>
           </div>
           <div className="p-2 w-full">
