@@ -55,15 +55,13 @@ const AdvertisePriceChunk = () => {
             <div className="w-[320px]  border-[1px] border-[#D6DDEB] mx-[0.7rem]"></div>
 
             <div className="flex flex-col items-center justify-center  gap-[10px] my-[2rem]  ">
-
               <h1 className="font-[700] text-[#002360] text-[30px] leading-[48px] font-epilogue">
                 #20,000
               </h1>
 
               <Button overrideStyles="rounded-none " fit>
-            Make a payment{" "}
-          </Button>
-
+                Make a payment{" "}
+              </Button>
             </div>
           </div>
         </div>
@@ -107,10 +105,10 @@ const AdvertisePriceChunk = () => {
               <h1 className="font-[700] text-[#002360] md:text-[30px] md:leading-[48px] font-epilogue">
                 #50,000
               </h1>
-           
+
               <Button overrideStyles="rounded-none " fit>
-            Make a payment{" "}
-          </Button>
+                Make a payment{" "}
+              </Button>
             </div>
           </div>
         </div>
