@@ -6,8 +6,8 @@ const AdvertiseBenefitCard = (props: AdvertiseBenefitCardProps) => {
   return (
     <section className="flex flex-col items-center justify-center">
       <div
-        className="md:h-[300px] h-[224px] w-full bg-transparent 
-       md:bg-[#F9FDFF] md:p-[1rem] p-0 rounded-[8px] flex flex-col 
+        className="md:h-[300px] h-[224px] w-full 
+       bg-[#F9FDFF] p-4 rounded-[8px] flex flex-col 
        items-start justify-center"
       >
         <div className="w-[40px] h-[40px] bg-[#ECF2FE] rounded-[4px] flex items-center justify-center">
