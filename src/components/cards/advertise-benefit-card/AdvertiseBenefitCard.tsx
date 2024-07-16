@@ -1,5 +1,5 @@
 import React from "react";
-import { AdvertiseBenefitCardProps } from "./AdvertiseBeneiftCard.types";
+import { AdvertiseBenefitCardProps } from "./AdvertiseBenefitCard.types";
 import Image from "next/image";
 
 const AdvertiseBenefitCard = (props: AdvertiseBenefitCardProps) => {
