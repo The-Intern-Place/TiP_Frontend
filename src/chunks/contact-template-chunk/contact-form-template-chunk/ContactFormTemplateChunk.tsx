@@ -1,14 +1,16 @@
 import React from "react";
+import TextInput from "@/components/inputs/text-input/TextInput";
+
 
 const ContactFormTemplateChunk = () => {
   return (
-    <div>
-      <div className="shadow-lg ml-5 w-5/5 sm:w-4/5 mt-10">
-        <p className="mt-2 text-xl text-[#1976D2] font-bold tracking-tight sm:text-xl ml-9 sm:mt-10">
+    <div className="shadow-lg w-full h-full sm:w-4/5 sm:mt-10">
+      <div className="mt-10 sm:mt-10">
+        <p className="mt-10 text-xl text-[#1976D2] font-bold tracking-tight sm:text-xl ml-9 sm:mt-10">
           Send us a message
         </p>
-        <form className="text w-4/5 ml-9 sm:mt-20">
-          <div className="p-2 w-full">
+        <form className="text w-4/5 ml-9 mt-10 sm:mt-10">
+          <div className="p-2 w-full sm:mb-5">
             <div className="relative">
               <label
                 htmlFor="name"
@@ -16,16 +18,15 @@ const ContactFormTemplateChunk = () => {
               >
                 Full Name
               </label>
-              <input
+              <TextInput
                 type="text"
                 id="name"
                 name="name"
                 required
-                className=" w-full bg-white rounded border border-gray-200 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-900 py-1 px-1 leading-8 transition-colors duration-200 ease-in-out "
-              />
+                className=" w-full bg-white rounded border border-gray-200 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-900 py-1 px-1 leading-8 transition-colors duration-200 ease-in-out " label={""} />
             </div>
           </div>
-          <div className="p-2 w-full">
+          <div className="p-2 w-full sm:mb-5">
             <div className="relative">
               <label
                 htmlFor="email"
@@ -33,16 +34,15 @@ const ContactFormTemplateChunk = () => {
               >
                 Your Email
               </label>
-              <input
+              <TextInput
                 type="email"
                 id="email"
                 name="email"
                 required
-                className=" w-full bg-white rounded border border-gray-200 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-900 py-1 px-1 leading-8 transition-colors duration-200 ease-in-out"
-              />
+                className=" w-full bg-white rounded border border-gray-200 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-900 py-1 px-1 leading-8 transition-colors duration-200 ease-in-out" label={""} />
             </div>
           </div>
-          <div className="p-2 w-full">
+          <div className="p-2 w-full sm:mb-5">
             <div className="relative">
               <label
                 htmlFor="name"
@@ -50,13 +50,12 @@ const ContactFormTemplateChunk = () => {
               >
                 Company Name
               </label>
-              <input
+              <TextInput
                 type="text"
                 id="name"
                 name="company name"
                 required
-                className=" w-full bg-white rounded border border-gray-200 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-900 py-1 px-1 leading-8 transition-colors duration-200 ease-in-out"
-              />
+                className=" w-full bg-white rounded border border-gray-200 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-900 py-1 px-1 leading-8 transition-colors duration-200 ease-in-out" label={""} />
             </div>
           </div>
           <div className="p-2 w-full">
