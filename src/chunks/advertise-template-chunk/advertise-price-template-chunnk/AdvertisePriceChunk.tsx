@@ -9,8 +9,7 @@ const AdvertisePriceChunk = () => {
       {/*top heading */}
       <div className="flex items-center justify-center  gap-[10px] mt-[3rem]  mb-[1rem]  md:my-[2rem]">
         <h1
-          className="font-[600] text-[#1B1B1B] text-[32px]  py-[2rem]
- leading-[38px] font-clash"
+          className="font-[600] text-[#1B1B1B] text-[32px] leading-[38px] font-clash"
         >
           Pricing Rates
         </h1>
