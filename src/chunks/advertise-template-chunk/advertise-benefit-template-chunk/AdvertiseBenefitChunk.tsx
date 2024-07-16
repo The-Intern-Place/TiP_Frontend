@@ -33,7 +33,6 @@ const AdvertiseBenefitChunk = () => {
             image={a.image}
           />
         ))}
-        
       </div>
     </section>
   );
