@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 
 import { priceImpression } from "@/utils/data/adveertise";
+import Button from "@/components/button/Button";
 
 const AdvertisePriceChunk = () => {
   return (
@@ -56,12 +57,10 @@ const AdvertisePriceChunk = () => {
               <h1 className="font-[700] text-[#002360] text-[30px] leading-[48px] font-epilogue">
                 #20,000
               </h1>
-              <button
-                className="bg-[#0046BF] md:w-[147px] md:h-[42px] gap-[10px] text-[#FFFFFF] 
-md:leading-[22px] md:text-[14px] font-[700] font-epilogue md:pt-[10px] md:pr-[10px] md:pb-[10px] md:pl-[10px] "
-              >
-                Make a Payment
-              </button>
+
+              <Button overrideStyles="rounded-none " fit>
+                Make a payment{" "}
+              </Button>
             </div>
           </div>
         </div>
@@ -105,12 +104,10 @@ md:leading-[22px] md:text-[14px] font-[700] font-epilogue md:pt-[10px] md:pr-[10
               <h1 className="font-[700] text-[#002360] md:text-[30px] md:leading-[48px] font-epilogue">
                 #50,000
               </h1>
-              <button
-                className="bg-[#0046BF] md:w-[147px] md:h-[42px] gap-[10px] text-[#FFFFFF] 
-md:leading-[22px] md:text-[14px] font-[700] font-epilogue md:pt-[10px] md:pr-[10px] md:pb-[10px] md:pl-[10px] "
-              >
-                Make a Payment
-              </button>
+
+              <Button overrideStyles="rounded-none " fit>
+                Make a payment{" "}
+              </Button>
             </div>
           </div>
         </div>
