@@ -11,8 +11,6 @@ export const metadata = {
 
 function ContactUs() {
   return (
-   
-
     <div>
       <Head>
         <title>The Intern Place | Login</title>

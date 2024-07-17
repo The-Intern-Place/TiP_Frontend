@@ -14,13 +14,12 @@ const page = () => {
       <FoundersOfferTemplateChunk />
 
       <div className="md:block hidden">
-      <FoundersCeoTemplateChunk />
+        <FoundersCeoTemplateChunk />
       </div>
 
-      <div  className="md:hidden block">
+      <div className="md:hidden block">
         <FoundersCeoMobileTemplateChunk />
       </div>
-
     </div>
   );
 };
