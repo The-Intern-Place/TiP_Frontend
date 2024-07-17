@@ -55,7 +55,7 @@ const CompaniesCategoryChunk = () => {
 
   return (
     <section className="bg-[#F8F8FD] flex justify-center items-center w-full">
-      <div className="flex flex-col items-center max-w-[1350px] xl:px-0 w-full h-full mx-auto px-6 md:px-10 lg:px-16 xl:px-0 pt-10">
+      <div className="flex flex-col items-center max-w-[1350px]  w-full h-full mx-auto px-6 md:px-10 lg:px-16 xl:px-0 pt-10">
         {/* heading text */}
         <h1 className="text-grey text-[32px] font-[600]   leading-[38px] pt-[2rem]   p-1">
           Companies by Category

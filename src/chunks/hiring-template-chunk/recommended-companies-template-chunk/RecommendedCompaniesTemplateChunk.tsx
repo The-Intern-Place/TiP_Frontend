@@ -6,7 +6,7 @@ import React from "react";
 const RecommendedCompaniesTemplateChunk = () => {
   return (
     <section className="bg-[#ffffff] overflow-x-hidden flex justify-center md:items-center items-start">
-      <div className="flex flex-col items-center max-w-[1350px] xl:px-0 w-full h-full mx-auto px-6 md:px-10 lg:px-16 xl:px-0 pt-1">
+      <div className="flex flex-col items-center max-w-[1350px] w-full h-full mx-auto px-6 md:px-10 lg:px-16 xl:px-0 pt-1">
         {/* heading text */}
         <div className="flex flex-col py-3 mt-6">
           <h1 className="text-grey text-[32px] font-[600] leading-[38px]">
