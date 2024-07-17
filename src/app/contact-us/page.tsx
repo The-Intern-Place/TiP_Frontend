@@ -4,20 +4,12 @@ import type { Metadata } from "next";
 import Navbar from "@/components/navbar/Navbar";
 import ContactFaqTemplateChunk from "@/chunks/contact-template-chunk/contact-faq-template-chunk/ContactFaqTemplateChunk";
 import ContactFormTemplateChunk from "@/chunks/contact-template-chunk/contact-form-template-chunk/ContactFormTemplateChunk";
+import Head from "next/head";
 
 export const metadata: Metadata = {
   title: "The Intern Place | Login ",
   description: "The Intern Place",
 };
-
-function ContactUs() {
-  return (
-    <div>
-
-import Navbar from "@/components/navbar/Navbar";
-import ContactFaqTemplateChunk from "@/chunks/contact-template-chunk/contact-faq-template-chunk/ContactFaqTemplateChunk";
-import ContactFormTemplateChunk from "@/chunks/contact-template-chunk/contact-form-template-chunk/ContactFormTemplateChunk";
-import Head from "next/head";
 
 function ContactUs() {
   return (

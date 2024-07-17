@@ -1,5 +1,3 @@
-
-
 "use client";
 
 import { qaData } from "@/utils/data/qa-data";

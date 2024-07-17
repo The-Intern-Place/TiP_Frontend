@@ -44,15 +44,14 @@ const FoundersHeroTemplateChunk = () => {
           </div>
 
           {/* button */}
-    
-            <button
-              className=" bg-[#0046BF] text-white p-3  w-[122px] h-[42px]
+
+          <button
+            className=" bg-[#0046BF] text-white p-3  w-[122px] h-[42px]
              md:w-[139px] md:h-[50px]  mx-3 mt-[1rem] text-[14px] leading-[22px] font-epilogue"
-              aria-label="Search"
-            >
-              Contact Us
-            </button>
-       
+            aria-label="Search"
+          >
+            Contact Us
+          </button>
         </div>
       </div>
     </section>

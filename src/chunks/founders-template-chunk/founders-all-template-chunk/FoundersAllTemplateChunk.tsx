@@ -1,8 +1,6 @@
 import Image from "next/image";
 import React from "react";
 
-
-
 import mission_gilf from "/public/images/tip_gilf.gif";
 import story_gilf from "/public/images/tip_gilf1.gif";
 import vision_gilf from "/public/images/tip_gilf3.gif";
@@ -127,10 +125,6 @@ const FoundersAllTemplateChunk = () => {
           </div>
         </div>
       </div>
-
-
-
-  
     </section>
   );
 };

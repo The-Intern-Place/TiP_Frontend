@@ -34,19 +34,37 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="text-lg font-semibold">Employer</li>
               <li className="pb-3">Post A Job</li>
-              <li>  <Link href="/short-listing">Shortlisting Services</Link></li> 
+              <li>
+                {" "}
+                <Link href="/short-listing">Shortlisting Services</Link>
+              </li>
               <li>Candidate Search</li>
-              <li>Advertise</li>
+              <li>
+                {" "}
+                <Link href="/advertise">Advertise</Link>
+              </li>
             </ul>
           </div>
 
           <div className="flex flex-col gap-4 w-full mt-2 md:mt-0">
             <ul className="space-y-3">
               <li className="text-lg font-semibold">About</li>
-              <li className="pb-3"><Link href="/founders">Founders</Link></li>
-           <li>  <Link href="/contact-us">Contact Us</Link></li> 
-              <li><Link href="/terms">Terms</Link></li>
-              <li><Link href="/policy">Privacy Policy</Link></li>
+              <li className="pb-3">
+                <Link href="/founders">
+                  {" "}
+                  <Link href="/founders"> Founders</Link>
+                </Link>
+              </li>
+              <li>
+                {" "}
+                <Link href="/contact-us">Contact Us</Link>
+              </li>
+              <li>
+                <Link href="/terms">Terms</Link>
+              </li>
+              <li>
+                <Link href="/policy">Privacy Policy</Link>
+              </li>
             </ul>
           </div>
 

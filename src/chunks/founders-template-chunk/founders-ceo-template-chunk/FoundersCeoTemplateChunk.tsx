@@ -1,14 +1,13 @@
-import React from 'react'
+import React from "react";
 
 import Image from "next/image";
 import ceo from "public/images/Ibunkun Amosu.svg";
 import linkdin from "public/images/LinkedIn.svg";
 import x from "public/images/X.svg";
 
-
 const FoundersCeoTemplateChunk = () => {
   return (
-   <section className="flex flex-col items-center justify-center w-[100%]">
+    <section className="flex flex-col items-center justify-center w-[100%]">
       {/* About CEO */}
       <div className="flex md:flex-row flex-col md:justify-evenly items-center md:gap-[30px] py-[5rem] md:py-[3rem]   max-w-[1095px]">
         {/* Image */}
@@ -47,13 +46,9 @@ const FoundersCeoTemplateChunk = () => {
             </li>
           </ul>
         </div>
+      </div>
+    </section>
+  );
+};
 
-        </div>
-     
-
-
-        </section>
-  )
-}
-
-export default FoundersCeoTemplateChunk
+export default FoundersCeoTemplateChunk;

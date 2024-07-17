@@ -1,16 +1,12 @@
-
 import React from "react";
 
 import { FounderOfferData } from "@/utils/data/founders";
 import { FoundersOfferCardProps } from "@/components/cards/founders-offer-card/FoundersOfferCard.type";
 import FoundersOfferCard from "@/components/cards/founders-offer-card/FoundersOfferCard";
 
-
 const FoundersOfferTemplateChunk = () => {
   return (
-    <section  className="flex flex-col items-center lg:my-[5rem] mt-[4rem] md:mt-auto md:my-[3rem]">
-
-
+    <section className="flex flex-col items-center lg:my-[5rem] mt-[4rem] md:mt-auto md:my-[3rem]">
       {/*What we offer */}
       <div className="flex flex-col items-center lg:my-[5rem] mt-[4rem] md:mt-auto md:my-[3rem]">
         {/* Heading */}
@@ -35,11 +31,8 @@ const FoundersOfferTemplateChunk = () => {
           ))}
         </div>
       </div>
+    </section>
+  );
+};
 
-
-      </section>
-
-  )
-}
-
-export default FoundersOfferTemplateChunk
+export default FoundersOfferTemplateChunk;
