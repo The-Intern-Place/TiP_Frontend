@@ -11,10 +11,10 @@ export type IUser = {
   exp?: number;
 };
 export type ISignUpInput = {
-  firstName: "";
-  lastName: "";
-  email: "";
-  password: "";
-  phone: "";
-  code: "";
+  firstName: string;
+  lastName: string;
+  email: string;
+  password: string;
+  phone: string;
+  code: string;
 };
