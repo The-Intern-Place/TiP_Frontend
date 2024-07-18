@@ -3,12 +3,12 @@ import TextInput from "@/components/inputs/text-input/TextInput";
 
 const ContactFormTemplateChunk = () => {
   return (
-    <div className="shadow-lg w-full h-full sm:w-4/5 sm:mt-10">
-      <div className="mt-10 sm:mt-10">
-        <p className="mt-10 text-xl text-[#1976D2] font-bold tracking-tight sm:text-xl ml-9 sm:mt-10">
+    <div className="w-full h-full mt-10 md:mt-0 p-7">
+      <div className="bg-white drop-shadow-[0_4px_10px_#00000033] p-10">
+        <p className="text-xl text-[#1976D2] font-bold tracking-tight sm:text-xl">
           Send us a message
         </p>
-        <form className="text w-4/5 ml-9 mt-10 sm:mt-10">
+        <form className="text mt-3">
           <div className="p-2 w-full sm:mb-5">
             <div className="relative">
               <label
@@ -22,7 +22,6 @@ const ContactFormTemplateChunk = () => {
                 id="name"
                 name="name"
                 required
-                className=" w-full bg-white rounded border border-gray-200 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-900 py-1 px-1 leading-8 transition-colors duration-200 ease-in-out "
                 label={""}
               />
             </div>
@@ -40,7 +39,6 @@ const ContactFormTemplateChunk = () => {
                 id="email"
                 name="email"
                 required
-                className=" w-full bg-white rounded border border-gray-200 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-900 py-1 px-1 leading-8 transition-colors duration-200 ease-in-out"
                 label={""}
               />
             </div>
@@ -58,7 +56,6 @@ const ContactFormTemplateChunk = () => {
                 id="name"
                 name="company name"
                 required
-                className=" w-full bg-white rounded border border-gray-200 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-900 py-1 px-1 leading-8 transition-colors duration-200 ease-in-out"
                 label={""}
               />
             </div>
