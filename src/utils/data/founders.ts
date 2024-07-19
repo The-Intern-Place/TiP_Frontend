@@ -13,7 +13,7 @@ export const FounderOfferData = [
     title: "Streamlined Hiring",
     description:
       "Our platform simplifies and accelerates the recruitment process, making it easier for businesses to find, assess, and hire the right candidates efficiently and effectively.",
-  },
+    },
 
   {
     id: "3",

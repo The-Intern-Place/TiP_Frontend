@@ -13,7 +13,8 @@ export const DefaultStory: FoundersOfferCardStory = {
     title: "Global Reach",
     description:
       "While based in Nigeria, our network extends far beyond. We connect African talent with opportunities around the world, fostering international growth, collaboration, and the exchange of skills and ideas.",
-  },
+     
+    },
   name: "Founders Offer Card",
 };
 

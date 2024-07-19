@@ -3,6 +3,7 @@ import Image from "next/image";
 import React from "react";
 import headline from "public/images/headline.svg";
 import Navbar from "@/components/navbar/Navbar";
+import Button from "@/components/button/Button";
 
 const FoundersHeroTemplateChunk = () => {
   return (
@@ -45,13 +46,13 @@ const FoundersHeroTemplateChunk = () => {
 
           {/* button */}
 
-          <button
-            className=" bg-[#0046BF] text-white p-3  w-[122px] h-[42px]
-             md:w-[139px] md:h-[50px]  mx-3 mt-[1rem] text-[14px] leading-[22px] font-epilogue"
+          <Button
+            overrideStyles=" bg-[#0046BF] text-white p-3   h-[42px] rounded-none
+             max-w-[139px] md:h-[50px]  mx-3 mt-[1rem] text-[14px] leading-[22px] font-epilogue"
             aria-label="Search"
           >
             Contact Us
-          </button>
+          </Button>
         </div>
       </div>
     </section>
