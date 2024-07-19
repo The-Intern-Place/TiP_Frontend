@@ -13,8 +13,10 @@ const FoundersAllTemplateChunk = () => {
         {/* story section */}
         <div className="flex    md:items-center  justify-end md:h-[200px] md:w-[702px] lg:w-[842px]  w-[318px] lg:h-[200px]  gap-[10px]   lg:ml-[14rem]">
           <div>
-            <h1 className="md:text-[72px] text-[32px]  pt-[2rem] md:pt-0
-             text-light-blue font-[600] md:leading-[79px] leading-[48px]">
+            <h1
+              className="md:text-[72px] text-[32px]  pt-[2rem] md:pt-0
+             text-light-blue font-[600] md:leading-[79px] leading-[48px]"
+            >
               1
             </h1>
           </div>
@@ -50,8 +52,10 @@ const FoundersAllTemplateChunk = () => {
 
         {/* mission section */}
 
-        <div className="flex  md:items-center justify-start lg:w-[822px] lg:h-[263px] 
-        md:h-[450px] md:w-[702px] w-[318px] mt-[3rem] md:mt-0   gap-[12px]  lg:mr-[23rem] ">
+        <div
+          className="flex  md:items-center justify-start lg:w-[822px] lg:h-[263px] 
+        md:h-[450px] md:w-[702px] w-[318px] mt-[3rem] md:mt-0   gap-[12px]  lg:mr-[23rem] "
+        >
           <div className=" md:h-[198px] gap-[30px]">
             <div className="w-[32px] h-[32px] items-center rounded-[50%] md:gap-[20px] gap-[12px] flex bg-[#D6DDEB] cursor-pointer">
               <Image src={mission_gilf} alt="" className="" />
@@ -66,8 +70,10 @@ const FoundersAllTemplateChunk = () => {
               </ul>
             </div>
 
-            <p className="font-epilogue md:text-[18px] md:leading-[32px] text-[14px] leading-[30px] text-grey font-[400] gap-[10px] 
-            pt-[1.4rem] md:pt-[2.5rem]">
+            <p
+              className="font-epilogue md:text-[18px] md:leading-[32px] text-[14px] leading-[30px] text-grey font-[400] gap-[10px] 
+            pt-[1.4rem] md:pt-[2.5rem]"
+            >
               The Intern Place is the leading internship talent community that
               connects employers with highly qualified and diverse candidates,
               helping them find the best talent to grow their team within budget
@@ -89,8 +95,10 @@ const FoundersAllTemplateChunk = () => {
         </div>
 
         {/* vission section */}
-        <div className="flex  md:items-center  justify-end md:w-[704px]  w-[296px]
-        lg:h-[200px] md:mt-[5rem] mt-[3rem] lg:w-[824px]  gap-[10px] md:mb-0 mmb-[4rem] lg:ml-[10rem]">
+        <div
+          className="flex  md:items-center  justify-end md:w-[704px]  w-[296px]
+        lg:h-[200px] md:mt-[5rem] mt-[3rem] lg:w-[824px]  gap-[10px] md:mb-0 mmb-[4rem] lg:ml-[10rem]"
+        >
           <div>
             <h1 className="md:text-[72px] pt-[2.2rem] md:pt-0 md:leading-[79px] md:text-[#002360] text-[#1976D2] font-[600] text-[32px] leading-[48px]">
               3

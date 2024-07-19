@@ -13,16 +13,14 @@ const FoundersOfferCard = (props: FoundersOfferCardProps) => {
           {props.title}
         </h1>
 
-        {
-
-props.description &&
-        <p className="text-grey md:pt-[1rem]  p-[5px] md:p-0 font-[400] gap-[10px] font-epilogue md:text-[18px] md:leading-[25px] 
-        text-[14px] leading-[30px]">
-          {props.description}
-        </p>
-         }
-
-       
+        {props.description && (
+          <p
+            className="text-grey md:pt-[1rem]  p-[5px] md:p-0 font-[400] gap-[10px] font-epilogue md:text-[18px] md:leading-[25px] 
+        text-[14px] leading-[30px]"
+          >
+            {props.description}
+          </p>
+        )}
       </div>
 
       {props.img && (

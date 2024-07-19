@@ -37,7 +37,7 @@ const FoundersCeoTemplateChunk = () => {
               <Image
                 src={linkdin}
                 alt="ibunkun_pics"
-                style={{ width: '100px', height: 'auto' }}
+                style={{ width: "100px", height: "auto" }}
                 className="w-full h-full"
               />
             </li>

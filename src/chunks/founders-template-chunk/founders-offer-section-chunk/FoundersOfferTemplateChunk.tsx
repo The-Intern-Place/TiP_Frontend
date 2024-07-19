@@ -20,7 +20,7 @@ const FoundersOfferTemplateChunk = () => {
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-[30px]  md:px-[1rem]">
           {FounderOfferData.map((o: FoundersOfferCardProps, i: number) => (
             <FoundersOfferCard
-            id={o.id}
+              id={o.id}
               key={i}
               img={o.img}
               secondimg={o.secondimg}
@@ -28,8 +28,6 @@ const FoundersOfferTemplateChunk = () => {
               fourthimg={o.fourthimg}
               title={o.title}
               description={o.description}
-           
-              
             />
           ))}
         </div>
