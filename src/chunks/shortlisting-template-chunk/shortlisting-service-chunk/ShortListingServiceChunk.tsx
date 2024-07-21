@@ -26,7 +26,7 @@ const ShortListingServiceChunk = () => {
             selection, saving you time and ensuring you find the perfect match
             for your internship positions
           </p>
-          <Button overrideStyles="border-0 rounded-none w-[10rem] sm:w-44 fit">
+          <Button overrideStyles="border-0 rounded-none w-[11rem] sm:w-44 fit">
             Contact Us
           </Button>
         </div>
