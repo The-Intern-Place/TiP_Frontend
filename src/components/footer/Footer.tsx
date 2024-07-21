@@ -8,6 +8,7 @@ import IC_Facebook from "public/icons/IC_Facebook";
 import IC_Instagram from "public/icons/IC_Instagram";
 import IC_LinkedIn from "public/icons/IC_LinkedIn";
 import IC_Twitter from "public/icons/IC_Twitter";
+import Send from "public/images/send.svg";
 
 const Footer = () => {
   return (
@@ -50,10 +51,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="text-lg font-semibold">About</li>
               <li className="pb-3">
-                <Link href="/founders">
-                  {" "}
-                  <Link href="/founders"> Founders</Link>
-                </Link>
+                <Link href="/founders"> Founders</Link>
               </li>
               <li>
                 {" "}
@@ -101,7 +99,7 @@ const Footer = () => {
                 overrideStyles="border-0 p-0 rounded-none block md:hidden"
                 fit
               >
-                <Image src="/send.svg" alt="" width="30" height="30" />
+                <Image src={Send} alt="" width="30" height="30" />
               </Button>
             </div>
           </div>

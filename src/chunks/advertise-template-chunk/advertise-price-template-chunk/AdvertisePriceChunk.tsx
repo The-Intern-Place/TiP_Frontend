@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import good from "public/tip-good.svg";
+import good from "public/images/tip-good.svg";
 
 const AdvertisePriceChunk = () => {
   return (
