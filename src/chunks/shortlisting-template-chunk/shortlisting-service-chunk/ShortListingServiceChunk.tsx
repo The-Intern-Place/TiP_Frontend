@@ -26,12 +26,12 @@ const ShortListingServiceChunk = () => {
             selection, saving you time and ensuring you find the perfect match
             for your internship positions
           </p>
-          <Button overrideStyles="border-0 rounded-none w-32 sm:w-44 align-items-center fit">
+          <Button overrideStyles="border-0 rounded-none w-[10rem] sm:w-44 fit">
             Contact Us
           </Button>
         </div>
         <div className="flex flex-col md:flex-row">
-          <div className="max-w-sm p-6 mt-12">
+          <div className="max-w-sm p-6 mt-12 sm:ml-16">
             <h5 className="mb-2 text-2xl font-bold tracking-tight">
               How It Works
             </h5>
@@ -43,11 +43,11 @@ const ShortListingServiceChunk = () => {
             </p>
 
             <div className="flex flex-row">
-              <Button overrideStyles="border-0 rounded-none w-44 mr-5 fit">
+              <Button overrideStyles="border-0 rounded-none bg-[#0046BF] w-44 mr-5 fit">
                 See FAQs
               </Button>
 
-              <Button overrideStyles="border-2 rounded-none w-44 bg-white  sm:text-[#0046BF] fit">
+              <Button overrideStyles="border-2 border-[#DAD2B8] rounded-none w-44 bg-white  sm:text-[#0046BF] fit">
                 <p className="text-[#0046BF]">Reach Us</p>
               </Button>
             </div>
