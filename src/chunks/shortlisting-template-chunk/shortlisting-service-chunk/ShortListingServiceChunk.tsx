@@ -59,7 +59,7 @@ const ShortListingServiceChunk = () => {
                 Step 1
               </h5>
 
-            <p className="text-[#1B1B1B] leading-[30px]">
+              <p className="text-[#1B1B1B] leading-[30px]">
                 We effectively identify the most suitable candidates for your
                 role positions.
               </p>
