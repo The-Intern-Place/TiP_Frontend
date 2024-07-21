@@ -15,11 +15,11 @@ const ContactFaqTemplateChunk = () => {
     <div>
       <div className="">
         <div className="">
-          <p className="flex justify-center mt-2 text-2xl font-bold tracking-tight sm:text-2xl font-clash">
+          <p className="flex justify-center mt-2 text-2xl font-bold tracking-tight sm:text-2xl font-clash mb-2">
             Frequently Asked Questions
           </p>
-          <dl className="max-w-xl text-base leading-7 text-gray-600 lg:max-w-none">
-            <div className="max-w-3xl mx-auto">
+          <dl className="text-base leading-7 text-gray-600 ">
+            <div className=" mx-auto">
               {qaData.map(({ id, question, answer }) => (
                 <div
                   key={id}
@@ -30,7 +30,7 @@ const ContactFaqTemplateChunk = () => {
                     onClick={() => handleToggle(id)}
                     className="flex items-center justify-between w-full p-6"
                   >
-                    <span className="flex text-2xl font-semibold text-[#1976D2] font-clash">
+                    <span className="flex text-left text-2xl font-semibold text-[#1976D2] font-clash">
                       {question}
                     </span>
                     <div

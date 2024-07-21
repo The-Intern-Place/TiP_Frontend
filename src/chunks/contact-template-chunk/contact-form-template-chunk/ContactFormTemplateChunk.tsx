@@ -4,7 +4,7 @@ import TextInput from "@/components/inputs/text-input/TextInput";
 const ContactFormTemplateChunk = () => {
   return (
     <div className="w-full h-full mt-10 md:mt-0 p-7">
-      <div className="bg-white drop-shadow-[0_4px_10px_#00000033] p-10">
+      <div className="bg-white drop-shadow-[0_4px_10px_#00000033] p-8">
         <p className="text-xl text-[#1976D2] font-bold tracking-tight sm:text-xl">
           Send us a message
         </p>
