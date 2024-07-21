@@ -18,6 +18,7 @@
     "check-lint": "eslint . --ext ts --ext tsx --ext js"
   },
   "dependencies": {
+    "@hookform/resolvers": "^3.9.0",
     "@reduxjs/toolkit": "^2.2.3",
     "axios": "^1.6.8",
     "jose": "^5.6.3",

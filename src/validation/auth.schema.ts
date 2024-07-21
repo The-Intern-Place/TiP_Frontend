@@ -1,6 +1,7 @@
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import validator from "validator";
+yup;
 
 export const signUpSchema = yup.object({
   firstName: yup.string().required("First Name is required"),
