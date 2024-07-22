@@ -9,9 +9,9 @@ const FoundersAllTemplateChunk = () => {
   return (
     <section className="w-full flex flex-col items-center justify-center">
       {/* vission,story section */}
-      <div className="flex flex-col justify-center items-center  max-w-[1084px]  w-full mt-[3rem] p-2  lg:px-[4rem] md:pl-[4rem] lg:pl-[15rem] ">
+      <div className="flex flex-col justify-center items-center  max-w-[1084px] w-full mt-[3rem] p-2  lg:px-[4rem] md:pl-[4rem] lg:pl-[15rem] ">
         {/* story section */}
-        <div className="flex    md:items-center  justify-end md:h-[200px] md:w-[702px] lg:w-[842px]  w-[318px] lg:h-[200px]  gap-[10px]   lg:ml-[14rem]">
+        <div className="flex md:items-center  justify-end md:h-[200px] md:w-[702px] lg:w-[842px] sm:w-[500px] w-full lg:h-[200px]  gap-[10px]   lg:ml-[14rem]">
           <div>
             <h1
               className="md:text-[72px] text-[32px]  pt-[2rem] md:pt-0
@@ -54,7 +54,7 @@ const FoundersAllTemplateChunk = () => {
 
         <div
           className="flex  md:items-center justify-start lg:w-[822px] lg:h-[263px] 
-        md:h-[450px] md:w-[702px] w-[318px] mt-[3rem] md:mt-0   gap-[12px]  lg:mr-[23rem] "
+        md:h-[450px] md:w-[702px] sm:w-[500px] w-full mt-[3rem] md:mt-0   gap-[12px]  lg:mr-[23rem] "
         >
           <div className=" md:h-[198px] gap-[30px]">
             <div className="w-[32px] h-[32px] items-center rounded-[50%] md:gap-[20px] gap-[12px] flex bg-[#D6DDEB] cursor-pointer">
@@ -96,7 +96,7 @@ const FoundersAllTemplateChunk = () => {
 
         {/* vission section */}
         <div
-          className="flex  md:items-center  justify-end md:w-[704px]  w-[296px]
+          className="flex  md:items-center  justify-end md:w-[704px] sm:w-[500px] w-full
         lg:h-[200px] md:mt-[5rem] mt-[3rem] lg:w-[824px]  gap-[10px] md:mb-0 mmb-[4rem] lg:ml-[10rem]"
         >
           <div>

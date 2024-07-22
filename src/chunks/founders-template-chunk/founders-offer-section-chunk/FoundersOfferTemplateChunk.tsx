@@ -6,7 +6,7 @@ import FoundersOfferCard from "@/components/cards/founders-offer-card/FoundersOf
 
 const FoundersOfferTemplateChunk = () => {
   return (
-    <section className="flex flex-col items-center  md:mt-[2rem] md:my-[3rem]">
+    <section className="flex flex-col items-center  md:mt-[2rem] w-full md:my-[3rem]">
       {/*What we offer */}
       <div className="flex flex-col items-center lg:my-[5rem] mt-[4rem] md:mt-auto md:my-[3rem]">
         {/* Heading */}

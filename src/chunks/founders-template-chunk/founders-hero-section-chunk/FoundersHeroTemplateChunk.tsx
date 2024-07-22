@@ -11,7 +11,7 @@ const FoundersHeroTemplateChunk = () => {
       <Navbar bgcolor="#f8f8f8" />
       <div className="bg-[#f8f8f8]  md:h-[360px] w-[100%] ">
         {/* hero components */}
-        <div className="flex flex-col  items-center justify-center md:pt-2">
+        <div className="flex flex-col  items-center justify-center md:pt-2 max-w-[1350px] mx-auto px-6 md:px-10 lg:px-16 xl:px-0">
           <div className="flex  flex-col  pt-[3.5rem]  gap-2 items-center  justify-center  ">
             {/* mre about job section */}
             <div className="flex flex-row items-center  gap-[5px] ">

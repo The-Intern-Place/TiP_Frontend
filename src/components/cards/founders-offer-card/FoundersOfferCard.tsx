@@ -6,7 +6,7 @@ const FoundersOfferCard = (props: FoundersOfferCardProps) => {
   return (
     <section
       className="flex flex-col border-[1px] rounded-[20px] border-light-blue bg-[#FFFFFF]
-     lg:w-[578px]  justify-between items-center w-[327px]  h-[350px] md:h-[440px]  md:w-full  "
+     lg:w-[578px]  justify-between items-center sm:w-[500px] h-[350px] md:h-[440px] md:w-full"
     >
       <div className="flex-grow gap-[12px] md:m-[2rem] p-[7px]">
         <h1 className="text-light-blue font-[600] font-clash text-[20px] leading-[24px] p-[5px] md:p-0">
