@@ -8,8 +8,6 @@ const HiringResultTemplateChunk = () => {
   return (
     <section className="bg-[#F8F8FD]">
       <div className="flex flex-col items-center max-w-[1350px] w-full h-full mx-auto px-6 md:px-10 lg:px-16 xl:px-0 pt-1">
-        <div className="flex flex-col items-center max-w-[1350px]  w-full h-full mx-auto px-6 md:px-10 lg:px-16 xl:px-0 pt-1">
-          <div className="flex flex-col items-center max-w-[1350px] w-full h-full mx-auto px-6 md:px-10 lg:px-16 xl:px-0 pt-1">
             {/* heading text */}
             <div className="flex gap-2 items-start w-full h-full  pt-[2rem]">
               <div className="flex w-[56px] h-[56px] rounded-full bg-[#ffffff] justify-center items-center">
@@ -54,8 +52,6 @@ const HiringResultTemplateChunk = () => {
               />
             </div>
           </div>
-        </div>
-      </div>
     </section>
   );
 };
