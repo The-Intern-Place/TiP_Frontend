@@ -8,6 +8,7 @@ import IC_Facebook from "public/icons/IC_Facebook";
 import IC_Instagram from "public/icons/IC_Instagram";
 import IC_LinkedIn from "public/icons/IC_LinkedIn";
 import IC_Twitter from "public/icons/IC_Twitter";
+import Send from "public/images/send.svg";
 
 const Footer = () => {
   return (
@@ -34,7 +35,10 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="text-lg font-semibold">Employer</li>
               <li className="pb-3">Post A Job</li>
-              <Link href="/short-listing">Shortlisting Services</Link>
+              <li>
+                {" "}
+                <Link href="/short-listing">Shortlisting Services</Link>
+              </li>
               <li>Candidate Search</li>
               <li>
                 {" "}
@@ -47,12 +51,31 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="text-lg font-semibold">About</li>
               <li className="pb-3">
-                {" "}
                 <Link href="/founders"> Founders</Link>
               </li>
-              <Link href="/contact-us">Contact Us</Link>
-              <li>Terms</li>
-              <li>Privacy Policy</li>
+              <li>
+                {" "}
+                <Link href="/contact-us">Contact Us</Link>
+              </li>
+              <li>
+                <Link href="/terms">Terms</Link>
+              </li>
+              <li>
+                <Link href="/policy">Privacy Policy</Link>
+              </li>
+              <li className="pb-3">
+                <Link href="/founders">Founders</Link>
+              </li>
+              <li>
+                {" "}
+                <Link href="/contact-us">Contact Us</Link>
+              </li>
+              <li>
+                <Link href="/terms">Terms</Link>
+              </li>
+              <li>
+                <Link href="/policy">Privacy Policy</Link>
+              </li>
             </ul>
           </div>
 
@@ -76,7 +99,7 @@ const Footer = () => {
                 overrideStyles="border-0 p-0 rounded-none block md:hidden"
                 fit
               >
-                <Image src="/send.svg" alt="" width="30" height="30" />
+                <Image src={Send} alt="" width="30" height="30" />
               </Button>
             </div>
           </div>

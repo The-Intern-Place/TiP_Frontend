@@ -54,12 +54,12 @@ const ContactFaqTemplateChunk = () => {
           </dl>
         </div>
         <div className="mt-10 flex justify-end gap-x-6">
-          <a
+          <Link
             href="#"
             className="text-sm font-semibold leading-6 text-[#1976D2]"
           >
             See All <span aria-hidden="true">→</span>
-          </a>
+          </Link>
         </div>
         <div>
           <p className="flex justify-center mt-2 mb-10 text-3xl font-bold tracking-tight sm:text-2xl">
@@ -73,29 +73,20 @@ const ContactFaqTemplateChunk = () => {
           </Link>
           <Link className="flex justify-center items-center" href={"#"}>
             <IC_Phone />
-
             <span className="text-sm text-[#1976D2] ml-3">09032884485</span>
           </Link>
           <ul className="flex justify-center mt-5 space-x-4">
             <li className="bg-[#1976D2] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-              <a href="#">
-                <IC_Facebook />
-              </a>
+              <IC_Facebook />
             </li>
             <li className="bg-[#1976D2] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-              <a href="#">
-                <IC_LinkedIn />
-              </a>
+              <IC_LinkedIn />
             </li>
             <li className="bg-[#1976D2] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-              <a href="#">
-                <IC_Instagram />
-              </a>
+              <IC_Instagram />
             </li>
             <li className="bg-[#1976D2] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-              <a href="#">
-                <IC_Twitter />
-              </a>
+              <IC_Twitter />
             </li>
           </ul>
         </div>
