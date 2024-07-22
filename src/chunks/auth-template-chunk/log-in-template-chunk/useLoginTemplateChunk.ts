@@ -9,7 +9,7 @@ import { useForm } from "react-hook-form";
 export default function useLoginTemplateChunk() {
   const [handleLoginIn, { isLoading: loggingIn }] = useLoginMutation();
   const router = useRouter();
-  const form = useForm({
+  const form = useForm<ILoginDTO>({
     defaultValues: {
       email: "",
       password: "",
@@ -31,7 +31,7 @@ export default function useLoginTemplateChunk() {
       }
     } catch (error) {
       showToast({
-        msg: `Error siging up: ${error}`,
+        msg: `Error signing up`,
         type: "ERROR",
       });
     }
