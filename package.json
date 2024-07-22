@@ -37,9 +37,9 @@
   "lint-staged": {
     "*.{ts,tsx,js,jsx}": [
       "npm run lint",
-      "prettier --write"
-    ],
-    "*.ts": "eslint --cache --fix"
+      "prettier --write",
+       "eslint --cache --fix"
+    ]
   },
   "devDependencies": {
     "@chromatic-com/storybook": "1.2.25",

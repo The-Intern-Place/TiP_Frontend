@@ -1,10 +1,14 @@
+"use client";
 import JobCard from "@/components/cards/job-card/JobCard";
 import { JobCardProps } from "@/components/cards/job-card/JobCard.types";
 import { jobs } from "@/utils/data/jobs";
 import IC_ArrowRight from "@assets/icons/IC_ArrowRight";
 import React from "react";
+import useJobOpeningTemplateChunk from "./useJobOpeningTemplateChunk";
 
 const JobOpeningTemplateChunk = () => {
+  const {data} = useJobOpeningTemplateChunk();
+  console.log(data)
   return (
     <div className="w-full job-opening">
       <div className="flex justify-between items-center w-full h-full max-w-[1350px] mx-auto px-6 md:px-10 lg:px-16 xl:px-0 ">
