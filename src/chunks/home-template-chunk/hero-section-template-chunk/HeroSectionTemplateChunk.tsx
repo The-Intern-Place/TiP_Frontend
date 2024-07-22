@@ -25,6 +25,8 @@ const HeroSectionTemplateChunk = () => {
         </p>
 
         <div className="flex bg-white  rounded-full w-full md:w-[450px] pr-2">
+
+
           <div className="flex relative w-full md:w-fit">
             <input
               type="text"
@@ -40,8 +42,12 @@ const HeroSectionTemplateChunk = () => {
               >
                 <IC_Search className="w-5 h-5" />
               </button>
+
+
             </div>
           </div>
+
+          
           <div className="border border-[#1976D2] opacity-20 my-2 hidden md:flex" />
           <div>
             <SelectInput2
