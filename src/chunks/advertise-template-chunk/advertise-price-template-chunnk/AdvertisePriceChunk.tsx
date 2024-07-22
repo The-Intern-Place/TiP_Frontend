@@ -16,7 +16,7 @@ const AdvertisePriceChunk = () => {
 
       <div className="flex  flex-col md:flex-row justify-center items-center gap-[20px]  lg:gap-[25px]">
         {/* Basic Plan */}
-        <div className="bg-[#F9FDFF] w-[87%]   rounded-[20px]">
+        <div className="bg-[#F9FDFF] w-[100%]   rounded-[20px]">
           <div className="lg:w-[350px] rounded-[20px] border-[1px] bg-[#FFFFFF] border-[#D6DDEB] mx-[1rem] my-[1rem]">
             <div className="flex flex-col p-[1.5rem] mx-[0.3rem]">
               <h1 className="font-clash font-[600] text-[24px] leading-[40px]  text-[#002360]">
@@ -28,7 +28,7 @@ const AdvertisePriceChunk = () => {
             </div>
 
             {/* first divider */}
-            <div className="w-[320px]  border-[1px] border-[#D6DDEB] mx-[0.7rem]"></div>
+            <div className="md:w-[320px] w-[90%]  border-[1px] border-[#D6DDEB] mx-[0.7rem]"></div>
 
             {priceImpression.map((p) => (
               <ul
@@ -45,7 +45,7 @@ const AdvertisePriceChunk = () => {
             ))}
 
             {/* second divider */}
-            <div className="w-[320px]  border-[1px] border-[#D6DDEB] mx-[0.7rem]"></div>
+            <div className="md:w-[320px] w-[90%]  border-[1px] border-[#D6DDEB] mx-[0.7rem]"></div>
 
             <div className="flex flex-col items-center justify-center  gap-[10px] my-[2rem]  ">
               <h1 className="font-[700] text-[#002360] text-[30px] leading-[48px] font-epilogue">
@@ -60,7 +60,7 @@ const AdvertisePriceChunk = () => {
         </div>
 
         {/* Premium Plan */}
-        <div className="bg-div-custom w-[87%]   rounded-[20px]">
+        <div className="bg-div-custom w-[100%]   rounded-[20px]">
           <div className="lg:w-[350px] rounded-[20px] border-[1px] bg-[#FFFFFF] border-[#D6DDEB] mx-[1rem] my-[1rem]">
             <div className="flex flex-col p-[1.5rem] mx-[0.3rem]">
               <h1 className="font-clash font-[600] text-[24px] leading-[40px]  text-[#002360]">
@@ -72,11 +72,11 @@ const AdvertisePriceChunk = () => {
             </div>
 
             {/* first divider */}
-            <div className="w-[320px]  border-[1px] border-[#D6DDEB] mx-[0.7rem]"></div>
+            <div className="md:w-[320px]  border-[1px] border-[#D6DDEB] mx-[0.7rem]"></div>
             {priceImpression.map((p) => (
               <ul
                 key={p.id}
-                className="flex flex-col gap-[22px]  p-[1rem] mx-[0.5rem]"
+                className="flex flex-col gap-[22px]  p-[1rem] mx-[0.5rem] w-[100%]"
               >
                 <li className="gap-[6px] flex items-center ">
                   <Image src={p.img} alt="good" className="w-5 h-5" />{" "}
@@ -88,7 +88,7 @@ const AdvertisePriceChunk = () => {
             ))}
 
             {/* second divider */}
-            <div className="w-[320px]  border-[1px] border-[#D6DDEB] mx-[0.7rem]"></div>
+            <div className=" md:w-[320px] w-[90%] border-[1px] border-[#D6DDEB] mx-[0.7rem]"></div>
 
             <div className="flex flex-col items-center justify-center  gap-[10px] my-[2rem]">
               <h1 className="font-[700] text-[#002360] md:text-[30px] md:leading-[48px] font-epilogue">

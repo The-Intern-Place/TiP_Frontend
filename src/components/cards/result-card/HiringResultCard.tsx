@@ -6,7 +6,7 @@ const HiringResultCard = (props: HiringResultProps) => {
   return (
     <section className="">
       <div
-        className="md:w-[234px] lg:w-[274px] bg-[#FFFFFF] h-[255px] w-[100%] border-2 border-[##D6DDEB]
+        className=" bg-[#FFFFFF] h-[255px] w-[100%] border-2 border-[##D6DDEB]
       p-2 items-center justify-center flex flex-col mt-[2rem] "
       >
         <div className="flex justify-center w-[100%]">
