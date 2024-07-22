@@ -99,8 +99,6 @@ const AdvertisePriceChunk = () => {
                 Make a payment{" "}
               </Button>
             </div>
-
-
           </div>
         </div>
       </div>
