@@ -15,7 +15,7 @@ import IC_Business from "@assets/icons/IC_Business";
 import IC_Developer from "@assets/icons/IC_Developer";
 import Image from "next/image";
 
-import rightarrow from "public/images/righticon.svg"
+import rightarrow from "public/images/righticon.svg";
 
 const CompaniesCategoryChunk = () => {
   const hiringcategorydata = [
@@ -57,10 +57,7 @@ const CompaniesCategoryChunk = () => {
   ];
 
   return (
-
     <section className="bg-[#F8F8FD] flex justify-center items-center w-full">
-
-
       <div className="flex flex-col  max-w-[1350px]  w-full h-full mx-auto px-6 md:px-10 lg:px-16 xl:px-0 pt-10">
         {/* heading text */}
         <h1 className="text-grey text-[32px] font-[600]   leading-[38px] pt-[2rem]   p-1">
@@ -68,30 +65,27 @@ const CompaniesCategoryChunk = () => {
         </h1>
         {/* body */}
         <div className="w-full mx-0 items-center flex justify-center">
-
           <Swiper
-          
             modules={[Navigation, Pagination]}
             spaceBetween={10}
             slidesPerView={1.5}
             loop={true}
             navigation={{
-              nextEl: '.custom-next',
-              prevEl: '.custom-prev',
+              nextEl: ".custom-next",
+              prevEl: ".custom-prev",
             }}
             pagination={{ clickable: true, el: ".custom-pagination" }}
             breakpoints={{
-        
               640: {
                 slidesPerView: 1,
                 spaceBetween: 10,
               },
-           
+
               768: {
                 slidesPerView: 2,
                 spaceBetween: 20,
               },
-           
+
               1024: {
                 slidesPerView: 4,
                 spaceBetween: 10,
@@ -110,20 +104,12 @@ const CompaniesCategoryChunk = () => {
             ))}
           </Swiper>
 
-         
           <div className="custom-next md:absolute right-[10px]  hidden  transform -translate-y-1/2 w-[48px] h-[50px] bg-[#0046BF] mt-[40px] md:flex items-center justify-center cursor-pointer">
-          <Image src={rightarrow} alt="right-icon" />
+            <Image src={rightarrow} alt="right-icon" />
+          </div>
         </div>
-
-        </div>
-
-        
-        
       </div>
-
     </section>
-
-    
   );
 };
 

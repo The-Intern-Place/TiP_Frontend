@@ -27,8 +27,6 @@ body {
   align-items: center;
 }
 
-
-
 @media (min-width: 1200px) {
   .brandAuthBtns {
     flex-direction: row;
@@ -41,32 +39,27 @@ body {
   background-size: 100% 100%;
 }
 
-
-
 .custom-pagination {
   display: flex;
   justify-content: center;
   margin-top: 20px;
-  border: none; 
-  background: transparent;/* Ensure border-bottom is removed */
+  border: none;
+  background: transparent; /* Ensure border-bottom is removed */
 }
 .icon-loading:before {
   content: "\e90a";
 }
 
 @media (max-width: 500px) {
-
   .custom-pagination {
     display: none;
     border-bottom: 0px;
   }
 
-  .custom-next{
+  .custom-next {
     display: none;
-
   }
-    .custom-prev{
-      display: none;
+  .custom-prev {
+    display: none;
   }
-
 }

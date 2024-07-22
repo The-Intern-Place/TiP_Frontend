@@ -6,7 +6,6 @@ const RecommendedCompaniesCard = (props: RecommendedCompaniesCardProps) => {
   return (
     <section className="">
       <div className="md:w-[360px] lg:w-full w-full border-2 border-[#D6DDEB] p-[1rem] items-start justify-center flex flex-col space-y-3">
-
         <div className="flex justify-between w-[100%]">
           <Image
             src={props.img}
