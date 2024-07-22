@@ -4,5 +4,5 @@ export const Auth = {
 };
 
 export const Jobs = {
-  GET_ALL_JOBS: `jobs`
-}
+  GET_ALL_JOBS: `jobs`,
+};

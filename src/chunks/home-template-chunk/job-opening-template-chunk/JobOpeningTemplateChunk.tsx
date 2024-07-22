@@ -7,8 +7,8 @@ import React from "react";
 import useJobOpeningTemplateChunk from "./useJobOpeningTemplateChunk";
 
 const JobOpeningTemplateChunk = () => {
-  const {data} = useJobOpeningTemplateChunk();
-  console.log(data)
+  const { data } = useJobOpeningTemplateChunk();
+  console.log(data);
   return (
     <div className="w-full job-opening">
       <div className="flex justify-between items-center w-full h-full max-w-[1350px] mx-auto px-6 md:px-10 lg:px-16 xl:px-0 ">

@@ -14,6 +14,4 @@ const jobsApi = configuredApi.enhanceEndpoints({}).injectEndpoints({
   }),
 });
 
-export const {
-    useGetAllJobsQuery
-} = jobsApi;
+export const { useGetAllJobsQuery } = jobsApi;

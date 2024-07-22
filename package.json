@@ -38,7 +38,7 @@
     "*.{ts,tsx,js,jsx}": [
       "npm run lint",
       "prettier --write",
-       "eslint --cache --fix"
+      "eslint --cache --fix"
     ]
   },
   "devDependencies": {
