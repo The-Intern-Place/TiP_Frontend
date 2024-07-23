@@ -42,6 +42,7 @@ const HeroSectionTemplateChunk = () => {
               </button>
             </div>
           </div>
+
           <div className="border border-[#1976D2] opacity-20 my-2 hidden md:flex" />
           <div>
             <SelectInput2
