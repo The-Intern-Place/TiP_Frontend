@@ -5,7 +5,13 @@ export const recommendedData = [
     title: "Nomad",
     description:
       "Nomad is located in Paris, France. Nomad has generates $728,000 in sales (USD).",
-    trackOne: "Business",
+    tracks: [
+      {
+        color: "#FFB836",
+        border: "#FFB836",
+        track: "Business Service",
+      },
+    ],
   },
 
   {
@@ -14,7 +20,13 @@ export const recommendedData = [
     title: "Discord",
     description:
       "We'd love to work with someone like you. We care about creating a delightful experience.",
-    trackOne: "Business",
+    tracks: [
+      {
+        color: "#FFB836",
+        border: "#FFB836",
+        track: "Business Service",
+      },
+    ],
   },
 
   {
@@ -23,7 +35,13 @@ export const recommendedData = [
     title: "Maze",
     description:
       "We're a passionate bunch working from all over the world to build the future of rapid testing together.",
-    trackOne: "Business",
+    tracks: [
+      {
+        color: "#FFB836",
+        border: "#FFB836",
+        track: "Business Service",
+      },
+    ],
   },
 
   {
@@ -32,7 +50,13 @@ export const recommendedData = [
     title: "Udacity",
     description:
       "Udacity is a new type of online university that teaches the actual programming skills.",
-    trackOne: "Business",
+    tracks: [
+      {
+        color: "#FFB836",
+        border: "#FFB836",
+        track: "Business Service",
+      },
+    ],
   },
 
   {
@@ -41,8 +65,18 @@ export const recommendedData = [
     title: "Webflow",
     description:
       "Webflow is the first design and hosting platform built from the ground up for the mobile age.",
-    trackOne: "Business",
-    trackTwo: "Technology",
+    tracks: [
+      {
+        color: "#FFB836",
+        border: "#FFB836",
+        track: "Business Service",
+      },
+      {
+        bgcolor: "#FF65501A",
+        color: "#FF6550",
+        track: "Technology",
+      },
+    ],
   },
 
   {
@@ -51,8 +85,23 @@ export const recommendedData = [
     title: "Foundation",
     description:
       "Foundation helps creators mint and auction their digital artworks as NFTs on the Ethereum blockchain.",
-    trackOne: "Business",
-    trackThree: "Crypto",
+    tracks: [
+      {
+        color: "#FFB836",
+        border: "#FFB836",
+        track: "Business Service",
+      },
+      {
+        bgcolor: "#FF65501A",
+        color: "#FF6550",
+        track: "Technology",
+      },
+      {
+        color: "#1976D2",
+        bgcolor: "#4640DE1A",
+        track: "Crypto",
+      },
+    ],
   },
 ];
 

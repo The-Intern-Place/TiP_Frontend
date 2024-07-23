@@ -26,9 +26,7 @@ const RecommendedCompaniesTemplateChunk = () => {
                 img={h.img}
                 title={h.title}
                 description={h.description}
-                trackOne={h.trackOne}
-                trackTwo={h.trackTwo}
-                trackThree={h.trackThree}
+                tracks={h.tracks}
               />
             ),
           )}
