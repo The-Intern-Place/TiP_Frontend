@@ -11,10 +11,6 @@ const FindJobCard = (props: FindJobCardProps) => {
       className="flex  flex-col md:flex-row justify-between md:p-[24px]  p-[11px] gap-[24px]  md:items-start
     border-[1px] border-[#D6DDEB]  lg:h-[149px] md:h-[180px] md:w-[100%] w-[100%]  my-[0.5rem]"
     >
-
-
-
-
       <div className="flex  flex-col md:flex-row gap-[15px]  md:gap-[24px] w-[356px] h-[101px]  ">
         <Image src={props.img} alt="jobs_image" className="w-[68px] h-[68px]" />
 
@@ -64,7 +60,6 @@ const FindJobCard = (props: FindJobCardProps) => {
               </h1>
             </div>
           </div>
-
         </div>
       </div>
 
@@ -98,7 +93,6 @@ const FindJobCard = (props: FindJobCardProps) => {
           </h1>
         </div>
       </div>
-      
     </section>
   );
 };

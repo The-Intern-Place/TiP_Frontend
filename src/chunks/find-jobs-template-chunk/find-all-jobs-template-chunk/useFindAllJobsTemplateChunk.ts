@@ -86,16 +86,11 @@ export default function useFindAllJobsTemplateChunk() {
 
   const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
 
+  const [showFilter, setShowFilter] = useState(false);
 
-
-  const [showFilter, setShowFilter] = useState(false)
-
-  const handleFilterToggle = ()=> {
-
-    setShowFilter(!showFilter)
-
-  }
-
+  const handleFilterToggle = () => {
+    setShowFilter(!showFilter);
+  };
 
   return {
     iconToggle,
@@ -110,6 +105,6 @@ export default function useFindAllJobsTemplateChunk() {
     ITEMS_PER_PAGE,
     filterData,
     handleFilterToggle,
-    showFilter
+    showFilter,
   };
 }

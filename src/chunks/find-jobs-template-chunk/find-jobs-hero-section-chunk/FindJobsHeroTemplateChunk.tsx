@@ -35,8 +35,10 @@ const FindJobsHeroTemplateChunk = () => {
               </div>
             </div>
 
-            <p className="font-[400] md:text-[18px] text-[16px] leading-[30px]  font-epilogue text-[#515B6F] md:leading-[32px]
-            text-center pt-1 px-1">
+            <p
+              className="font-[400] md:text-[18px] text-[16px] leading-[30px]  font-epilogue text-[#515B6F] md:leading-[32px]
+            text-center pt-1 px-1"
+            >
               Find your next career at companies like HubSpot, Nike and Dropbox
             </p>
           </div>
@@ -46,15 +48,15 @@ const FindJobsHeroTemplateChunk = () => {
             <div
               className="flex flex-col lg:flex-row bg-white items-center md:w-[600px] p-[16px] md:p-0  lg:w-[1086px] lg:h-[104px]  w-[95%] mx-2 h-[210px]
              mt-[2rem] gap-3 relative "
-             style={{
-              boxShadow: `
+              style={{
+                boxShadow: `
                 0px 2.71px 4.4px 0px #C0C0C007,
                 0px 6.86px 11.12px 0px #C0C0C00A,
                 0px 14px 22.68px 0px #C0C0C00C,
                 0px 28.84px 46.72px 0px #C0C0C00F,
                 0px 79px 128px 0px #C0C0C017
-              `
-            }}
+              `,
+              }}
             >
               {/* placeholder and search icon for smaller screen*/}
               <div className="flex items-center lg:w-[485px] w-[100%] lg:px-1 gap-[16px] pt-0  pb-0 lg:pl-[16px] md:px-[2rem]">
@@ -70,10 +72,6 @@ const FindJobsHeroTemplateChunk = () => {
                   className=" border-b-[1px] border-gray  bg-transparent rounded-none focus:outline-none 
             focus:ring-0  lg:w-[485px]  w-full h-[60px] items-center  md:mt-2 mt-[0rem] "
                 />
-
-            
-
-
               </div>
 
               {/* divider */}
@@ -110,7 +108,6 @@ const FindJobsHeroTemplateChunk = () => {
                   Search <span className="md:hidden block">my job</span>
                 </button>
               </div>
-
             </div>
 
             {/* popular text */}
@@ -122,11 +119,7 @@ const FindJobsHeroTemplateChunk = () => {
                 Popular : UI Designer, UX Researcher, Android, Admin
               </p>
             </div>
-
-
           </div>
-
-
         </div>
       </div>
     </section>
