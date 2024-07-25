@@ -68,7 +68,7 @@ const CompaniesCategoryChunk = () => {
           <Swiper
             modules={[Navigation, Pagination]}
             spaceBetween={10}
-            slidesPerView={1.5}
+            slidesPerView={1.7}
             loop={true}
             navigation={{
               nextEl: ".custom-next",
@@ -104,7 +104,8 @@ const CompaniesCategoryChunk = () => {
             ))}
           </Swiper>
 
-          <div className="custom-next md:absolute right-[10px]  hidden  transform -translate-y-1/2 w-[48px] h-[50px] bg-[#0046BF] mt-[40px] md:flex items-center justify-center cursor-pointer">
+          <div className="custom-next md:absolute md:right-[10px] right-0 transform translate-y-1/2 w-[48px] h-[50px] bg-[#0046BF]
+mt-[40px] flex items-center justify-center cursor-pointer">
             <Image src={rightarrow} alt="right-icon" />
           </div>
         </div>
