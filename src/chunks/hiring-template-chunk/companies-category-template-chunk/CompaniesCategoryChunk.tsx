@@ -104,8 +104,10 @@ const CompaniesCategoryChunk = () => {
             ))}
           </Swiper>
 
-          <div className="custom-next md:absolute md:right-[10px] right-0 transform translate-y-1/2 w-[48px] h-[50px] bg-[#0046BF]
-mt-[40px] flex items-center justify-center cursor-pointer">
+          <div
+            className="custom-next md:absolute md:right-[10px] right-0 transform translate-y-1/2 w-[48px] h-[50px] bg-[#0046BF]
+mt-[40px] flex items-center justify-center cursor-pointer"
+          >
             <Image src={rightarrow} alt="right-icon" />
           </div>
         </div>
