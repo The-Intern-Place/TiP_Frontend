@@ -97,7 +97,7 @@ const CompaniesCategoryChunk = () => {
               <SwiperSlide
                 key={i}
                 className="flex flex-col md:flex-row items-center gap-[5px] 
-                lg:gap-[32px] justify-center my-[3rem] w-[360px] h-full"
+                lg:gap-[32px] justify-center my-[3rem] h-full"
               >
                 <HiringCategoryCard key={i} title={h.title} icon={h.icon} />
               </SwiperSlide>

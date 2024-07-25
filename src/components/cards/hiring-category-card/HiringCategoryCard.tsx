@@ -6,7 +6,7 @@ const HiringCategoryCard = (props: HiringCategoryCardProps) => {
     <section>
       <div
         className="group flex justify-center md:items-start items-center  hover:fill-white
-       flex-col  relative md:w-[274px] w-full h-[173px] hover:bg-light-blue hover:stroke-white
+       flex-col relative w-full h-[173px] hover:bg-light-blue hover:stroke-white
          gap-[32px]  hover:text-white px-[2rem] border-2 border-[#D6DDEB] "
       >
         <p>{props.icon}</p>

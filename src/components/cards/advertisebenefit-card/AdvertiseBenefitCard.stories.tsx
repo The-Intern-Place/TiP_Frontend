@@ -10,7 +10,6 @@ const AdvertiseBenefitCardMeta = {
 
 export const DefaultStory: AdvertiseBenefitCardStory = {
   args: {
-    id: 1,
     image: awareness,
     title: "Brand Awareness",
     description:
