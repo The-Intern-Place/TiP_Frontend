@@ -5,7 +5,7 @@ import { RecommendedCompaniesCardProps } from "./RecommendedCompaniesCard.types"
 const RecommendedCompaniesCard = (props: RecommendedCompaniesCardProps) => {
   return (
     <section className="">
-      <div className="md:w-[360px] lg:w-full w-full h-full border-2 border-[#D6DDEB] p-[1rem] items-start justify-center flex flex-col space-y-3">
+      <div className="w-full h-full border border-[#D6DDEB] p-[1rem] items-start justify-center flex flex-col space-y-3">
         <div className="flex justify-between w-[100%]">
           <Image
             src={props.img}
@@ -25,25 +25,15 @@ const RecommendedCompaniesCard = (props: RecommendedCompaniesCardProps) => {
           {props.description}
         </p>
 
-        <div className="flex flex-col md:flex-row gap-2">
-          <button className="w-[140px] h-[34px] border-2 border-[#FFB836] flex-wrap rounded-[80px] text-[14px] font-[600] leading-[22px] text-[#FFB836]">
-            {props.trackOne}
-          </button>
-
-          {props.trackTwo && (
-            <button className="w-[140px] h-[34px] bg-[#FF65501A]  rounded-[80px] text-[14px] font-[600] leading-[22px] text-[#FF6550]">
-              {props.trackTwo}
-            </button>
-          )}
-
-          {props.trackThree && (
+        <div className="flex flex-col md:flex-row gap-2 flex-wrap">
+          {props.tracks.map((track, key) => (
             <button
-              className="w-[140px] h-[34px] border-1  bg-[#4640DE1A] rounded-[80px] text-[14px]
-     font-[600] leading-[22px] text-[#1976D2]"
+            key={key}
+              className={`w-[140px] h-[34px] ${track?.border ? `border-2 border-[${track.border}]` : ""} ${track?.bgcolor ? `bg-[${track.bgcolor}]` : ""} text-[${track.color}] rounded-[80px] text-[14px] font-[600] leading-[22px]`}
             >
-              {props.trackThree}
+              {track.track}
             </button>
-          )}
+          ))}
         </div>
       </div>
     </section>

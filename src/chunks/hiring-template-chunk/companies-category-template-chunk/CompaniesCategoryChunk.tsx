@@ -64,11 +64,14 @@ const CompaniesCategoryChunk = () => {
           Companies by Category
         </h1>
         {/* body */}
-        <div className="w-full mx-0 items-center flex justify-center">
+        <div className="w-full mx-0 items-center flex justify-center relative">
           <Swiper
             modules={[Navigation, Pagination]}
             spaceBetween={10}
-            slidesPerView={1.7}
+
+
+            slidesPerView={3}
+
             loop={true}
             navigation={{
               nextEl: ".custom-next",
@@ -76,8 +79,18 @@ const CompaniesCategoryChunk = () => {
             }}
             pagination={{ clickable: true, el: ".custom-pagination" }}
             breakpoints={{
-              640: {
+              0: {
                 slidesPerView: 1,
+                spaceBetween: 10,
+              },
+
+              300: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+              },
+
+              640: {
+                slidesPerView: 2,
                 spaceBetween: 10,
               },
 
@@ -88,7 +101,7 @@ const CompaniesCategoryChunk = () => {
 
               1024: {
                 slidesPerView: 4,
-                spaceBetween: 10,
+                spaceBetween: 35,
               },
             }}
             scrollbar={{ draggable: true }}
@@ -104,10 +117,14 @@ const CompaniesCategoryChunk = () => {
             ))}
           </Swiper>
 
+
           <div
             className="custom-next md:absolute md:right-[10px] right-0 transform translate-y-1/2 w-[48px] h-[50px] bg-[#0046BF]
 mt-[40px] flex items-center justify-center cursor-pointer"
           >
+
+          <div className="custom-next z-50 absolute md:right-[-25px] right-[-15px] p-2 md:p-0 transform -translate-y-1/2 md:w-[48px] md:h-[50px] bg-[#0046BF] mt-[40px] flex items-center justify-center cursor-pointer">
+
             <Image src={rightarrow} alt="right-icon" />
           </div>
         </div>
