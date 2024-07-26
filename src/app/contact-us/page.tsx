@@ -4,12 +4,17 @@ import ContactFaqTemplateChunk from "@/chunks/contact-template-chunk/contact-faq
 import ContactFormTemplateChunk from "@/chunks/contact-template-chunk/contact-form-template-chunk/ContactFormTemplateChunk";
 import Head from "next/head";
 
+export const metadata = {
+  title: "The Intern Place | Login",
+  description: "The Intern Place",
+};
+
 function ContactUs() {
   return (
     <div>
       <Head>
         <title>The Intern Place | Login</title>
-        <meta name="description" content={"The Intern Place"} />
+        <meta name="description" content="The Intern Place" />
       </Head>
       <Navbar bgcolor={"#FAFBFC"} />
       <main className="w-full h-full max-w-[1350px] mx-auto bg-[#FAFBFC]">
@@ -34,4 +39,5 @@ function ContactUs() {
     </div>
   );
 }
+
 export default ContactUs;

@@ -13,6 +13,9 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import IC_Business from "@assets/icons/IC_Business";
 import IC_Developer from "@assets/icons/IC_Developer";
+import Image from "next/image";
+
+import rightarrow from "public/images/righticon.svg";
 
 const CompaniesCategoryChunk = () => {
   const hiringcategorydata = [
@@ -55,36 +58,47 @@ const CompaniesCategoryChunk = () => {
 
   return (
     <section className="bg-[#F8F8FD] flex justify-center items-center w-full">
-      <div className="flex flex-col items-center max-w-[1350px]  w-full h-full mx-auto px-6 md:px-10 lg:px-16 xl:px-0 pt-10">
+      <div className="flex flex-col  max-w-[1350px]  w-full h-full mx-auto px-6 md:px-10 lg:px-16 xl:px-0 pt-10">
         {/* heading text */}
         <h1 className="text-grey text-[32px] font-[600]   leading-[38px] pt-[2rem]   p-1">
           Companies by Category
         </h1>
         {/* body */}
-        <div className="w-full mx-0 items-center flex justify-center">
+        <div className="w-full mx-0 items-center flex justify-center relative">
           <Swiper
-            // install Swiper modules
             modules={[Navigation, Pagination]}
             spaceBetween={10}
-            slidesPerView={1}
+            slidesPerView={3}
             loop={true}
-            navigation
+            navigation={{
+              nextEl: ".custom-next",
+              prevEl: ".custom-prev",
+            }}
             pagination={{ clickable: true, el: ".custom-pagination" }}
             breakpoints={{
-              // when window width is >= 640px
-              640: {
+              0: {
                 slidesPerView: 1,
                 spaceBetween: 10,
               },
-              // when window width is >= 768px
+
+              300: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+              },
+
+              640: {
+                slidesPerView: 2,
+                spaceBetween: 10,
+              },
+
               768: {
                 slidesPerView: 2,
                 spaceBetween: 20,
               },
-              // when window width is >= 1024px
+
               1024: {
                 slidesPerView: 4,
-                spaceBetween: 10,
+                spaceBetween: 35,
               },
             }}
             scrollbar={{ draggable: true }}
@@ -93,12 +107,16 @@ const CompaniesCategoryChunk = () => {
               <SwiperSlide
                 key={i}
                 className="flex flex-col md:flex-row items-center gap-[5px] 
-                lg:gap-[32px] justify-center my-[3rem] w-[350px] h-full"
+                lg:gap-[32px] justify-center my-[3rem] h-full"
               >
                 <HiringCategoryCard key={i} title={h.title} icon={h.icon} />
               </SwiperSlide>
             ))}
           </Swiper>
+
+          <div className="custom-next z-50 absolute md:right-[-25px] right-[-15px] p-2 md:p-0 transform -translate-y-1/2 md:w-[48px] md:h-[50px] bg-[#0046BF] mt-[40px] flex items-center justify-center cursor-pointer">
+            <Image src={rightarrow} alt="right-icon" />
+          </div>
         </div>
       </div>
     </section>

@@ -6,9 +6,12 @@ export type RecommendedCompaniesCardProps = {
   img: string | StaticImport;
   title: string;
   description: string;
-  trackOne: string;
-  trackTwo?: string;
-  trackThree?: string;
+  tracks: Array<{
+    bgcolor?: string;
+    color: string;
+    border?: string;
+    track: string;
+  }>;
 };
 
 export type RecommendedCompaniesCardStory = StoryObj<

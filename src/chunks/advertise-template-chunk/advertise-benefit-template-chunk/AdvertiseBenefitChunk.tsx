@@ -7,11 +7,8 @@ const AdvertiseBenefitChunk = () => {
   return (
     <section className="flex flex-col md:items-center items-center justify-center top-[92px] md:mt-[4rem]  w-[100%]">
       {/* heading */}
-      <div
-        className="flex md:items-center md:justify-center items-start justify-start">
-        <h1
-          className="font-[600] text-[#1B1B1B] md:text-[32px] md:leading-[38px] px-4 text-[20px] leading-[38px] font-clash pb-4"
-        >
+      <div className="flex md:items-center md:justify-center items-start justify-start">
+        <h1 className="font-[600] text-[#1B1B1B] md:text-[32px] md:leading-[38px] px-4 text-[20px] leading-[38px] font-clash pb-4">
           Benefits of Advertising
         </h1>
       </div>

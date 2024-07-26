@@ -29,24 +29,7 @@ function ContactLinkTemplateChunk() {
         </Link>
         <ul className="flex mt-5 space-x-4">
           <li className="bg-[#1976D2] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-            <a href="#">
-              <IC_Facebook />
-            </a>
-          </li>
-          <li className="bg-[#1976D2] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-            <a href="#">
-              <IC_LinkedIn />
-            </a>
-          </li>
-          <li className="bg-[#1976D2] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-            <a href="#">
-              <IC_Instagram />
-            </a>
-          </li>
-          <li className="bg-[#1976D2] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-            <a href="#">
-              <IC_Twitter />
-            </a>
+
           </li>
         </ul>
       </div>

@@ -9,6 +9,7 @@ const Button = (props: ButtonProps) => {
     children,
     overrideStyles,
     loading,
+    // type = "button",
     ...buttonProps
   } = props;
   return (

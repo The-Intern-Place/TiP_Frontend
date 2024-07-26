@@ -49,16 +49,14 @@ const ContactFaqTemplateChunk = () => {
             </div>
           </dl>
         </div>
-        <div className="flex justify-end gap-x-6">
-          <a
+
             href="#"
             className="text-sm font-semibold leading-6 text-[#1976D2]"
           >
             See All <span aria-hidden="true">→</span>
-          </a>
+          </Link>
         </div>
-        <ContactLinkTemplateChunk />
-        {/*  */}
+
       </div>
     </div>
   );

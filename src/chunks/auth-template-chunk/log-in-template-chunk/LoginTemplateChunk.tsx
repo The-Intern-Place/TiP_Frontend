@@ -8,6 +8,14 @@ import { Toaster } from "react-hot-toast";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FcGoogle } from "react-icons/fc";
 import useLoginTemplateChunk from "./useLoginTemplateChunk";
+
+import { Metadata } from "next/types";
+
+export const metadata: Metadata = {
+  title: "The Intern Place | Login ",
+  description: "The Intern Place",
+};
+
 import Head from "next/head";
 
 const LogInTemplateChunk = () => {
@@ -15,7 +23,7 @@ const LogInTemplateChunk = () => {
     form: {
       handleSubmit,
       control,
-      formState: { isValid },
+      formState: { isValid, isDirty },
     },
     handleSubmitForm,
     loggingIn,
@@ -58,7 +66,11 @@ const LogInTemplateChunk = () => {
           </div>
 
           <div className="w-full mt-5">
-            <Button loading={loggingIn} disabled={!isValid}>
+            <Button
+              loading={loggingIn}
+              type="submit"
+              disabled={!isValid || !isDirty}
+            >
               Login
             </Button>
           </div>
