@@ -7,6 +7,7 @@ import SelectInput2 from "@/components/inputs/select-input/SelectInput2";
 import { LocationIcon, ArrowDown } from "@assets/images";
 import searchicon from "public/images/searchicon.svg";
 import IC_Search from "public/icons/IC_Search";
+import Button from "@/components/button/Button";
 
 const FindDreamCompaniesHeroTemplateChunk = () => {
   return (
@@ -36,15 +37,12 @@ const FindDreamCompaniesHeroTemplateChunk = () => {
             </p>
           </div>
           {/* search Input */}
-          <div className="flex flex-col items-start gap-[20px]">
+          <div className="flex flex-col max-w-[1350px] w-full h-full mx-auto px-6 md:px-10 lg:px-24 xl:px-0">
             {/* search Inoput for large screen */}
 
-            <div
-              className="hidden md:flex bg-white items-center justify-center md:w-[750px]  lg:w-[1086px] md:h-[104px] w-[100%] mx-2 h-[80px]
-           mt-[2rem] gap-3 relative "
-            >
+            <div className="hidden md:flex gap-4 bg-white items-center justify-center p-4 mt-[2rem]">
               {/* placeholder and search icon */}
-              <div className="flex items-center lg:w-[485px] w-[100%] px-1 gap-[16px] pt-0  pb-0 pl-[16px]">
+              <div className="flex items-center lg:w-[485px] w-[100%] px-1 gap-[16px]">
                 <Image
                   src={searchicon}
                   alt="searchIcon"
@@ -54,45 +52,36 @@ const FindDreamCompaniesHeroTemplateChunk = () => {
                 <input
                   type="text"
                   placeholder="Job title  or Keyword"
-                  className=" border-b-[1px] border-gray  bg-transparent rounded-none focus:outline-none 
-          focus:ring-0  md:w-[200px]  w-full h-[60px] items-center  md:mt-2 mt-[0rem] "
+                  className=" border-b-[1px] border-gray  bg-transparent rounded-none focus:outline-none focus:ring-0  w-full h-[60px] items-center"
                 />
               </div>
 
               {/* divider */}
-              <div className="border-[1px] border-gray my-1 md:h-[66px] mx-3  hidden  md:flex" />
+              <div className="border-[1px] border-gray md:h-[60px] hidden md:flex" />
 
               {/* florence,italy  */}
-              <div className=" md:w-[555px] w-[120px] h-[69px] bg-transparent hidden md:flex  mt-[1rem]  ">
+              <div className=" md:w-[555px] w-[120px] bg-transparent hidden md:flex">
                 <SelectInput2
                   label=""
                   placeholder="Florence, Italy"
                   options={[{ id: "Country", name: "City, Country" }]}
-                  overrideStyles="border-r-0 border-l-0 border-t-0 rounded-r-full bg-transparent md:w-full w-[60px] h-[56px] border-b-[1px] border-gray rounded-bl-none rounded-br-none  "
+                  overrideStyles="focus:outline-0 border-r-0 border-l-0 border-t-0 rounded-none bg-transparent border-b-[1px] border-gray rounded-br-none rounded-bl-none"
                   iconLeft={<Image src={LocationIcon} alt="" />}
                   onChange={() => {}}
                   iconRight={
-                    <div className="w-[16px] h-[16px] opacity-[50%]">
-                      <Image
-                        src={ArrowDown}
-                        alt=""
-                        className="absolute  w-[16px] h-[16px]  text-[#25324B]"
-                      />
-                    </div>
+                    <Image
+                      src={ArrowDown}
+                      alt=""
+                      className="absolute right-2 top-3 text-[#25324B]"
+                    />
                   }
                 />
               </div>
 
               {/* button */}
-              <div className="hidden md:block">
-                <button
-                  className=" bg-[#0046BF] text-white p-3 
-md:w-[107px] h-[50px] w-[60px] mx-3 mt-[0.8rem]"
-                  aria-label="Search"
-                >
-                  Search
-                </button>
-              </div>
+              <Button overrideStyles="rounded-none" fit>
+                Search
+              </Button>
             </div>
 
             {/* smaller search button */}
@@ -145,11 +134,11 @@ md:w-[107px] h-[50px] w-[60px] mx-3 mt-[0.8rem]"
 
             {/* popular text */}
             <div className="md:pt-[1rem] text-center sm:text-start p-2">
-              <p className="text-[16px] font-[400] font-epilogue md:block hidden leading-[25px] text-[#1B1B1B]">
+              <p className="text-[16px] font-[400] font-epilogue md:block hidden leading-[25px] text-grey">
                 Popular : UI Designer, UX Researcher, Android, Admin
               </p>
 
-              <p className="text-[14px] font-[400] font-epilogue block md:hidden text-center leading-[30px] text-[#1B1B1B]">
+              <p className="text-[14px] font-[400] font-epilogue block md:hidden text-center leading-[30px] text-grey">
                 Popular: Product Designer Intern, Developer
               </p>
             </div>
