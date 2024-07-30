@@ -39,7 +39,7 @@ export default function useSignupTemplateChunk() {
     const handleGetAllCountries = async () => {
       try {
         const request = await axios.get(
-          `${process.env.NEXT_PUBLIC_COUNTRIES_API}`
+          `${process.env.NEXT_PUBLIC_COUNTRIES_API}`,
         );
 
         const res = await request.data;

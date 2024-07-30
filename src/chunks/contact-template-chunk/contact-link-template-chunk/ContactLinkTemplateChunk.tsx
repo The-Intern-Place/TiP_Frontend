@@ -1,10 +1,6 @@
 import React from "react";
-import IC_Facebook from "@assets/icons/IC_Facebook";
-import IC_Instagram from "@assets/icons/IC_Instagram";
-import IC_LinkedIn from "@assets/icons/IC_LinkedIn";
 import { IC_Mail } from "@assets/icons/IC_Mail";
 import { IC_Phone } from "@assets/icons/IC_Phone";
-import IC_Twitter from "@assets/icons/IC_Twitter";
 import Link from "next/link";
 
 function ContactLinkTemplateChunk() {
@@ -28,9 +24,7 @@ function ContactLinkTemplateChunk() {
           </span>
         </Link>
         <ul className="flex mt-5 space-x-4">
-          <li className="bg-[#1976D2] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-
-          </li>
+          <li className="bg-[#1976D2] h-10 w-10 rounded-full flex items-center justify-center shrink-0"></li>
         </ul>
       </div>
     </div>

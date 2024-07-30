@@ -1,12 +1,10 @@
 "use client";
 import { qaData } from "@/utils/data/qa-data";
 import { IC_Arrow } from "@assets/icons/IC_Arrow";
-
 import styles from "@/styles/contact.module.css";
-
 import React from "react";
 import useContactFaqTemplateChunk from "./useContactFaqTemplateChunk";
-import ContactLinkTemplateChunk from "../contact-link-template-chunk/ContactLinkTemplateChunk";
+import Link from "next/link";
 
 const ContactFaqTemplateChunk = () => {
   const { handleToggle, visibleId } = useContactFaqTemplateChunk();
@@ -49,14 +47,12 @@ const ContactFaqTemplateChunk = () => {
             </div>
           </dl>
         </div>
-
-            href="#"
-            className="text-sm font-semibold leading-6 text-[#1976D2]"
-          >
-            See All <span aria-hidden="true">→</span>
-          </Link>
-        </div>
-
+        <Link
+          href="#"
+          className="text-sm font-semibold leading-6 text-[#1976D2]"
+        >
+          See All <span aria-hidden="true">→</span>
+        </Link>
       </div>
     </div>
   );
