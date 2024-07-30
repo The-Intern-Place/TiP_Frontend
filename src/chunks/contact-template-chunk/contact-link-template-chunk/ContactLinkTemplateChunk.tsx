@@ -22,22 +22,14 @@ function ContactLinkTemplateChunk() {
         </Link>
         <Link className="flex lg:justify-start justify-center " href={"#"}>
           <IC_Phone />
+
           <span className="text-sm text-[#1976D2] font-semibold ml-3">
             09032884485
           </span>
         </Link>
         <ul className="flex mt-5 space-x-4">
           <li className="bg-[#1976D2] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-            <IC_Facebook />
-          </li>
-          <li className="bg-[#1976D2] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-            <IC_LinkedIn />
-          </li>
-          <li className="bg-[#1976D2] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-            <IC_Instagram />
-          </li>
-          <li className="bg-[#1976D2] h-10 w-10 rounded-full flex items-center justify-center shrink-0">
-            <IC_Twitter />
+
           </li>
         </ul>
       </div>

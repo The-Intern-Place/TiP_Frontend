@@ -7,13 +7,15 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prepare": "husky",
+    "prepare": "husky install",
+    "commit": "git-cz",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "lint:fix": "next lint --fix",
     "format": "prettier --write .",
     "test": "jest",
-    "check-format": "prettier --check ."
+    "check-format": "prettier --check .",
+    "check-lint": "eslint . --ext ts --ext tsx --ext js"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
@@ -37,9 +39,9 @@
   "lint-staged": {
     "*.{ts,tsx,js,jsx}": [
       "npm run lint",
-      "prettier --write"
-    ],
-    "*.ts": "eslint --cache --fix"
+      "prettier --write",
+      "eslint --cache --fix"
+    ]
   },
   "devDependencies": {
     "@chromatic-com/storybook": "1.2.25",
