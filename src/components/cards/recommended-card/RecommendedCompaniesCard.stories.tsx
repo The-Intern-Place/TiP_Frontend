@@ -20,7 +20,7 @@ export const DefaultStory: RecommendedCompaniesCardStory = {
         bgcolor: "#4640DE1A",
         track: "Crypto",
       },
-    ]
+    ],
   },
   name: "Recommended Companies Card",
 };

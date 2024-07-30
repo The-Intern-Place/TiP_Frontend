@@ -48,7 +48,6 @@ export const httpRequest =
         !(headers && headers["X-no-auth-redirect"] === "true")
       ) {
         // window.location.href = "/login";
-        
       }
       return {
         error: {
