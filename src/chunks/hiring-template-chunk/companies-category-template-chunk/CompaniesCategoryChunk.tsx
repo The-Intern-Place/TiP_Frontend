@@ -68,7 +68,11 @@ const CompaniesCategoryChunk = () => {
           <Swiper
             modules={[Navigation, Pagination]}
             spaceBetween={10}
+
             slidesPerView={1.7}
+
+         
+
             loop={true}
             navigation={{
               nextEl: ".custom-next",

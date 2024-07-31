@@ -29,7 +29,11 @@ const RecommendedCompaniesCard = (props: RecommendedCompaniesCardProps) => {
           {props.tracks.map((track, key) => (
             <button
               key={key}
+
               className={`w-[140px] h-[34px] ${track?.border ? `border-2 border-[${track.border}]` : ""} ${track?.bgcolor ? `bg-[${track.bgcolor}]` : ""} text-[${track.color}] rounded-[80px] text-[14px] font-[600] leading-[22px]`}
+
+<!--               className={`w-[140px] h-[34px] ${track.style} rounded-[80px] text-[14px] font-[600] leading-[22px]`} -->
+
             >
               {track.track}
             </button>

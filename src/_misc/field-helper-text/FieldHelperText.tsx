@@ -4,7 +4,7 @@ import { IFieldHelperTextProps } from "./FieldHelperText.types";
 const FieldHelperText = ({
   helperText,
   error,
-  className,
+  // className,
   children,
 }: IFieldHelperTextProps) => {
   return helperText || children ? (
@@ -12,7 +12,7 @@ const FieldHelperText = ({
       className={twMerge(
         `text-[16px] font-[400] mt-[2px]`,
         error ? "!text-[#D24444]" : "text-gray-500",
-        className,
+        // className,
       )}
     >
       {helperText}

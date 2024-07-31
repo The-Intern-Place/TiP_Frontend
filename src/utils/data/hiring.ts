@@ -7,8 +7,7 @@ export const recommendedData = [
       "Nomad is located in Paris, France. Nomad has generates $728,000 in sales (USD).",
     tracks: [
       {
-        color: "#FFB836",
-        border: "#FFB836",
+        style: "text-[#FFB836] border-2 border-[#FFB836]",
         track: "Business Service",
       },
     ],
@@ -22,8 +21,7 @@ export const recommendedData = [
       "We'd love to work with someone like you. We care about creating a delightful experience.",
     tracks: [
       {
-        color: "#FFB836",
-        border: "#FFB836",
+        style: "text-[#FFB836] border-2 border-[#FFB836]",
         track: "Business Service",
       },
     ],
@@ -37,8 +35,7 @@ export const recommendedData = [
       "We're a passionate bunch working from all over the world to build the future of rapid testing together.",
     tracks: [
       {
-        color: "#FFB836",
-        border: "#FFB836",
+        style: "text-[#FFB836] border-2 border-[#FFB836]",
         track: "Business Service",
       },
     ],
@@ -52,8 +49,7 @@ export const recommendedData = [
       "Udacity is a new type of online university that teaches the actual programming skills.",
     tracks: [
       {
-        color: "#FFB836",
-        border: "#FFB836",
+        style: "text-[#FFB836] border-2 border-[#FFB836]",
         track: "Business Service",
       },
     ],
@@ -67,13 +63,11 @@ export const recommendedData = [
       "Webflow is the first design and hosting platform built from the ground up for the mobile age.",
     tracks: [
       {
-        color: "#FFB836",
-        border: "#FFB836",
+        style: "text-[#FFB836] border-2 border-[#FFB836]",
         track: "Business Service",
       },
       {
-        bgcolor: "#FF65501A",
-        color: "#FF6550",
+        style: "text-[#FF6550] bg-[#FF65501A]",
         track: "Technology",
       },
     ],
@@ -87,18 +81,15 @@ export const recommendedData = [
       "Foundation helps creators mint and auction their digital artworks as NFTs on the Ethereum blockchain.",
     tracks: [
       {
-        color: "#FFB836",
-        border: "#FFB836",
+        style: "text-[#FFB836] border-2 border-[#FFB836]",
         track: "Business Service",
       },
       {
-        bgcolor: "#FF65501A",
-        color: "#FF6550",
+        style: "text-[#FF6550] bg-[#FF65501A]",
         track: "Technology",
       },
       {
-        color: "#1976D2",
-        bgcolor: "#4640DE1A",
+        style: "text-[#1976D2] bg-[#4640DE1A]",
         track: "Crypto",
       },
     ],
