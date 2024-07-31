@@ -15,11 +15,7 @@ const CompanyProfileHeroChunk = () => {
 
         <div className="flex items-center justify-between md:justify-start ">
           <div className="md:w-[160px] md:h-[160px] md:rounded-[126px] w-[56px] h-[56px] bg-[#D1E1FD] rounded-[44px]">
-            <Image
-              src={companyPics}
-              alt="company_profile"
-             
-            />
+            <Image src={companyPics} alt="company_profile" />
           </div>
 
           {/* button for smaller screen */}
