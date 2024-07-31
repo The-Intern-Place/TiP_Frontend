@@ -46,7 +46,10 @@ export default function useSignupTemplateChunk() {
         if (res.data) {
           setCountries(res.data);
         }
-      } catch (error) {}
+      } catch (error) {
+        // eslint-disable-next-line
+        console.log(error);
+      }
     };
 
     handleGetAllCountries();

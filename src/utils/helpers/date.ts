@@ -1,6 +1,6 @@
 export const handleReturnYear = () => {
   const currentYear = new Date().getFullYear();
-  let yearData = [];
+  const yearData = [];
 
   for (let i = 1900; i <= currentYear; i++) {
     yearData.push(i);

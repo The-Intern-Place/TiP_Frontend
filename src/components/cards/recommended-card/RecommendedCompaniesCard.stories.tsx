@@ -16,9 +16,8 @@ export const DefaultStory: RecommendedCompaniesCardStory = {
       "Nomad is located in Paris, France. Nomad has generates $728,000 in sales (USD).",
     tracks: [
       {
-        color: "#1976D2",
-        bgcolor: "#4640DE1A",
-        track: "Crypto",
+        style: "text-[#FFB836] border-2 border-[#FFB836]",
+        track: "Business Service",
       },
     ],
   },

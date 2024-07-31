@@ -7,13 +7,15 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prepare": "husky",
+    "prepare": "husky install",
+    "commit": "git-cz",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "lint:fix": "next lint --fix",
     "format": "prettier --write .",
     "test": "jest",
-    "check-format": "prettier --check ."
+    "check-format": "prettier --check .",
+    "check-lint": "eslint . --ext ts --ext tsx --ext js"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
@@ -55,6 +57,8 @@
     "@types/react": "18.3.3",
     "@types/react-dom": "^18",
     "@types/validator": "^13.12.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
     "autoprefixer": "^10.0.1",
     "eslint": "^8.57.0",
     "eslint-config-next": "^14.1.4",
