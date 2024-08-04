@@ -14,7 +14,12 @@ export const DefaultStory: RecommendedCompaniesCardStory = {
     title: "Nomad",
     description:
       "Nomad is located in Paris, France. Nomad has generates $728,000 in sales (USD).",
-    trackOne: "Business",
+    tracks: [
+      {
+        style: "text-[#FFB836] border-2 border-[#FFB836]",
+        track: "Business Service",
+      },
+    ],
   },
   name: "Recommended Companies Card",
 };
