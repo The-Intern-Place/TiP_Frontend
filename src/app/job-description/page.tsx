@@ -19,11 +19,14 @@ function page() {
     <div className="w-full overflow-x-hidden">
       <Navbar />
       <Tag />
-      <div className="w-full h-full max-w-[1350px] mt-10 mx-auto mb-6mx-auto grid grid-cols-2 gap-x-8 gap-y-16">
+      <div className="w-full h-full max-w-[1350px] mt-10 px-6 mb-6 mx-auto grid sm:grid-cols-2 gap-x-8 gap-y-16">
         <div>
           <Title />
+          <div className="h-[1px] w-[100%] mb-7 bg-[#D6DDEB] ml-2"></div>
           <Responsibilities />
+          <div className="h-[1px] w-[100%] mb-6 bg-[#D6DDEB] ml-2"></div>
           <Whoyouare />
+          <div className="h-[1px] w-[100%] mt-6 bg-[#D6DDEB] ml-2"></div>
         </div>
 
         <div>
@@ -38,11 +41,14 @@ function page() {
             applied={""}
             capacity={""}
           />
+          <div className="h-[1px] w-[100%] mb-5 bg-[#D6DDEB] ml-2"></div>
           <Categories />
+          <div className="h-[1px] w-[100%] mb-5 mt-5 bg-[#D6DDEB] ml-2"></div>
           <Requiredskills />
+          <div className="h-[1px] w-[100%] mt-5 bg-[#D6DDEB] ml-2"></div>
         </div>
       </div>
-      <div className="">
+      <div className="px-6">
         <Perksandbenefits />
       </div>
     </div>

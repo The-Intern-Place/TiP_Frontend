@@ -1,376 +1,94 @@
 "use client";
 
 import React from "react";
+import AIcon from "@assets/icons/AIcon"
+import CupIcon from "@assets/icons/CupIcon"
+import HolIcon from "@assets/icons/HolIcon"
+import MedIcon from "@assets/icons/MedIcon"
+import PalmsIcon from "@assets/icons/PalmsIcon"
+import TrainIcon from "@assets/icons/TrainIcon"
+import VidIcon from "@assets/icons/VidIcon"
 
 function Perksandbenefits() {
-    return (
-        <div className="w-full h-full max-w-[1350px] mt-10 mx-auto mb-6">
-            <div className="mb-10">
-                <h1 className="font-bold text-4xl">Perks & Benefits</h1>
-                <p>This job comes with several perks and benefits</p>
-            </div>
-            <div className="grid md:grid-cols-4 gap-8 w-full">
-                <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12">
-                    <a
-                        href="#"
-                        className="bg-green-100 text-green-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-green-400 mb-2"
-                    >
-                        <svg
-                            className="w-2.5 h-2.5 me-1.5"
-                            aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="currentColor"
-                            viewBox="0 0 18 18"
-                        >
-                            <path d="M17 11h-2.722L8 17.278a5.512 5.512 0 0 1-.9.722H17a1 1 0 0 0 1-1v-5a1 1 0 0 0-1-1ZM6 0H1a1 1 0 0 0-1 1v13.5a3.5 3.5 0 1 0 7 0V1a1 1 0 0 0-1-1ZM3.5 15.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2ZM16.132 4.9 12.6 1.368a1 1 0 0 0-1.414 0L9 3.55v9.9l7.132-7.132a1 1 0 0 0 0-1.418Z" />
-                        </svg>
-                        Design
-                    </a>
-                    <h2 className="text-gray-900 dark:text-white text-3xl font-extrabold mb-2">
-                        Start with Flowbite Design System
-                    </h2>
-                    <p className="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">
-                        Static websites are now used to bootstrap lots of websites and are
-                        becoming the basis for a variety of tools that even influence both
-                        web designers and developers.
-                    </p>
-                    <a
-                        href="#"
-                        className="text-blue-600 dark:text-blue-500 hover:underline font-medium text-lg inline-flex items-center"
-                    >
-                        Read more
-                        <svg
-                            className="w-3.5 h-3.5 ms-2 rtl:rotate-180"
-                            aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 14 10"
-                        >
-                            <path
-                                stroke="currentColor"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M1 5h12m0 0L9 1m4 4L9 9"
-                            />
-                        </svg>
-                    </a>
-                </div>
-                <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12">
-                    <a
-                        href="#"
-                        className="bg-purple-100 text-purple-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-purple-400 mb-2"
-                    >
-                        <svg
-                            className="w-2.5 h-2.5 me-1.5"
-                            aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 20 16"
-                        >
-                            <path
-                                stroke="currentColor"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M5 4 1 8l4 4m10-8 4 4-4 4M11 1 9 15"
-                            />
-                        </svg>
-                        Code
-                    </a>
-                    <h2 className="text-gray-900 dark:text-white text-3xl font-extrabold mb-2">
-                        Best react libraries around the web
-                    </h2>
-                    <p className="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">
-                        Static websites are now used to bootstrap lots of websites and are
-                        becoming the basis for a variety of tools that even influence both
-                        web designers and developers.
-                    </p>
-                    <a
-                        href="#"
-                        className="text-blue-600 dark:text-blue-500 hover:underline font-medium text-lg inline-flex items-center"
-                    >
-                        Read more
-                        <svg
-                            className="w-3.5 h-3.5 ms-2 rtl:rotate-180"
-                            aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 14 10"
-                        >
-                            <path
-                                stroke="currentColor"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M1 5h12m0 0L9 1m4 4L9 9"
-                            />
-                        </svg>
-                    </a>
-                </div>
-                <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12">
-                    <a
-                        href="#"
-                        className="bg-purple-100 text-purple-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-purple-400 mb-2"
-                    >
-                        <svg
-                            className="w-2.5 h-2.5 me-1.5"
-                            aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 20 16"
-                        >
-                            <path
-                                stroke="currentColor"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M5 4 1 8l4 4m10-8 4 4-4 4M11 1 9 15"
-                            />
-                        </svg>
-                        Code
-                    </a>
-                    <h2 className="text-gray-900 dark:text-white text-3xl font-extrabold mb-2">
-                        Best react libraries around the web
-                    </h2>
-                    <p className="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">
-                        Static websites are now used to bootstrap lots of websites and are
-                        becoming the basis for a variety of tools that even influence both
-                        web designers and developers.
-                    </p>
-                    <a
-                        href="#"
-                        className="text-blue-600 dark:text-blue-500 hover:underline font-medium text-lg inline-flex items-center"
-                    >
-                        Read more
-                        <svg
-                            className="w-3.5 h-3.5 ms-2 rtl:rotate-180"
-                            aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 14 10"
-                        >
-                            <path
-                                stroke="currentColor"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M1 5h12m0 0L9 1m4 4L9 9"
-                            />
-                        </svg>
-                    </a>
-                </div>
-                <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12">
-                    <a
-                        href="#"
-                        className="bg-purple-100 text-purple-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-purple-400 mb-2"
-                    >
-                        <svg
-                            className="w-2.5 h-2.5 me-1.5"
-                            aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 20 16"
-                        >
-                            <path
-                                stroke="currentColor"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M5 4 1 8l4 4m10-8 4 4-4 4M11 1 9 15"
-                            />
-                        </svg>
-                        Code
-                    </a>
-                    <h2 className="text-gray-900 dark:text-white text-3xl font-extrabold mb-2">
-                        Best react libraries around the web
-                    </h2>
-                    <p className="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">
-                        Static websites are now used to bootstrap lots of websites and are
-                        becoming the basis for a variety of tools that even influence both
-                        web designers and developers.
-                    </p>
-                    <a
-                        href="#"
-                        className="text-blue-600 dark:text-blue-500 hover:underline font-medium text-lg inline-flex items-center"
-                    >
-                        Read more
-                        <svg
-                            className="w-3.5 h-3.5 ms-2 rtl:rotate-180"
-                            aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 14 10"
-                        >
-                            <path
-                                stroke="currentColor"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M1 5h12m0 0L9 1m4 4L9 9"
-                            />
-                        </svg>
-                    </a>
-                </div>
-                <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12">
-                    <a
-                        href="#"
-                        className="bg-purple-100 text-purple-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-purple-400 mb-2"
-                    >
-                        <svg
-                            className="w-2.5 h-2.5 me-1.5"
-                            aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 20 16"
-                        >
-                            <path
-                                stroke="currentColor"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M5 4 1 8l4 4m10-8 4 4-4 4M11 1 9 15"
-                            />
-                        </svg>
-                        Code
-                    </a>
-                    <h2 className="text-gray-900 dark:text-white text-3xl font-extrabold mb-2">
-                        Best react libraries around the web
-                    </h2>
-                    <p className="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">
-                        Static websites are now used to bootstrap lots of websites and are
-                        becoming the basis for a variety of tools that even influence both
-                        web designers and developers.
-                    </p>
-                    <a
-                        href="#"
-                        className="text-blue-600 dark:text-blue-500 hover:underline font-medium text-lg inline-flex items-center"
-                    >
-                        Read more
-                        <svg
-                            className="w-3.5 h-3.5 ms-2 rtl:rotate-180"
-                            aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 14 10"
-                        >
-                            <path
-                                stroke="currentColor"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M1 5h12m0 0L9 1m4 4L9 9"
-                            />
-                        </svg>
-                    </a>
-                </div>
-                <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12">
-                    <a
-                        href="#"
-                        className="bg-purple-100 text-purple-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-purple-400 mb-2"
-                    >
-                        <svg
-                            className="w-2.5 h-2.5 me-1.5"
-                            aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 20 16"
-                        >
-                            <path
-                                stroke="currentColor"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M5 4 1 8l4 4m10-8 4 4-4 4M11 1 9 15"
-                            />
-                        </svg>
-                        Code
-                    </a>
-                    <h2 className="text-gray-900 dark:text-white text-3xl font-extrabold mb-2">
-                        Best react libraries around the web
-                    </h2>
-                    <p className="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">
-                        Static websites are now used to bootstrap lots of websites and are
-                        becoming the basis for a variety of tools that even influence both
-                        web designers and developers.
-                    </p>
-                    <a
-                        href="#"
-                        className="text-blue-600 dark:text-blue-500 hover:underline font-medium text-lg inline-flex items-center"
-                    >
-                        Read more
-                        <svg
-                            className="w-3.5 h-3.5 ms-2 rtl:rotate-180"
-                            aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 14 10"
-                        >
-                            <path
-                                stroke="currentColor"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M1 5h12m0 0L9 1m4 4L9 9"
-                            />
-                        </svg>
-                    </a>
-                </div>
-                <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12">
-                    <a
-                        href="#"
-                        className="bg-purple-100 text-purple-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-purple-400 mb-2"
-                    >
-                        <svg
-                            className="w-2.5 h-2.5 me-1.5"
-                            aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 20 16"
-                        >
-                            <path
-                                stroke="currentColor"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M5 4 1 8l4 4m10-8 4 4-4 4M11 1 9 15"
-                            />
-                        </svg>
-                        Code
-                    </a>
-                    <h2 className="text-gray-900 dark:text-white text-3xl font-extrabold mb-2">
-                        Best react libraries around the web
-                    </h2>
-                    <p className="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">
-                        Static websites are now used to bootstrap lots of websites and are
-                        becoming the basis for a variety of tools that even influence both
-                        web designers and developers.
-                    </p>
-                    <a
-                        href="#"
-                        className="text-blue-600 dark:text-blue-500 hover:underline font-medium text-lg inline-flex items-center"
-                    >
-                        Read more
-                        <svg
-                            className="w-3.5 h-3.5 ms-2 rtl:rotate-180"
-                            aria-hidden="true"
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 14 10"
-                        >
-                            <path
-                                stroke="currentColor"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M1 5h12m0 0L9 1m4 4L9 9"
-                            />
-                        </svg>
-                    </a>
-                </div>
-            </div>
+  return (
+    <div className="w-full h-full max-w-[1350px] mt-10 mx-auto mb-6">
+      <div className="mb-3 ml-4">
+        <h1 className="font-bold text-3xl">Perks & Benefits</h1>
+        <p className="">This job comes with several perks benefits</p>
+      </div>
+      <div className="grid md:grid-cols-4 gap-8 w-full">
+        <div className="rounded-lg p-8 md:p-12">
+          <MedIcon />
+          <h2 className="text-gray-900 text-3xl font-extrabold mb-2 mt-4">
+            Full Healthcare
+          </h2>
+          <p className="text-lg font-normal  w-60 text-[#515B6F] mb-4 mt-4">
+            We believe in thriving communities and that starts with our team being happy and healthy.
+          </p>
         </div>
-    );
+        <div className=" rounded-lg p-8 md:p-12">
+          <HolIcon />
+          <h2 className="text-gray-900 text-3xl font-extrabold mb-2 mt-4">
+            Unlimited Vacation
+          </h2>
+          <p className="text-lg font-normal  w-60 text-[#515B6F] mb-4 mt-4">
+            We believe you should have a flexible schedule that makes space for family, wellness, and fun.
+          </p>
+
+        </div>
+        <div className=" rounded-lg p-8 md:p-12">
+          <VidIcon />
+          <h2 className="text-gray-900 text-3xl font-extrabold mb-2 mt-4">
+            Skiill Development
+          </h2>
+          <p className="text-lg font-normal  w-64 text-[#515B6F] mb-4 mt-4">
+            We believe in always learning and leveling up our skills. Whether it's a conference or online course..
+          </p>
+
+        </div>
+        <div className=" rounded-lg p-8 md:p-12">
+          <AIcon />
+          <h2 className="text-gray-900 text-3xl font-extrabold mb-2 mt-4">
+            Team Summit
+          </h2>
+          <p className="text-lg font-normal  w-60 text-[#515B6F] mb-4 mt-4">
+            Every 6 months we have a full team summit where we have fun, reflect, and plan for the upcoming quarter.
+          </p>
+
+        </div>
+        <div className=" rounded-lg p-8 md:p-12">
+          <CupIcon />
+          <h2 className="text-gray-900  text-3xl font-extrabold mb-2 mt-4">
+            Remote Working
+          </h2>
+          <p className="text-lg font-normal  w-60 text-[#515B6F] mb-4 mt-4">
+            You know how you perform your best. Work from home, coffee shop or anywhere when you feel like it.
+          </p>
+
+        </div>
+        <div className="rounded-lg p-8 md:p-12">
+          <TrainIcon />
+          <h2 className="text-gray-900 text-3xl font-extrabold mb-2 mt-4">
+            Commuter Benefits
+          </h2>
+          <p className="text-lg font-normal  w-60 text-[#515B6F] mb-4 mt-4">
+            We’re grateful for all the time and energy each team member puts into getting to work every day.
+          </p>
+
+        </div>
+        <div className=" rounded-lg p-8 md:p-12">
+          <PalmsIcon />
+          <h2 className="text-gray-900  text-3xl font-extrabold mb-2 mt-4">
+            We Give Back
+          </h2>
+          <p className="text-lg font-normal w-60 text-[#515B6F] mb-4">
+            We anonymously match any donation our employees make (up to $/€ 600) so they can support the organizations they care about most—times two.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default Perksandbenefits;
