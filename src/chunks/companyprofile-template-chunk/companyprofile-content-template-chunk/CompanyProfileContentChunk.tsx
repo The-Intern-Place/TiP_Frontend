@@ -14,23 +14,19 @@ import companyFourA from "public/images/companypicfourA.svg";
 import squareX from "public/images/squareX.svg";
 import squareLinkdin from "public/images/squareLinkdin.svg";
 
-import html from "public/images/html.svg";
-import css from "public/images/css.svg";
-import javascript from "public/images/javascript.svg";
-
 import r_arrow from "public/images/r_arrow2.svg";
+import { partners } from "@/utils/data/companyprofile";
 
-const CompnayProfileContentChunk = () => {
+const CompanyProfileContentChunk = () => {
   return (
-    <section className="flex flex-col justify-center items-center md:flex-row lg:gap-[64px] ">
+    <section className="flex flex-col justify-center items-center md:flex-row lg:gap-[64px]">
       <div
-        className="flex flex-col justify-center pt-[24px]  lg:flex-row md:gap-[64px] md:pt-[30px] lg:pr-[124px]  p-[20px] gap-[24px]
-   md:pb-[30px] lg:pl-[124px] "
+        className="lg:flex gap-20 w-full h-full max-w-[1350px] mx-auto px-6 md:px-10 lg:px-16 xl:px-0 pt-10"
       >
-        {/* company prfoile */}
+        {/* company profile */}
         <div className="flex flex-col gap-[40px] ">
           <div className="flex flex-col gap-[16px]">
-            <h1 className="text-[24px] leading-[29px] md:text-[32px] md:leading-[38px] text-[#1B1B1B]  font-clash font-[600]">
+            <h1 className="text-[24px] leading-[29px] md:text-[32px] md:leading-[38px] text-[#1B1B1B] font-semibold">
               Company Profile
             </h1>
             <p className="text-[16px] leading-[30px]  text-[#515B6F]  font-epilogue font-[400]  ">
@@ -166,34 +162,20 @@ const CompnayProfileContentChunk = () => {
             Learn about the companies that have partnered with Urban Tech.
           </p>
 
-          <ul className="flex gap-[8px]">
-            <li className="font-[400] font-epilogue text-[#25324B] md:leading-[30px] leading-[25px] flex flex-col p-[12px] gap-[10px] text-center">
-              {" "}
-              <Image
-                src={html}
-                alt="company_pics"
-                className="w-[74px] h-[74px]  "
-              />{" "}
-              HTML 5
-            </li>
-            <li className="font-[400] font-epilogue text-[#25324B] md:leading-[30px] leading-[25px] flex flex-col p-[12px] gap-[10px] text-center">
-              {" "}
-              <Image
-                src={css}
-                alt="company_pics"
-                className="w-[74px] h-[74px]  "
-              />{" "}
-              CSS 3
-            </li>
-            <li className="font-[400] font-epilogue text-[#25324B] md:leading-[30px] leading-[25px] flex flex-col p-[12px] gap-[10px] text-center">
-              {" "}
-              <Image
-                src={javascript}
-                alt="company_pics"
-                className="w-[74px] h-[74px]  "
-              />{" "}
-              JavaScript
-            </li>
+          <ul className="flex gap-2">
+            {partners.map((partner) => (
+              <li
+                key={partner.id}
+                className="text-[#25324B] md:leading-[30px] leading-[25px] flex flex-col p-[12px] gap-[10px] text-center"
+              >
+                <Image
+                  src={partner.img}
+                  alt="company_pics"
+                  className="w-full h-full"
+                />
+                {partner.text}
+              </li>
+            ))}
           </ul>
 
           <ul>
@@ -227,4 +209,4 @@ const CompnayProfileContentChunk = () => {
   );
 };
 
-export default CompnayProfileContentChunk;
+export default CompanyProfileContentChunk;

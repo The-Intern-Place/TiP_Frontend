@@ -3,14 +3,14 @@ import React from "react";
 
 import companyPics from "public/images/tip_company.svg";
 import Link from "next/link";
-import { companyprofileherodata } from "@/utils/data/compnayprofile";
+import { companyprofileherodata } from "@/utils/data/companyprofile";
 import { CompanyProfileHeroCardProps } from "@/components/cards/companyprofile-hero-card/CompanyProfileHeroCard.type";
 import CompanyProfileHeroCard from "@/components/cards/companyprofile-hero-card/CompanyProfileHeroCard";
 
 const CompanyProfileHeroChunk = () => {
   return (
-    <section className="flex md:justify-center justify-start items-start md:items-center w-full overflow-hidden py-[2rem] md:py-0 md:h-[40vh]  lg:h-[50vh] bg-[#FAFBFC]">
-      <div className="flex flex-col md:flex-row  items-start justify-start md:items-center md:justify-center gap-[24px] p-[10px]  w-[100%] ">
+    <section className="py-12 bg-[#FAFBFC]">
+      <div className="flex gap-8 w-full h-full max-w-[1350px] mx-auto px-6 md:px-10 lg:px-16 pt-10 xl:px-0">
         {/* img div */}
 
         <div className="flex items-center justify-between md:justify-start ">
@@ -21,8 +21,7 @@ const CompanyProfileHeroChunk = () => {
           {/* button for smaller screen */}
           <div className="md:hidden block absolute right-[15px] top-[139px]">
             <button
-              className=" flex rounded-none bg-[#FFFFFF] text-[#1976D2] text-[16px] items-center gap-[8px] justify-center 
-    leading-[25px] text-center border-[1px] border-[#1976D2] h-[34px]   pt-[4px] pr-[12px] pb-[4px] pl-[12px]"
+              className=" flex rounded-none bg-[#FFFFFF] text-[#1976D2] text-[16px] items-center gap-[8px] justify-center leading-[25px] text-center border-[1px] border-[#1976D2] h-[34px]   pt-[4px] pr-[12px] pb-[4px] pl-[12px]"
             >
               43 Jobs
             </button>
@@ -36,13 +35,13 @@ const CompanyProfileHeroChunk = () => {
               <h1 className="text-[#002360] text-[48px] leading-[52px] font-[600] font-clash gap-[20px] flex">
                 Urban Tech
               </h1>
-              <button className="hidden md:flex rounded-none bg-[#FFFFFF] text-[#0046BF] text-[16px] items-center gap-[8px] justify-center leading-[25px] text-center border-[1px] border-blue h-[34px]   pt-[4px] pr-[12px] pb-[4px] pl-[12px]">
+              <span className="hidden md:flex rounded-none bg-white text-blue text-base items-center gap-2 justify-center leading-[25px] text-center border border-blue h-[34px] px-3">
                 3 Jobs
-              </button>
+              </span>
             </div>
 
             <Link
-              href="#"
+              href="https://gourbantech.com"
               className="text-light-blue font-[600] md:text-[16px] md:leading-[25px]"
             >
               https://gourbantech.com
@@ -60,7 +59,7 @@ const CompanyProfileHeroChunk = () => {
                   text={c.text}
                   title={c.title}
                 />
-              ),
+              )
             )}
           </div>
         </div>

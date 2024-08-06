@@ -1,4 +1,4 @@
-import CompnayProfileContentChunk from "@/chunks/companyprofile-template-chunk/companyprofile-content-template-chunk/CompnayProfileContentChunk";
+import CompanyProfileContentChunk from "@/chunks/companyprofile-template-chunk/companyprofile-content-template-chunk/CompanyProfileContentChunk";
 import CompanyProfileHeroChunk from "@/chunks/companyprofile-template-chunk/companyprofile-hero-template-chunk/CompanyProfileHeroChunk";
 import CompanyProfileTeamChunk from "@/chunks/companyprofile-template-chunk/companyprofile-team-template-chunk/CompanyProfileTeamChunk";
 import JobOpeningTemplateChunk from "@/chunks/home-template-chunk/job-opening-template-chunk/JobOpeningTemplateChunk";
@@ -15,7 +15,7 @@ const page = () => {
     <div className="overflow-hidden">
       <Navbar bgcolor="#FAFBFC" />
       <CompanyProfileHeroChunk />
-      <CompnayProfileContentChunk />
+      <CompanyProfileContentChunk />
       <CompanyProfileTeamChunk />
       <JobOpeningTemplateChunk />
     </div>
