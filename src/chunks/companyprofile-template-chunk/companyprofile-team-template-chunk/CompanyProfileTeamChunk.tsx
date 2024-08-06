@@ -16,7 +16,7 @@ import Image from "next/image";
 
 const CompanyProfileTeamChunk = () => {
   return (
-    <div className="flex flex-col justify-between w-full h-full max-w-[1350px] mx-auto px-6 md:px-10 lg:px-16 pt-10 xl:px-0 ">
+    <div className="flex flex-col justify-between w-full h-full max-w-[1350px] mx-auto px-6 md:px-10 lg:px-16 py-10 xl:px-0 ">
       <div>
         {/* Heading */}
 
