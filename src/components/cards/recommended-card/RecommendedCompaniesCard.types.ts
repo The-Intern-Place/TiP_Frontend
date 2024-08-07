@@ -9,6 +9,9 @@ export type RecommendedCompaniesCardProps = {
   tracks: Array<{
     style?: string;
     track: string;
+    border?: string;
+    bgcolor?: string;
+    color?: string;
   }>;
 };
 
