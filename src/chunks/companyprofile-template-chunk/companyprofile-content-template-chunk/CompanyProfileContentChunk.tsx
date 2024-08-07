@@ -20,9 +20,7 @@ import { partners } from "@/utils/data/companyprofile";
 const CompanyProfileContentChunk = () => {
   return (
     <section className="flex flex-col justify-center items-center md:flex-row lg:gap-[64px]">
-      <div
-        className="lg:flex gap-20 w-full h-full max-w-[1350px] mx-auto px-6 md:px-10 lg:px-16 xl:px-0 pt-10"
-      >
+      <div className="lg:flex gap-20 w-full h-full max-w-[1350px] mx-auto px-6 md:px-10 lg:px-16 xl:px-0 pt-10">
         {/* company profile */}
         <div className="flex flex-col gap-[40px] ">
           <div className="flex flex-col gap-[16px]">

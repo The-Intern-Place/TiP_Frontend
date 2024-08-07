@@ -40,7 +40,7 @@ const CompanyProfileTeamChunk = () => {
               title={c.title}
               text={c.text}
             />
-          )
+          ),
         )}
       </div>
 
@@ -86,7 +86,7 @@ const CompanyProfileTeamChunk = () => {
                   text={c.text}
                 />
               </SwiperSlide>
-            )
+            ),
           )}
         </Swiper>
 

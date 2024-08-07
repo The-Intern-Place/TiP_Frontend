@@ -39,19 +39,19 @@ export const partners = [
   {
     id: 1,
     img: html,
-    text: "HTML 5"
+    text: "HTML 5",
   },
   {
     id: 2,
     img: css,
-    text: "CSS 3"
+    text: "CSS 3",
   },
   {
     id: 3,
     img: javascript,
-    text: "Javascript"
+    text: "Javascript",
   },
-]
+];
 import oliverTeam from "public/images/oliverteam.svg";
 import anwuriTeam from "public/images/anwuri.svg";
 import arienneTeam from "public/images/arienneteam.svg";
