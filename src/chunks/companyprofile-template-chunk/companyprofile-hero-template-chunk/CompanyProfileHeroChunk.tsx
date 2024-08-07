@@ -7,10 +7,12 @@ import { companyprofileherodata } from "@/utils/data/companyprofile";
 import { CompanyProfileHeroCardProps } from "@/components/cards/companyprofile-hero-card/CompanyProfileHeroCard.type";
 import CompanyProfileHeroCard from "@/components/cards/companyprofile-hero-card/CompanyProfileHeroCard";
 
+
 const CompanyProfileHeroChunk = () => {
   return (
     <section className="py-12 bg-[#FAFBFC]">
-      <div className="flex gap-8 w-full h-full max-w-[1350px] mx-auto px-6 md:px-10 lg:px-16 pt-10 xl:px-0">
+
+      <div className="flex flex-col md:flex-row gap-8 w-full h-full max-w-[1350px] mx-auto px-6 md:px-10 lg:px-16 md:pt-10 xl:px-0">
         {/* img div */}
 
         <div className="flex items-center justify-between md:justify-start ">
@@ -19,13 +21,15 @@ const CompanyProfileHeroChunk = () => {
           </div>
 
           {/* button for smaller screen */}
-          <div className="md:hidden block absolute right-[15px] top-[139px]">
-            <button
-              className=" flex rounded-none bg-[#FFFFFF] text-[#1976D2] text-[16px] items-center gap-[8px] justify-center leading-[25px] text-center border-[1px] border-[#1976D2] h-[34px]   pt-[4px] pr-[12px] pb-[4px] pl-[12px]"
+          <div className="md:hidden block absolute right-[15px] top-[146px]">
+            <div 
+              className=" flex rounded-none bg-[#FFFFFF] text-[#1976D2] text-[16px] border-[1px] border-[#1976D2] 
+               items-center gap-[8px] justify-center leading-[25px] text-center   h-[34px]   pt-[4px] pr-[12px] pb-[4px] pl-[12px]"
             >
-              43 Jobs
-            </button>
+         <h1 className="text-[#1976D2] text-[16px] leading-[25px] font-[400] text-center font-epilogue ">43 Jobs</h1>
+            </div>
           </div>
+
         </div>
 
         {/* text div */}
@@ -49,7 +53,7 @@ const CompanyProfileHeroChunk = () => {
           </div>
 
           {/* mapping with herodata */}
-          <div className="flex flex-col md:flex-row flex-wrap gap-[16px] lg:gap-[40px]">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:flex  gap-[16px] lg:gap-[40px]">
             {companyprofileherodata.map(
               (c: CompanyProfileHeroCardProps, i: number) => (
                 <CompanyProfileHeroCard
@@ -61,9 +65,11 @@ const CompanyProfileHeroChunk = () => {
                 />
               )
             )}
-          </div>
+          </div> 
+
         </div>
       </div>
+
     </section>
   );
 };

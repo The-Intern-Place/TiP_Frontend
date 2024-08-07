@@ -1,6 +1,8 @@
+"use client";
 import React from "react";
 import { FindJobCardProps } from "./FindJobCard.types";
 import Image from "next/image";
+import Link from "next/link";
 
 const FindJobCard = (props: FindJobCardProps) => {
   const appliedPercentage =
@@ -9,15 +11,18 @@ const FindJobCard = (props: FindJobCardProps) => {
   return (
     <section
       className="flex  flex-col md:flex-row justify-between p-[24px]   items-start
-    border-[1px] border-[#D6DDEB]  lg:h-[149px] md:h-[180px] w-[100%]  my-[0.5rem]"
+    border-[1px] border-[#D6DDEB]  lg:h-[149px] md:h-[180px] w-[100%]  my-[0.5rem]"  
     >
       <div className="flex  flex-col md:flex-row gap-[15px]  md:gap-[24px] w-[356px] h-[101px]  ">
         <Image src={props.img} alt="jobs_image" className="w-[68px] h-[68px]" />
 
         <div className="flex  flex-col gap-[8px] lg:max-w-[288px]">
-          <h1 className="text-[20px]  font-epilogue text-[#25324B] font-[600] leading-[24px]">
+
+          <Link href={`/findjobdetails/${props.id}`} passHref={true}>
+          <h1  className="text-[20px]  font-epilogue text-[#25324B] font-[600] leading-[24px]">
             {props.title}
           </h1>
+          </Link>
 
           {/* company and location */}
           <div className="flex flex-wrap items-center lg:gap-[8px]  gap-8px  ">
