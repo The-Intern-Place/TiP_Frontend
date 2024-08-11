@@ -14,7 +14,7 @@ const AdvertiseHeroChunk = () => {
             <span className="text-[#26A4FF] relative">
               Advertise{" "}
               <span
-                className="absolute lg:top-14 top-10 md:right-0 right-1 items-center 
+                className="absolute top-14 md:right-0 right-1 items-center 
                md:items-end "
               >
                 <Image

@@ -17,8 +17,8 @@ const AdvertisePriceChunk = () => {
 
       <div className="flex  flex-col md:flex-row justify-center items-center gap-[20px]  lg:gap-[25px]">
         {/* Basic Plan */}
-        <div className="bg-[#F9FDFF] w-[87%]  border-[2px]   rounded-[20px]">
-          <div className="lg:w-[350px] rounded-[20px] border-[1px] bg-[#FFFFFF] border-[#D6DDEB] mx-[1rem] my-[1rem]">
+        <div className="bg-[#F9FDFF] w-[87%] rounded-[20px]">
+          <div className="lg:w-[350px] rounded-[20px] bg-[#FFFFFF] mx-[1rem] my-[1rem]">
             <div className="flex flex-col gap-[10px] p-[1.5rem] mx-[0.3rem]">
               <h1 className="font-clash font-[600] text-[24px] leading-[40px]  text-[#002360]">
                 Basic Plan
@@ -73,7 +73,7 @@ const AdvertisePriceChunk = () => {
             </ul>
 
             {/* second divider */}
-            <div className="w-[320px]  border-[1px] border-[#D6DDEB] mx-[0.7rem]"></div>
+            <div className="w-[320px] border-[1px] border-[#D6DDEB] mx-[0.7rem]"></div>
 
             <div className="flex flex-col items-center justify-center  p-[10px]">
               <h1 className="font-[700] text-[#002360] text-[30px] leading-[48px] font-epilogue">
@@ -90,8 +90,8 @@ leading-[22px] text-[14px] font-[700] font-epilogue  "
         </div>
 
         {/* Premium Plan */}
-        <div className="bg-div-custom w-[87%] border-[2px]  rounded-[20px]">
-          <div className="lg:w-[350px] rounded-[20px] border-[1px] bg-[#FFFFFF] border-[#D6DDEB] mx-[1rem] my-[1rem]">
+        <div className="bg-div-custom w-[87%] rounded-[20px]">
+          <div className="lg:w-[350px] rounded-[20px]  bg-[#FFFFFF] mx-[1rem] my-[1rem]">
             <div className="flex flex-col gap-[10px] p-[1.5rem] mx-[0.3rem]">
               <h1 className="font-clash font-[600] text-[24px] leading-[40px]  text-[#002360]">
                 Premium Plan
