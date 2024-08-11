@@ -1,15 +1,11 @@
 import React from "react";
-import { AdvertiseBenefitCardProps } from "./AdvertiseBeneiftCard.types";
+import { AdvertiseBenefitCardProps } from "./AdvertiseBenefitCard.types";
 import Image from "next/image";
 
 const AdvertiseBenefitCard = (props: AdvertiseBenefitCardProps) => {
   return (
     <section className="flex flex-col items-center justify-center">
-      <div
-        className="bg-transparent 
-       md:bg-[#F9FDFF] p-[2rem] rounded-[8px] flex flex-col 
-       items-start justify-center"
-      >
+      <div className="bg-[#F9FDFF] p-[2rem] rounded-[8px] h-full flex flex-col items-start justify-center">
         <div className="w-[40px] h-[40px] bg-[#ECF2FE] flex items-center justify-center">
           <Image
             src={props.image}
