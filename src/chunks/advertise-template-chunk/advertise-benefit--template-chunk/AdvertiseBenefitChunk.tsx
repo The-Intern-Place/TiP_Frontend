@@ -20,9 +20,7 @@ const AdvertiseBenefitChunk = () => {
       </div>
 
       {/* mapping through with data */}
-      <div
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:gap-[30px] max-w-[1292px] w-[93%] md:items-center justify-center"
-      >
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:gap-[30px] max-w-[1292px] w-[93%] md:items-center justify-center">
         {benefitdata.map((a: AdvertiseBenefitCardProps, i: number) => (
           <AdvertiseBenefitCard
             key={i}
