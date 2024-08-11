@@ -1,11 +1,11 @@
 import AdvertiseBenefitCard from "@/components/cards/advertisebenefit-card/AdvertiseBenefitCard";
-import { AdvertiseBenefitCardProps } from "@/components/cards/advertisebenefit-card/AdvertiseBeneiftCard.types";
+import { AdvertiseBenefitCardProps } from "@/components/cards/advertisebenefit-card/AdvertiseBenefitCard.types";
 import { benefitdata } from "@/utils/data/adveertise";
 import React from "react";
 
 const AdvertiseBenefitChunk = () => {
   return (
-    <section className="flex flex-col md:items-center items-center justify-center top-[92px] mt-[4.5rem]  w-[100%]">
+    <section className="flex flex-col md:items-center items-center justify-center top-[92px] md:mt-[4.5rem] w-[100%]">
       {/* heading */}
       <div
         className="flex md:items-center md:justify-center items-start justify-start
@@ -20,10 +20,7 @@ const AdvertiseBenefitChunk = () => {
       </div>
 
       {/* mapping through with data */}
-      <div
-        className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 
-        md:gap-[30px] max-w-[1292px] w-[93%] md:items-center justify-center space-y-[0.6rem]"
-      >
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[30px] max-w-[1292px] w-[93%] justify-center">
         {benefitdata.map((a: AdvertiseBenefitCardProps, i: number) => (
           <AdvertiseBenefitCard
             key={i}

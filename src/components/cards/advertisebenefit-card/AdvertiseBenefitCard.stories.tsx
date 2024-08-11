@@ -1,7 +1,7 @@
 import { Meta } from "@storybook/react";
 import AdvertiseBenefitCard from "./AdvertiseBenefitCard";
 import awareness from "public/awareness.svg";
-import { AdvertiseBenefitCardStory } from "./AdvertiseBeneiftCard.types";
+import { AdvertiseBenefitCardStory } from "./AdvertiseBenefitCard.types";
 
 const AdvertiseBenefitCardMeta = {
   title: "Components/Card/AdvertiseBenefitCard",
