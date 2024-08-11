@@ -13,7 +13,7 @@ const CompanyProfileTeamCard = (props: CompanyProfileTeamCardProps) => {
       <Image
         src={props.img}
         alt="team_pics"
-        className="w-[80px] h-[80px]  rounded-[50%]"
+        className="w-[80px] h-[80px] rounded-[50%]"
       />
       <h1 className="font-epilogue font-[600] text-[#1B1B1B]  md:leading-[32px] text-[18px] leading-[28px] text-center">
         {props.title}

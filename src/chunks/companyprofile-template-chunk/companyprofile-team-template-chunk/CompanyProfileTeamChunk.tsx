@@ -30,7 +30,7 @@ const CompanyProfileTeamChunk = () => {
         </div>
       </div>
       {/* for medium screen without slider */}
-      <div className="md:flex w-full hidden  gap-[16px]">
+      <div className="md:flex w-full hidden gap-[16px]">
         {companyprofileteamdata.map(
           (c: CompanyProfileTeamCardProps, i: number) => (
             <CompanyProfileTeamCard

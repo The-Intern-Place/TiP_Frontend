@@ -17,7 +17,7 @@ const page = () => {
       <CompanyProfileHeroChunk />
       <CompanyProfileContentChunk />
       <CompanyProfileTeamChunk />
-      <JobOpeningTemplateChunk />
+      <JobOpeningTemplateChunk title="Similar jobs" />
     </div>
   );
 };
