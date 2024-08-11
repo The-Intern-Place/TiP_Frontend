@@ -1,5 +1,5 @@
 import AdvertiseBenefitCard from "@/components/cards/advertise-benefit-card/AdvertiseBenefitCard";
-import { AdvertiseBenefitCardProps } from "@/components/cards/advertise-benefit-card/AdvertiseBeneiftCard.types";
+import { AdvertiseBenefitCardProps } from "@/components/cards/advertise-benefit-card/AdvertiseBenefitCard.types";
 import { benefitdata } from "@/utils/data/adveertise";
 import React from "react";
 

@@ -1,7 +1,7 @@
 import { Meta } from "@storybook/react";
 import AdvertiseBenefitCard from "./AdvertiseBenefitCard";
 import awareness from "public/awareness.svg";
-import { AdvertiseBenefitCardStory } from "./AdvertiseBeneiftCard.types";
+import { AdvertiseBenefitCardStory } from "./AdvertiseBenefitCard.types";
 
 const AdvertiseBenefitCardMeta = {
   title: "Components/Card/AdvertiseBenefitCard",
@@ -17,7 +17,7 @@ export const DefaultStory: AdvertiseBenefitCardStory = {
       "Get your brand in front of a highly targeted audience. It is a fantastic chance to showcase what makes your brand unique.",
   },
 
-  name: "Find Job Card",
+  name: "Advertise Benefit  Card",
 };
 
 export default AdvertiseBenefitCardMeta;
