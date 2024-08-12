@@ -8,7 +8,6 @@ export type JobDescriptionCardProps = {
   company: string;
   location: string;
   duration: string;
-  
 };
 
 export type JobDescriptionCardStory = StoryObj<typeof JobDescriptionCardMeta>;

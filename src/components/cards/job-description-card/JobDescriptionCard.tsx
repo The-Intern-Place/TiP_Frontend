@@ -1,7 +1,7 @@
 import React from "react";
 import { JobDescriptionCardProps } from "./JobDescriptionCard.types";
 import { IC_Share } from "@assets/icons/IC_Share";
-import { Logo } from "@assets/icons/Logo"
+import { Logo } from "@assets/icons/Logo";
 
 const JobDescriptionCard = (props: JobDescriptionCardProps) => {
     return (
@@ -9,7 +9,7 @@ const JobDescriptionCard = (props: JobDescriptionCardProps) => {
             className="flex flex-col md:flex-row justify-between p-[24px] ml-4 items-start
             border-[1px] border-[#D6DDEB]  lg:h-[99px] md:h-[180px] w-[90%] sm:w-[100%]  my-[0.5rem]"
         >
-            <div className="flex  flex-col md:flex-row gap-[15px]  md:gap-[24px] w-[356px] h-[101px] -ml-4 ">
+            <div className="flex  flex-col md:flex-row gap-[15px]  md:gap-[24px] w-[356px] h-[101px] -ml-4">
                 {/* <Image src={<IC_Share/>} alt="jobs_image" className="w-[68px] h-[68px]" /> */}
                 <Logo />
 
@@ -19,7 +19,7 @@ const JobDescriptionCard = (props: JobDescriptionCardProps) => {
                     </h1>
 
                     {/* company and location */}
-                    <div className="flex items-center sm:gap-[8px] gap-[1px]">
+                    <div className="flex items-center sm:gap-[8px] gap-[1px] md:gap-[1px] sm:px-2">
                         <p className="text-[16px] text-[#7C8493] font-epilogue font-[400] leading-[25px] whitespace-nowrap">
                             {props.company}
                         </p>
@@ -38,13 +38,11 @@ const JobDescriptionCard = (props: JobDescriptionCardProps) => {
                                     {props.duration}
                                 </h1>
                             </div>
-
                         </div>
-                        <div className="flex sm:ml-[41rem] -mt-[9rem] -ml-[3rem] sm:-mt-9 flex-row cursor-pointer">
+                        <div className="flex sm:ml-[41rem] -mt-[9rem] -ml-[3rem] md:mr-6 sm:-mt-9 flex-row cursor-pointer">
                             <IC_Share />
                             <div className="h-[34px] w-[1px] bg-[#D6DDEB] ml-2"></div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -54,15 +52,12 @@ const JobDescriptionCard = (props: JobDescriptionCardProps) => {
             <div className="flex flex-col w-[20rem] -ml-4 md:w-[120px]">
                 <div className="mt-[2rem] sm:mt-0">
                     <div className="flex items-center">
-                        <button
-                            className="w-full h-[50px] bg-[#4640DE] flex text-center items-center justify-center ml-4 font-[700] text-[16px] leading-[25px] text-[#FFFFFF]"
-                        >
+                        <button className="w-full h-[50px] bg-[#4640DE] flex text-center items-center justify-center ml-4 font-[700] text-[16px] leading-[25px] text-[#FFFFFF]">
                             Apply
                         </button>
                     </div>
                 </div>
             </div>
-
         </section>
     );
 };

@@ -1,5 +1,4 @@
-import tick from 'public/images/tick.svg'
-
+import tick from "public/images/tick.svg";
 
 export const responsibilityImpression = [
   {

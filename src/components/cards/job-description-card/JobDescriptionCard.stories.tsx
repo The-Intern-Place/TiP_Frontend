@@ -1,5 +1,5 @@
 import { Meta } from "@storybook/react";
-import JobDescriptionCard from "./JobDescriptionCard"
+import JobDescriptionCard from "./JobDescriptionCard";
 import Nomad from "public/images/Nomad.svg";
 import { JobDescriptionCardStory } from "./JobDescriptionCard.types";
 
