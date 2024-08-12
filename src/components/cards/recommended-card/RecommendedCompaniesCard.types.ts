@@ -7,9 +7,7 @@ export type RecommendedCompaniesCardProps = {
   title: string;
   description: string;
   tracks: Array<{
-    bgcolor?: string;
-    color: string;
-    border?: string;
+    style?: string;
     track: string;
   }>;
 };
