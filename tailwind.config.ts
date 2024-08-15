@@ -13,7 +13,7 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        clash: ["var(--font--clash)"],
+        clash: ["var(--font-clash)"],
         epilogue: ["var(--font-epilogue)"],
       },
       backgroundImage: {
