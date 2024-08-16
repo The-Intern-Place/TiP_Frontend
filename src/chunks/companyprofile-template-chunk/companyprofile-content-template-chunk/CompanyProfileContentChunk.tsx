@@ -113,42 +113,41 @@ const CompanyProfileContentChunk = () => {
           </div>
 
           {/* photo for mobile view */}
-          <div className="flex flex-col  md:hidden gap-[12px] ">
-            <div className="w-[326px] h-[307px] md:w-[355px] md:h-[450px] ">
-              <Image
-                src={companyOneA}
-                alt="company_pics"
-                className="w-full h-full object-cover md:w-[355px] md:h-[450px] "
-              />
-            </div>
+          <div className="flex flex-col max-w-full w-full md:hidden gap-[12px]">
+  <div className="w-full h-[307px]">
+    <Image
+      src={companyOneA}
+      alt="company_pics"
+      className="w-full h-full object-cover md:w-[355px] md:h-[450px]"
+    />
+  </div>
 
-            <ul className="flex md:flex-col md:gap-[8px] gap-[12px] ">
-              <li className="w-[101px] h-[107px] md:w-[284px] md:h-[143px] ">
-                {" "}
-                <Image
-                  src={companyTwoA}
-                  alt="company_pics"
-                  className="w-[101px] h-[107px] md:w-[284px] md:h-[143px] "
-                />
-              </li>
-              <li className="w-[101px] h-[107px] md:w-[284px] md:h-[143px] ">
-                {" "}
-                <Image
-                  src={companyThreeA}
-                  alt="company_pics"
-                  className="w-[101px] h-[107px] md:w-[284px] md:h-[143px] "
-                />
-              </li>
-              <li className="w-[101px] h-[107px] md:w-[284px] md:h-[143px] ">
-                {" "}
-                <Image
-                  src={companyFourA}
-                  alt="company_pics"
-                  className="w-[101px] h-[107px] md:w-[284px] md:h-[143px] "
-                />
-              </li>
-            </ul>
-          </div>
+  <ul className="flex md:flex-col md:gap-[8px] gap-[18px] max-w-full w-full">
+    <li className="w-[100%] h-[107px]">
+      <Image
+        src={companyTwoA}
+        alt="company_pics"
+        className="w-full h-full"
+      />
+    </li>
+    <li className="w-[100%] h-[107px]">
+      <Image
+        src={companyThreeA}
+        alt="company_pics"
+        className="w-full h-full"
+      />
+    </li>
+    <li className="w-[100%] h-[107px]">
+      <Image
+        src={companyFourA}
+        alt="company_pics"
+        className="w-full h-full"
+      />
+    </li>
+  </ul>
+</div>
+
+
         </div>
 
         {/* Partners */}
