@@ -30,7 +30,7 @@ const CompanyProfileTeamChunk = () => {
         </div>
       </div>
       {/* for medium screen without slider */}
-      <div className="md:flex w-full hidden gap-[16px]">
+      <div className="md:flex max-w-full hidden gap-[16px]">
         {companyprofileteamdata.map(
           (c: CompanyProfileTeamCardProps, i: number) => (
             <CompanyProfileTeamCard
@@ -90,7 +90,7 @@ const CompanyProfileTeamChunk = () => {
           )}
         </Swiper>
 
-        <div className="custom-nexts absolute md:hidden right-[7px]  transform translate-y-[-420%] w-[28px] h-[40px] bg-[#0046BF] mt-[-10px] flex items-center justify-center cursor-pointer z-10">
+        <div className="custom-nexts absolute md:hidden right-[7px]  transform translate-y-[-400%] w-[28px] h-[40px] bg-[#0046BF] mt-[-2px] flex items-center justify-center cursor-pointer z-10">
           <Image src={rightarrow} alt="right-icon" />
         </div>
       </div>

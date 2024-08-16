@@ -62,7 +62,7 @@ const CompanyProfileContentChunk = () => {
               </li>
               <li
                 className="flex border-[1px] border-[#1976D2] p-[8px] gap-[16px] text-[#1976D2] text-[16px] leading-[25px] 
-        font-epilogue font-[500] items-center justify-center w-[332px] md:w-[250px] lg:w-[292px]"
+        font-epilogue font-[500] items-center justify-center w-[332px] md:w-[292px]"
               >
                 <Image
                   src={squareLinkdin}
@@ -153,9 +153,14 @@ const CompanyProfileContentChunk = () => {
 
         {/* Partners */}
         <div className="flex flex-col  gap-[20px]">
-          <h1 className="text-[24px] leading-[29px] md:text-[32px] md:leading-[38px] text-[#1B1B1B]  font-clash font-[600]">
+          <h1 className="hidden md:block text-[24px] pt-[2rem] lg:pt-0 leading-[29px] md:text-[32px] md:leading-[38px] text-[#1B1B1B]  font-clash font-[600]">
             Partners
           </h1>
+
+          <h1 className="md:hidden flex pt-[2rem] text-[24px] leading-[29px] md:text-[32px] md:leading-[38px] text-[#1B1B1B]  font-clash font-[600]">
+            Tech Stack
+          </h1>
+
           <p className="text-[16px] leading-[30px]  text-[#515B6F]  font-epilogue font-[400] ">
             Learn about the companies that have partnered with Urban Tech.
           </p>

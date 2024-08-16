@@ -63,6 +63,8 @@ const CompaniesCategoryChunk = () => {
         <h1 className="text-grey text-[32px] font-[600]   leading-[38px] pt-[2rem]   p-1">
           Companies by Category
         </h1>
+
+        </div>
         {/* body */}
         <div className="w-full mx-0 items-center flex justify-center relative">
           <Swiper

@@ -7,7 +7,7 @@ import React from "react";
 type IJobOpeningTemplateChunkProps = {
   title?: string;
   styleSubtitle?: string;
-}
+};
 
 const JobOpeningTemplateChunk = (props: IJobOpeningTemplateChunkProps) => {
   return (
@@ -16,7 +16,8 @@ const JobOpeningTemplateChunk = (props: IJobOpeningTemplateChunkProps) => {
         <div className="my-20 w-full">
           <div className="flex justify-between">
             <h1 className="md:text-5xl text-[32px] font-semibold">
-              {props.title ?? "Latest"} <span className="text-[#1976D2]">{props.styleSubtitle}</span>
+              {props.title ?? "Latest"}{" "}
+              <span className="text-[#1976D2]">{props.styleSubtitle}</span>
             </h1>
             <p className="flex gap-2 items-center text-blue md:flex hidden">
               Show all <IC_ArrowRight />{" "}
