@@ -24,7 +24,7 @@ const FindAllJobsTemplateChunk = () => {
     filterData,
   } = useFindAllJobsTemplateChunk();
   return (
-    <section className="w-full gap-8 flex flex-col md:flex-row justify-center mx-auto items-center w-full h-full max-w-[1350px] mx-auto md:px-12 px-8 lg:px-16 xl:px-0">
+    <section className="w-full gap-8 flex flex-col md:flex-row justify-center  items-center  h-full max-w-[1350px] mx-auto md:px-12 px-8 lg:px-16 xl:px-0">
       {/* find job filter */}
       <div className="p-1  top-[75px] gap-[20px] ">
         {filterData.map(({ id, title, description }) => (
