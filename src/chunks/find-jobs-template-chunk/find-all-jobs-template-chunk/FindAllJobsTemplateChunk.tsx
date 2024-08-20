@@ -51,8 +51,8 @@ const FindAllJobsTemplateChunk = () => {
       {/* find job filter */}
       <div
         className={`p-1 px-2   gap-[20px] ${showFilter ? "fixed" : "hidden md:flex md:flex-col"}  md:relative top-[30px] md:top-0 
-      right-[17px] md:right-0  bg-[#FFFFFF] md:bg-transparent  z-10 h-[100%]  rounded-[3px]
-      w-[90%] md:w-[300px]  md:overflow-hidden overflow-scroll
+      right-[17px] md:right-0  bg-[#FFFFFF] md:bg-transparent  z-10 h-[85%]  rounded-[3px]
+      w-[90%] md:w-[300px]  md:overflow-hidden overflow-scroll 
        `}
       >
         <div className="flex justify-between items-center md:hidden pt-[1rem] px-[0.25rem]">
@@ -70,12 +70,12 @@ const FindAllJobsTemplateChunk = () => {
         {filterData.map(({ id, title, description }) => (
           <div
             key={id}
-            className="transition-all duration-200  cursor-pointer "
+            className="transition-all duration-200  cursor-pointer max-w-full"
           >
             <button
               type="button"
               onClick={() => handleToggle(id)}
-              className="flex w-full justify-between  pb-3  mt-[1.3rem]"
+              className="flex w-full justify-between  pb-4  mt-[1.3rem] rounded-none bg-transparent max-w-full px-0"
             >
               <span className="flex font-[700] text-[16px] leading-[24px] text-[#25324B]  font-epilogue">
                 {title}
@@ -97,7 +97,11 @@ const FindAllJobsTemplateChunk = () => {
                   height={5}
                 />
               </svg>
+
             </button>
+
+
+
             {/* checkbox */}
             <div
               className={` pb-5  sm:pb-6 flex gap-[16px] items-start flex-col justify-start ${visibleId.includes(id) ? "hidden" : "block"}`}
@@ -111,7 +115,7 @@ const FindAllJobsTemplateChunk = () => {
                     type="checkbox"
                     className="w-[24px] h-[24px] border-[#D6DDEB] border-[2px] accent-[#4640DE] checked:bg-[#4640DE] "
                   />
-                  <p className="font-[400] text-[16px] leading-[25px] lg:pl-[1rem] pl-[0.5rem] font-epilogue text-[#1B1B1B]">
+                  <p className="font-[400] text-[16px] leading-[25px] lg:pl-[1rem] pl-[0.5rem] font-epilogue md:text-[#1B1B1B]">
                     {desc.duration}
                   </p>
                   <p className="font-[400] text-[16px] leading-[25px]  font-epilogue text-[#1B1B1B]">
@@ -122,6 +126,17 @@ const FindAllJobsTemplateChunk = () => {
             </div>
           </div>
         ))}
+
+
+        <div className="flex my-1">
+        <button
+            className="w-[100%]   h-[50px] bg-[#4640DE] flex md:hidden text-center items-center rounded-none
+          justify-center font-[700] text-[16px] leading-[25px] text-[#FFFFFF]"
+          >
+            Apply
+            </button>
+        </div>
+
       </div>
 
       {/* find jobs */}

@@ -1,6 +1,7 @@
 import React from "react";
 import { FindJobCardProps } from "./FindJobCard.types";
 import Image from "next/image";
+import Button from "@/components/button/Button";
 
 const FindJobCard = (props: FindJobCardProps) => {
   const appliedPercentage =
@@ -67,12 +68,12 @@ const FindJobCard = (props: FindJobCardProps) => {
 
       <div className="flex flex-col  lg:w-[164px] md:w-[120px] w-[100%] ">
         <div className="mt-[4.5rem] md:mt-0">
-          <button
-            className="w-[100%]   h-[50px] bg-[#4640DE] flex text-center items-center 
+          <Button
+            overrideStyles="w-[100%]   h-[50px] bg-[#4640DE] flex text-center items-center rounded-none
           justify-center font-[700] text-[16px] leading-[25px] text-[#FFFFFF]"
           >
             Apply
-          </button>
+          </Button>
         </div>
 
         {/* percentage bar */}
