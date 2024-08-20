@@ -12,6 +12,7 @@ import Image from "next/image";
 
 import filtericon from "public/images/filtericon.svg";
 import close from "public/images/close.svg";
+import Button from "@/components/button/Button";
 
 const FindAllJobsTemplateChunk = () => {
   const {
@@ -97,10 +98,7 @@ const FindAllJobsTemplateChunk = () => {
                   height={5}
                 />
               </svg>
-
             </button>
-
-
 
             {/* checkbox */}
             <div
@@ -127,16 +125,14 @@ const FindAllJobsTemplateChunk = () => {
           </div>
         ))}
 
-
         <div className="flex my-1">
-        <button
-            className="w-[100%]   h-[50px] bg-[#4640DE] flex md:hidden text-center items-center rounded-none
-          justify-center font-[700] text-[16px] leading-[25px] text-[#FFFFFF]"
+          <Button
+            overrideStyles="w-[100%]   h-[50px] bg-[#0046BF] flex md:hidden text-center items-center rounded-none
+          justify-center font-[700] text-[16px] leading-[25px] text-[#FFFFFF]" 
           >
             Apply
-            </button>
+          </Button>
         </div>
-
       </div>
 
       {/* find jobs */}

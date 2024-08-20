@@ -15,8 +15,6 @@ const FindJobsHeroTemplateChunk = () => {
       <div className="bg-[#f8f8f8]  md:h-[500px] lg:h-[460px] max-w-full w-full">
         {/* hero components */}
         <div className="flex flex-col  items-center justify-center md:pt-2">
-
-
           <div className="flex  flex-col  pt-[3.5rem]  gap-2 items-center  ">
             {/* find your dream job section */}
             <div className="flex  flex-col md:flex-row items-center justify-center gap-[24px]  top-[205px]">
@@ -82,9 +80,8 @@ const FindJobsHeroTemplateChunk = () => {
 
               {/* florence,italy  */}
               <div className=" lg:w-[485px] w-[100%] items-center  h-[39px] bg-transparent flex rounded-0   lg:mt-[0rem] rounded-bl-none rounded-br-none md:px-[1rem]  lg:px-0  ">
-           
-              <Image src={LocationIcon} alt=""  className="" />
-         
+                <Image src={LocationIcon} alt="" className="" />
+
                 <SelectInput2
                   label=""
                   placeholder="Florence, Italy"
@@ -121,11 +118,11 @@ const FindJobsHeroTemplateChunk = () => {
           "
             >
               <p className="opacity-70 font-epilogue text-[16px] font-[400] leading-25px] text-[#1B1B1B]">
-                Popular : <br className="md:hidden block"/> UI Designer, UX Researcher, Android, Admin
+                Popular : <br className="md:hidden block" /> UI Designer, UX
+                Researcher, Android, Admin
               </p>
             </div>
           </div>
-
         </div>
       </div>
     </section>
