@@ -82,7 +82,7 @@ const CompaniesCategoryChunk = () => {
               },
 
               300: {
-                slidesPerView: 2,
+                slidesPerView: 1,
                 spaceBetween: 10,
               },
 
@@ -114,13 +114,8 @@ const CompaniesCategoryChunk = () => {
             ))}
           </Swiper>
 
-          <div
-            className="custom-next md:absolute md:right-[10px] right-0 transform translate-y-1/2 w-[48px] h-[50px] bg-[#0046BF]
-mt-[40px] flex items-center justify-center cursor-pointer"
-          >
-            <div className="custom-next z-50 absolute md:right-[-25px] right-[-15px] p-2 md:p-0 transform -translate-y-1/2 md:w-[48px] md:h-[50px] bg-[#0046BF] mt-[40px] flex items-center justify-center cursor-pointer">
-              <Image src={rightarrow} alt="right-icon" />
-            </div>
+          <div className="p-2 z-50 absolute md:right-[-25px] right-[-15px] transform -translate-y-1/2 bg-[#0046BF] flex items-center justify-center cursor-pointer">
+            <Image src={rightarrow} alt="right-icon" />
           </div>
         </div>
       </div>
