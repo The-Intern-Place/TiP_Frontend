@@ -203,6 +203,7 @@ const FindAllJobsTemplateChunk = () => {
             {currentjobdata.map((j: FindJobCardProps, i: number) => (
               <FindJobCard
                 key={i}
+                id={j.id}
                 img={j.img}
                 title={j.title}
                 company={j.company}
@@ -215,6 +216,7 @@ const FindAllJobsTemplateChunk = () => {
               />
             ))}
           </div>
+
           {/* pagination */}
           <div className="flex items-center justify-center my-[1rem] md:my-[3rem]">
             <FindjobPagination

@@ -1,6 +1,8 @@
+"use client";
 import React from "react";
 import { FindJobCardProps } from "./FindJobCard.types";
 import Image from "next/image";
+import Link from "next/link";
 import Button from "@/components/button/Button";
 
 const FindJobCard = (props: FindJobCardProps) => {
@@ -16,9 +18,11 @@ const FindJobCard = (props: FindJobCardProps) => {
         <Image src={props.img} alt="jobs_image" className="w-[68px] h-[68px]" />
 
         <div className="flex  flex-col gap-[8px] lg:max-w-[288px]">
-          <h1 className="text-[20px]  font-epilogue text-[#25324B] font-[600] leading-[24px]">
-            {props.title}
-          </h1>
+          <Link href={`/findjobdetails/${props.id}`} passHref={true}>
+            <h1 className="text-[20px]  font-epilogue text-[#25324B] font-[600] leading-[24px]">
+              {props.title}
+            </h1>
+          </Link>
 
           {/* company and location */}
           <div className="flex flex-wrap items-center lg:gap-[8px]  gap-8px  ">

@@ -63,57 +63,59 @@ const CompaniesCategoryChunk = () => {
         <h1 className="text-grey text-[32px] font-[600]   leading-[38px] pt-[2rem]   p-1">
           Companies by Category
         </h1>
-        {/* body */}
-        <div className="w-full mx-0 items-center flex justify-center relative">
-          <Swiper
-            modules={[Navigation, Pagination]}
-            spaceBetween={10}
-            slidesPerView={3}
-            loop={true}
-            navigation={{
-              nextEl: ".custom-next",
-              prevEl: ".custom-prev",
-            }}
-            pagination={{ clickable: true, el: ".custom-pagination" }}
-            breakpoints={{
-              0: {
-                slidesPerView: 1,
-                spaceBetween: 10,
-              },
+      </div>
+      {/* body */}
+      <div className="w-full mx-0 items-center flex justify-center relative">
+        <Swiper
+          modules={[Navigation, Pagination]}
+          spaceBetween={10}
+          slidesPerView={1.7}
+          loop={true}
+          navigation={{
+            nextEl: ".custom-next",
+            prevEl: ".custom-prev",
+          }}
+          pagination={{ clickable: true, el: ".custom-pagination" }}
+          breakpoints={{
+            0: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
 
-              300: {
-                slidesPerView: 1,
-                spaceBetween: 10,
-              },
+            300: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
 
-              640: {
-                slidesPerView: 2,
-                spaceBetween: 10,
-              },
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 10,
+            },
 
-              768: {
-                slidesPerView: 2,
-                spaceBetween: 20,
-              },
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
 
-              1024: {
-                slidesPerView: 4,
-                spaceBetween: 35,
-              },
-            }}
-            scrollbar={{ draggable: true }}
-          >
-            {hiringcategorydata.map((h, i) => (
-              <SwiperSlide
-                key={i}
-                className="flex flex-col md:flex-row items-center gap-[5px] 
+            1024: {
+              slidesPerView: 4,
+              spaceBetween: 35,
+            },
+          }}
+          scrollbar={{ draggable: true }}
+        >
+          {hiringcategorydata.map((h, i) => (
+            <SwiperSlide
+              key={i}
+              className="flex flex-col md:flex-row items-center gap-[5px] 
                 lg:gap-[32px] justify-center my-[3rem] h-full"
-              >
-                <HiringCategoryCard key={i} title={h.title} icon={h.icon} />
-              </SwiperSlide>
-            ))}
-          </Swiper>
+            >
+              <HiringCategoryCard key={i} title={h.title} icon={h.icon} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
 
+        <div className="custom-next z-50 absolute md:right-[-25px] right-[-15px] p-2 md:p-0 transform -translate-y-1/2 md:w-[48px] md:h-[50px] bg-[#0046BF] mt-[40px] flex items-center justify-center cursor-pointer">
           <div className="p-2 z-50 absolute md:right-[-25px] right-[-15px] transform -translate-y-1/2 bg-[#0046BF] flex items-center justify-center cursor-pointer">
             <Image src={rightarrow} alt="right-icon" />
           </div>

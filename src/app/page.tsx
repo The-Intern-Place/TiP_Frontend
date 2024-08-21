@@ -27,7 +27,7 @@ export default function Home() {
       <div>
         <JobCategoryTemplateChunk />
         <TalentSectionTemplateChunk />
-        <JobOpeningTemplateChunk />
+        <JobOpeningTemplateChunk styleSubtitle="jobs open" />
       </div>
     </div>
   );
