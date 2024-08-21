@@ -3,6 +3,7 @@ import React from "react";
 import { FindJobCardProps } from "./FindJobCard.types";
 import Image from "next/image";
 import Link from "next/link";
+import Button from "@/components/button/Button";
 
 const FindJobCard = (props: FindJobCardProps) => {
   const appliedPercentage =
@@ -10,8 +11,8 @@ const FindJobCard = (props: FindJobCardProps) => {
 
   return (
     <section
-      className="flex  flex-col md:flex-row justify-between p-[24px]   items-start
-    border-[1px] border-[#D6DDEB]  lg:h-[149px] md:h-[180px] w-[100%]  my-[0.5rem]"
+      className="flex  flex-col md:flex-row justify-between md:p-[24px]  p-[11px] gap-[24px]  md:items-start
+    border-[1px] border-[#D6DDEB]  lg:h-[149px] md:h-[180px] md:w-[100%] w-[100%]  my-[0.5rem]"
     >
       <div className="flex  flex-col md:flex-row gap-[15px]  md:gap-[24px] w-[356px] h-[101px]  ">
         <Image src={props.img} alt="jobs_image" className="w-[68px] h-[68px]" />
@@ -39,7 +40,7 @@ const FindJobCard = (props: FindJobCardProps) => {
           </div>
 
           {/* types af track */}
-          <div className="flex flex-wrap lg:flex-nowrap  gap-[8px] ">
+          <div className="flex flex-wrap lg:flex-nowrap gap-[6px]  md:gap-[8px] w-full">
             <div className="rounded-[80px] flex bg-[#56CDAD1A] w-[83px] h-[34px] items-center justify-center text-center">
               <h1 className="font-[600] font-epilogue text-[14px] leading-[22px] text-[#56CDAD] ">
                 {" "}
@@ -69,14 +70,14 @@ const FindJobCard = (props: FindJobCardProps) => {
 
       {/* apply section */}
 
-      <div className="flex flex-col  lg:w-[164px] md:w-[120px] ">
-        <div className="mt-[6.5rem] md:mt-0">
-          <button
-            className="w-[100%]   h-[50px] bg-[#4640DE] flex text-center items-center 
+      <div className="flex flex-col  lg:w-[164px] md:w-[120px] w-[100%] ">
+        <div className="mt-[4.5rem] md:mt-0">
+          <Button
+            overrideStyles="w-[100%]   h-[50px] bg-[#4640DE] flex text-center items-center rounded-none
           justify-center font-[700] text-[16px] leading-[25px] text-[#FFFFFF]"
           >
             Apply
-          </button>
+          </Button>
         </div>
 
         {/* percentage bar */}
