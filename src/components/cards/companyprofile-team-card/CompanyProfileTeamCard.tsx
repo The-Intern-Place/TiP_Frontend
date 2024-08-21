@@ -7,8 +7,8 @@ import graylinkdin from "public/images/gray_linkdin.svg";
 const CompanyProfileTeamCard = (props: CompanyProfileTeamCardProps) => {
   return (
     <section
-      className=" md:w-full border border-[#D6DDEB] rounded-[1px] md:p-[24px] gap-[16px]
-     flex flex-col items-center justify-center h-[253px]"
+      className="w-full border border-[#D6DDEB] rounded-[1px] p-4 md:p-[18px] gap-[16px]
+     flex flex-col items-center justify-center"
     >
       <Image
         src={props.img}

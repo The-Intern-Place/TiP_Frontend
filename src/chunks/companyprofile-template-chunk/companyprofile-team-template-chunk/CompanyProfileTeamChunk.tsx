@@ -30,7 +30,7 @@ const CompanyProfileTeamChunk = () => {
         </div>
       </div>
       {/* for medium screen without slider */}
-      <div className="md:flex max-w-full hidden gap-[16px]">
+      <div className="md:flex max-w-full hidden gap-[16px] h-full">
         {companyprofileteamdata.map(
           (c: CompanyProfileTeamCardProps, i: number) => (
             <CompanyProfileTeamCard
@@ -46,20 +46,30 @@ const CompanyProfileTeamChunk = () => {
 
       {/* adding slider and visible in mobile screen */}
 
-      <div className="flex w-[380px]  md:hidden justify-center items-center  gap-[16px]">
-        <Swiper
+      <div className="flex w-full md:w-full md:hidden justify-center items-center  gap-[16px]">
+      <Swiper
           modules={[Navigation, Pagination]}
           spaceBetween={10}
           slidesPerView={1.7}
           loop={true}
           navigation={{
-            nextEl: ".custom-nexts",
+            nextEl: ".custom-next",
             prevEl: ".custom-prev",
           }}
           pagination={{ clickable: true, el: ".custom-pagination" }}
           breakpoints={{
-            640: {
+            0: {
               slidesPerView: 1,
+              spaceBetween: 10,
+            },
+
+            300: {
+              slidesPerView: 1,
+              spaceBetween: 10,
+            },
+
+            640: {
+              slidesPerView: 2,
               spaceBetween: 10,
             },
 
@@ -70,7 +80,7 @@ const CompanyProfileTeamChunk = () => {
 
             1024: {
               slidesPerView: 4,
-              spaceBetween: 10,
+              spaceBetween: 35,
             },
           }}
           scrollbar={{ draggable: true }}
