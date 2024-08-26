@@ -47,7 +47,7 @@ const CompanyProfileTeamChunk = () => {
       {/* adding slider and visible in mobile screen */}
 
       <div className="flex w-full md:w-full md:hidden justify-center items-center  gap-[16px]">
-      <Swiper
+        <Swiper
           modules={[Navigation, Pagination]}
           spaceBetween={10}
           slidesPerView={1.7}

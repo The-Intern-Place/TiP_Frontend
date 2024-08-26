@@ -30,5 +30,6 @@ export const clash = localFont({
       style: "italic",
     },
   ],
-  variable: "--font--clash",
+  display: "swap",
+  variable: "--font-clash",
 });
