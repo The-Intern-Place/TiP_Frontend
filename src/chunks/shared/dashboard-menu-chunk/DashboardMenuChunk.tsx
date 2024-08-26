@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const DashboardMenuChunk = (props: DashboardMenuChunkProps) => {
   return (
-    <div className="bg-white h-screen lg:w-[302px] md:w-[232px] sm:w-[200px] hidden sm:block">
+    <div className="bg-white h-screen lg:w-[302px] md:w-[232px] sm:w-[200px] hidden sm:block overflow-auto max-w-[250px] flex-shrink-0 w-full flex flex-col sticky top-0">
       <Image src={TipLogo} alt="TiP logo" className="py-3 w-16 mx-auto" />
       <div className="flex flex-col gap-4 px-4 py-6">
         {props.options.map((option, key) => (

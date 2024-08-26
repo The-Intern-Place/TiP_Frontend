@@ -8,7 +8,7 @@ const DashboardLayout = (props: IDashboardLayoutProps) => {
   return (
     <main className="flex items-start min-h-screen">
       <DashboardMenuChunk options={menuOptions} subOptions={subMenuOptions} />
-      <div className="w-full bg-[#FAFBFC] h-screen">{props.children}</div>
+      <div className="w-full bg-[#FAFBFC]">{props.children}</div>
     </main>
   );
 };
