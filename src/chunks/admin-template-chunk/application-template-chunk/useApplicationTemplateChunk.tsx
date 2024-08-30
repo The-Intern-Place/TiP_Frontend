@@ -45,12 +45,12 @@ const useApplicationTemplateChunk = () => {
 
   const handleImageClick = () => {
     if (dateInputRef.current) {
-      dateInputRef.current.showPicker(); // Directly show the calendar
+      dateInputRef.current.showPicker(); 
     }
   };
 
   const handleDateChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setSelectedDate(e.target.value); // Update the displayed date
+    setSelectedDate(e.target.value); 
   };
 
   return {

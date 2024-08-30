@@ -64,7 +64,7 @@ const ApplicationTemplateChunk = () => {
               />
             </div>
 
-            {/* Hidden Date input that triggers the calendar */}
+            
             <input
               type="date"
               ref={dateInputRef}
