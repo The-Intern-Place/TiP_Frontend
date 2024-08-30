@@ -357,7 +357,7 @@ export const reviewdata = [
     sector1: "Marketing",
     sector2: "Design",
     applied: "20 July 2021",
-    statusInterview: "Interview",
+    statusReview: "in Review",
   },
 
   {
@@ -370,7 +370,7 @@ export const reviewdata = [
     sector1: "Marketing",
     sector2: "Design",
     applied: "16 July 2021",
-    statusOffered: "Offered",
+    statusReview: "in Review",
   },
 
   {
@@ -383,7 +383,7 @@ export const reviewdata = [
     sector1: "Marketing",
     sector2: "Design",
     applied: "14 July 2021",
-    statusAssesment: "Assesment",
+    statusReview: "in Review",
   },
 
   {
@@ -396,7 +396,7 @@ export const reviewdata = [
     sector1: "Marketing",
     sector2: "Design",
     applied: "10 July 2021",
-    statusSuitable: "Unsuitable",
+    statusReview: "in Review",
   },
 
   {
@@ -409,7 +409,7 @@ export const reviewdata = [
     sector1: "Marketing",
     sector2: "Design",
     applied: "10 July 2021",
-    statusSuitable: "Unsuitable",
+    statusReview: "in Review",
   },
 
   {
@@ -422,7 +422,7 @@ export const reviewdata = [
     sector1: "Marketing",
     sector2: "Design",
     applied: "14 July 2021",
-    statusAssesment: "Assesment",
+    statusReview: "in Review",
   },
 
   {
@@ -435,7 +435,7 @@ export const reviewdata = [
     sector1: "Marketing",
     sector2: "Design",
     applied: "16 July 2021",
-    statusOffered: "Offered",
+    statusReview: "in Review",
   },
 
   {
@@ -448,7 +448,7 @@ export const reviewdata = [
     sector1: "Marketing",
     sector2: "Design",
     applied: "20 July 2021",
-    statusInterview: "Interview",
+    statusReview: "in Review",
   },
 
   {
@@ -476,7 +476,7 @@ export const interviewdata = [
     sector1: "Marketing",
     sector2: "Design",
     applied: "10 July 2021",
-    statusSuitable: "Unsuitable",
+    statusInterview: "Interview",
   },
 
   {
@@ -489,7 +489,7 @@ export const interviewdata = [
     sector1: "Marketing",
     sector2: "Design",
     applied: "14 July 2021",
-    statusAssesment: "Assesment",
+    statusInterview: "Interview",
   },
 
   {
@@ -502,7 +502,7 @@ export const interviewdata = [
     sector1: "Marketing",
     sector2: "Design",
     applied: "16 July 2021",
-    statusOffered: "Offered",
+    statusInterview: "Interview",
   },
 ];
 
@@ -517,7 +517,7 @@ export const assesmentdata = [
     sector1: "Marketing",
     sector2: "Design",
     applied: "10 July 2021",
-    statusSuitable: "Unsuitable",
+    statusAssesment: "Assesment",
   },
 
   {
@@ -543,7 +543,7 @@ export const assesmentdata = [
     sector1: "Marketing",
     sector2: "Design",
     applied: "16 July 2021",
-    statusOffered: "Offered",
+    statusAssesment: "Assesment",
   },
 
   {
@@ -556,7 +556,7 @@ export const assesmentdata = [
     sector1: "Marketing",
     sector2: "Design",
     applied: "20 July 2021",
-    statusInterview: "Interview",
+    statusAssesment: "Assesment",
   },
 
   {
@@ -569,7 +569,7 @@ export const assesmentdata = [
     sector1: "Marketing",
     sector2: "Design",
     applied: "24 July 2021",
-    statusReview: "in Review",
+    statusAssesment: "Assesment",
   },
 ];
 
@@ -584,7 +584,7 @@ export const offersdata = [
     sector1: "Marketing",
     sector2: "Design",
     applied: "10 July 2021",
-    statusSuitable: "Unsuitable",
+    statusOffered: "Offered",
   },
 
   {
@@ -597,7 +597,7 @@ export const offersdata = [
     sector1: "Marketing",
     sector2: "Design",
     applied: "14 July 2021",
-    statusAssesment: "Assesment",
+    statusOffered: "Offered",
   },
 
   {
@@ -625,7 +625,7 @@ export const unsuitabledata = [
     sector1: "Marketing",
     sector2: "Design",
     applied: "24 July 2021",
-    statusReview: "in Review",
+    statusSuitable: "Unsuitable",
   },
 
   {
@@ -638,7 +638,7 @@ export const unsuitabledata = [
     sector1: "Marketing",
     sector2: "Design",
     applied: "20 July 2021",
-    statusInterview: "Interview",
+    statusSuitable: "Unsuitable",
   },
 
   {
@@ -651,7 +651,7 @@ export const unsuitabledata = [
     sector1: "Marketing",
     sector2: "Design",
     applied: "16 July 2021",
-    statusOffered: "Offered",
+    statusSuitable: "Unsuitable",
   },
 
   {
@@ -664,7 +664,7 @@ export const unsuitabledata = [
     sector1: "Marketing",
     sector2: "Design",
     applied: "14 July 2021",
-    statusAssesment: "Assesment",
+    statusSuitable: "Unsuitable",
   },
 
   {
@@ -703,7 +703,7 @@ export const unsuitabledata = [
     sector1: "Marketing",
     sector2: "Design",
     applied: "14 July 2021",
-    statusAssesment: "Assesment",
+    statusSuitable: "Unsuitable",
   },
 
   {
@@ -716,7 +716,7 @@ export const unsuitabledata = [
     sector1: "Marketing",
     sector2: "Design",
     applied: "16 July 2021",
-    statusOffered: "Offered",
+    statusSuitable: "Unsuitable",
   },
 
   {
@@ -729,7 +729,7 @@ export const unsuitabledata = [
     sector1: "Marketing",
     sector2: "Design",
     applied: "20 July 2021",
-    statusInterview: "Interview",
+    statusSuitable: "Unsuitable",
   },
 
   {
@@ -742,7 +742,7 @@ export const unsuitabledata = [
     sector1: "Marketing",
     sector2: "Design",
     applied: "24 July 2021",
-    statusReview: "in Review",
+    statusSuitable: "Unsuitable",
   },
 
   //   11 to 20
@@ -756,7 +756,7 @@ export const unsuitabledata = [
     sector1: "Marketing",
     sector2: "Design",
     applied: "24 July 2021",
-    statusReview: "in Review",
+    statusSuitable: "Unsuitable",
   },
 
   {
@@ -769,7 +769,7 @@ export const unsuitabledata = [
     sector1: "Marketing",
     sector2: "Design",
     applied: "20 July 2021",
-    statusInterview: "Interview",
+    statusSuitable: "Unsuitable",
   },
 
   {
@@ -782,7 +782,7 @@ export const unsuitabledata = [
     sector1: "Marketing",
     sector2: "Design",
     applied: "16 July 2021",
-    statusOffered: "Offered",
+    statusSuitable: "Unsuitable",
   },
 
   {
@@ -795,7 +795,7 @@ export const unsuitabledata = [
     sector1: "Marketing",
     sector2: "Design",
     applied: "14 July 2021",
-    statusAssesment: "Assesment",
+    statusSuitable: "Unsuitable",
   },
 
   {
@@ -834,7 +834,7 @@ export const unsuitabledata = [
     sector1: "Marketing",
     sector2: "Design",
     applied: "14 July 2021",
-    statusAssesment: "Assesment",
+    statusSuitable: "Unsuitable",
   },
 
   {
@@ -847,7 +847,7 @@ export const unsuitabledata = [
     sector1: "Marketing",
     sector2: "Design",
     applied: "16 July 2021",
-    statusOffered: "Offered",
+    statusSuitable: "Unsuitable",
   },
 
   {
@@ -860,7 +860,7 @@ export const unsuitabledata = [
     sector1: "Marketing",
     sector2: "Design",
     applied: "20 July 2021",
-    statusInterview: "Interview",
+    statusSuitable: "Unsuitable",
   },
 
   {
@@ -887,7 +887,7 @@ export const unsuitabledata = [
     sector1: "Marketing",
     sector2: "Design",
     applied: "24 July 2021",
-    statusReview: "in Review",
+    statusSuitable: "Unsuitable",
   },
 
   {
@@ -900,7 +900,7 @@ export const unsuitabledata = [
     sector1: "Marketing",
     sector2: "Design",
     applied: "20 July 2021",
-    statusInterview: "Interview",
+    statusSuitable: "Unsuitable",
   },
 
   {
@@ -913,7 +913,7 @@ export const unsuitabledata = [
     sector1: "Marketing",
     sector2: "Design",
     applied: "16 July 2021",
-    statusOffered: "Offered",
+    statusSuitable: "Unsuitable",
   },
 
   {
@@ -926,7 +926,7 @@ export const unsuitabledata = [
     sector1: "Marketing",
     sector2: "Design",
     applied: "14 July 2021",
-    statusAssesment: "Assesment",
+    statusSuitable: "Unsuitable",
   },
 
   {

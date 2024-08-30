@@ -8,7 +8,7 @@ import {
   reviewdata,
   unsuitabledata,
 } from "@/utils/data/dashboardapplication";
-import { useState } from "react";
+import { useRef, useState } from "react";
 
 const useApplicationTemplateChunk = () => {
   const [bgClick, setBgClick] = useState(false);
@@ -40,6 +40,19 @@ const useApplicationTemplateChunk = () => {
 
   const [filter, setFilter] = useState("ALL");
 
+  const [selectedDate, setSelectedDate] = useState("July");
+  const dateInputRef = useRef<HTMLInputElement>(null);
+
+  const handleImageClick = () => {
+    if (dateInputRef.current) {
+      dateInputRef.current.showPicker(); // Directly show the calendar
+    }
+  };
+
+  const handleDateChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSelectedDate(e.target.value); // Update the displayed date
+  };
+
   return {
     bgClick,
     handleBgClick,
@@ -54,6 +67,13 @@ const useApplicationTemplateChunk = () => {
     currentreviewdata,
     filter,
     setFilter,
+    selectedDate,
+    setSelectedDate,
+    handleDateChange,
+    handleImageClick,
+    dateInputRef,
+    alldata,
+    unsuitabledata,
   };
 };
 
