@@ -3,7 +3,6 @@ import useApplicationTemplateChunk from "../useApplicationTemplateChunk";
 import Image from "next/image";
 import FindjobPagination from "@/components/pagination/FindjobPagination";
 
-
 const Interview = () => {
   const { ITEMS_PER_PAGE, paginate, currentPage, currentinterviewdata } =
     useApplicationTemplateChunk();
