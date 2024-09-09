@@ -44,7 +44,7 @@ const JobCategoryTemplateChunk = () => {
           <p className="text-[#1B1B1B] text-base opacity-60 md:flex hidden">
             Search your career opportunity with categories
           </p>
-          <p className="flex gap-2 items-center text-blue md:flex hidden">
+          <p className="gap-2 items-center text-blue md:flex hidden">
             Show all <IC_ArrowRight />{" "}
           </p>
         </div>

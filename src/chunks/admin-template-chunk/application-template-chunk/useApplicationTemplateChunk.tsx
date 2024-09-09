@@ -45,12 +45,12 @@ const useApplicationTemplateChunk = () => {
 
   const handleImageClick = () => {
     if (dateInputRef.current) {
-      dateInputRef.current.showPicker(); 
+      dateInputRef.current.showPicker();
     }
   };
 
   const handleDateChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setSelectedDate(e.target.value); 
+    setSelectedDate(e.target.value);
   };
 
   return {

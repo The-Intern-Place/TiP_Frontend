@@ -64,7 +64,6 @@ const ApplicationTemplateChunk = () => {
               />
             </div>
 
-            
             <input
               type="date"
               ref={dateInputRef}
