@@ -4,8 +4,10 @@ import { CategoryCardProps } from "./CategoryCard.types";
 
 const CategoryCard = (props: CategoryCardProps) => {
   return (
-    <div className="w-full group flex md:block gap-4 items-center hover:bg-light-blue hover:text-white border border-[#DAD2B8]
-     bg-white md:rounded-xl max-w-[280px] min-w-full md:px-8 md:py-12 px-6 py-4 space-y-3">
+    <div
+      className="w-full group flex md:block gap-4 items-center hover:bg-light-blue hover:text-white border border-[#DAD2B8]
+     bg-white md:rounded-xl max-w-[280px] min-w-full md:px-8 md:py-12 px-6 py-4 space-y-3"
+    >
       {props.icon}
       <div className="w-full">
         <p className="text-2xl font-semibold">{props.children}</p>
