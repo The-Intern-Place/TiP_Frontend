@@ -3,6 +3,7 @@ import { CustomerSurvey } from "@assets/images";
 import Image from "next/image";
 import React from "react";
 import useDashboardTemplateChunk from "./useDashboardTemplateChunk";
+import JobDetailCard from "@/components/cards/job-detail-card/JobDetailCard";
 
 const DashboardTemplateChunk = () => {
   const data = useDashboardTemplateChunk();
@@ -57,7 +58,7 @@ const DashboardTemplateChunk = () => {
 
       <div className="w-full">
         <section className="flex items-center justify-between">
-          <h1 className="text-light-blue font-semibold text-2xl">
+          <h1 className="text-light-blue font-semibold text-2xl mb-2">
             Featured Jobs
           </h1>
           <span className="text-blue">View All</span>
@@ -76,6 +77,22 @@ const DashboardTemplateChunk = () => {
                 </h2>
                 <p className="text-light-blue">{job.value} Vacancy</p>
               </section>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="w-full">
+        <section className="flex items-center justify-between">
+          <h1 className="text-light-blue font-semibold text-2xl mb-2">
+            Recommended Jobs
+          </h1>
+          <span className="text-blue">View All</span>
+        </section>
+        <div className="flex gap-4">
+          {data.recommendedJobs.map((job, key) => (
+            <div key={key}>
+              <JobDetailCard {...job} />
             </div>
           ))}
         </div>

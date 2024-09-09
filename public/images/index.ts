@@ -28,8 +28,14 @@ import IM_Meta from "./im_meta.svg";
 import IM_CannyCo from "./im_canny-co.svg";
 import IM_GreenHouse from "./im_greenhouse.svg";
 import IM_HuntingInc from "./im_hunting-inc.svg";
+import IM_Save from "./im_save.svg";
+import IM_MotionDesigner from "./im_motion-designer.svg";
+import IM_ProjectManager from "./im_project-manager.svg";
 
 export {
+  IM_MotionDesigner,
+  IM_ProjectManager,
+  IM_Save,
   IM_CannyCo,
   IM_GreenHouse,
   IM_HuntingInc,
