@@ -1,47 +1,79 @@
 "use client";
 
-import {
-  alldata,
-  assesmentdata,
-  interviewdata,
-  offersdata,
-  reviewdata,
-  unsuitabledata,
-} from "@/utils/data/dashboardapplication";
-import { useRef, useState } from "react";
+import { alldata } from "@/utils/data/dashboardapplication";
+import { useTab } from "@/utils/hooks/useTab";
+import { ListItem } from "@/utils/types";
+import { useEffect, useRef, useState } from "react";
 
 const useApplicationTemplateChunk = () => {
   const [bgClick, setBgClick] = useState(false);
-
-  const handleBgClick = () => {
-    setBgClick(!bgClick);
-  };
-
+  const [data, setData] = useState(alldata);
+  const [filter, setFilter] = useState("ALL");
   const ITEMS_PER_PAGE = 5;
   const [currentPage, setCurrentPage] = useState(1);
   const indexOfFirstItem = (currentPage - 1) * ITEMS_PER_PAGE;
   const indexOfLastItem = currentPage * ITEMS_PER_PAGE;
-  const currentdata = alldata.slice(indexOfFirstItem, indexOfLastItem);
-  const currentreviewdata = reviewdata.slice(indexOfFirstItem, indexOfLastItem);
-  const currentinterviewdata = interviewdata.slice(
-    indexOfFirstItem,
-    indexOfLastItem,
-  );
-  const currentassesmentdata = assesmentdata.slice(
-    indexOfFirstItem,
-    indexOfLastItem,
-  );
-  const currentoffersdata = offersdata.slice(indexOfFirstItem, indexOfLastItem);
-  const currentunsuitabledata = unsuitabledata.slice(
-    indexOfFirstItem,
-    indexOfLastItem,
-  );
   const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
-
-  const [filter, setFilter] = useState("ALL");
-
   const [selectedDate, setSelectedDate] = useState("July");
   const dateInputRef = useRef<HTMLInputElement>(null);
+
+  const filterTabs = useTab([
+    {
+      id: "ALL",
+      name: "All",
+    },
+    {
+      id: "REVIEW",
+      name: "In Review",
+    },
+    {
+      id: "INTERVIEW",
+      name: "Interview",
+    },
+    {
+      id: "ASSESSMENT",
+      name: "Assessment",
+    },
+    {
+      id: "OFFERED",
+      name: "Offer",
+    },
+    {
+      id: "UNSUITABLE",
+      name: "Unsuitable",
+    },
+  ]);
+
+  useEffect(() => {
+    setData(alldata.slice(indexOfFirstItem, indexOfLastItem));
+  }, []);
+
+  const tableHeaders: ListItem[] = [
+    {
+      id: "id",
+      name: "#",
+    },
+    {
+      id: "company",
+      name: "Company",
+    },
+    {
+      id: "roles",
+      name: "Roles",
+    },
+    {
+      id: "date",
+      name: "Dates Applied",
+    },
+    {
+      id: "status",
+      name: "Status",
+    },
+  ];
+
+  const handleBgClick = () => {
+    setBgClick(!bgClick);
+  };
 
   const handleImageClick = () => {
     if (dateInputRef.current) {
@@ -53,18 +85,22 @@ const useApplicationTemplateChunk = () => {
     setSelectedDate(e.target.value); // Update the displayed date
   };
 
+  const handleFilterClick = (tab: ListItem) => {
+    if (tab.id !== "ALL") {
+      setData(alldata.filter((data) => data.status === tab.id.toLowerCase()));
+    } else {
+      setData(alldata.slice(indexOfFirstItem, indexOfLastItem));
+    }
+    filterTabs.handleTabChange(tab);
+  };
+
   return {
     bgClick,
     handleBgClick,
     ITEMS_PER_PAGE,
     currentPage,
     paginate,
-    currentdata,
-    currentassesmentdata,
-    currentinterviewdata,
-    currentoffersdata,
-    currentunsuitabledata,
-    currentreviewdata,
+    data,
     filter,
     setFilter,
     selectedDate,
@@ -73,7 +109,9 @@ const useApplicationTemplateChunk = () => {
     handleImageClick,
     dateInputRef,
     alldata,
-    unsuitabledata,
+    filterTabs,
+    tableHeaders,
+    handleFilterClick,
   };
 };
 

@@ -15,7 +15,6 @@ const page = () => {
     <DashboardLayout>
       <DashboardHeaderChunk title="Application" />
       <div className="border-b border-[#DAD2B8]" />
-
       <section className="px-7  bg-[#FAFBFC]">
         <ApplicationTemplateChunk />
       </section>

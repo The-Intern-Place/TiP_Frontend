@@ -11,17 +11,17 @@ import IC_Settings from "@assets/icons/IC_Settings";
 export default function useDashboardLayout() {
   const menuOptions: ListItem[] = [
     {
-      id: "",
+      id: "dashboard",
       name: "Dashboard",
       icon: <IC_Dashboard />,
     },
     {
-      id: "",
+      id: "messages",
       name: "Messages",
       icon: <IC_Messages />,
     },
     {
-      id: "",
+      id: "application",
       name: "Applications",
       icon: <IC_Applications />,
     },
