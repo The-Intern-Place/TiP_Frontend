@@ -85,6 +85,17 @@ export default function useFindAllJobsTemplateChunk() {
     );
   };
 
+
+
+  const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
+
+  const [showFilter, setShowFilter] = useState(false);
+
+  const handleFilterToggle = () => {
+    setShowFilter(!showFilter);
+  };
+
+
   return {
     iconToggle,
     cardType,
@@ -97,5 +108,7 @@ export default function useFindAllJobsTemplateChunk() {
     currentPage,
     ITEMS_PER_PAGE,
     filterData,
+    handleFilterToggle,
+    showFilter,
   };
 }
