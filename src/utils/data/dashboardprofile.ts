@@ -38,6 +38,7 @@ export const sideprofiledata = [
 
 import bigtwitter from "public/images/big_twitter.svg";
 import godaddy from "public/images/godaddy-logo-0 1.svg";
+
 export const experiences = [
   {
     id: "1",
@@ -82,5 +83,66 @@ export const educations = [
     title: "University of Toronto",
     subtitle: "Bachelor of Arts, Visual Communication",
     date: "2005 - 2009",
+  },
+];
+
+export const skillprofiledata = [
+  {
+    id: "1",
+    title: "Communication",
+  },
+
+  {
+    id: "2",
+    title: "Analytics",
+  },
+
+  {
+    id: "3",
+    title: "Facebook Ads",
+  },
+
+  {
+    id: "4",
+    title: "Content planning",
+  },
+
+  {
+    id: "5",
+    title: "Community Manager",
+  },
+];
+
+import portfolio from "public/images/portfolio (1).svg";
+import portfoliotwo from "public/images/portfolio (2).svg";
+import portfoliothree from "public/images/portfolio (3).svg";
+
+export const portfolioprofiledata = [
+  {
+    id: "1",
+    title: "Funiro - Landing Page for furniture shop",
+    pics: portfolio,
+  },
+
+  {
+    id: "2",
+    title: "Growthly - SaaS Analytics & Sales Website",
+    pics: portfoliotwo,
+  },
+
+  {
+    id: "3",
+    title: " Clinically - clinic & health care website",
+    pics: portfoliothree,
+  },
+];
+
+export const profileinfodata = [
+  {
+    id: "1",
+    descriptionOne:
+      "I’m a product designer + filmmaker currently working remotely at Twitter from beautiful Manchester, United Kingdom. I’m passionateabout designing digital products that have a positive impact on the   world.",
+    descriptionTwo:
+      "For 10 years, I’ve specialised in interface, experience & interaction design as well as working in user research and product  strategy for product agencies, big tech companies & start-ups.",
   },
 ];

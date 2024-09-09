@@ -5,7 +5,9 @@ import Image from "next/image";
 import {
   educations,
   experiences,
-  sideprofiledata,
+  portfolioprofiledata,
+  profileinfodata,
+  skillprofiledata,
 } from "@/utils/data/dashboardprofile";
 import { ExperienceProfileCardProps } from "@/components/cards/dashboard-profile-card/experience-profile-card/ExperienceProfileCard.type";
 import ExperienceProfileCard from "@/components/cards/dashboard-profile-card/experience-profile-card/ExperienceProfileCard";
@@ -14,14 +16,12 @@ import { EducationProfileCardProps } from "@/components/cards/dashboard-profile-
 import EducationProfileCard from "@/components/cards/dashboard-profile-card/educations-profile-card/EducationsProfileCard";
 
 import editicon from "public/images/edit_Icon.svg";
-import portfolio from "public/images/portfolio (1).svg";
-import portfoliotwo from "public/images/portfolio (2).svg";
-import portfoliothree from "public/images/portfolio (3).svg";
 
 import greenflag from "public/images/greenflag_icon.svg";
 import righticon from "public/images/bluerighticon.svg";
 
 import location from "public/images/location.svg";
+import SidebarProfileTemplateChunk from "./sidebar-template-chunk/SidebarProfileTemplateChunk";
 
 const ProfileTemplateChunk = () => {
   return (
@@ -90,19 +90,17 @@ const ProfileTemplateChunk = () => {
               />
             </div>
           </div>
+          {profileinfodata.map((p) => (
+            <div key={p.id}>
+              <p className="font-[400] font-epilogue text-[#515B6F] text-[16px] leading-[30px]">
+                {p.descriptionOne}
+              </p>
 
-          <p className="font-[400] font-epilogue text-[#515B6F] text-[16px] leading-[30px]">
-            I’m a product designer + filmmaker currently working remotely at
-            Twitter from beautiful Manchester, United Kingdom. I’m passionate
-            about designing digital products that have a positive impact on the
-            world.
-          </p>
-
-          <p className="font-[400] font-epilogue text-[#515B6F] text-[16px] leading-[30px]">
-            For 10 years, I’ve specialised in interface, experience &
-            interaction design as well as working in user research and product
-            strategy for product agencies, big tech companies & start-ups.
-          </p>
+              <p className="font-[400] font-epilogue text-[#515B6F] text-[16px] leading-[30px] mt-[2.5rem]">
+                {p.descriptionTwo}
+              </p>
+            </div>
+          ))}
         </div>
 
         {/* experience */}
@@ -201,32 +199,17 @@ const ProfileTemplateChunk = () => {
             </div>
           </div>
 
-          <ul className="flex flex-wrap gap-[10px]">
-            <li className="w-[148px] h-[38px] bg-[#F8F8FD] gap-[16px] pt-[4px] pr-[12px] pb-[4px] pl-[12px]">
-              <h1 className="font-epilogue font-[400] text-[#1976D2] text-[16px] leading-[30px] text-center">
-                Communication
-              </h1>
-            </li>
-            <li className="w-[98px] h-[38px] bg-[#F8F8FD] gap-[16px] pt-[4px] pr-[12px] pb-[4px] pl-[12px]">
-              <h1 className="font-epilogue font-[400] text-[#1976D2] text-[16px] leading-[30px] text-center">
-                Analytics
-              </h1>
-            </li>
-            <li className="w-[144px] h-[38px] bg-[#F8F8FD] gap-[16px] pt-[4px] pr-[12px] pb-[4px] pl-[12px]">
-              <h1 className="font-epilogue font-[400] text-[#1976D2] text-[16px] leading-[30px] text-center">
-                Facebook Ads
-              </h1>
-            </li>
-            <li className="w-[168px] h-[38px] bg-[#F8F8FD] gap-[16px] pt-[4px] pr-[12px] pb-[4px] pl-[12px]">
-              <h1 className="font-epilogue font-[400] text-[#1976D2] text-[16px] leading-[30px] text-center">
-                Content Planning
-              </h1>
-            </li>
-            <li className="w-[195px] h-[38px] bg-[#F8F8FD] gap-[16px] pt-[4px] pr-[12px] pb-[4px] pl-[12px]">
-              <h1 className="font-epilogue font-[400] text-[#1976D2] text-[16px] leading-[30px] text-center ">
-                Community Manager
-              </h1>
-            </li>
+          <ul className="flex flex-wrap gap-[16px] pt-[1rem]">
+            {skillprofiledata.map((s) => (
+              <li
+                key={s.id}
+                className=" h-[38px] bg-[#F8F8FD] gap-[16px] pt-[4px] pr-[12px] pb-[4px] pl-[12px]"
+              >
+                <h1 className="font-epilogue font-[400] text-[#1976D2] text-[16px] leading-[30px] text-center">
+                  {s.title}
+                </h1>
+              </li>
+            ))}
           </ul>
         </div>
 
@@ -247,38 +230,18 @@ const ProfileTemplateChunk = () => {
           </div>
 
           <ul className="flex  gap-[24px] max-w-full">
-            <li className="flex flex-col w-[203px] gap-[10px]">
-              <Image
-                src={portfolio}
-                alt="experience_image"
-                className="w-[203px] h-[152px]"
-              />
-              <h1 className="font-[500] text-[16px] leading-[32px] text-[#25324B] font-epilogue">
-                Funiro - Landing Page for furniture shop
-              </h1>
-            </li>
-
-            <li className="flex flex-col w-[203px] gap-[10px]">
-              <Image
-                src={portfoliotwo}
-                alt="experience_image"
-                className="w-[203px] h-[152px]"
-              />
-              <h1 className="font-[500] text-[15.7px] leading-[32px] text-[#25324B] font-epilogue w-full">
-                Growthly - SaaS Analytics & Sales Website
-              </h1>
-            </li>
-
-            <li className="flex flex-col w-[203px] gap-[10px]">
-              <Image
-                src={portfoliothree}
-                alt="experience_image"
-                className="w-[203px] h-[152px]"
-              />
-              <h1 className="font-[500] text-[16px] leading-[32px] text-[#25324B] font-epilogue">
-                Clinically - clinic & health care website
-              </h1>
-            </li>
+            {portfolioprofiledata.map((p) => (
+              <li key={p.id} className="flex flex-col w-[203px] gap-[10px]">
+                <Image
+                  src={p.pics}
+                  alt="experience_image"
+                  className="w-[203px] h-[152px]"
+                />
+                <h1 className="font-[500] text-[15px] leading-[32px] text-[#25324B] font-epilogue w-full">
+                  {p.title}
+                </h1>
+              </li>
+            ))}
           </ul>
 
           <div className="gap-[8px] pt-[2px] pr-[10px] pb-[2px] pl-[10px]  items-center flex  justify-end w-full ">
@@ -297,94 +260,7 @@ const ProfileTemplateChunk = () => {
 
       {/* sidebar section */}
       <div>
-        <div className="flex flex-col gap-[24px] max-w-[352px] w-full">
-          {sideprofiledata.map((a) => (
-            <div
-              className="border-[1px] border-[#D6DDEB] bg-[#FFFFFF] p-[24px] gap-[16px] h-[306px] flex flex-col"
-              key={a.id}
-            >
-              <div>
-                <h1 className="text-[#002360] font-[600] text-[20px] leading-[24px] font-epilogue">
-                  {a.title}
-                </h1>
-              </div>
-
-              <div className="flex flex-col gap-[16px]">
-                <ul className="flex gap-[16px]">
-                  <li className="w-[24px] h-[24px]" key="imgFirst">
-                    <Image
-                      src={a.imgMail || a.imgFirst}
-                      alt="icon"
-                      className="w-[24px] h-[24px]"
-                    />
-                  </li>
-                  <li key="firstText">
-                    <span className="text-[#515B6F] font-epilogue text-[16px] leading-[30px] font-[400]">
-                      {a.labelFirst}
-                    </span>{" "}
-                    <br />
-                    <h1 className="text-[#002360] text-[16px] leading-[30px] font-[400] font-epilogue">
-                      {a.firstText}
-                    </h1>
-                    {a.instaText && (
-                      <h1 className="font-[400] text-[16px] leading-[30px] font-epilogue text-[#0046BF]">
-                        {a.instaText}
-                      </h1>
-                    )}
-                  </li>
-                </ul>
-
-                <ul className="flex gap-[16px]">
-                  <li className="w-[24px] h-[24px]" key="imgSecond">
-                    <Image
-                      src={a.imgPhone || a.imgSecond}
-                      alt="icon"
-                      className="w-[24px] h-[24px]"
-                    />
-                  </li>
-                  <li key="secondText">
-                    <span className="text-[#515B6F] font-epilogue text-[16px] leading-[30px] font-[400]">
-                      {a.labelSecond}
-                    </span>{" "}
-                    <br />
-                    <h1 className="text-[#002360] text-[16px] leading-[30px] font-[400] font-epilogue">
-                      {a.secondText}
-                    </h1>
-                    {a.twitterText && (
-                      <h1 className="font-[400] text-[16px] leading-[30px] font-epilogue text-[#0046BF]">
-                        {a.twitterText}
-                      </h1>
-                    )}
-                  </li>
-                </ul>
-
-                <ul className="flex gap-[16px]">
-                  <li className="w-[24px] h-[24px]" key="imgThird">
-                    <Image
-                      src={a.imgLang || a.imgThird}
-                      alt="icon"
-                      className="w-[24px] h-[24px]"
-                    />
-                  </li>
-                  <li key="thirdText">
-                    <span className="text-[#515B6F] font-epilogue text-[16px] leading-[30px] font-[400]">
-                      {a.labelThird}
-                    </span>{" "}
-                    <br />
-                    <h1 className="text-[#002360] text-[16px] leading-[30px] font-[400] font-epilogue">
-                      {a.thirdText}
-                    </h1>
-                    {a.webText && (
-                      <h1 className="font-[400] text-[16px] leading-[30px] font-epilogue text-[#0046BF]">
-                        {a.webText}
-                      </h1>
-                    )}
-                  </li>
-                </ul>
-              </div>
-            </div>
-          ))}
-        </div>
+        <SidebarProfileTemplateChunk />
       </div>
     </section>
   );
