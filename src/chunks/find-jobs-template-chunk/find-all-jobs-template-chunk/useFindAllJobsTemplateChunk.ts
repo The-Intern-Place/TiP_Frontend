@@ -85,8 +85,6 @@ export default function useFindAllJobsTemplateChunk() {
     );
   };
 
-
-
   const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
 
   const [showFilter, setShowFilter] = useState(false);
@@ -94,7 +92,6 @@ export default function useFindAllJobsTemplateChunk() {
   const handleFilterToggle = () => {
     setShowFilter(!showFilter);
   };
-
 
   return {
     iconToggle,

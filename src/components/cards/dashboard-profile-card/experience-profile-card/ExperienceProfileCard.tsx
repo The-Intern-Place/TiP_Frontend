@@ -11,7 +11,7 @@ const ExperienceProfileCard = (props: ExperienceProfileCardProps) => {
       )}
 
       <div className="flex gap-[24px]">
-        <div className="w-[80px] h-[80px] rounded-[100px]">
+        <div className="w-[180px] h-[180px] rounded-[100px]">
           <Image
             src={props.img}
             alt="experience_image"
@@ -48,7 +48,7 @@ const ExperienceProfileCard = (props: ExperienceProfileCardProps) => {
           </div>
 
           <div>
-            <p className="font-epilogue font-[400] text-[16px] leading-[30px]">
+            <p className="font-epilogue font-[400] text-[16px] leading-[30px] text-[#25324B]">
               {props.description}
             </p>
           </div>

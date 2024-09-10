@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const SidebarProfileTemplateChunk = () => {
   return (
-    <div className="flex flex-col gap-[24px] max-w-[352px] w-full">
+    <div className="flex flex-col gap-[24px]">
       {sideprofiledata.map((a) => (
         <div
           className="border-[1px] border-[#D6DDEB] bg-[#FFFFFF] p-[24px] gap-[16px] h-[306px] flex flex-col"
@@ -18,16 +18,25 @@ const SidebarProfileTemplateChunk = () => {
           <div className="flex flex-col gap-[16px]">
             <ul className="flex gap-[16px]">
               <li className="w-[24px] h-[24px]" key="imgFirst">
-                <Image
-                  src={a.imgMail || a.imgFirst}
-                  alt="icon"
-                  className="w-[24px] h-[24px]"
-                />
+                {a.imgMail && (
+                  <Image
+                    src={a.imgMail}
+                    alt="icon"
+                    className="w-[24px] h-[24px]"
+                  />
+                )}
+                {a.imgSecond && (
+                  <Image
+                    src={a.imgSecond}
+                    alt="icon"
+                    className="w-[24px] h-[24px]"
+                  />
+                )}
               </li>
               <li key="firstText">
                 <span className="text-[#515B6F] font-epilogue text-[16px] leading-[30px] font-[400]">
                   {a.labelFirst}
-                </span>{" "}
+                </span>
                 <br />
                 <h1 className="text-[#002360] text-[16px] leading-[30px] font-[400] font-epilogue">
                   {a.firstText}
@@ -42,16 +51,25 @@ const SidebarProfileTemplateChunk = () => {
 
             <ul className="flex gap-[16px]">
               <li className="w-[24px] h-[24px]" key="imgSecond">
-                <Image
-                  src={a.imgPhone || a.imgSecond}
-                  alt="icon"
-                  className="w-[24px] h-[24px]"
-                />
+                {a.imgPhone && (
+                  <Image
+                    src={a.imgPhone}
+                    alt="icon"
+                    className="w-[24px] h-[24px]"
+                  />
+                )}
+                {a.imgFirst && (
+                  <Image
+                    src={a.imgFirst}
+                    alt="icon"
+                    className="w-[24px] h-[24px]"
+                  />
+                )}
               </li>
               <li key="secondText">
                 <span className="text-[#515B6F] font-epilogue text-[16px] leading-[30px] font-[400]">
                   {a.labelSecond}
-                </span>{" "}
+                </span>
                 <br />
                 <h1 className="text-[#002360] text-[16px] leading-[30px] font-[400] font-epilogue">
                   {a.secondText}
@@ -66,16 +84,25 @@ const SidebarProfileTemplateChunk = () => {
 
             <ul className="flex gap-[16px]">
               <li className="w-[24px] h-[24px]" key="imgThird">
-                <Image
-                  src={a.imgLang || a.imgThird}
-                  alt="icon"
-                  className="w-[24px] h-[24px]"
-                />
+                {a.imgLang && (
+                  <Image
+                    src={a.imgLang}
+                    alt="icon"
+                    className="w-[24px] h-[24px]"
+                  />
+                )}
+                {a.imgThird && (
+                  <Image
+                    src={a.imgThird}
+                    alt="icon"
+                    className="w-[24px] h-[24px]"
+                  />
+                )}
               </li>
               <li key="thirdText">
                 <span className="text-[#515B6F] font-epilogue text-[16px] leading-[30px] font-[400]">
                   {a.labelThird}
-                </span>{" "}
+                </span>
                 <br />
                 <h1 className="text-[#002360] text-[16px] leading-[30px] font-[400] font-epilogue">
                   {a.thirdText}

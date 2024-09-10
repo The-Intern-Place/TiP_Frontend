@@ -1,5 +1,5 @@
-import graytwitter from "public/images/gray_twitter.svg";
-import grayinsta from "public/images/gray_insta.svg";
+import graytwitter from "public/images/graytwitter.svg";
+import grayinsta from "public/images/grayInsta.svg";
 import grayweb from "public/images/gray_website.svg";
 
 import email from "public/images/email_Icon.svg";

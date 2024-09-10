@@ -232,6 +232,8 @@ const FindAllJobsTemplateChunk = () => {
         </div>
       </div>
     </section>
+
+    </section>
   );
 };
 

@@ -25,8 +25,8 @@ import SidebarProfileTemplateChunk from "./sidebar-template-chunk/SidebarProfile
 
 const ProfileTemplateChunk = () => {
   return (
-    <section className="flex gap-[24px] py-[1.5rem]">
-      <div className="flex flex-col max-w-[728px] w-full">
+    <section className="flex gap-[24px] py-[1.5rem]  w-full overflow-x-hidden">
+      <div className="flex flex-col max-w-[650px] w-full">
         {/* details section */}
         <div className=" flex p-[24px] gap-[24px] bg-[#FFFFFF] border-[1px]">
           <div className="w-[140px] h-[140px] rounded-[196px]">
@@ -259,7 +259,7 @@ const ProfileTemplateChunk = () => {
       </div>
 
       {/* sidebar section */}
-      <div>
+      <div className="">
         <SidebarProfileTemplateChunk />
       </div>
     </section>
