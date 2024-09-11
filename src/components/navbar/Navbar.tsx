@@ -30,7 +30,7 @@ const Navbar = (props: NavbarProps) => {
             <Link href={"/sign-up"}>Sign Up</Link>
           </Button>
         </div>
-        <Image alt="" src="" className="md:hidden" />
+        {/* <Image alt="" src="" className="md:hidden" /> */}
       </div>
     </div>
   );

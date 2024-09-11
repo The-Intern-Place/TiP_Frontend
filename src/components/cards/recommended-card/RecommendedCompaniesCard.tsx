@@ -27,7 +27,7 @@ const RecommendedCompaniesCard = (props: RecommendedCompaniesCardProps) => {
 
         <div className="flex flex-col md:flex-row gap-2 flex-wrap">
           {props.tracks.map((track, key) => (
-            <button key={key}>{track.track}</button>
+
           ))}
         </div>
       </div>

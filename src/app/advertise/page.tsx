@@ -1,4 +1,4 @@
-import AdvertiseBenefitChunk from "@/chunks/advertise-template-chunk/advertise-benefit--template-chunk/AdvertiseBenefitChunk";
+import AdvertiseBenefitChunk from "@/chunks/advertise-template-chunk/advertise-benefit-template-chunk/AdvertiseBenefitChunk";
 import AdvertiseHeroChunk from "@/chunks/advertise-template-chunk/advertise-hero-section-chunk/AdvertiseHeroChunk";
 import AdvertisePriceChunk from "@/chunks/advertise-template-chunk/advertise-price-template-chunk/AdvertisePriceChunk";
 import Navbar from "@/components/navbar/Navbar";

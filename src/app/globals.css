@@ -13,8 +13,12 @@
   }
 }
 h1,
-h2 {
-  font-family: var(--font--clash);
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-clash);
 }
 
 body {
@@ -27,6 +31,15 @@ body {
   align-items: center;
 }
 
+.scrollbar-hide::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
 @media (min-width: 1200px) {
   .brandAuthBtns {
     flex-direction: row;
@@ -34,7 +47,7 @@ body {
 }
 
 .job-opening {
-  background-image: url(../../public/images/job-openings-background.png);
+  background-image: url(/images/job-openings-background.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
@@ -56,12 +69,19 @@ body {
     border-bottom: 0px;
   }
 
-  .custom-next {
+  /* .custom-next {
     display: flex;
     width: 90px;
-    height: 50px;
+    height: 40px;
     margin-top: 120px;
   }
+
+  .custom-nexts {
+    display: flex;
+    width: 40px;
+    height: 50px;
+    margin-top: 120px;
+  } */
   .custom-prev {
     display: none;
   }
