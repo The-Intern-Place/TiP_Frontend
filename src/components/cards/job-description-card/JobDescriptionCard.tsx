@@ -39,7 +39,7 @@ const JobDescriptionCard = (props: JobDescriptionCardProps) => {
                 </h1>
               </div>
             </div>
-            <div className="flex sm:ml-[41rem] -mt-[9rem] -ml-[3rem] md:mr-6 sm:-mt-9 flex-row cursor-pointer">
+            <div className="flex sm:ml-[51rem] -mt-[9rem] -ml-[3rem] lg:ml-[30rem] md:mr-6 sm:-mt-9 flex-row cursor-pointer">
               <IC_Share />
               <div className="h-[34px] w-[1px] bg-[#D6DDEB] ml-2"></div>
             </div>
@@ -52,7 +52,7 @@ const JobDescriptionCard = (props: JobDescriptionCardProps) => {
       <div className="flex flex-col w-[20rem] -ml-4 md:w-[120px]">
         <div className="mt-[2rem] sm:mt-0">
           <div className="flex items-center">
-            <button className="w-full h-[50px] bg-[#4640DE] flex text-center items-center justify-center ml-4 font-[700] text-[16px] leading-[25px] text-[#FFFFFF]">
+            <button className="w-full h-[50px] bg-[#0046BF] flex text-center items-center justify-center ml-4 font-[700] text-[16px] leading-[25px] text-[#FFFFFF]">
               Apply
             </button>
           </div>
