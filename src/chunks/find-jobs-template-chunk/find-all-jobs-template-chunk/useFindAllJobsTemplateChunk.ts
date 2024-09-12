@@ -85,7 +85,7 @@ export default function useFindAllJobsTemplateChunk() {
     );
   };
 
-  const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
+  // const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
 
   const [showFilter, setShowFilter] = useState(false);
 

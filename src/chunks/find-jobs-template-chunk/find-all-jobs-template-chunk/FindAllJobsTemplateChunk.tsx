@@ -32,9 +32,6 @@ const FindAllJobsTemplateChunk = () => {
   } = useFindAllJobsTemplateChunk();
 
   return (
-
-    <section className="w-full gap-8 flex flex-col md:flex-row justify-center  items-center  h-full max-w-[1350px] mx-auto md:px-12 px-8 lg:px-16 xl:px-0">
-
     <section className="w-[100%]  gap-[20px] flex flex-col md:flex-row  justify-center md:mx-auto  overflow-x-hidden  ">
       {/*  */}
       <div
@@ -131,7 +128,7 @@ const FindAllJobsTemplateChunk = () => {
         <div className="flex my-1">
           <Button
             overrideStyles="w-[100%]   h-[50px] bg-[#0046BF] flex md:hidden text-center items-center rounded-none
-          justify-center font-[700] text-[16px] leading-[25px] text-[#FFFFFF]" 
+          justify-center font-[700] text-[16px] leading-[25px] text-[#FFFFFF]"
           >
             Apply
           </Button>
@@ -231,8 +228,6 @@ const FindAllJobsTemplateChunk = () => {
           </div>
         </div>
       </div>
-    </section>
-
     </section>
   );
 };
