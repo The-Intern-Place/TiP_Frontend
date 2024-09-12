@@ -10,6 +10,7 @@ const FindJobCardMeta = {
 
 export const DefaultStory: FindJobCardStory = {
   args: {
+    id: "1",
     img: Nomad,
     title: "Social Media Assitant",
     company: "Nomad",
