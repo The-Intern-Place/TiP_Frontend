@@ -18,6 +18,7 @@ const DashboardTemplateChunk = () => {
           Discover exciting opportunities. Dive in!
         </p>
       </div>
+
       {!data.user && (
         <div className="flex max-w-[700px] mx-auto flex-col gap-5 items-center text-center">
           <Image
@@ -54,6 +55,7 @@ const DashboardTemplateChunk = () => {
           </div>
         ))}
       </div>
+
       <div className="w-full">
         <section className="flex items-center justify-between">
           <h1 className="text-light-blue font-semibold text-2xl mb-2">
@@ -61,6 +63,7 @@ const DashboardTemplateChunk = () => {
           </h1>
           <span className="text-blue">View All</span>
         </section>
+
         <div className="flex gap-4">
           {data.featuredJobs.map((job, key) => (
             <div
