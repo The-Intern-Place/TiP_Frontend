@@ -13,6 +13,8 @@ import Image from "next/image";
 import filtericon from "public/images/filtericon.svg";
 import close from "public/images/close.svg";
 import Button from "@/components/button/Button";
+import FindJobTileCard from "@/components/cards/find-job-tile-card/FindJobTileCard";
+import { FindJobTileCardProps } from "@/components/cards/find-job-tile-card/FindJobTileCard.types";
 
 const FindAllJobsTemplateChunk = () => {
   const {
@@ -32,7 +34,7 @@ const FindAllJobsTemplateChunk = () => {
   } = useFindAllJobsTemplateChunk();
 
   return (
-    <section className="w-[100%]  gap-[20px] flex flex-col md:flex-row  justify-center md:mx-auto  overflow-x-hidden  ">
+    <section className="flex flex-col md:flex-row md:justify-between gap-8 py-8">
       {/*  */}
       <div
         className="flex gap-[8px] pt-[12px] pr-[16px] pb-[12px] pl-[16px] items-center justify-center md:hidden
@@ -51,12 +53,12 @@ const FindAllJobsTemplateChunk = () => {
 
       {/* find job filter */}
       <div
-        className={`p-1 px-2   gap-[20px] ${showFilter ? "fixed" : "hidden md:flex md:flex-col"}  md:relative top-[30px] md:top-0 
-      right-[17px] md:right-0  bg-[#FFFFFF] md:bg-transparent  z-10 h-[85%]  rounded-[3px]
-      w-[90%] md:w-[300px]  md:overflow-hidden overflow-scroll 
+        className={`gap-[20px] ${showFilter ? "fixed" : "hidden md:flex md:flex-col"} p-6 md:p-0 rounded  shadow-md md:shadow-none max-h-[90%] md:max-h-full overflow-y-scroll md:overflow-y-visible md:relative top-6 md:top-0 
+      right-[17px] md:right-0  bg-[#FFFFFF] md:bg-transparent  z-10
+      w-[90%] md:w-72
        `}
       >
-        <div className="flex justify-between items-center md:hidden pt-[1rem] px-[0.25rem]">
+        <div className="flex  justify-between items-center md:hidden px-[0.25rem] mb-6">
           <h1 className="font-clash text-[#1B1B1B] font-[600] text-[20px] leading-[24px]">
             More Filter{" "}
           </h1>
@@ -76,7 +78,7 @@ const FindAllJobsTemplateChunk = () => {
             <button
               type="button"
               onClick={() => handleToggle(id)}
-              className="flex w-full justify-between  pb-4  mt-[1.3rem] rounded-none bg-transparent max-w-full px-0"
+              className="flex w-full justify-between  pb-4 rounded-none bg-transparent max-w-full px-0"
             >
               <span className="flex font-[700] text-[16px] leading-[24px] text-[#25324B]  font-epilogue">
                 {title}
@@ -128,7 +130,7 @@ const FindAllJobsTemplateChunk = () => {
         <div className="flex my-1">
           <Button
             overrideStyles="w-[100%]   h-[50px] bg-[#0046BF] flex md:hidden text-center items-center rounded-none
-          justify-center font-[700] text-[16px] leading-[25px] text-[#FFFFFF]" 
+          justify-center font-[700] text-[16px] leading-[25px] text-[#FFFFFF]"
           >
             Apply
           </Button>
@@ -136,9 +138,9 @@ const FindAllJobsTemplateChunk = () => {
       </div>
 
       {/* find jobs */}
-      <div className="md:pt-[1.4rem] lg:px-2  lg:w-[919px] px-2  pr-[16px] md:pr-0  pb-[40px] md:pb-0 pl-[16px]  md:pl-0 ">
+      <div className="w-full">
         {/* heading */}
-        <div className="flex flex-row justify-between md:items-center items-start pb-[1rem]">
+        <div className="flex flex-row justify-between md:items-center">
           <div className="gap-[8px]">
             <h1 className="font-[600] text-[32px] leading-[38px] text-[#25324B]">
               All Jobs
@@ -149,7 +151,7 @@ const FindAllJobsTemplateChunk = () => {
             </p>
           </div>
           {/* icons */}
-          <div className="flex items-center pt-[2.3rem]    gap-3">
+          <div className="flex items-center gap-3">
             <div className="flex  gap-2">
               <h1 className="font-[400] text-[16px] leading-[25px] text-[#7C8493] hidden md:flex">
                 sort by:
@@ -183,14 +185,14 @@ const FindAllJobsTemplateChunk = () => {
             </div>
 
             <div className="md:flex hidden gap-3 items-center">
-              <div className="" onClick={handleCardStyleChange("tile")}>
+              <div className="" onClick={handleCardStyleChange("card")}>
                 <IC_TilesOption
-                  className={`cursor-pointer w-[24px] h-[24px]  ${cardType === "tile" ? "fill-[#4640DE] stroke-[#4640DE] opacity-1" : "fill-[white] opacity-[0.6]"}`}
+                  className={`cursor-pointer w-[24px] h-[24px]  ${cardType === "card" ? "fill-[#4640DE] stroke-[#4640DE] opacity-1" : "fill-[white] opacity-[0.6]"}`}
                 />
               </div>
-              <div className="" onClick={handleCardStyleChange("card")}>
+              <div className="" onClick={handleCardStyleChange("tile")}>
                 <IC_CardsOption
-                  className={`cursor-pointer w-[24px] h-[24px] ${cardType === "card" ? "fill-[#4640DE] stroke-[#4640DE] opacity-1" : "fill-[#1B1B1B] opacity-[0.6]"}`}
+                  className={`cursor-pointer w-[24px] h-[24px] ${cardType === "tile" ? "fill-[#4640DE] stroke-[#4640DE] opacity-1" : "fill-[#1B1B1B] opacity-[0.6]"}`}
                 />
               </div>
             </div>
@@ -199,33 +201,74 @@ const FindAllJobsTemplateChunk = () => {
 
         {/* mapping starts here */}
         <div>
-          <div className="flex flex-col">
-            {currentjobdata.map((j: FindJobCardProps, i: number) => (
-              <FindJobCard
-                key={i}
-                id={j.id}
-                img={j.img}
-                title={j.title}
-                company={j.company}
-                location={j.location}
-                duration={j.duration}
-                sector1={j.sector1}
-                sector2={j.sector2}
-                applied={j.applied}
-                capacity={j.capacity}
-              />
-            ))}
-          </div>
-
+          {currentjobdata.length > 0 ? (
+            <>
+              {cardType === "card" ? (
+                <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-4 mt-4">
+                  {currentjobdata.map((j: FindJobCardProps) => (
+                    <FindJobCard
+                      key={j.id}
+                      id={j.id}
+                      img={j.img}
+                      title={j.title}
+                      company={j.company}
+                      location={j.location}
+                      duration={j.duration}
+                      sector1={j.sector1}
+                      sector2={j.sector2}
+                      applied={j.applied}
+                      capacity={j.capacity}
+                    />
+                  ))}
+                </div>
+              ) : (
+                <div className="flex flex-col mt-4">
+                  {currentjobdata.map((j: FindJobTileCardProps) => (
+                    <FindJobTileCard
+                      key={j.id}
+                      id={j.id}
+                      img={j.img}
+                      title={j.title}
+                      company={j.company}
+                      location={j.location}
+                      duration={j.duration}
+                      sector1={j.sector1}
+                      sector2={j.sector2}
+                      applied={j.applied}
+                      capacity={j.capacity}
+                    />
+                  ))}
+                </div>
+              )}
+            </>
+          ) : (
+            <>
+              <div className="flex justify-center flex-col items-center">
+                <Image
+                  src="/images/jobs_empty.svg"
+                  alt="Empty Job Image"
+                  width={400}
+                  height={400}
+                />
+                <p className="text-center w-full mt-8 md:w-[80%] lg:w-[75%] xl:w-[70%] mx-auto">
+                  Your career path awaits! 🚀 Browse through our job listings
+                  and let the possibilities inspire you. The perfect opportunity
+                  might be just one click away.
+                </p>
+              </div>
+            </>
+          )}
           {/* pagination */}
-          <div className="flex items-center justify-center my-[1rem] md:my-[3rem]">
-            <FindjobPagination
-              totalItems={alljobsdata.length}
-              itemsPerPage={ITEMS_PER_PAGE}
-              currentPage={currentPage}
-              paginate={paginate}
-            />
-          </div>
+          {currentjobdata.length > 0 && (
+            <div className="flex items-center justify-center my-[1rem] md:my-[3rem]">
+              <FindjobPagination
+                totalItems={alljobsdata.length}
+                itemsPerPage={ITEMS_PER_PAGE}
+                currentPage={currentPage}
+                paginate={paginate}
+              />
+            </div>
+          )}
         </div>
       </div>
     </section>

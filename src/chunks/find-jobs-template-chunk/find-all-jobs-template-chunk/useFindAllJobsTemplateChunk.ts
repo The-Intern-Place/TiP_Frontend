@@ -14,7 +14,7 @@ type IJobFilter = {
 
 export default function useFindAllJobsTemplateChunk() {
   const [iconToggle, setIconToggle] = useState<boolean>(false);
-  const [cardType, setCardType] = useState<string | null>(null);
+  const [cardType, setCardType] = useState<string>("card");
   const [visibleId, setVisibleId] = useState<number[]>([]);
   // pagination
   const ITEMS_PER_PAGE = 7;

@@ -26,7 +26,7 @@ export default function useDashboardLayout() {
       icon: <IC_Applications />,
     },
     {
-      id: "",
+      id: "/admin/find-job",
       name: "Find Jobs",
       icon: <IC_Search color="black" />,
     },
