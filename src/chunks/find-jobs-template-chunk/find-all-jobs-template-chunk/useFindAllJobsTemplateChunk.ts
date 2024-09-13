@@ -22,6 +22,7 @@ export default function useFindAllJobsTemplateChunk() {
   const indexOfFirstItem = (currentPage - 1) * ITEMS_PER_PAGE;
   const indexOfLastItem = currentPage * ITEMS_PER_PAGE;
   const currentjobdata = alljobsdata.slice(indexOfFirstItem, indexOfLastItem);
+  const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
 
   const filterData: IJobFilter[] = [
     {
@@ -84,7 +85,7 @@ export default function useFindAllJobsTemplateChunk() {
     );
   };
 
-  const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
+  // const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
 
   const [showFilter, setShowFilter] = useState(false);
 

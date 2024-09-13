@@ -66,7 +66,7 @@ const DashboardHeaderChunk = (props: DashboardHeaderChunkProps) => {
         </div>
       </div>
 
-      <div className="flex items-center gap-4 px-3 py-5 block sm:hidden">
+      <div className="flex items-center gap-4 px-3 py-5  sm:hidden">
         <Image src={MobileHamburger} alt="hamburger" />
         <div className="relative w-full">
           <span className="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
