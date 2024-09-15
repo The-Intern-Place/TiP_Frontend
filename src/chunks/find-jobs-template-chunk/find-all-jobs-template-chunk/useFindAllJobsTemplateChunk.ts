@@ -90,7 +90,7 @@ export default function useFindAllJobsTemplateChunk() {
   const [showFilter, setShowFilter] = useState(false);
 
   const handleFilterToggle = () => {
-    setShowFilter(!showFilter);
+    setShowFilter((prevShowFilter) => !prevShowFilter);
   };
 
   return {
