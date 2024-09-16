@@ -26,6 +26,7 @@ export default function RootLayout({
           {children}
           {pathname !== "/login" &&
             pathname !== "/sign-up" &&
+            pathname !== "/settings" &&
             !pathname.startsWith("/admin") && <Footer />}
         </Provider>
       </body>
