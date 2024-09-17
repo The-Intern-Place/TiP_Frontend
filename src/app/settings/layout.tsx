@@ -10,8 +10,8 @@ interface ClassProps {
 const layout = ({ children, className }: ClassProps) => {
   const newClassName = twMerge("", className);
   return (
-    <div>
-      <SidebarChunk />
+    <div className={newClassName}>
+      <SidebarChunk className="hidden md:flex flex-row" />
       <div className="">
         <SettingsHeaderChunk />
         {children}

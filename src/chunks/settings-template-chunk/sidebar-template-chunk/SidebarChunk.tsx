@@ -1,7 +1,7 @@
 import React from "react";
 
-const SidebarChunk = () => {
-  return <div>SidebarChunk</div>;
+const SidebarChunk = (Props: { className: string }) => {
+  return <div className={Props.className}>SidebarChunk</div>;
 };
 
 export default SidebarChunk;
