@@ -12,7 +12,7 @@ const layout = ({ children, className }: ClassProps) => {
   return (
     <div className={newClassName}>
       <SidebarChunk className="hidden md:flex flex-row md:w-[19%]" />
-      <div className="md:w-[81%]">
+      <div className="w-[81%]">
         <SettingsHeaderChunk />
         {children}
       </div>
