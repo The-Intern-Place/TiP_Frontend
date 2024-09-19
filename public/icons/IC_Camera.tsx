@@ -9,8 +9,9 @@ const IC_Camera = ({
 }) => {
   return (
     <svg
-      width="24"
-      height="21"
+      className={className}
+      width="22.75"
+      height="20.13"
       viewBox="0 0 24 21"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
