@@ -6,9 +6,11 @@ import { IDashboardLayoutProps } from "./DashboardLayout.types";
 const DashboardLayout = (props: IDashboardLayoutProps) => {
   const { menuOptions, subMenuOptions } = useDashboardLayout();
   return (
-    <main className="flex items-start min-h-screen">
+    <main className="flex w-full min-h-screen">
       <DashboardMenuChunk options={menuOptions} subOptions={subMenuOptions} />
-      <div className="w-full bg-[#FAFBFC] min-h-screen">{props.children}</div>
+      <div className="bg-[#FAFBFC] min-h-screen w-full flex-1 overflow-x-hidden">
+        {props.children}
+      </div>
     </main>
   );
 };

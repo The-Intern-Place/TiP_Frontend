@@ -23,7 +23,7 @@ const FindJobsSearchChunk = ({ isInDashboard }: { isInDashboard: boolean }) => {
           type="text"
           placeholder="Job title or keyword"
           className=" border-b-[1px] border-gray  bg-transparent rounded-none focus:outline-none 
-            focus:ring-0  lg:w-[485px]  w-full h-[60px] items-center"
+            focus:ring-0 w-full h-[60px] items-center"
         />
       </div>
 
@@ -31,7 +31,7 @@ const FindJobsSearchChunk = ({ isInDashboard }: { isInDashboard: boolean }) => {
       <div className="border-[1px] border-gray my-1 md:h-[66px] lg:mx-2  hidden  lg:flex" />
 
       {/* florence,italy  */}
-      <div className=" lg:w-[485px] w-[100%] items-center bg-transparent flex rounded-0 lg:mt-[0rem] mb-8 lg:mb-0 rounded-bl-none rounded-br-none">
+      <div className="w-full items-center bg-transparent flex rounded-0 lg:mt-[0rem] mb-8 lg:mb-0 rounded-bl-none rounded-br-none">
         <Image src={LocationIcon} alt="" className="" />
 
         <SelectInput2
@@ -53,13 +53,9 @@ const FindJobsSearchChunk = ({ isInDashboard }: { isInDashboard: boolean }) => {
       </div>
 
       {/* button */}
-      <div className="w-full md:px-1  lg:w-[107px] md:h-[50px] h-[42px] ">
-        <Button
-          overrideStyles=" bg-[#0046BF] text-white md:p-3 gap-1 w-[98%] flex text-center items-center justify-center ml-[0.4rem]
-               lg:w-[107px] md:h-[50px h-[42px]  mt-[0rem] md:mt-[-0.4rem] lg:mt-[0.55rem] rounded-none"
-          aria-label="Search"
-        >
-          Search <span className="md:hidden block">my job</span>
+      <div className="w-full md:ml-6 lg:w-64">
+        <Button overrideStyles="" aria-label="Search">
+          Search <span className="lg:hidden block">my job</span>
         </Button>
       </div>
     </div>

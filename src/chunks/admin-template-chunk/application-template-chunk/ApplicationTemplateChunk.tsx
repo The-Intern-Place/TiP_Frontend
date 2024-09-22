@@ -21,7 +21,7 @@ const ApplicationTemplateChunk = () => {
     handleFilterClick,
     dateInputRef,
     handleDateChange,
-    getStatusClass
+    getStatusClass,
   } = useApplicationTemplateChunk();
 
   return (
@@ -146,7 +146,7 @@ const ApplicationTemplateChunk = () => {
 
             <tbody>
               {data.map((t) => {
-                console.log(t)
+                console.log(t);
                 const theme = getStatusClass(t.status);
                 return (
                   <tr

@@ -31,13 +31,14 @@ const FindAllJobsTemplateChunk = () => {
     filterData,
     handleFilterToggle,
     showFilter,
+    filterJobs,
   } = useFindAllJobsTemplateChunk();
 
   return (
-    <section className="flex flex-col md:flex-row md:justify-between gap-8 py-8">
+    <section className="flex flex-col lg:flex-row md:justify-between gap-8 py-8">
       {/*  */}
       <div
-        className="flex gap-[8px] pt-[12px] pr-[16px] pb-[12px] pl-[16px] items-center justify-center md:hidden
+        className="flex gap-[8px] pt-[12px]  pb-[12px]  items-center justify-center lg:hidden
  w-[100%] h-[50px] border-[1px] border-r-0 border-l-0 border-[#515B6F33] mt-[40px] px-0"
         onClick={handleFilterToggle}
       >
@@ -53,12 +54,12 @@ const FindAllJobsTemplateChunk = () => {
 
       {/* find job filter */}
       <div
-        className={`gap-[20px] ${showFilter ? "fixed" : "hidden md:flex md:flex-col"} p-6 md:p-0 rounded  shadow-md md:shadow-none max-h-[90%] md:max-h-full overflow-y-scroll md:overflow-y-visible md:relative top-6 md:top-0 
-      right-[17px] md:right-0  bg-[#FFFFFF] md:bg-transparent  z-10
-      w-[90%] md:w-72
+        className={`gap-[20px] ${showFilter ? "fixed" : "hidden lg:flex lg:flex-col"} p-6 lg:p-0 rounded  shadow-md lg:shadow-none max-h-[90%] lg:max-h-full overflow-y-scroll lg:overflow-y-visible lg:relative top-6 lg:top-0 
+      right-[17px] md:right-0  bg-[#FFFFFF] lg:bg-transparent  z-10
+      w-[90%] lg:w-72
        `}
       >
-        <div className="flex  justify-between items-center md:hidden px-[0.25rem] mb-6">
+        <div className="flex  justify-between items-center lg:hidden px-[0.25rem] mb-6">
           <h1 className="font-clash text-[#1B1B1B] font-[600] text-[20px] leading-[24px]">
             More Filter{" "}
           </h1>
@@ -113,13 +114,11 @@ const FindAllJobsTemplateChunk = () => {
                 >
                   <input
                     type="checkbox"
-                    className="w-[24px] h-[24px] border-[#D6DDEB] border-[2px] accent-[#4640DE] checked:bg-[#4640DE] "
+                    className="w-[24px] h-[24px] border-[#D6DDEB] border-[2px] accent-[#4640DE] checked:bg-[#4640DE]"
+                    onClick={() => filterJobs(desc.text)}
                   />
                   <p className="font-[400] text-[16px] leading-[25px] lg:pl-[1rem] pl-[0.5rem] font-epilogue md:text-[#1B1B1B]">
-                    {desc.duration}
-                  </p>
-                  <p className="font-[400] text-[16px] leading-[25px]  font-epilogue text-[#1B1B1B]">
-                    ({desc.jobs})
+                    {desc.text}
                   </p>
                 </div>
               ))}
@@ -129,7 +128,7 @@ const FindAllJobsTemplateChunk = () => {
 
         <div className="flex my-1">
           <Button
-            overrideStyles="w-[100%]   h-[50px] bg-[#0046BF] flex md:hidden text-center items-center rounded-none
+            overrideStyles="w-[100%] h-[50px] bg-[#0046BF] flex lg:hidden text-center items-center rounded-none
           justify-center font-[700] text-[16px] leading-[25px] text-[#FFFFFF]"
           >
             Apply
@@ -140,33 +139,31 @@ const FindAllJobsTemplateChunk = () => {
       {/* find jobs */}
       <div className="w-full">
         {/* heading */}
-        <div className="flex flex-row justify-between md:items-center">
+        <div className="flex flex-col sm:flex-row bg-[#F8F8FD] px-4 py-2 rounded justify-between md:items-center">
           <div className="gap-[8px]">
             <h1 className="font-[600] text-[32px] leading-[38px] text-[#25324B]">
               All Jobs
             </h1>
 
             <p className="font-[400] text-[16px] leading-[25px] text-[#7C8493]">
-              Showing 73 results
+              Showing {currentjobdata.length} results
             </p>
           </div>
           {/* icons */}
-          <div className="flex items-center gap-3">
-            <div className="flex  gap-2">
-              <h1 className="font-[400] text-[16px] leading-[25px] text-[#7C8493] hidden md:flex">
-                sort by:
-              </h1>
-              {/* button */}
+          <div className="hidden sm:flex items-center gap-3">
+            <div className="flex items-center gap-2">
+              <h1 className="font-[400] text-[#7C8493]">sort by:</h1>
+
               <button
                 type="button"
                 onClick={() => setIconToggle(!iconToggle)}
-                className="flex justify-center gap-2 "
+                className="flex justify-center gap-2 mt-1"
               >
-                <span className="flex font-[700] text-[16px] leading-[24px] text-[#25324B]">
+                <span className="flex font-[700] text-sm text-[#25324B]">
                   Most relevant
                 </span>
                 <svg
-                  className={`w-6 h-6 text-gray-400 ${!iconToggle ? styles.rotate : ""}`}
+                  className={`w-5 h-5 text-gray-400 ${!iconToggle ? styles.rotate : ""}`}
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -185,14 +182,20 @@ const FindAllJobsTemplateChunk = () => {
             </div>
 
             <div className="md:flex hidden gap-3 items-center">
-              <div className="" onClick={handleCardStyleChange("card")}>
+              <div
+                className={`${cardType === "card" && "bg-[#1976D21A] p-1 rounded"}`}
+                onClick={handleCardStyleChange("card")}
+              >
                 <IC_TilesOption
-                  className={`cursor-pointer w-[24px] h-[24px]  ${cardType === "card" ? "fill-[#4640DE] stroke-[#4640DE] opacity-1" : "fill-[white] opacity-[0.6]"}`}
+                  className={`cursor-pointer w-[24px]  h-[24px]  ${cardType === "card" ? " fill-[#4640DE] stroke-[#4640DE] opacity-1" : "fill-[white] opacity-60"}`}
                 />
               </div>
-              <div className="" onClick={handleCardStyleChange("tile")}>
+              <div
+                className={`${cardType === "tile" && "bg-[#1976D21A] p-1 rounded"}`}
+                onClick={handleCardStyleChange("tile")}
+              >
                 <IC_CardsOption
-                  className={`cursor-pointer w-[24px] h-[24px] ${cardType === "tile" ? "fill-[#4640DE] stroke-[#4640DE] opacity-1" : "fill-[#1B1B1B] opacity-[0.6]"}`}
+                  className={`cursor-pointer w-[24px]  h-[24px] ${cardType === "tile" ? "fill-[#4640DE] stroke-[#4640DE] opacity-1" : "fill-[#1B1B1B] opacity-60"}`}
                 />
               </div>
             </div>
@@ -204,39 +207,15 @@ const FindAllJobsTemplateChunk = () => {
           {currentjobdata.length > 0 ? (
             <>
               {cardType === "card" ? (
-                <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-4 mt-4">
+                <div className="grid xl:grid-cols-3 gap-4 mt-4">
                   {currentjobdata.map((j: FindJobCardProps) => (
-                    <FindJobCard
-                      key={j.id}
-                      id={j.id}
-                      img={j.img}
-                      title={j.title}
-                      company={j.company}
-                      location={j.location}
-                      duration={j.duration}
-                      sector1={j.sector1}
-                      sector2={j.sector2}
-                      applied={j.applied}
-                      capacity={j.capacity}
-                    />
+                    <FindJobCard key={j.id} {...j} />
                   ))}
                 </div>
               ) : (
                 <div className="flex flex-col mt-4">
                   {currentjobdata.map((j: FindJobTileCardProps) => (
-                    <FindJobTileCard
-                      key={j.id}
-                      id={j.id}
-                      img={j.img}
-                      title={j.title}
-                      company={j.company}
-                      location={j.location}
-                      duration={j.duration}
-                      sector1={j.sector1}
-                      sector2={j.sector2}
-                      applied={j.applied}
-                      capacity={j.capacity}
-                    />
+                    <FindJobTileCard key={j.id} {...j} />
                   ))}
                 </div>
               )}

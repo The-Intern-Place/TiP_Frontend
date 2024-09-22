@@ -9,7 +9,7 @@ const FindJobs = () => {
     <DashboardLayout>
       <DashboardHeaderChunk title="Find Jobs" />
       <div className="border-b border-[#DAD2B8]" />
-      <section className="px-7 py-8 bg-white">
+      <section className="px-7 py-8 bg-white overflow-x-hidden">
         <FindJobsSearchChunk isInDashboard />
         <FindAllJobsTemplateChunk />
       </section>

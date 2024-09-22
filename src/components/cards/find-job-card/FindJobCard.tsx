@@ -35,7 +35,7 @@ const FindJobCard = (props: FindJobCardProps) => {
 
           <p className="text-[#7C8493] font-epilogue"> {props.location} </p>
         </div>
-        <div className="my-4 flex flex-row gap-4">
+        <div className="my-4 flex flex-row gap-4 flex-wrap">
           <h1
             className={`font-epilogue text-sm rounded-full py-1 px-4 font-medium ${useJobSectorColor(props.sector1)}`}
           >
@@ -50,6 +50,10 @@ const FindJobCard = (props: FindJobCardProps) => {
           </h1>
         </div>
         <div className="mb-4 mt-6">
+          <div className="flex items-center justify-between">
+            <p className="text-sm">{props.jobLevel}</p>
+            <p className="text-sm">{props.salaryRange}</p>
+          </div>
           <div className="w-[100%] h-[6px] rounded-[10px] bg-[#D6DDEB] mt-4">
             <div
               className="h-[6px] bg-[#56CDAD]"

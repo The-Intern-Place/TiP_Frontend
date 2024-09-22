@@ -13,6 +13,8 @@ export type FindJobTileCardProps = {
   sector2: string;
   applied: string;
   capacity: string;
+  jobLevel: string;
+  salaryRange: string;
 };
 
 export type FindJobTileCardStory = StoryObj<typeof FindJobTileCardMeta>;

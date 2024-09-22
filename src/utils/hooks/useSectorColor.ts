@@ -4,10 +4,8 @@ export const useJobSectorColor = (sector: string) => {
       return "text-[#FFB836] border border-[#FFB836]";
     case "design":
       return "text-[#4640DE] border border-[#4640DE]";
-    case "business":
-      return "text-[#56CDAD] border border-[#56CDAD]";
     default:
-      return "";
+      return "text-[#56CDAD] border border-[#56CDAD]";
   }
 };
 
