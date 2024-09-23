@@ -9,7 +9,7 @@ const IC_HomeNav = ({
 }) => {
   return (
     <svg
-      className="hover:text-[#1976D2]"
+      className="hover:bg-[#1976D2]"
       width="25"
       height="25"
       viewBox="0 0 25 25"

@@ -26,7 +26,16 @@ const SidebarChunk = (Props: { className: string }) => {
             >
               {item?.title}
             </Link>
-            <div className="">{item?.notification}</div>
+            {item?.notification && (
+              <div className="py-[10px] px-[10px] bg-[#1976D2]">
+                {item?.notification}
+              </div>
+            )}
+            {/* <div
+              className={`py-[10px] px-[10px] ${item?.notification && `bg-[#1976D2]`} `}
+            >
+              {item?.notification}
+            </div> */}
           </div>
         ))}
       </div>
