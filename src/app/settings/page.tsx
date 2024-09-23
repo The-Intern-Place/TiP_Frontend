@@ -1,5 +1,8 @@
 "use client";
+import SettingsProfileChunk from "@/chunks/settings-template-chunk/setting-profile-template-chunk/SettingsProfileChunk";
 import SettingsContainer from "@/chunks/settings-template-chunk/settings-container-chunk/SettingsContainer";
+import SettingsLoginChunk from "@/chunks/settings-template-chunk/settings-login-template-chunk/SettingsLoginChunk";
+import SettingsNotificationsChunk from "@/chunks/settings-template-chunk/settings-notifications-template-chunk/SettingsNotificationsChunk";
 import React, { useState } from "react";
 
 const Settings = () => {
@@ -41,11 +44,11 @@ const Settings = () => {
           </h1>
         </div>
         {active === "profile" ? (
-          <div>Profile</div>
+          <SettingsProfileChunk />
         ) : active === "login" ? (
-          <div>Login</div>
+          <SettingsLoginChunk />
         ) : active === "notifications" ? (
-          <div>Notifications</div>
+          <SettingsNotificationsChunk />
         ) : null}
       </div>
     </SettingsContainer>
