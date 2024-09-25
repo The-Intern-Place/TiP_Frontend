@@ -11,7 +11,7 @@ const SettingsProfileChunk = () => {
     <div className="md:mx-7">
       <div className="">
         {/* Basic info */}
-        <div className="flex flex-col md:py-6 py-4 border-b-[1px]">
+        <div className="flex flex-col md:py-6 py-4 md:border-b-[1px] border-b-0">
           <h1 className="text-base font-semibold font-epilogue">
             Basic Information
           </h1>
@@ -20,7 +20,7 @@ const SettingsProfileChunk = () => {
           </p>
         </div>
         {/* Profile photo for only desktop */}
-        <div className="border-b-[1px]">
+        <div className="md:border-b-[1px] border-b-0">
           <div className="hidden md:flex justify-between items-center  py-8 md:w-[916px]">
             <div className="w-[28%]">
               <h1 className="font-epilogue text-[18px] font-semibold leading-6 text-left">
@@ -62,7 +62,7 @@ const SettingsProfileChunk = () => {
 
         {/* Personal info */}
         <div className="md:py-8">
-          <h1 className="text-base md:text-[18px] font-semibold font-epilogue">
+          <h1 className="hidden md:inline-flex text-base md:text-[18px] font-semibold font-epilogue">
             Personal Information
           </h1>
 
