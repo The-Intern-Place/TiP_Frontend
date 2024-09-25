@@ -15,11 +15,13 @@ const Settings = () => {
   return (
     <SettingsContainer className="">
       <div className="border-b-[1px] md:mx-7 ">
-        <div className="flex md:items-start md:justify-start justify-between gap-2 pt-5 md:px-8">
+        <div className="flex md:items-start md:justify-start justify-between gap-2  md:px-8">
           <h1
             onClick={() => setActive("profile")}
             className={
-              "pb-4 px-4 text-base font-normal font-epilogue text-[#7C8493] hover:font-semibold active:font-semibold active:text-black hover:border-b-2 hover:border-blue"
+              active === "profile"
+                ? "pb-4 px-2 text-base font-normal font-epilogue text-[#7C8493] hover:font-semibold  hover:text-black hover:border-b-2 hover:border-blue"
+                : "pb-4 px-2 text-base font-normal font-epilogue text-[#7C8493]"
             }
           >
             My Profile
@@ -27,7 +29,9 @@ const Settings = () => {
           <h1
             onClick={() => setActive("login")}
             className={
-              "pb-4 px-4 text-base font-normal font-epilogue text-[#7C8493] hover:font-semibold active:font-semibold active:text-black hover:border-b-2 hover:border-blue"
+              active === "login"
+                ? "pb-4 px-2 text-base font-normal font-epilogue text-[#7C8493] hover:font-semibold  hover:text-black hover:border-b-2 hover:border-blue"
+                : "pb-4 px-2 text-base font-normal font-epilogue text-[#7C8493]"
             }
           >
             Login Details
@@ -36,21 +40,23 @@ const Settings = () => {
             onClick={() => handleActive("notifications")}
             className={
               active === "notifications"
-                ? "pb-4 px-4 text-base font-normal font-epilogue text-[#7C8493] hover:font-semibold  hover:text-black  hover:border-b-2 hover:border-blue"
-                : "pb-4 px-4 text-base font-normal font-epilogue text-[#7C8493]"
+                ? "pb-4 px-2 text-base font-normal font-epilogue text-[#7C8493] hover:font-semibold  hover:text-black  hover:border-b-2 hover:border-blue"
+                : "pb-4 px-2 text-base font-normal font-epilogue text-[#7C8493]"
             }
           >
             Notifications
           </h1>
         </div>
-        {active === "profile" ? (
-          <SettingsProfileChunk />
-        ) : active === "login" ? (
-          <SettingsLoginChunk />
-        ) : active === "notifications" ? (
-          <SettingsNotificationsChunk />
-        ) : null}
       </div>
+      {/* <SettingsContainer> */}
+      {active === "profile" ? (
+        <SettingsProfileChunk />
+      ) : active === "login" ? (
+        <SettingsLoginChunk />
+      ) : active === "notifications" ? (
+        <SettingsNotificationsChunk />
+      ) : null}
+      {/* </SettingsContainer> */}
     </SettingsContainer>
   );
 };

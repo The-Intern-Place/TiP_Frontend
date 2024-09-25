@@ -8,7 +8,7 @@ interface ContainerProps {
 }
 const SettingsContainer = ({ children, className, bg }: ContainerProps) => {
   const newClassName = twMerge(
-    `max-w-screen-xl mx-auto py-10 px-4 lg:px-0 ${bg}`,
+    `max-w-screen-xl mx-auto py-5 px-4 lg:px-0 ${bg}`,
     className
   );
   return <div className={newClassName}>{children}</div>;
