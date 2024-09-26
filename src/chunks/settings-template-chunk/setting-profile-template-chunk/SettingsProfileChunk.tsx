@@ -3,6 +3,7 @@ import useSettingsHeaderChunk from "../settings-header-template-chunk/useSetting
 import Image from "next/image";
 import IC_Image from "@assets/icons/IC_Image";
 import SettingsContainer from "../settings-container-chunk/SettingsContainer";
+import SettingsProfileForm from "./settings-profile-form/SettingsProfileForm";
 
 const SettingsProfileChunk = () => {
   const { findID } = useSettingsHeaderChunk();
@@ -67,7 +68,9 @@ const SettingsProfileChunk = () => {
           </h1>
 
           {/* personal info form */}
-          <div className=""></div>
+          <div className="">
+            <SettingsProfileForm />
+          </div>
         </div>
       </div>
     </div>
