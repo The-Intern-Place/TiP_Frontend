@@ -1,31 +1,31 @@
 import * as z from "zod";
 
-const dateOfBirthValidator = (dob: string) => {
-  const dateRegex: RegExp = /^\d{1,2}\/\d{1,2}\/\d{4}$/;
-  if (!dateRegex.test(dob)) {
-    return false;
-  }
+// const dateOfBirthValidator = (dob: string) => {
+//   const dateRegex: RegExp = /^\d{1,2}\/\d{1,2}\/\d{4}$/;
+//   if (!dateRegex.test(dob)) {
+//     return false;
+//   }
 
-  const [day, month, year] = dob.split("/");
-  const date: Date = new Date(`${year}-${month}-${day}`);
+//   const [day, month, year] = dob.split("/");
+//   const date: Date = new Date(`${year}-${month}-${day}`);
 
-  if (
-    date.getFullYear() !== parseInt(year, 10) ||
-    date.getMonth() + 1 !== parseInt(month, 10) ||
-    date.getDate() !== parseInt(day, 10)
-  ) {
-    return false;
-  }
+//   if (
+//     date.getFullYear() !== parseInt(year, 10) ||
+//     date.getMonth() + 1 !== parseInt(month, 10) ||
+//     date.getDate() !== parseInt(day, 10)
+//   ) {
+//     return false;
+//   }
 
-  const today: Date = new Date();
-  let age: number = today.getFullYear() - date.getFullYear();
-  const m: number = today.getMonth() - date.getMonth();
-  if (m < 0 || (m === 0 && today.getDate() < date.getDate())) {
-    age--;
-  }
+//   const today: Date = new Date();
+//   let age: number = today.getFullYear() - date.getFullYear();
+//   const m: number = today.getMonth() - date.getMonth();
+//   if (m < 0 || (m === 0 && today.getDate() < date.getDate())) {
+//     age--;
+//   }
 
-  return age >= 0 && age <= 150; // adjust the max age as needed
-};
+//   return age >= 0 && age <= 150; // adjust the max age as needed
+// };
 export const ProfileSchema = z.object({
   name: z.string().min(2, {
     message: "Name must be at least 2 characters long",
@@ -33,9 +33,8 @@ export const ProfileSchema = z.object({
   email: z.string().email({
     message: "Invalid email! Please enter a valid mail",
   }),
-  date_of_birth: z.string().refine(dateOfBirthValidator, {
-    message:
-      "Invalid date of birth. Must be a valid date in the format DD/MM/YYYY and result in an age between 0 and 150",
+  date_of_birth: z.date({
+    message: "A date of birth is required.",
   }),
   //   password: z.string().refine(
   //     (password) => {

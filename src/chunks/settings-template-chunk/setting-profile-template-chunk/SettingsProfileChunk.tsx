@@ -62,14 +62,16 @@ const SettingsProfileChunk = () => {
         </div>
 
         {/* Personal info */}
-        <div className="md:py-8">
-          <h1 className="hidden md:inline-flex text-base md:text-[18px] font-semibold font-epilogue">
-            Personal Information
-          </h1>
+        <div className="">
+          <div className="md:py-8 flex flex-col md:flex-row md:w-[916px] justify-between">
+            <h1 className="hidden md:inline-flex text-base md:text-[18px] font-semibold font-epilogue">
+              Personal Information
+            </h1>
 
-          {/* personal info form */}
-          <div className="">
-            <SettingsProfileForm />
+            {/* personal info form */}
+            <div className="">
+              <SettingsProfileForm />
+            </div>
           </div>
         </div>
       </div>
