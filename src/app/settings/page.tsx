@@ -15,7 +15,7 @@ const Settings = () => {
   return (
     <SettingsContainer className="">
       <div className="border-b-[1px] md:mx-7 ">
-        <div className="flex md:items-start md:justify-start justify-between gap-2  md:px-8">
+        <div className="flex md:items-start md:justify-start justify-between gap-1  md:px-8">
           <h1
             onClick={() => setActive("profile")}
             className={
