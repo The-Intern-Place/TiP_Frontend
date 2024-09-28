@@ -114,3 +114,9 @@ export const LoginSchema = z.object({
     }
   ),
 });
+
+export const NotificationSchema = z.object({
+  application: z.boolean().default(false).optional(),
+  jobs: z.boolean().default(false).optional(),
+  recommendations: z.boolean().default(false).optional(),
+});
