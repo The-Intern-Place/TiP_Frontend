@@ -63,9 +63,12 @@ const SettingsProfileForm = () => {
               name="name"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Full Name</FormLabel>
+                  <FormLabel className="text-[#1b1b1b] text-base font-epilogue font-semibold">
+                    Full Name
+                  </FormLabel>
                   <FormControl>
                     <Input
+                      className="h-[60px]"
                       type="text"
                       placeholder="Type in your full name"
                       {...field}
@@ -82,9 +85,12 @@ const SettingsProfileForm = () => {
                 name="email"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Email</FormLabel>
+                    <FormLabel className="text-[#1b1b1b] text-base font-epilogue font-semibold">
+                      Email
+                    </FormLabel>
                     <FormControl>
                       <Input
+                        className="h-[60px]"
                         type="text"
                         placeholder="Type in your full email"
                         {...field}
@@ -99,9 +105,16 @@ const SettingsProfileForm = () => {
                 name="mobile_number"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Phone Number</FormLabel>
+                    <FormLabel className="text-[#1b1b1b] text-base font-epilogue font-semibold">
+                      Phone Number
+                    </FormLabel>
                     <FormControl>
-                      <Input type="text" placeholder="+234" {...field} />
+                      <Input
+                        className="h-[60px]"
+                        type="text"
+                        placeholder="+234"
+                        {...field}
+                      />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -116,14 +129,16 @@ const SettingsProfileForm = () => {
                 name="date_of_birth"
                 render={({ field }) => (
                   <FormItem className="flex flex-col">
-                    <FormLabel>Date of birth</FormLabel>
+                    <FormLabel className="text-[#1b1b1b] text-base font-epilogue font-semibold">
+                      Date of birth
+                    </FormLabel>
                     <Popover>
                       <PopoverTrigger asChild>
                         <FormControl>
                           <Button
                             variant={"outline"}
                             className={cn(
-                              "w-full pl-3 text-left font-normal",
+                              "w-full pl-3 text-left font-normal h-[60px]",
                               !field.value && "text-muted-foreground"
                             )}
                           >
@@ -148,7 +163,7 @@ const SettingsProfileForm = () => {
                         />
                       </PopoverContent>
                     </Popover>
-                    <FormDescription>
+                    <FormDescription className="text-[#515B6F] text-base font-epilogue">
                       Your date of birth is used to calculate your age.
                     </FormDescription>
                     <FormMessage />
@@ -157,7 +172,7 @@ const SettingsProfileForm = () => {
               />
               {/* Gender */}
               <Select>
-                <SelectTrigger className="w-full">
+                <SelectTrigger className="w-full h-[60px]">
                   <SelectValue placeholder="Select a gender" />
                 </SelectTrigger>
                 <SelectContent>

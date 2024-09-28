@@ -1,8 +1,9 @@
 interface imageProps {
   id: number;
   name: string;
-  role: string;
+  role?: string;
   image: string;
+  email?: string;
 }
 
 export const user: imageProps[] = [
@@ -11,5 +12,6 @@ export const user: imageProps[] = [
     name: "Tosin Eme",
     role: "Product Designer",
     image: "/images/tosin_profile_pic.png",
+    email: "toseme@gmail.com",
   },
 ];
