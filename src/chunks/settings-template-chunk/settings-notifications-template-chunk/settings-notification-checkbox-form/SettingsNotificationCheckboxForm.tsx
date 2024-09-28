@@ -67,8 +67,10 @@ const SettingsNotificationCheckboxForm = () => {
                         />
                       </FormControl>
                       <div className="space-y-1 leading-none">
-                        <FormLabel>Applications</FormLabel>
-                        <FormDescription>
+                        <FormLabel className="text-[#1b1b1b] text-base font-epilogue font-semibold">
+                          Applications
+                        </FormLabel>
+                        <FormDescription className="text-[#515B6F] text-base font-epilogue">
                           These notifications for jobs you have applied to.
                         </FormDescription>
                       </div>
@@ -87,8 +89,10 @@ const SettingsNotificationCheckboxForm = () => {
                         />
                       </FormControl>
                       <div className="space-y-1 leading-none">
-                        <FormLabel>Jobs</FormLabel>
-                        <FormDescription>
+                        <FormLabel className="text-[#1b1b1b] text-base font-epilogue font-semibold">
+                          Jobs
+                        </FormLabel>
+                        <FormDescription className="text-[#515B6F] text-base font-epilogue">
                           These are notifications for job openings that suit
                           your profile
                         </FormDescription>
@@ -108,8 +112,10 @@ const SettingsNotificationCheckboxForm = () => {
                         />
                       </FormControl>
                       <div className="space-y-1 leading-none">
-                        <FormLabel>Recommendations</FormLabel>
-                        <FormDescription>
+                        <FormLabel className="text-[#1b1b1b] text-base font-epilogue font-semibold">
+                          Recommendations
+                        </FormLabel>
+                        <FormDescription className="text-[#515B6F] text-base font-epilogue">
                           These are notifications for personalized
                           recommendations from recruiters
                         </FormDescription>
@@ -117,7 +123,11 @@ const SettingsNotificationCheckboxForm = () => {
                     </FormItem>
                   )}
                 />
-                <Button type="submit">Submit</Button>
+                <div className="w-full flex justify-end">
+                  <Button className="bg-blue " type="submit">
+                    Apply Changes
+                  </Button>
+                </div>
               </form>
             </Form>
           </div>
