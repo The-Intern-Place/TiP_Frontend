@@ -1,7 +1,41 @@
 import React from "react";
 import { Checkbox } from "@/components/ui/checkbox";
+import { useForm } from "react-hook-form";
+import { z } from "zod";
+import {
+  Form,
+  FormControl,
+  FormDescription,
+  FormField,
+  FormItem,
+  FormLabel,
+} from "@/components/ui/form";
+import { Button } from "@/components/ui/button";
+import { NotificationSchema } from "schema";
+import { zodResolver } from "@hookform/resolvers/zod";
+import Link from "next/link";
+import { toast } from "@/hooks/use-toast";
 
 const SettingsNotificationCheckboxForm = () => {
+  const form = useForm<z.infer<typeof NotificationSchema>>({
+    resolver: zodResolver(NotificationSchema),
+    defaultValues: {
+      applications: true,
+      jobs: true,
+      recommendations: true,
+    },
+  });
+
+  function onSubmit(data: z.infer<typeof NotificationSchema>) {
+    toast({
+      title: "You submitted the following values:",
+      description: (
+        <pre className="mt-2 w-[340px] rounded-md bg-slate-950 p-4">
+          <code className="text-white">{JSON.stringify(data, null, 2)}</code>
+        </pre>
+      ),
+    });
+  }
   return (
     <div className="">
       <div className="md:border-b-[1px] border-b-0">
@@ -16,18 +50,76 @@ const SettingsNotificationCheckboxForm = () => {
           </div>
           {/* checkboxes */}
           <div className=" flex flex-row gap-6 md:w-[540px]">
-            <Checkbox id="terms1" />
-            <div className="grid gap-1.5 leading-none">
-              <label
-                htmlFor="terms1"
-                className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+            <Form {...form}>
+              <form
+                onSubmit={form.handleSubmit(onSubmit)}
+                className="space-y-6"
               >
-                Applications
-              </label>
-              <p className="text-sm text-muted-foreground">
-                These notifications for jobs you have applied to.
-              </p>
-            </div>
+                <FormField
+                  control={form.control}
+                  name="applications"
+                  render={({ field }) => (
+                    <FormItem className="flex flex-row items-start space-x-3 space-y-0 rounded-md  p-4">
+                      <FormControl>
+                        <Checkbox
+                          checked={field.value}
+                          onCheckedChange={field.onChange}
+                        />
+                      </FormControl>
+                      <div className="space-y-1 leading-none">
+                        <FormLabel>Applications</FormLabel>
+                        <FormDescription>
+                          These notifications for jobs you have applied to.
+                        </FormDescription>
+                      </div>
+                    </FormItem>
+                  )}
+                />
+                <FormField
+                  control={form.control}
+                  name="jobs"
+                  render={({ field }) => (
+                    <FormItem className="flex flex-row items-start space-x-3 space-y-0 rounded-md  p-4">
+                      <FormControl>
+                        <Checkbox
+                          checked={field.value}
+                          onCheckedChange={field.onChange}
+                        />
+                      </FormControl>
+                      <div className="space-y-1 leading-none">
+                        <FormLabel>Jobs</FormLabel>
+                        <FormDescription>
+                          These are notifications for job openings that suit
+                          your profile
+                        </FormDescription>
+                      </div>
+                    </FormItem>
+                  )}
+                />
+                <FormField
+                  control={form.control}
+                  name="recommendations"
+                  render={({ field }) => (
+                    <FormItem className="flex flex-row items-start space-x-3 space-y-0 rounded-md  p-4">
+                      <FormControl>
+                        <Checkbox
+                          checked={field.value}
+                          onCheckedChange={field.onChange}
+                        />
+                      </FormControl>
+                      <div className="space-y-1 leading-none">
+                        <FormLabel>Recommendations</FormLabel>
+                        <FormDescription>
+                          These are notifications for personalized
+                          recommendations from recruiters
+                        </FormDescription>
+                      </div>
+                    </FormItem>
+                  )}
+                />
+                <Button type="submit">Submit</Button>
+              </form>
+            </Form>
           </div>
         </div>
       </div>
