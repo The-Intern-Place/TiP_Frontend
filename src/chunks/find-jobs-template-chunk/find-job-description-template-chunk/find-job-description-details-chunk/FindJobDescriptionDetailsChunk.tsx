@@ -76,27 +76,27 @@ const FindJobDescriptionDetailsChunk = (
                 </div>
               </div>
               <div className="flex flex-col gap-4">
-                <div className="flex justify-between">
-                  <p className="text-xs">Apply Before</p>
-                  <p className="text-xs font-bold">
+                <div className="flex font-epilogue justify-between">
+                  <p>Apply Before</p>
+                  <p className="text-[#002360] font-semibold">
                     {props.additionalDetails.applyBefore}
                   </p>
                 </div>
                 <div className="flex justify-between">
-                  <p className="text-xs">Posted On</p>
-                  <p className="text-xs font-bold">
+                  <p>Posted On</p>
+                  <p className="text-[#002360] font-semibold">
                     {props.additionalDetails.postedOn}
                   </p>
                 </div>
                 <div className="flex justify-between">
-                  <p className="text-xs">Job Type</p>
-                  <p className="text-xs font-bold">
+                  <p>Job Type</p>
+                  <p className="text-[#002360] font-semibold">
                     {props.additionalDetails.jobType}
                   </p>
                 </div>
                 <div className="flex justify-between">
-                  <p className="text-xs">Salary</p>
-                  <p className="text-xs font-bold">
+                  <p>Salary</p>
+                  <p className="text-[#1B1B1B] font-semibold">
                     {props.additionalDetails.salary}
                   </p>
                 </div>
@@ -108,7 +108,7 @@ const FindJobDescriptionDetailsChunk = (
                 {props.categories.map((category, index) => (
                   <li
                     key={index}
-                    className={`text-xs rounded-full px-2 py-1 ${getCategoryColor(category)}`}
+                    className={`text-xs rounded-full font-semibold px-2 py-1 ${getCategoryColor(category)}`}
                   >
                     {category}
                   </li>
@@ -133,7 +133,7 @@ const FindJobDescriptionDetailsChunk = (
       </div>
       <div className="border-t text-[#515B6F] border-b p-6 my-6">
         <div className="my-4">
-          <h2 className="text-xl font-bold mb-2">Perks & enefits</h2>
+          <h2 className="text-xl font-bold mb-2">Perks & Benefits</h2>
           <p className="text-sm">
             This job comes with several perks and benefits.
           </p>

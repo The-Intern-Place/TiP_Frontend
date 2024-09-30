@@ -4,13 +4,17 @@ import { FindJobCardProps } from "./FindJobCard.types";
 import Image from "next/image";
 import Button from "@/components/button/Button";
 import { useJobSectorColor } from "@/utils/hooks/useSectorColor";
+import Link from "next/link";
 
 const FindJobCard = (props: FindJobCardProps) => {
   const appliedPercentage =
     (Number(props.applied) / Number(props.capacity)) * 100;
 
   return (
-    <section className="p-4 border hover:bg-[#99B5E50F] rounded border-[#D6DDEB]">
+    <Link
+      href={`find-job/${props.id}`}
+      className="p-4 border hover:bg-[#99B5E50F] rounded border-[#D6DDEB]"
+    >
       <div className="flex flex-row justify-between">
         <Image
           src={props.img}
@@ -73,7 +77,7 @@ const FindJobCard = (props: FindJobCardProps) => {
           </Button>
         </div>
       </div>
-    </section>
+    </Link>
   );
 };
 
