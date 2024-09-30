@@ -1,8 +1,8 @@
 import { StoryObj } from "@storybook/react";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
-import FindJobCardMeta from "./FindJobCard.stories";
+import FindJobTileCardMeta from "./FindJobTileCard.stories";
 
-export type FindJobCardProps = {
+export type FindJobTileCardProps = {
   id: string;
   img: string | StaticImport;
   title: string;
@@ -17,4 +17,4 @@ export type FindJobCardProps = {
   salaryRange: string;
 };
 
-export type FindJobCardStory = StoryObj<typeof FindJobCardMeta>;
+export type FindJobTileCardStory = StoryObj<typeof FindJobTileCardMeta>;

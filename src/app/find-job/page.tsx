@@ -8,9 +8,11 @@ export const metadata: Metadata = {
 };
 const page = () => {
   return (
-    <div className="w-full overflow-x-hidden">
+    <div className="">
       <FindJobsHeroTemplateChunk />
-      <FindAllJobsTemplateChunk />
+      <div className="bg-white w-[95%] max-w-[1350px] mx-auto">
+        <FindAllJobsTemplateChunk />
+      </div>
     </div>
   );
 };
