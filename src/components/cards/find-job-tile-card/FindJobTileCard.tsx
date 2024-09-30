@@ -29,7 +29,7 @@ const FindJobTileCard = (props: FindJobTileCardProps) => {
               {props.company}{" "}
             </p>
 
-            <div className="w-[4px] h-[4px] bg-[#7C8493] mx-1"/>
+            <div className="w-[4px] h-[4px] bg-[#7C8493] mx-1" />
 
             <p className="text-sm sm:text-base text-[#7C8493] font-epilogue">
               {" "}

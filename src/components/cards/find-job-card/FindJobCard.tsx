@@ -10,7 +10,7 @@ const FindJobCard = (props: FindJobCardProps) => {
     (Number(props.applied) / Number(props.capacity)) * 100;
 
   return (
-      <section className="p-4 border hover:bg-[#99B5E50F] rounded border-[#D6DDEB]">
+    <section className="p-4 border hover:bg-[#99B5E50F] rounded border-[#D6DDEB]">
       <div className="flex flex-row justify-between">
         <Image
           src={props.img}
