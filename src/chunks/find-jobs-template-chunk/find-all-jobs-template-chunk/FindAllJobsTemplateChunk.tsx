@@ -207,7 +207,7 @@ const FindAllJobsTemplateChunk = () => {
           {currentjobdata.length > 0 ? (
             <>
               {cardType === "card" ? (
-                <div className="grid sm:grid-cols-2 grid-cols-1 lg:grid-cols-3 gap-4 mt-4">
+                <div className="grid md:grid-cols-2 grid-cols-1 xl:grid-cols-3 gap-4 mt-4">
                   {currentjobdata.map((j: FindJobCardProps) => (
                     <FindJobCard key={j.id} {...j} />
                   ))}
