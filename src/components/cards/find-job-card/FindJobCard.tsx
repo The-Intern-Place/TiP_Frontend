@@ -10,7 +10,7 @@ const FindJobCard = (props: FindJobCardProps) => {
     (Number(props.applied) / Number(props.capacity)) * 100;
 
   return (
-    <section className="p-4 border rounded border-[#D6DDEB]">
+      <section className="p-4 border hover:bg-[#99B5E50F] rounded border-[#D6DDEB]">
       <div className="flex flex-row justify-between">
         <Image
           src={props.img}
@@ -19,7 +19,7 @@ const FindJobCard = (props: FindJobCardProps) => {
           width={50}
           className=""
         />
-        <h1 className="font-[600] font-epilogue bg-[#56CDAD1A] h-fit px-6 py-2 rounded-full text-sm text-[#56CDAD] ">
+        <h1 className="font-[600] font-epilogue bg-[#56CDAD1A] h-fit px-3 py-2 rounded-full text-sm text-[#56CDAD] ">
           {" "}
           {props.duration}
         </h1>
@@ -31,19 +31,19 @@ const FindJobCard = (props: FindJobCardProps) => {
         <div className="flex flex-wrap items-center space-x-2 my-2 text-sm">
           <p className="text-[#7C8493] font-epilogue">{props.company}</p>
 
-          <div className="w-[4px] h-[4px] bg-[#7C8493] md:mx-1"></div>
+          <div className="w-[4px] h-[4px] bg-[#7C8493] md:mx-1 rounded-full" />
 
           <p className="text-[#7C8493] font-epilogue"> {props.location} </p>
         </div>
-        <div className="my-4 flex flex-row gap-4 flex-wrap">
+        <div className="my-4 flex flex-row gap-2 flex-wrap">
           <h1
-            className={`font-epilogue text-sm rounded-full py-1 px-4 font-medium ${useJobSectorColor(props.sector1)}`}
+            className={`font-epilogue text-sm rounded-full py-1 px-2 font-medium ${useJobSectorColor(props.sector1)}`}
           >
             {" "}
             {props.sector1}
           </h1>
           <h1
-            className={`font-epilogue text-sm rounded-full py-1 px-4 font-medium ${useJobSectorColor(props.sector2)}`}
+            className={`font-epilogue text-sm rounded-full py-1 px-2 font-medium ${useJobSectorColor(props.sector2)}`}
           >
             {" "}
             {props.sector2}

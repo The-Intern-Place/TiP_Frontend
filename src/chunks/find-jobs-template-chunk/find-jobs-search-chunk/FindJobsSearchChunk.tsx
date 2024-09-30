@@ -28,7 +28,7 @@ const FindJobsSearchChunk = ({ isInDashboard }: { isInDashboard: boolean }) => {
       </div>
 
       {/* divider */}
-      <div className="border-[1px] border-gray my-1 md:h-[66px] lg:mx-2  hidden  lg:flex" />
+      <div className="border-[1px] border-gray my-1 md:h-[54px] lg:mx-2  hidden lg:flex" />
 
       {/* florence,italy  */}
       <div className="w-full items-center bg-transparent flex rounded-0 lg:mt-[0rem] mb-8 lg:mb-0 rounded-bl-none rounded-br-none">

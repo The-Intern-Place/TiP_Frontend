@@ -139,7 +139,7 @@ const FindAllJobsTemplateChunk = () => {
       {/* find jobs */}
       <div className="w-full">
         {/* heading */}
-        <div className="flex flex-col sm:flex-row bg-[#F8F8FD] px-4 py-2 rounded justify-between md:items-center">
+        <div className="flex flex-col sm:flex-row px-4 py-2 rounded justify-between md:items-center">
           <div className="gap-[8px]">
             <h1 className="font-[600] text-[32px] leading-[38px] text-[#25324B]">
               All Jobs
@@ -152,7 +152,7 @@ const FindAllJobsTemplateChunk = () => {
           {/* icons */}
           <div className="hidden sm:flex items-center gap-3">
             <div className="flex items-center gap-2">
-              <h1 className="font-[400] text-[#7C8493]">sort by:</h1>
+              <p className="text-[#515B6F]">Sort by:</p>
 
               <button
                 type="button"
@@ -207,7 +207,7 @@ const FindAllJobsTemplateChunk = () => {
           {currentjobdata.length > 0 ? (
             <>
               {cardType === "card" ? (
-                <div className="grid xl:grid-cols-3 gap-4 mt-4">
+                <div className="grid sm:grid-cols-2 grid-cols-1 lg:grid-cols-3 gap-4 mt-4">
                   {currentjobdata.map((j: FindJobCardProps) => (
                     <FindJobCard key={j.id} {...j} />
                   ))}

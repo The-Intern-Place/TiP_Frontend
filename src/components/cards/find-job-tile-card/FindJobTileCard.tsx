@@ -9,7 +9,7 @@ const FindJobTileCard = (props: FindJobTileCardProps) => {
     (Number(props.applied) / Number(props.capacity)) * 100;
 
   return (
-    <section className="w-full p-4 lg:p-6 flex flex-col lg:flex-row gap-8 lg:justify-between border border-[#D6DDEB] my-2">
+    <section className="w-full p-4 flex flex-col lg:flex-row gap-8 lg:justify-between border border-[#D6DDEB] my-2">
       <div className="flex flex-col md:flex-row gap-6">
         <div className="">
           <Image
@@ -29,7 +29,7 @@ const FindJobTileCard = (props: FindJobTileCardProps) => {
               {props.company}{" "}
             </p>
 
-            <div className="w-[4px] h-[4px] bg-[#7C8493] mx-1"></div>
+            <div className="w-[4px] h-[4px] bg-[#7C8493] mx-1"/>
 
             <p className="text-sm sm:text-base text-[#7C8493] font-epilogue">
               {" "}
