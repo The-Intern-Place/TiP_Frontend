@@ -21,7 +21,7 @@ export const DefaultStory: FindJobCardStory = {
     applied: "5",
     capacity: "10",
     jobLevel: "$900",
-    salaryRange: "$1000"
+    salaryRange: "$1000",
   },
   name: "Find Job Card",
 };

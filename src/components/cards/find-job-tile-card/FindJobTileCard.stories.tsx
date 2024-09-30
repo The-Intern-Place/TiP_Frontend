@@ -10,6 +10,7 @@ const FindJobTileCardMeta = {
 
 export const DefaultStory: FindJobTileCardStory = {
   args: {
+    id: "2",
     img: Nomad,
     title: "Social Media Assitant",
     company: "Nomad",
@@ -19,6 +20,8 @@ export const DefaultStory: FindJobTileCardStory = {
     sector2: "Design",
     applied: "5",
     capacity: "10",
+    jobLevel: "$900",
+    salaryRange: "$1000",
   },
   name: "Find Job Tile Card",
 };
