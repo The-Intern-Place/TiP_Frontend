@@ -1,39 +1,42 @@
 "use client";
 import React from "react";
-import { format } from "date-fns";
-import { Calendar as CalendarIcon } from "lucide-react";
-import { cn } from "@/lib/utils";
-import { Calendar } from "@/components/ui/calendar";
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from "@/components/ui/popover";
-import {
-  Form,
-  FormControl,
-  FormDescription,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "@/components/ui/form";
-import {
-  Select,
-  SelectContent,
-  SelectGroup,
-  SelectItem,
-  SelectLabel,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+// import { format } from "date-fns";
+// import { Calendar as CalendarIcon } from "lucide-react";
+// import { cn } from "@/lib/utils";
+// import { Calendar } from "@/components/ui/calendar";
+// import {
+//   Popover,
+//   PopoverContent,
+//   PopoverTrigger,
+// } from "@/components/ui/popover";
+// import {
+//   Form,
+//   FormControl,
+//   FormDescription,
+//   FormField,
+//   FormItem,
+//   FormLabel,
+//   FormMessage,
+// } from "@/components/ui/form";
+// import {
+//   Select,
+//   SelectContent,
+//   SelectGroup,
+//   SelectItem,
+//   SelectLabel,
+//   SelectTrigger,
+//   SelectValue,
+// } from "@/components/ui/select";
 
-import { Button } from "@/components/ui/button";
 import { LoginSchema, ProfileSchema } from "schema";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Input } from "@/components/ui/input";
+// import { Input } from "@/components/ui/input";
+import TextInput from "@/components/inputs/text-input/TextInput";
+import CustomDatePicker from "@/components/inputs/select-date-picker/CustomDatePicker";
+import SelectInput from "@/components/inputs/select-input/SelectInput";
+import Button from "@/components/button/Button";
 
 const SettingsProfileForm = () => {
   const [date, setDate] = React.useState<Date>();
@@ -49,16 +52,37 @@ const SettingsProfileForm = () => {
   const onSubmit = () => {
     console.log("submitted");
   };
+  const [dateValue, setDateValue] = React.useState({
+    day: "",
+    month: "",
+    year: "",
+  });
+
+  const handleChange = (event: any) => {
+    const { name, value } = event.target;
+    setDateValue((prevDateValue) => ({ ...prevDateValue, [name]: value }));
+  };
+
+  const handleSubmit = (event: any) => {
+    event.preventDefault();
+    // Get the selected date values from the Custom DatePicker component
+    const dateValue = {
+      day: event.target.day.value,
+      month: event.target.month.value,
+      year: event.target.year.value,
+    };
+    // Do something with the selected date values
+    console.log(dateValue);
+  };
   return (
-    <Form {...form}>
-      <React.Fragment>
-        <form
-          onSubmit={form.handleSubmit(onSubmit)}
-          className="space-y-6"
-          action=""
-        >
-          <div className="space-y-4">
-            <FormField
+    <React.Fragment>
+      <form
+        onSubmit={form.handleSubmit(onSubmit)}
+        className="space-y-6"
+        action=""
+      >
+        <div className="space-y-4">
+          {/* <FormField
               control={form.control}
               name="name"
               render={({ field }) => (
@@ -77,10 +101,18 @@ const SettingsProfileForm = () => {
                   <FormMessage />
                 </FormItem>
               )}
-            />
-            {/* email and phone no */}
-            <div className="flex flex-col md:flex-row gap-4">
-              <FormField
+            /> */}
+          <TextInput
+            label="Full Name"
+            onChange={() => {}}
+            type="text"
+            placeholder="Type in your full name"
+            name="name"
+          />
+
+          {/* email and phone no */}
+          <div className="flex flex-col md:flex-row gap-4">
+            {/* <FormField
                 control={form.control}
                 name="email"
                 render={({ field }) => (
@@ -99,8 +131,15 @@ const SettingsProfileForm = () => {
                     <FormMessage />
                   </FormItem>
                 )}
-              />
-              <FormField
+              /> */}
+            <TextInput
+              label="Email"
+              onChange={() => {}}
+              type="text"
+              placeholder="Type in your full email"
+              name="email"
+            />
+            {/* <FormField
                 control={form.control}
                 name="mobile_number"
                 render={({ field }) => (
@@ -119,12 +158,19 @@ const SettingsProfileForm = () => {
                     <FormMessage />
                   </FormItem>
                 )}
-              />
-            </div>
-            {/* DOB and gender */}
-            <div className="">
-              {/* DOB */}
-              <FormField
+              /> */}
+            <TextInput
+              label="Phone Number"
+              onChange={() => {}}
+              type="text"
+              placeholder="+234"
+              name="mobile_number"
+            />
+          </div>
+          {/* DOB and gender */}
+          <div className="">
+            {/* DOB */}
+            {/* <FormField
                 control={form.control}
                 name="date_of_birth"
                 render={({ field }) => (
@@ -169,9 +215,10 @@ const SettingsProfileForm = () => {
                     <FormMessage />
                   </FormItem>
                 )}
-              />
-              {/* Gender */}
-              <Select>
+              /> */}
+            <CustomDatePicker onChange={() => {}} dateValue={dateValue} />
+            {/* Gender */}
+            {/* <Select>
                 <SelectTrigger className="w-full h-[60px]">
                   <SelectValue placeholder="Select a gender" />
                 </SelectTrigger>
@@ -185,17 +232,23 @@ const SettingsProfileForm = () => {
                     </SelectItem>
                   </SelectGroup>
                 </SelectContent>
-              </Select>
-            </div>
+              </Select> */}
+            <SelectInput
+              label="Gender"
+              name="gender"
+              optionsData={["Male", "Female", "Prefer not to say"]}
+              placeholder="Male"
+            />
           </div>
-          <div className="w-full flex justify-end">
-            <Button className="bg-blue " type="submit">
+        </div>
+        <div className="w-full flex justify-end">
+          {/* <Button className="bg-blue " type="submit">
               Save changes
-            </Button>
-          </div>
-        </form>
-      </React.Fragment>
-    </Form>
+            </Button> */}
+          <Button overrideStyles="w-[161px]">Save changes</Button>
+        </div>
+      </form>
+    </React.Fragment>
   );
 };
 
