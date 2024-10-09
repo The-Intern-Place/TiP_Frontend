@@ -5,6 +5,7 @@ import Footer from "@/components/footer/Footer";
 import { usePathname } from "next/navigation";
 import { store } from "@/store";
 import { clash, epilogue } from "@assets/fonts";
+import { Toaster } from "@/components/ui/toaster";
 // import { Metadata } from 'next/types';
 
 // export const metadata: Metadata = {
@@ -26,8 +27,10 @@ export default function RootLayout({
           {children}
           {pathname !== "/login" &&
             pathname !== "/sign-up" &&
+            pathname !== "/settings" &&
             !pathname.startsWith("/admin") && <Footer />}
         </Provider>
+        <Toaster />
       </body>
     </html>
   );
