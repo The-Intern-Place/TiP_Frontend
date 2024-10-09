@@ -28,7 +28,7 @@ import React from "react";
 //   SelectValue,
 // } from "@/components/ui/select";
 
-import { LoginSchema, ProfileSchema } from "schema";
+import { ProfileSchema } from "@/validation/schema";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -39,7 +39,7 @@ import SelectInput from "@/components/inputs/select-input/SelectInput";
 import Button from "@/components/button/Button";
 
 const SettingsProfileForm = () => {
-  const [date, setDate] = React.useState<Date>();
+  // const [date, setDate] = React.useState<Date>();
   const form = useForm<z.infer<typeof ProfileSchema>>({
     resolver: zodResolver(ProfileSchema),
     defaultValues: {
