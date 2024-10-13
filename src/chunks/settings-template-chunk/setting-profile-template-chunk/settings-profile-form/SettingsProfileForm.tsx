@@ -245,7 +245,7 @@ const SettingsProfileForm = () => {
           {/* <Button className="bg-blue " type="submit">
               Save changes
             </Button> */}
-          <Button overrideStyles="w-[161px]">Save changes</Button>
+          <Button overrideStyles="w-[161px] sm:w-[161px]">Save changes</Button>
         </div>
       </form>
     </React.Fragment>

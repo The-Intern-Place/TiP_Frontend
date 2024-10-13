@@ -1,20 +1,22 @@
 import React from "react";
 import useSettingsHeaderChunk from "../../settings-header-template-chunk/useSettingsHeaderChunk";
-import {
-  Form,
-  FormControl,
-  FormDescription,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "@/components/ui/form";
+// import {
+//   Form,
+//   FormControl,
+//   FormDescription,
+//   FormField,
+//   FormItem,
+//   FormLabel,
+//   FormMessage,
+// } from "@/components/ui/form";
 import { LoginSchema } from "@/validation/schema";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Input } from "@/components/ui/input";
+// import { Input } from "@/components/ui/input";
 import { z } from "zod";
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
+import TextInput from "@/components/inputs/text-input/TextInput";
+import Button from "@/components/button/Button";
 
 const SettingsUpdatePassword = () => {
   const form = useForm<z.infer<typeof LoginSchema>>({
@@ -53,15 +55,15 @@ const SettingsUpdatePassword = () => {
 
               <p className="">Your email has been verified</p>
             </div> */}
-            <Form {...form}>
-              <React.Fragment>
-                <form
-                  onSubmit={form.handleSubmit(onSubmit)}
-                  className="space-y-6"
-                  action=""
-                >
-                  <div className="space-y-4">
-                    <FormField
+            {/* <Form {...form}> */}
+            <React.Fragment>
+              <form
+                onSubmit={form.handleSubmit(onSubmit)}
+                className="space-y-6"
+                action=""
+              >
+                <div className="space-y-4">
+                  {/* <FormField
                       control={form.control}
                       name="old_password"
                       render={({ field }) => (
@@ -84,8 +86,15 @@ const SettingsUpdatePassword = () => {
                           <FormMessage />
                         </FormItem>
                       )}
-                    />
-                    <FormField
+                    /> */}
+                  <TextInput
+                    label="Old Password"
+                    onChange={() => {}}
+                    type="password"
+                    placeholder="Enter your old password"
+                    name="old_password"
+                  />
+                  {/* <FormField
                       control={form.control}
                       name="new_password"
                       render={({ field }) => (
@@ -108,16 +117,26 @@ const SettingsUpdatePassword = () => {
                           <FormMessage />
                         </FormItem>
                       )}
-                    />
-                  </div>
-                  <div className="w-full flex justify-start">
-                    <Button className="bg-blue " type="submit">
+                    /> */}
+                  <TextInput
+                    label="New Password"
+                    onChange={() => {}}
+                    type="password"
+                    placeholder="Enter your new password"
+                    name="new_password"
+                  />
+                </div>
+                <div className="w-full flex justify-start">
+                  {/* <Button className="bg-blue " type="submit">
                       Change Password
-                    </Button>
-                  </div>
-                </form>
-              </React.Fragment>
-            </Form>
+                    </Button> */}
+                  <Button fit={false} overrideStyles=" w-[194px] md:w-[194px]">
+                    Change Password
+                  </Button>
+                </div>
+              </form>
+            </React.Fragment>
+            {/* </Form> */}
           </div>
         </div>
       </div>
