@@ -12,9 +12,9 @@ const IC_PaginateRight = (props: { className?: string }) => {
       <path
         d="M1.375 1L7.625 7L1.375 13"
         stroke="#25324B"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );

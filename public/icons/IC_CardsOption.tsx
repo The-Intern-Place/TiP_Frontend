@@ -22,18 +22,18 @@ const IC_CardsOption = ({
           // fill={color ?? "#1B1B1B"}
           // stroke={color ?? "#1B1B1B"}
           className={className}
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M18 14H6C4.89543 14 4 14.8954 4 16V18C4 19.1046 4.89543 20 6 20H18C19.1046 20 20 19.1046 20 18V16C20 14.8954 19.1046 14 18 14Z"
           // fill={color ?? "#1B1B1B"}
           // stroke={color ?? "#1B1B1B"}
           className={className}
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
       </g>
       <defs>
