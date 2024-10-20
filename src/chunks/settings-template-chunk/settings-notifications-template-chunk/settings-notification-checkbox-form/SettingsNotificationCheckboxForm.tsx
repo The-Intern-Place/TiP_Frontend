@@ -1,5 +1,5 @@
 import React from "react";
-import { Checkbox } from "@/components/ui/checkbox";
+import CustomCheckbox from "../../../../components/inputs/checkbox/CustomCheckbox";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import {
