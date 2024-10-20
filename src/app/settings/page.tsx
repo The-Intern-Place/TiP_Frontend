@@ -20,7 +20,7 @@ const Settings = () => {
             onClick={() => setActive("profile")}
             className={
               active === "profile"
-                ? "pb-4 px-2 text-base font-normal font-epilogue text-[#7C8493] hover:font-semibold  hover:text-black hover:border-b-2 hover:border-blue"
+                ? "pb-4 px-2 text-base font-epilogue  font-semibold text-black border-b-2 border-blue"
                 : "pb-4 px-2 text-base font-normal font-epilogue text-[#7C8493]"
             }
           >
@@ -30,7 +30,7 @@ const Settings = () => {
             onClick={() => setActive("login")}
             className={
               active === "login"
-                ? "pb-4 px-2 text-base font-normal font-epilogue text-[#7C8493] hover:font-semibold  hover:text-black hover:border-b-2 hover:border-blue"
+                ? "pb-4 px-2 text-base font-epilogue  font-semibold text-black border-b-2 border-blue"
                 : "pb-4 px-2 text-base font-normal font-epilogue text-[#7C8493]"
             }
           >
@@ -40,7 +40,7 @@ const Settings = () => {
             onClick={() => handleActive("notifications")}
             className={
               active === "notifications"
-                ? "pb-4 px-2 text-base font-normal font-epilogue text-[#7C8493] hover:font-semibold  hover:text-black  hover:border-b-2 hover:border-blue"
+                ? "pb-4 px-2 text-base font-epilogue  font-semibold text-black border-b-2 border-blue"
                 : "pb-4 px-2 text-base font-normal font-epilogue text-[#7C8493]"
             }
           >

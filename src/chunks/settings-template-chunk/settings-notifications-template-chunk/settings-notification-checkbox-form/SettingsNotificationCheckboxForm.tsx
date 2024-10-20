@@ -48,8 +48,8 @@ const SettingsNotificationCheckboxForm = () => {
               Customize your preferred notification setting
             </p>
           </div>
-          {/* checkboxes */}
-          <div className=" flex flex-row gap-6 md:w-[540px]">
+
+          {/* <div className=" flex flex-row gap-6 md:w-[540px]">
             <Form {...form}>
               <form
                 onSubmit={form.handleSubmit(onSubmit)}
@@ -130,6 +130,11 @@ const SettingsNotificationCheckboxForm = () => {
                 </div>
               </form>
             </Form>
+          </div> */}
+          <div className="flex flex-row gap-6 md:w-[540px]">
+            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+              <CustomCheckbox />
+            </form>
           </div>
         </div>
       </div>

@@ -1,22 +1,13 @@
 import IC_Check from "@assets/icons/IC_Check";
 import React from "react";
 import useSettingsHeaderChunk from "../../settings-header-template-chunk/useSettingsHeaderChunk";
-// import {
-//   Form,
-//   FormControl,
-//   FormDescription,
-//   FormField,
-//   FormItem,
-//   FormLabel,
-//   FormMessage,
-// } from "@/components/ui/form";
+
 import { LoginSchema } from "@/validation/schema";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-// import { Input } from "@/components/ui/input";
 
 import { z } from "zod";
-// import { Button } from "@/components/ui/button";
+
 import TextInput from "@/components/inputs/text-input/TextInput";
 import Button from "@/components/button/Button";
 
@@ -45,9 +36,7 @@ const SettingsUpdateEmail = () => {
             </p>
           </div>
 
-          {/* personal info form */}
           <div className=" flex flex-col gap-6 md:w-[540px]">
-            {/* email check */}
             <div className="flex flex-col gap-[6px]">
               <div className="flex gap-[3px]">
                 <h1 className="text-base md:text-[18px] font-epilogue text-black font-semibold">
@@ -58,7 +47,7 @@ const SettingsUpdateEmail = () => {
 
               <p className="">Your email has been verified</p>
             </div>
-            {/* <Form {...form}> */}
+
             <React.Fragment>
               <form
                 onSubmit={form.handleSubmit(onSubmit)}
@@ -66,26 +55,6 @@ const SettingsUpdateEmail = () => {
                 action=""
               >
                 <div className="space-y-4">
-                  {/* <FormField
-                      control={form.control}
-                      name="confirm_email"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel className="text-[#1b1b1b] text-base font-epilogue font-semibold">
-                           Update Email
-                          </FormLabel>
-                          <FormControl>
-                            <Input
-                              className="h-[60px]"
-                              type="text"
-                              placeholder="Enter your new email"
-                              {...field}
-                            />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    /> */}
                   <TextInput
                     label="Update Email"
                     onChange={() => {}}
@@ -95,16 +64,12 @@ const SettingsUpdateEmail = () => {
                   />
                 </div>
                 <div className="w-full flex justify-start">
-                  {/* <Button className="bg-blue " type="submit">
-                      Update Email
-                    </Button> */}
                   <Button overrideStyles=" w-[161px] sm:w-[161px]">
                     Update Email
                   </Button>
                 </div>
               </form>
             </React.Fragment>
-            {/* </Form> */}
           </div>
         </div>
       </div>
