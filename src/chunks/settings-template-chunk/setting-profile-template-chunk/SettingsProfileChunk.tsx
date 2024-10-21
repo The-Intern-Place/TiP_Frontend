@@ -2,7 +2,6 @@ import React from "react";
 import useSettingsHeaderChunk from "../settings-header-template-chunk/useSettingsHeaderChunk";
 import Image from "next/image";
 import IC_Image from "@assets/icons/IC_Image";
-import SettingsContainer from "../settings-container-chunk/SettingsContainer";
 import SettingsProfileForm from "./settings-profile-form/SettingsProfileForm";
 
 const SettingsProfileChunk = () => {
