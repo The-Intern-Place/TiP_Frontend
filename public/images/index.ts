@@ -31,6 +31,7 @@ import IM_HuntingInc from "./im_hunting-inc.svg";
 import IM_Save from "./im_save.svg";
 import IM_MotionDesigner from "./im_motion-designer.svg";
 import IM_ProjectManager from "./im_project-manager.svg";
+import ApplicationNotification from "./buildings.svg";
 
 export {
   IM_MotionDesigner,
@@ -66,4 +67,5 @@ export {
   BlueArrowRight,
   TechTalents,
   JobOpeningsBackground,
+  ApplicationNotification,
 };

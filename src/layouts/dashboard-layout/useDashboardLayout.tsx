@@ -24,21 +24,49 @@ export default function useDashboardLayout() {
       id: "application",
       name: "Applications",
       icon: <IC_Applications />,
+      category: "admin",
     },
     {
-      id: "/admin/find-job",
+      id: "find-job",
       name: "Find Jobs",
       icon: <IC_Search color="black" />,
+      category: "admin",
+    },
+    {
+      id: "all-applicants",
+      name: "All Applicants",
+      icon: <IC_Applications />,
+      category: "company",
+    },
+    {
+      id: "job-listing",
+      name: "Job Listing",
+      icon: <IC_Applications />,
+      category: "company",
     },
     {
       id: "",
       name: "Browse Companies",
       icon: <IC_Browse />,
+      category: "admin",
     },
     {
       id: "",
       name: "My Profile",
       icon: <IC_Profile />,
+      category: "admin",
+    },
+    {
+      id: "",
+      name: "Company Profile",
+      icon: <IC_Profile />,
+      category: "company",
+    },
+    {
+      id: "",
+      name: "Schedule",
+      icon: <IC_Profile />,
+      category: "company",
     },
   ];
 

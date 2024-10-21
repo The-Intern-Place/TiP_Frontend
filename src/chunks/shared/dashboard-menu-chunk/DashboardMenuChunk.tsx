@@ -16,7 +16,7 @@ const DashboardMenuChunk = (props: DashboardMenuChunkProps) => {
           <Link
             key={key}
             href={option.id}
-            className={`flex items-center gap-4 px-3 py-0.5 ${pathname === option.id ? "bg-[#1976D21A] text-[#1976D2] py-2 rounded" : ""}`}
+            className={`flex items-center gap-4 px-3 py-0.5 ${pathname.includes("/admin") && option.category === "company" && "hidden"} ${pathname.includes("/company") && option.category === "admin" && "hidden"} ${pathname === option.id ? "bg-[#1976D21A] text-[#1976D2] py-2 rounded" : ""}`}
           >
             {option.icon ? (
               option.icon
