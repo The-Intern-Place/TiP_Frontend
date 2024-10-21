@@ -3,6 +3,7 @@ import React from "react";
 import { DashboardHeaderChunkProps } from "./DashboardHeaderChunk.types";
 import Nomad from "public/images/Nomad.svg";
 import {
+  ApplicationNotification,
   ArrowDown,
   MobileHamburger,
   Notification,
@@ -22,6 +23,17 @@ const DashboardHeaderChunk = (props: DashboardHeaderChunkProps) => {
         </h1>
         <div className="flex md:gap-8 gap-2 items-center ml-auto">
           {props.action}
+          {props.company && (
+            <Link
+              href={""}
+              className="border-2 relative border-[#1976D2] rounded-full p-2"
+            >
+              <Image src={ApplicationNotification} alt="Notification icon" />
+              <p className="absolute top-1 right-1 bg-[#1976D2] rounded-[40%] text-white p-[2px] text-[8px]">
+                3
+              </p>
+            </Link>
+          )}
           <Link href={""}>
             <Image src={Notification} alt="Notification icon" />
           </Link>
@@ -54,14 +66,25 @@ const DashboardHeaderChunk = (props: DashboardHeaderChunkProps) => {
               },
             ]}
           >
-            <div className="flex items-center gap-2.5">
-              <Image src={Tosin} alt="tosin" />
-              <div>
-                <h3 className="md:text-base sm:text-sm">Tosin Eme</h3>
-                <p className="md:text-base sm:text-sm">Product Designer</p>
+            {!props.company ? (
+              <div className="flex items-center gap-2.5">
+                <Image src={Tosin} alt="tosin" />
+                <div>
+                  <h3 className="md:text-base sm:text-sm">Tosin Eme</h3>
+                  <p className="md:text-base sm:text-sm">Product Designer</p>
+                </div>
+                <Image src={ArrowDown} alt="" />
               </div>
-              <Image src={ArrowDown} alt="" />
-            </div>
+            ) : (
+              <div className="flex items-center gap-2.5">
+                <Image src={Nomad} width={50} height={50} alt="nomad" />
+                <div>
+                  <h3 className="md:text-base sm:text-sm font-bold">Nomad</h3>
+                  <p className="md:text-base sm:text-sm">Company</p>
+                </div>
+                <Image src={ArrowDown} alt="" />
+              </div>
+            )}
           </DropDownController>
         </div>
       </div>
