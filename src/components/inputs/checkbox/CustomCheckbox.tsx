@@ -1,5 +1,9 @@
 import React from "react";
-import { CheckboxProps, handleChecked, isChecked } from "./CustomCheckbox";
+import {
+  CheckboxProps,
+  handleChecked,
+  isChecked,
+} from "./CustomCheckbox.types";
 
 const CustomCheckbox = ({ label, description }: CheckboxProps) => {
   return (
@@ -15,5 +19,4 @@ const CustomCheckbox = ({ label, description }: CheckboxProps) => {
     </div>
   );
 };
-
 export default CustomCheckbox;

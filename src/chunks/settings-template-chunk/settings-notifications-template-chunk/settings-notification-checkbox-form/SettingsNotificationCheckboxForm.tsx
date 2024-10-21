@@ -1,5 +1,5 @@
 import React from "react";
-
+import CustomCheckbox from "@/components/inputs/checkbox/CustomCheckbox";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import {
@@ -133,7 +133,10 @@ const SettingsNotificationCheckboxForm = () => {
           </div> */}
           <div className="flex flex-row gap-6 md:w-[540px]">
             <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-              <CustomCheckbox />
+              <CustomCheckbox
+                label="Applications"
+                description="These notifications for jobs you have applied to."
+              />
             </form>
           </div>
         </div>
