@@ -13,9 +13,9 @@ const IC_Developer = (props: { className?: string }) => {
       <path
         d="M18 34L26 2M34 10L42 18L34 26M10 26L2 18L10 10"
         stroke="#4640DE"
-        stroke-width="3"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="3"
+        strokeLinecap="round"
+        strokeLinejoin="round"
         className={props.className}
       />
     </svg>
