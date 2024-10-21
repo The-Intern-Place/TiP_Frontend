@@ -1,11 +1,11 @@
-import React from "react";
-import {
-  CheckboxProps,
-  handleChecked,
-  isChecked,
-} from "./CustomCheckbox.types";
+import React, { useState } from "react";
+import { CheckboxProps } from "./CustomCheckbox.types";
 
 const CustomCheckbox = ({ label, description }: CheckboxProps) => {
+  const [isChecked, setIsChecked] = useState<boolean>(false);
+  const handleChecked = () => {
+    setIsChecked((prev) => !prev);
+  };
   return (
     <div className="flex flex-row items-start space-x-3 space-y-0 rounded-md  p-4">
       <input type="checkbox" checked={isChecked} onChange={handleChecked} />
