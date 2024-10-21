@@ -56,7 +56,6 @@ const Settings = () => {
       ) : active === "notifications" ? (
         <SettingsNotificationsChunk />
       ) : null}
-      {/* </SettingsContainer> */}
     </SettingsContainer>
   );
 };
