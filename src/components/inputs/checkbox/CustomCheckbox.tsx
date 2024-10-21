@@ -1,10 +1,10 @@
 import React from "react";
-import { CheckboxProps } from "./CustomCheckbox";
+import { CheckboxProps, handleChecked, isChecked } from "./CustomCheckbox";
 
 const CustomCheckbox = ({ label, description }: CheckboxProps) => {
   return (
     <div className="flex flex-row items-start space-x-3 space-y-0 rounded-md  p-4">
-      <input type="checkbox" />
+      <input type="checkbox" checked={isChecked} onChange={handleChecked} />
 
       <div className="space-y-1 leading-none">
         <span className="text-[#1b1b1b] text-base font-epilogue font-semibold">
