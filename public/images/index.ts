@@ -22,6 +22,7 @@ import Tosin from "./tosin.svg";
 import CustomerSurvey from "./customer-survey.png";
 import MobileHamburger from "./mobile-hamburger.svg";
 import ApplicationSent from "./im_application-sent.svg";
+import User from './user.svg'
 import InterviewSchedule from "./im_interview-schedule.svg";
 import JobOpening from "./im_job-opening.svg";
 import IM_Meta from "./im_meta.svg";
@@ -68,4 +69,5 @@ export {
   TechTalents,
   JobOpeningsBackground,
   ApplicationNotification,
+  User
 };

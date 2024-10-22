@@ -29,7 +29,7 @@ const DashboardHeaderChunk = (props: DashboardHeaderChunkProps) => {
               className="border-2 relative border-[#1976D2] rounded-full p-2"
             >
               <Image src={ApplicationNotification} alt="Notification icon" />
-              <p className="absolute top-1 right-1 bg-[#1976D2] rounded-[40%] text-white p-[2px] text-[8px]">
+              <p className="absolute top-1 right-1 bg-[#1976D2] rounded-[50%] text-white p-[2px] text-[8px]">
                 3
               </p>
             </Link>

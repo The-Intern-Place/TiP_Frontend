@@ -34,6 +34,7 @@ const CompanyDashboardTemplateChunk = () => {
           </div>
         ))}
       </div>
+      <div className="flex flex-col gap-4 justify-bewteen md:flex-row"></div>
     </div>
   );
 };
