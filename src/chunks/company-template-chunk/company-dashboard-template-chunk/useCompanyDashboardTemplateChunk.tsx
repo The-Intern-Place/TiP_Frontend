@@ -1,5 +1,5 @@
 import { ListItem } from "@/utils/types";
-import { ApplicationSent, InterviewSchedule,User } from "@assets/images";
+import { ApplicationSent, InterviewSchedule, User } from "@assets/images";
 
 export default function useCompanyDashboardTemplateChunk() {
   const stats: ListItem[] = [
