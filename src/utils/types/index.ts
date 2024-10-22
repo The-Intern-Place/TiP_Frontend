@@ -4,6 +4,7 @@ export type ListItem = {
   id: string;
   name: string;
   description?: string;
+  category?: string;
   icon?: ReactNode;
   readonly?: boolean;
   value?: number;

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { DropDownControllerProps } from "./DropDownController.types";
 import useDropDownController from "./useDropDownController";
 
@@ -41,8 +42,11 @@ export default function DropDownController(props: DropDownControllerProps) {
               {option.component ? (
                 <option.component />
               ) : (
-                <>
-                  {option.icon}
+                <Link
+                  href={`${option.id === "company" ? "/company/dashboard" : "/admin/dashboard"}`}
+                  className="flex items-center gap-4"
+                >
+                  <div>{option.icon}</div>
                   <div>
                     {option.description ? (
                       <p className="text-[20px] font-600 text-grey">
@@ -57,7 +61,7 @@ export default function DropDownController(props: DropDownControllerProps) {
                       </span>
                     )}
                   </div>
-                </>
+                </Link>
               )}
             </li>
           ))}

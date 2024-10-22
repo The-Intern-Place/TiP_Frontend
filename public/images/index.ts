@@ -22,6 +22,7 @@ import Tosin from "./tosin.svg";
 import CustomerSurvey from "./customer-survey.png";
 import MobileHamburger from "./mobile-hamburger.svg";
 import ApplicationSent from "./im_application-sent.svg";
+import User from "./user.svg";
 import InterviewSchedule from "./im_interview-schedule.svg";
 import JobOpening from "./im_job-opening.svg";
 import IM_Meta from "./im_meta.svg";
@@ -31,6 +32,7 @@ import IM_HuntingInc from "./im_hunting-inc.svg";
 import IM_Save from "./im_save.svg";
 import IM_MotionDesigner from "./im_motion-designer.svg";
 import IM_ProjectManager from "./im_project-manager.svg";
+import ApplicationNotification from "./buildings.svg";
 
 export {
   IM_MotionDesigner,
@@ -66,4 +68,6 @@ export {
   BlueArrowRight,
   TechTalents,
   JobOpeningsBackground,
+  ApplicationNotification,
+  User,
 };
