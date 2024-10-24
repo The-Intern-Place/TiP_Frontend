@@ -41,7 +41,7 @@ const SettingsProfileChunk = () => {
                 />
               </div>
               <div
-                className="flex flex-col items-center justify-center w-[376px] h-[150px] bg-[#F5F8EE] 
+                className="flex flex-col items-center justify-center w-[376px] h-[150px] bg-[#F5F8EE] border-2 border-blue border-dashed rounded-md
 "
               >
                 <IC_Image />

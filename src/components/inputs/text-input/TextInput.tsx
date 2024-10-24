@@ -26,7 +26,7 @@ const TextInput = (props: ITextInputProps) => {
         {label}
       </label>
       <div
-        className={`bg-white flex relative rounded-lg h-[50px] border-2 ${props.error ? "border-[#D24444]" : "border-[#D6DDEB]"}  ${overrideStyles}`}
+        className={`bg-white flex relative rounded-lg h-[55px] border-2 ${props.error ? "border-[#D24444]" : "border-[#D6DDEB]"}  ${overrideStyles}`}
       >
         {iconLeft && (
           <div

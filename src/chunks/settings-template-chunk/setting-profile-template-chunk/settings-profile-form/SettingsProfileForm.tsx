@@ -8,19 +8,21 @@ import TextInput from "@/components/inputs/text-input/TextInput";
 import CustomDatePicker from "@/components/inputs/select-date-picker/CustomDatePicker";
 import SelectInput from "@/components/inputs/select-input/SelectInput";
 import Button from "@/components/button/Button";
+import { optionsData } from "./useSettingsProfileForm";
 
 const SettingsProfileForm = () => {
   const form = useForm<z.infer<typeof ProfileSchema>>({
     resolver: zodResolver(ProfileSchema),
     defaultValues: {
-      name: "",
+      first_name: "",
+      last_name: "",
       email: "",
       date_of_birth: new Date(),
       gender: "",
     },
   });
-  const onSubmit = () => {
-    console.log("submitted");
+  const onSubmit = (data: z.infer<typeof ProfileSchema>) => {
+    console.log("submitted", data);
   };
   const [dateValue, setDateValue] = React.useState({
     day: "",
@@ -36,18 +38,32 @@ const SettingsProfileForm = () => {
         action=""
       >
         <div className="space-y-4">
-          <TextInput
-            label="Full Name"
-            onChange={() => {}}
-            type="text"
-            placeholder="Type in your full name"
-            name="name"
-          />
+          <div className="flex flex-col md:flex-row gap-5">
+            <TextInput
+              overrideStyles=""
+              label="First Name"
+              // onChange={() => {}}
+              {...form.register("first_name")}
+              type="text"
+              placeholder="Type in your first name"
+              name="first_name"
+            />
+            <TextInput
+              overrideStyles=""
+              label="Last Name"
+              // onChange={() => {}}
+              {...form.register("last_name")}
+              type="text"
+              placeholder="Type in your last name"
+              name="last_name"
+            />
+          </div>
 
           <div className="flex flex-col md:flex-row gap-4">
             <TextInput
               label="Email"
-              onChange={() => {}}
+              // onChange={() => {}}
+              {...form.register("email")}
               type="text"
               placeholder="Type in your full email"
               name="email"
@@ -55,26 +71,45 @@ const SettingsProfileForm = () => {
 
             <TextInput
               label="Phone Number"
-              onChange={() => {}}
+              // onChange={() => {}}
+              {...form.register("mobile_number")}
               type="text"
               placeholder="+234"
               name="mobile_number"
             />
           </div>
 
-          <div className="">
-            <CustomDatePicker onChange={() => {}} dateValue={dateValue} />
+          <div className="flex flex-col md:flex-row gap-4">
+            <CustomDatePicker
+              // onChange={() => {}}
+              {...form.register("first_name")}
+              dateValue={dateValue}
+              overrideStyles="md:gap-1 mt-0"
+              name="date_of_birth"
+            />
 
             <SelectInput
+              overrideStyles="border-[#D6DDEB] border-2"
               label="Gender"
-              name="gender"
-              optionsData={["Male", "Female", "Prefer not to say"]}
-              placeholder="Male"
+              optionsData={optionsData!.map((option: string, index: any) => (
+                <option key={index} value={option}>
+                  {option}
+                </option>
+              ))}
+              placeholder="Gender"
+              // onChange={() => {}}
+              {...form.register("gender")}
             />
           </div>
         </div>
         <div className="w-full flex justify-end">
-          <Button overrideStyles="w-[161px] sm:w-[161px]">Save changes</Button>
+          <Button
+            type="submit"
+            overrideStyles="w-[161px] sm:w-[161px]"
+            onClick={() => onsubmit}
+          >
+            Save changes
+          </Button>
         </div>
       </form>
     </React.Fragment>
