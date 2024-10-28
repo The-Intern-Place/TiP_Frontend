@@ -7,10 +7,15 @@ import IC_Notification from "@assets/icons/IC_Notification";
 import SettingsContainer from "../settings-container-chunk/SettingsContainer";
 import IC_Indicator from "@assets/icons/IC_Indicator";
 import IC_ArrowDown from "@assets/icons/IC_ArrowDown";
+// import { user } from "../../../utils/data/user";
 
 const SettingsHeaderChunk = () => {
   const { findID } = useSettingsHeaderChunk();
-  const user = findID(1);
+  // const findID = (id: number) => {
+  //   const foundID = user.find((item: any) => item.id === id);
+  //   return foundID;
+  // };
+  const currentUser: any = findID(1);
   return (
     <SettingsContainer bg="md:bg-[#F8F8F8]">
       <div className="w-full flex flex-col md:flex-row md:px-10 md:gap-[60px]">
@@ -39,15 +44,15 @@ const SettingsHeaderChunk = () => {
         <div className="md:w-[30%] flex flex-col items-center md:flex-row gap-5 md:gap-4">
           <div className="relative w-[80px] h-[80px] md:w-[50px] md:h-[50px] rounded-full bg-lightBlue flex flex-col items-center justify-center">
             <Image
-              src={user!.image}
-              alt={user!.name}
+              src={currentUser!.image}
+              alt={currentUser!.name}
               width={60}
               height={60}
               className="md:hidden"
             />
             <Image
-              src={user!.image}
-              alt={user!.name}
+              src={currentUser!.image}
+              alt={currentUser!.name}
               width={40}
               height={40}
               className="hidden md:block"
@@ -58,10 +63,10 @@ const SettingsHeaderChunk = () => {
           </div>
           <div className="flex flex-col gap-5 md:gap-[2px] items-center">
             <h2 className="font-clash text-black font-semibold text-xl md:text-[24px]">
-              {user?.name}
+              {currentUser?.name}
             </h2>
             <h3 className="font-clash text-black font-normal text-base">
-              {user?.role}
+              {currentUser?.role}
             </h3>
           </div>
           <div className="hidden md:block">

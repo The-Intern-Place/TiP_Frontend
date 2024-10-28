@@ -5,8 +5,17 @@ import SettingsProfileForm from "./settings-profile-form/SettingsProfileForm";
 import useSettingsProfile from "./useSettingsProfile";
 
 const SettingsProfileChunk = () => {
-  const { findID, fileInputRef, handleFileChange, handleFileClick } =
-    useSettingsProfile();
+  const {
+    findID,
+    fileInputRef,
+    handleFileChange,
+    handleFileClick,
+    isDragging,
+    onDragOver,
+    onDragLeave,
+    onDrop,
+    deleteUpload,
+  } = useSettingsProfile();
   const user = findID(1);
   return (
     <div className="md:mx-7">
@@ -44,26 +53,34 @@ const SettingsProfileChunk = () => {
               <div
                 className="flex flex-col items-center justify-center w-[376px] h-[150px] bg-[#F5F8EE] border-2 border-blue border-dashed rounded-md
 "
+                onDragOver={onDragOver}
+                onDragLeave={onDragLeave}
+                onDrop={onDrop}
               >
                 <IC_Image />
-                <div className="">
-                  <span
-                    onClick={handleFileClick}
-                    className="font-epilogue text-[18px] font-normal leading-6 text-blue"
-                  >
-                    Click to replace
-                  </span>{" "}
-                  <h2 className="font-epilogue text-[18px] font-normal leading-6">
-                    {" "}
-                    or drag and drop
-                  </h2>
-                  <input
-                    type="file"
-                    className="hidden"
-                    onChange={handleFileChange}
-                    ref={fileInputRef}
-                  />
-                </div>
+                {isDragging ? (
+                  <span className=""> Drop image here</span>
+                ) : (
+                  <div className="">
+                    <span
+                      onClick={handleFileClick}
+                      className="font-epilogue text-[18px] font-normal leading-6 text-blue"
+                    >
+                      Click to replace
+                    </span>{" "}
+                    <h2 className="font-epilogue text-[18px] font-normal leading-6">
+                      {" "}
+                      or drag and drop
+                    </h2>
+                    <input
+                      type="file"
+                      className="hidden"
+                      onChange={handleFileChange}
+                      ref={fileInputRef}
+                    />
+                  </div>
+                )}
+
                 <h1 className="font-epilogue text-[18px] font-normal leading-6 text-[#1B1B1B99]">
                   SVG, PNG, JPG or GIF (max.400 x 400px)
                 </h1>
