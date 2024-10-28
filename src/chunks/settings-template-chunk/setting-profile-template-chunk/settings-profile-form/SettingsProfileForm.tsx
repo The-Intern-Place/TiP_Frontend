@@ -42,8 +42,8 @@ const SettingsProfileForm = () => {
             <TextInput
               overrideStyles=""
               label="First Name"
-              // onChange={() => {}}
-              {...form.register("first_name")}
+              onChange={() => {}}
+              // {...form.register("first_name")}
               type="text"
               placeholder="Type in your first name"
               name="first_name"
@@ -51,8 +51,8 @@ const SettingsProfileForm = () => {
             <TextInput
               overrideStyles=""
               label="Last Name"
-              // onChange={() => {}}
-              {...form.register("last_name")}
+              onChange={() => {}}
+              // {...form.register("last_name")}
               type="text"
               placeholder="Type in your last name"
               name="last_name"
@@ -62,8 +62,8 @@ const SettingsProfileForm = () => {
           <div className="flex flex-col md:flex-row gap-4">
             <TextInput
               label="Email"
-              // onChange={() => {}}
-              {...form.register("email")}
+              onChange={() => {}}
+              // {...form.register("email")}
               type="text"
               placeholder="Type in your full email"
               name="email"
@@ -71,8 +71,8 @@ const SettingsProfileForm = () => {
 
             <TextInput
               label="Phone Number"
-              // onChange={() => {}}
-              {...form.register("mobile_number")}
+              onChange={() => {}}
+              // {...form.register("mobile_number")}
               type="text"
               placeholder="+234"
               name="mobile_number"
@@ -81,8 +81,8 @@ const SettingsProfileForm = () => {
 
           <div className="flex flex-col md:flex-row gap-4">
             <CustomDatePicker
-              // onChange={() => {}}
-              {...form.register("first_name")}
+              onChange={() => {}}
+              // {...form.register("first_name")}
               dateValue={dateValue}
               overrideStyles="md:gap-1 mt-0"
               name="date_of_birth"
@@ -97,8 +97,9 @@ const SettingsProfileForm = () => {
                 </option>
               ))}
               placeholder="Gender"
-              // onChange={() => {}}
-              {...form.register("gender")}
+              name="gender"
+              onChange={() => {}}
+              // {...form.register("gender")}
             />
           </div>
         </div>

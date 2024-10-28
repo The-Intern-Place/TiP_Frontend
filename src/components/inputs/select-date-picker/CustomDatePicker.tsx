@@ -2,6 +2,7 @@
 import { daysData, handleReturnYear, monthData } from "@/utils/helpers/date";
 import SelectInput from "../select-input/SelectInput";
 import { customDateTypes } from "./CustomDatePicker.types";
+import React from "react";
 
 const CustomDatePicker = ({
   name,

@@ -1,11 +1,12 @@
 import React from "react";
-import useSettingsHeaderChunk from "../settings-header-template-chunk/useSettingsHeaderChunk";
 import Image from "next/image";
 import IC_Image from "@assets/icons/IC_Image";
 import SettingsProfileForm from "./settings-profile-form/SettingsProfileForm";
+import useSettingsProfile from "./useSettingsProfile";
 
 const SettingsProfileChunk = () => {
-  const { findID } = useSettingsHeaderChunk();
+  const { findID, fileInputRef, handleFileChange, handleFileClick } =
+    useSettingsProfile();
   const user = findID(1);
   return (
     <div className="md:mx-7">
@@ -45,12 +46,24 @@ const SettingsProfileChunk = () => {
 "
               >
                 <IC_Image />
-                <h1 className="font-epilogue text-[18px] font-normal leading-6">
-                  <span className="font-epilogue text-[18px] font-normal leading-6 text-blue">
+                <div className="">
+                  <span
+                    onClick={handleFileClick}
+                    className="font-epilogue text-[18px] font-normal leading-6 text-blue"
+                  >
                     Click to replace
                   </span>{" "}
-                  or drag and drop
-                </h1>
+                  <h2 className="font-epilogue text-[18px] font-normal leading-6">
+                    {" "}
+                    or drag and drop
+                  </h2>
+                  <input
+                    type="file"
+                    className="hidden"
+                    onChange={handleFileChange}
+                    ref={fileInputRef}
+                  />
+                </div>
                 <h1 className="font-epilogue text-[18px] font-normal leading-6 text-[#1B1B1B99]">
                   SVG, PNG, JPG or GIF (max.400 x 400px)
                 </h1>
