@@ -24,7 +24,6 @@ const MessagesHeaderChunk = (props: MessagesHeaderChunkProps) => {
           {props.action}
           <Link href={""}>
             <Image src={Notification} alt="Notification icon" />
-            git
           </Link>
           <DropDownController
             options={[
