@@ -103,12 +103,8 @@ const SettingsProfileForm = () => {
             />
           </div>
         </div>
-        <div className="w-full flex justify-end">
-          <Button
-            type="submit"
-            overrideStyles="w-[161px] sm:w-[161px]"
-            onClick={() => onsubmit}
-          >
+        <div className="w-[161px] flex justify-end ml-auto">
+          <Button type="submit" overrideStyles=" " onClick={() => onsubmit}>
             Save changes
           </Button>
         </div>

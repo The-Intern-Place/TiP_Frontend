@@ -57,8 +57,8 @@ const SettingsUpdatePassword = () => {
                     name="new_password"
                   />
                 </div>
-                <div className="w-full flex justify-start">
-                  <Button fit={false} overrideStyles=" w-[194px] md:w-[194px]">
+                <div className="w-[194px] flex justify-start ml-auto">
+                  <Button fit={false} overrideStyles="">
                     Change Password
                   </Button>
                 </div>

@@ -63,7 +63,7 @@ const SettingsUpdateEmail = () => {
                     name="confirm_email"
                   />
                 </div>
-                <div className="w-full flex justify-start">
+                <div className="w-[161px] flex justify-start ml-auto">
                   <Button overrideStyles=" w-[161px] sm:w-[161px]">
                     Update Email
                   </Button>
