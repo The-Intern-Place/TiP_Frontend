@@ -14,7 +14,7 @@ const layout = ({ children, className }: ClassProps) => {
     <div className={newClassName}>
       <SidebarChunk className="hidden md:flex flex-col md:w-[19%] justify-center items-center gap-10 border-b" />
       <div className="md:w-[81%]">
-        <SettingsHeaderChunk title="Settings" />
+        <SettingsHeaderChunk title="Help Centre" />
 
         {children}
       </div>

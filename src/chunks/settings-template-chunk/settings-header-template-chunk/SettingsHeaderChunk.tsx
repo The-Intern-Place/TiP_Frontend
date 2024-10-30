@@ -9,7 +9,7 @@ import IC_Indicator from "@assets/icons/IC_Indicator";
 import IC_ArrowDown from "@assets/icons/IC_ArrowDown";
 // import { user } from "../../../utils/data/user";
 
-const SettingsHeaderChunk = () => {
+const SettingsHeaderChunk = ({ title }: any) => {
   const { findID } = useSettingsHeaderChunk();
   // const findID = (id: number) => {
   //   const foundID = user.find((item: any) => item.id === id);
@@ -37,7 +37,7 @@ const SettingsHeaderChunk = () => {
             </div>
           </div>
           <h1 className="text-2xl md:text-[32px] font-semibold font-clash text-light-blue leading-10">
-            Settings
+            {title}
           </h1>
         </div>
         {/* Pic and Info */}

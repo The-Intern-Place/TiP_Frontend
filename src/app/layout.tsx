@@ -31,6 +31,7 @@ export default function RootLayout({
             {pathname !== "/login" &&
               pathname !== "/sign-up" &&
               pathname !== "/settings" &&
+              pathname !== "/help-centre" &&
               !pathname.startsWith("/admin") && <Footer />}
           </DndProvider>
         </Provider>
