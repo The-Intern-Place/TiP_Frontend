@@ -16,7 +16,7 @@ import IC_Search from "@assets/icons/IC_Search";
 const DashboardHeaderChunk = (props: DashboardHeaderChunkProps) => {
   return (
     <>
-      <div className="bg-[#FAFBFC] sm:flex items-center w-full md:py-8 sm:py-5 sm:px-4 md:px-7 hidden">
+      <div className="bg-[#FAFBFC] sm:flex items-center w-full py-5 sm:px-4 md:px-7 hidden">
         <h1 className="text-[#1976D2] lg:text-[32px] md:text-[28px] sm:text-[20px] font-bold">
           {props.title}
         </h1>
@@ -66,7 +66,7 @@ const DashboardHeaderChunk = (props: DashboardHeaderChunkProps) => {
         </div>
       </div>
 
-      <div className="flex items-center gap-4 px-3 py-5 block sm:hidden">
+      <div className="flex items-center gap-4 px-3 py-5  sm:hidden">
         <Image src={MobileHamburger} alt="hamburger" />
         <div className="relative w-full">
           <span className="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
