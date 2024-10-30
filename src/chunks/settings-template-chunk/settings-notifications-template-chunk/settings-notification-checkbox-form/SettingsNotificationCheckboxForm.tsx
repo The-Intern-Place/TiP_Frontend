@@ -53,8 +53,8 @@ const SettingsNotificationCheckboxForm = () => {
                 label="Recommendations"
                 description="These are notifications for personalized recommendations from recruiters"
               />
-              <div className="w-full flex justify-end">
-                <Button overrideStyles="w-[169px]" type="submit">
+              <div className="w-[169px] flex justify-end ml-auto">
+                <Button overrideStyles="" type="submit">
                   Apply Changes
                 </Button>
               </div>
