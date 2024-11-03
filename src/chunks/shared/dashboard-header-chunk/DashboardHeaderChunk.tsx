@@ -54,14 +54,25 @@ const DashboardHeaderChunk = (props: DashboardHeaderChunkProps) => {
               },
             ]}
           >
-            <div className="flex items-center gap-2.5">
-              <Image src={Tosin} alt="tosin" />
-              <div>
-                <h3 className="md:text-base sm:text-sm">Tosin Eme</h3>
-                <p className="md:text-base sm:text-sm">Product Designer</p>
+            {!props.company ? (
+              <div className="flex items-center gap-2.5">
+                <Image src={Tosin} alt="tosin" />
+                <div>
+                  <h3 className="md:text-base sm:text-sm">Tosin Eme</h3>
+                  <p className="md:text-base sm:text-sm">Product Designer</p>
+                </div>
+                <Image src={ArrowDown} alt="" />
               </div>
-              <Image src={ArrowDown} alt="" />
-            </div>
+            ) : (
+              <div className="flex items-center gap-2.5">
+                <Image src={Nomad} width={50} height={50} alt="nomad" />
+                <div>
+                  <h3 className="md:text-base sm:text-sm font-bold">Nomad</h3>
+                  <p className="md:text-base sm:text-sm">Company</p>
+                </div>
+                <Image src={ArrowDown} alt="" />
+              </div>
+            )}
           </DropDownController>
         </div>
       </div>
