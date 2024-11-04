@@ -6,8 +6,6 @@ import MessagesMenuChunk from "@/chunks/shared/messages-menu-chunk/MessagesMenuC
 import MessageField from "@/components/messagefield/MessageField";
 import { conversationsData } from "./useMessagesData";
 
-
-
 const MessagesChunk: React.FC = () => {
   const [selectedConversationId, setSelectedConversationId] = useState<
     number | null

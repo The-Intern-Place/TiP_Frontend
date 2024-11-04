@@ -12,7 +12,6 @@ import Link from "next/link";
 import Image from "next/image";
 import DropDownController from "@/components/controller/drop-down-controller/DropDownController";
 
-
 const MessagesHeaderChunk = (props: MessagesHeaderChunkProps) => {
   return (
     <>

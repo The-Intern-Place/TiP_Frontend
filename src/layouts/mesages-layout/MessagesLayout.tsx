@@ -4,7 +4,6 @@ import MessagesMenuChunk from "@/chunks/shared/messages-menu-chunk/MessagesMenuC
 import { IMessagesLayoutProps } from "./MessagesLayout.types";
 
 const MessagesLayout = (props: IMessagesLayoutProps) => {
-  
   return (
     <main className="items-start min-h-screen">
       <MessagesMenuChunk
