@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { CustomerSurvey } from "@assets/images";
-import MessageField from "@/components/message field/MessageField";
+import MessageField from "@/components/messagefield/MessageField";
 
 function MessagesTemplateChunk() {
   const [isMessageSelected, setIsMessageSelected] = useState(false);

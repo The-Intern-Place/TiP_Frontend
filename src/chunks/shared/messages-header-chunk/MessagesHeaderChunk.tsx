@@ -11,7 +11,7 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 import DropDownController from "@/components/controller/drop-down-controller/DropDownController";
-// import IC_Search from "@assets/icons/IC_Search";
+
 
 const MessagesHeaderChunk = (props: MessagesHeaderChunkProps) => {
   return (
@@ -71,15 +71,6 @@ const MessagesHeaderChunk = (props: MessagesHeaderChunkProps) => {
         <h1 className="text-[#1976D2] text-[32px] md:text-[28px] sm:text-[20px] font-bold">
           {props.title}
         </h1>
-        {/* <div className="relative w-full">
-          <span className="absolute inset-y-0 right-0 pr-3 flex items-center pointer-events-none">
-            <IC_Search color="black" />
-          </span>
-          <input
-            className="bg-white rounded-full w-full px-6 py-4"
-            placeholder="Search"
-          />
-        </div> */}
         <Link href={""}>
           <Image src={Notification} alt="Notification icon" />
         </Link>

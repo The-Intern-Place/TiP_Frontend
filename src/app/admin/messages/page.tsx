@@ -1,8 +1,7 @@
 // import MessagesTemplateChunk from "@/chunks/shared/messages-template-chunk/MessagesTemplateChunk";
-import MessagesChunk from "@/chunks/admin-template-chunk/messages-chunk/messagesChunk";
+import MessagesChunk from "@/chunks/admin-template-chunk/messages-chunk/MessagesChunk";
 import MessagesHeaderChunk from "@/chunks/shared/messages-header-chunk/MessagesHeaderChunk";
 import DashboardLayout from "@/layouts/dashboard-layout/DashboardLayout";
-// import MessagesLayout from "@/layouts/mesages-layout/MessagesLayout";
 import React from "react";
 
 const Messages = () => {
