@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 
 import MessagesMenuChunk from "@/chunks/shared/messages-menu-chunk/MessagesMenuChunk";
