@@ -1,10 +1,13 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import { TipLogo } from "@assets/images";
 import { DashboardMenuChunkProps } from "./DashboardMenuChunk.types";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const DashboardMenuChunk = (props: DashboardMenuChunkProps) => {
+  const pathname = usePathname();
   return (
     <div className="bg-white h-screen lg:w-[302px] md:w-[232px] sm:w-[200px] hidden sm:block overflow-auto max-w-[250px] flex-shrink-0 w-full flex flex-col sticky top-0">
       <Image src={TipLogo} alt="TiP logo" className="py-3 w-16 mx-auto" />
@@ -13,7 +16,7 @@ const DashboardMenuChunk = (props: DashboardMenuChunkProps) => {
           <Link
             key={key}
             href={option.id}
-            className="flex items-center gap-4 px-3 py-0.5"
+            className={`flex items-center gap-4 px-3 py-0.5 ${pathname === option.id ? "bg-[#1976D21A] text-[#1976D2] py-2 rounded" : ""}`}
           >
             {option.icon ? (
               option.icon
