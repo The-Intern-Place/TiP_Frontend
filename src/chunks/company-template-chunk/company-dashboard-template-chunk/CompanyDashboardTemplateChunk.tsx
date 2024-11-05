@@ -1,11 +1,13 @@
 import React from "react";
 import useCompanyDashboardTemplateChunk from "./useCompanyDashboardTemplateChunk";
 import Image from "next/image";
+import CompanyStatisticsChunk from "@/chunks/company-statistics-chunk/CompanyStatisticsChunk";
+import ApplicantsSummary from "@/chunks/applicant-summary/ApplicantsSummary";
 
 const CompanyDashboardTemplateChunk = () => {
   const { stats } = useCompanyDashboardTemplateChunk();
   return (
-    <div className="py-5 grid grid-flow-row gap-10 w-full">
+    <div className="py-5">
       <div>
         <h2 className="text-2xl font-bold leading-[28.8px] text-grey">
           Good morning Nomad
@@ -14,7 +16,7 @@ const CompanyDashboardTemplateChunk = () => {
           Here is your job listings statistics report from July 19 - July 25
         </p>
       </div>
-      <div className="flex w-full gap-6">
+      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 my-6">
         {stats.map((d, key) => (
           <div
             key={key}
@@ -34,7 +36,10 @@ const CompanyDashboardTemplateChunk = () => {
           </div>
         ))}
       </div>
-      <div className="flex flex-col gap-4 justify-bewteen md:flex-row"></div>
+      <div className="">
+        <CompanyStatisticsChunk />
+        <ApplicantsSummary />
+      </div>
     </div>
   );
 };
