@@ -8,7 +8,7 @@ const IC_Applicants = () => {
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
-     width="24"
+      width="24"
       height="25"
     >
       <path
