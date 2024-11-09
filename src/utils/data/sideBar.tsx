@@ -33,7 +33,6 @@ export const sideBarData: SideBarProps = {
       icon: <IC_MessagesNav />,
       title: "Messages",
       link: "/messages",
-      // notification: { messages },
     },
     {
       icon: <IC_Applications />,

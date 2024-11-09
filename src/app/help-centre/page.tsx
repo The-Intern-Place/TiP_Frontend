@@ -5,7 +5,7 @@ import React from "react";
 
 const HelpCentre = () => {
   return (
-    <SettingsContainer className="flex flex-row gap-6">
+    <SettingsContainer className="max-w-screen-xl mx-auto flex flex-row gap-6">
       <GetStartedTemplateChunk />
       <HelpCenterFormTemplateChunk />
     </SettingsContainer>
