@@ -20,7 +20,7 @@ const SelectInput = ({
         {label}
       </label>
       <div
-        className={` bg-white flex rounded-lg h-[60px] ${hasBorder ? overrideStyles : `border-2 border-athsSpecial ${overrideStyles}`} mt-1 mb-5 `}
+        className={` bg-white flex rounded-lg h-[60px] ${hasBorder ? overrideStyles : `border-2 border-athsSpecial mt-1 mb-5 ${overrideStyles}`} ${overrideStyles} `}
       >
         <select
           {...props}
