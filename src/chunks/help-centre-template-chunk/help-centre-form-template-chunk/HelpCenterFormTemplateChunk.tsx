@@ -12,7 +12,9 @@ const HelpCenterFormTemplateChunk = () => {
     <div className="">
       {/* Sort */}
       <div className="flex flex-row gap-0 w-[253px] justify-start items-center">
-        <h1 className="w-[25%]">Sort By:</h1>
+        <h1 className="w-[30%] font-epilogue text-[18px] font-normal">
+          Sort By:
+        </h1>
         <div className="w-[75%] mt-[2px]">
           <SelectInput
             overrideStyles="border-[#D6DDEB] border-0 p-0 m-0"

@@ -30,7 +30,7 @@ const GetStartedTemplateChunk = () => {
   return (
     <div className="hidden sm:flex flex-col gap-3 px-4 border-t-[1px] border-r-[1px]  border-[#D6DDEB]">
       <div className="">
-        <h1 className="font-epilogue font-semibold text-base text-[#515B6F]">
+        <h1 className="font-epilogue font-semibold text-base text-[#515B6F] my-6">
           Type your question or search keyword
         </h1>
         <div className="hidden md:inline-flex flex-row max-w-3xl w-full relative ">
