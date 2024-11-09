@@ -12,7 +12,8 @@ import Perksandbenefits from "@/chunks/job-description-chunk/job-description-per
 
 import JobOpeningTemplateChunk from "@/chunks/home-template-chunk/job-opening-template-chunk/JobOpeningTemplateChunk";
 import BriefDescription from "@/chunks/job-description-chunk/job-description-brief-template-chunk/BriefDescription";
-import About from "@/chunks/job-description-chunk/job-description-about-template-chunk/About";
+import About from "@/chunks/job-description-chunk/job-description-about-template-chunk/about";
+
 
 export const metadata: Metadata = {
   title: "The Intern Place | Find Job",
@@ -44,6 +45,9 @@ function page() {
             sector2={""}
             applied={""}
             capacity={""}
+            id={""}             
+            salaryRange={""} 
+            jobLevel={""}
           />
           <div className="h-[1px] w-[100%] mb-5 bg-[#D6DDEB] ml-2"></div>
           <Categories />
