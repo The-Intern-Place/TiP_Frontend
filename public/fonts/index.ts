@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 export const epilogue = Epilogue({
   subsets: ["latin"],
   variable: "--font-epilogue",
+  display: "swap",
 });
 
 export const clash = localFont({
@@ -29,5 +30,6 @@ export const clash = localFont({
       style: "italic",
     },
   ],
-  variable: "--font--clash",
+  display: "swap",
+  variable: "--font-clash",
 });

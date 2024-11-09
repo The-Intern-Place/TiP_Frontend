@@ -21,12 +21,12 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`${clash.variable} ${epilogue.className} relative`}>
+      <body className={`${epilogue.className} ${clash.variable} relative`}>
         <Provider store={store}>
           {children}
           {pathname !== "/login" &&
             pathname !== "/sign-up" &&
-            !pathname.startsWith("/dashboard") && <Footer />}
+            !pathname.startsWith("/admin") && <Footer />}
         </Provider>
       </body>
     </html>

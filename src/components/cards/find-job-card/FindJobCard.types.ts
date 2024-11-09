@@ -3,6 +3,7 @@ import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import FindJobCardMeta from "./FindJobCard.stories";
 
 export type FindJobCardProps = {
+  id: string;
   img: string | StaticImport;
   title: string;
   company: string;
@@ -12,6 +13,8 @@ export type FindJobCardProps = {
   sector2: string;
   applied: string;
   capacity: string;
+  jobLevel: string;
+  salaryRange: string;
 };
 
 export type FindJobCardStory = StoryObj<typeof FindJobCardMeta>;
