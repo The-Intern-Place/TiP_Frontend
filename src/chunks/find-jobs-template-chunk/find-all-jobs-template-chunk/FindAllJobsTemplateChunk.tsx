@@ -65,7 +65,7 @@ const FindAllJobsTemplateChunk = () => {
               {description.map((desc, index) => (
                 <div
                   key={index}
-                  className="flex   items-center gap-2 py-[0.3rem] "
+                  className="flex  items-center gap-2 py-[0.3rem] "
                 >
                   <input
                     type="checkbox"
@@ -83,6 +83,7 @@ const FindAllJobsTemplateChunk = () => {
           </div>
         ))}
       </div>
+
       {/* find jobs */}
       <div className="pt-[1.4rem] lg:px-2  lg:w-[919px] ">
         {/* heading */}

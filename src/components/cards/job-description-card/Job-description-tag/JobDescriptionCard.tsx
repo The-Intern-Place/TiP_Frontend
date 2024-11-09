@@ -1,14 +1,26 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import { JobDescriptionCardProps } from "./JobDescriptionCard.types";
 import { IC_Share } from "@assets/icons/IC_Share";
 import { Logo } from "@assets/icons/Logo";
+import Button from "@/components/button/Button";
+import JobDescriptionModalChunk from "@/chunks/job-description-chunk/job-description-modal template/JobDescriptionModalChunk";
 
 const JobDescriptionCard = (props: JobDescriptionCardProps) => {
+  const [isModal, setIsModal] = useState(false);
+
+  const handleOpenModal = () => {
+    setIsModal(!isModal);
+  };
+
   return (
     <section
-      className="flex flex-col md:flex-row justify-between p-[24px] ml-4 items-start
+      className="flex flex-col md:flex-row justify-between p-[24px] ml-4 items-start bg-white
             border-[1px] border-[#D6DDEB]  lg:h-[99px] md:h-[180px] w-[90%] sm:w-[100%]  my-[0.5rem]"
     >
+      {isModal && (
+        <div className="bg-black opacity-[50%] fixed z-[50] inset-0"></div>
+      )}
       <div className="flex  flex-col md:flex-row gap-[15px]  md:gap-[24px] w-[356px] h-[101px] -ml-4">
         {/* <Image src={<IC_Share/>} alt="jobs_image" className="w-[68px] h-[68px]" /> */}
         <Logo />
@@ -39,24 +51,41 @@ const JobDescriptionCard = (props: JobDescriptionCardProps) => {
                 </h1>
               </div>
             </div>
-            <div className="flex sm:ml-[41rem] -mt-[9rem] -ml-[3rem] md:mr-6 sm:-mt-9 flex-row cursor-pointer">
-              <IC_Share />
-              <div className="h-[34px] w-[1px] bg-[#D6DDEB] ml-2"></div>
-            </div>
           </div>
         </div>
       </div>
 
       {/* apply section */}
 
-      <div className="flex flex-col w-[20rem] -ml-4 md:w-[120px]">
-        <div className="mt-[2rem] sm:mt-0">
-          <div className="flex items-center">
-            <button className="w-full h-[50px] bg-[#4640DE] flex text-center items-center justify-center ml-4 font-[700] text-[16px] leading-[25px] text-[#FFFFFF]">
-              Apply
-            </button>
-          </div>
+      <div className="flex items-center justify-center ">
+        <div className="flex items-center  cursor-pointer">
+          <IC_Share />
+          <div className="h-[50px] w-[1px] bg-[#D6DDEB] ml-2"></div>
         </div>
+
+        <div className="flex items-center" onClick={handleOpenModal}>
+          <Button
+            overrideStyles="w-[167px] h-[57px] bg-[#0046BF] rounded-[0px] flex text-center items-center justify-center ml-4 font-[700] 
+            text-[16px] leading-[25px] text-[#FFFFFF]"
+          >
+            Apply
+          </Button>
+        </div>
+      </div>
+
+      <div
+        className={`absolute inset-x-0 z-[100] top-[250px] md:mx-auto flex justify-center max-w-[650px] m-[27px] md:m-0  md:w-full
+            ${isModal ? "absolute" : "hidden"}
+      `}
+      >
+        <JobDescriptionModalChunk
+          img={props.img}
+          title={props.title}
+          company={props.company}
+          location={props.location}
+          duration={props.duration}
+          setIsModal={setIsModal}
+        />
       </div>
     </section>
   );

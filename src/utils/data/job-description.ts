@@ -89,3 +89,42 @@ export const nicetohavesImpression = [
     text: "  Up to 10,000 impressions",
   },
 ];
+
+import emojiIcon from "public/images/emoji_icon.svg";
+import boldIcon from "public/images/bold_Icon.svg";
+import italicIcon from "public/images/italics_Icon.svg";
+import numberIcon from "public/images/number_Icon.svg";
+import listIcon from "public/images/list_Icon.svg";
+import linkIcon from "public/images/link_Icon.svg";
+
+export const textarea_icon = [
+  {
+    id: "1",
+    pics: emojiIcon,
+  },
+
+  {
+    id: "2",
+    pics: boldIcon,
+  },
+
+  {
+    id: "3",
+    pics: italicIcon,
+  },
+
+  {
+    id: "4",
+    pics: numberIcon,
+  },
+
+  {
+    id: "5",
+    pics: listIcon,
+  },
+
+  {
+    id: "6",
+    pics: linkIcon,
+  },
+];

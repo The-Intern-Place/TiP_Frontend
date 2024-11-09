@@ -13,7 +13,7 @@ const JobOpeningTemplateChunk = () => {
             <h1 className="md:text-5xl text-[32px] font-semibold">
               Latest <span className="text-[#1976D2]">jobs open</span>
             </h1>
-            <p className="flex gap-2 items-center text-blue md:flex hidden">
+            <p className=" gap-2 items-center text-blue md:flex hidden">
               Show all <IC_ArrowRight />{" "}
             </p>
           </div>

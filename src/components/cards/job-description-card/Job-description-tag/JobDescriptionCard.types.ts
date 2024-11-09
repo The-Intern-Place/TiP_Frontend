@@ -1,13 +1,15 @@
 import { StoryObj } from "@storybook/react";
-import { StaticImport } from "next/dist/shared/lib/get-img-props";
+
 import JobDescriptionCardMeta from "./JobDescriptionCard.stories";
+import { ReactNode } from "react";
 
 export type JobDescriptionCardProps = {
-  img: string | StaticImport;
+  img: string | ReactNode;
   title: string;
   company: string;
   location: string;
   duration: string;
+  setIsModal?: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
 export type JobDescriptionCardStory = StoryObj<typeof JobDescriptionCardMeta>;

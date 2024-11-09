@@ -2,7 +2,7 @@
 
 import React from "react";
 // import FindJobCard from "@/components/cards/find-job-card/FindJobCard";
-import JobDescriptionCard from "@/components/cards/job-description-card/JobDescriptionCard";
+import JobDescriptionCard from "@/components/cards/job-description-card/Job-description-tag/JobDescriptionCard";
 
 function Tag() {
   return (

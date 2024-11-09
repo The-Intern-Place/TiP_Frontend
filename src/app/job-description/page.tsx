@@ -3,12 +3,16 @@ import React from "react";
 import Navbar from "@/components/navbar/Navbar";
 import Tag from "@/chunks/job-description-chunk/job-description-tag-template-chunk/tag";
 import Title from "@/chunks/job-description-chunk/job-description-title-template-chunk/title";
-import Responsibilities from "@/chunks/job-description-chunk/job-description-resposibilities-template-chunk/responsibilities";
+import Responsibilities from "@/chunks/job-description-chunk/job-description-responsibilities-template-chunk/responsibilities";
 import Whoyouare from "@/chunks/job-description-chunk/job-description-whoareyou-template-chunk/whoareyou";
-import About from "@/chunks/job-description-chunk/job-description-about-template-chunk/about";
+
 import Categories from "@/chunks/job-description-chunk/job-description-categories-template-chunk/categories";
 import Requiredskills from "@/chunks/job-description-chunk/job-description-requiredskills-template-chunk/requiredskills";
 import Perksandbenefits from "@/chunks/job-description-chunk/job-description-perksandbenefits-template-chunk/perksandbenefits";
+
+import JobOpeningTemplateChunk from "@/chunks/home-template-chunk/job-opening-template-chunk/JobOpeningTemplateChunk";
+import BriefDescription from "@/chunks/job-description-chunk/job-description-brief-template-chunk/BriefDescription";
+import About from "@/chunks/job-description-chunk/job-description-about-template-chunk/About";
 
 export const metadata: Metadata = {
   title: "The Intern Place | Find Job",
@@ -48,8 +52,17 @@ function page() {
           <div className="h-[1px] w-[100%] mt-5 bg-[#D6DDEB] ml-2"></div>
         </div>
       </div>
+
       <div className="px-6">
         <Perksandbenefits />
+      </div>
+
+      <div className="">
+        <BriefDescription />
+      </div>
+
+      <div className="">
+        <JobOpeningTemplateChunk />
       </div>
     </div>
   );
