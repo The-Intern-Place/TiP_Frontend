@@ -17,11 +17,31 @@ const Footer = () => {
         <Image src={TIP_Logo} alt="Logo" className="lg:hidden" />
         <div className="flex flex-wrap md:grid md:grid-flow-col lg:gap-7 gap-3 w-full">
           <Image src={TIP_Logo} alt="Logo" className="hidden lg:block" />
+
+
+          
+          <div>
+            <ul className="space-y-3">
+              <li className="text-lg font-semibold">Employers</li>
+              <li>Post a Job</li>
+              <li>
+                {" "}
+                <Link href="/short-listing">Shortlisting Service</Link>
+              </li>
+              <li>Skills Assessment </li>
+              <li>Candidate Search</li>
+              <li>
+                {" "}
+                <Link href="/advertise">Advertise</Link>
+              </li>
+            </ul>
+          </div>
+
           <div className="flex flex-col gap-4">
             <ul className="space-y-3">
               <li className="text-lg font-semibold">Candidates</li>
-              <li>Job Listings</li>
-              <li>Skills Assessment </li>
+              <li>Job Listing</li>
+          
               <li>
                 <Link href={"/hiring"}>Companies Hiring</Link>
               </li>
@@ -31,32 +51,20 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div>
-            <ul className="space-y-3">
-              <li className="text-lg font-semibold">Employer</li>
-              <li>Post A Job</li>
-              <li>
-                {" "}
-                <Link href="/short-listing">Shortlisting Services</Link>
-              </li>
-              <li>Candidate Search</li>
-              <li>
-                {" "}
-                <Link href="/advertise">Advertise</Link>
-              </li>
-            </ul>
-          </div>
+
 
           <div className="flex flex-col gap-4 w-full mt-2 md:mt-0">
             <ul className="space-y-3">
-              <li className="text-lg font-semibold">About</li>
+              <li className="text-lg font-semibold">Company</li>
               <li>
-                <Link href="/founders"> Founders</Link>
+                <Link href="/founders"> About</Link>
               </li>
               <li>
                 {" "}
                 <Link href="/contact-us">Contact Us</Link>
               </li>
+              <li>Career</li>
+
               <li>
                 <Link href="/terms">Terms</Link>
               </li>
@@ -90,6 +98,9 @@ const Footer = () => {
               </Button>
             </div>
           </div>
+
+
+
         </div>
         <div className="py-4">
           <hr className="text-white" />
