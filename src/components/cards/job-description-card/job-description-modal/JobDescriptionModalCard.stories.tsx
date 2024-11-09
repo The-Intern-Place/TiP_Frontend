@@ -1,4 +1,3 @@
-
 import JobDescriptionModalCard from "./JobDescriptionModalCard";
 import { JobDescriptionModalCardStory } from "./JobDescriptionModalcard.type";
 import Nomad from "public/images/Nomad.svg";

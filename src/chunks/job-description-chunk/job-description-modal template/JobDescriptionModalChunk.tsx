@@ -142,7 +142,7 @@ const JobDescriptionModalChunk = (props: JobDescriptionCardProps) => {
 
                   <ul className="flex gap-[7px]">
                     {textarea_icon.map((t) => (
-                      <li  key={t.id}>
+                      <li key={t.id}>
                         {" "}
                         <Image
                           src={t.pics}

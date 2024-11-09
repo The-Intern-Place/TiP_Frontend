@@ -17,11 +17,12 @@ const HeroSectionTemplateChunk = () => {
             Build Your <span className="text-[#1976D2] w-full">Company.</span>
           </h1>
         </div>
-        <p className="max-w-[600px]">
-          TiP aims to be the leading internship talent community, connecting
-          highly qualified and diverse candidates with global opportunities. Our
-          mission is to ensure equal access to internships and entry-level jobs
-          for students and graduates worldwide.
+        <p className="max-w-[682px]">
+          The Intern Place (TiP) is the leading internship hiring platform,
+          powered by AI, that connects employers with highly qualified and
+          diverse talents. Our AI-powered job platform provides customizable,
+          advanced matching algorithms and automation features designed to help
+          you streamline complex hiring tasks.
         </p>
 
         <div className="flex bg-white  rounded-full w-full md:w-[450px] pr-2">
