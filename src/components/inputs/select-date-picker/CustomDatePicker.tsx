@@ -2,20 +2,27 @@
 import { daysData, handleReturnYear, monthData } from "@/utils/helpers/date";
 import SelectInput from "../select-input/SelectInput";
 import { customDateTypes } from "./CustomDatePicker.types";
+import React from "react";
 
-const CustomDatePicker = ({ onChange, dateValue }: customDateTypes) => {
+const CustomDatePicker = ({
+  name,
+  onChange,
+  dateValue,
+  overrideStyles,
+}: customDateTypes) => {
   const yearsData = handleReturnYear();
 
   return (
     <section className="mb-4 w-full">
       <label
-        htmlFor="dateOfBirth"
+        htmlFor={name}
         className="text-sm md:text-base capitalize text-[rgba(27,27,27,1)]"
       >
         date <span className="lowercase">of</span> birth
       </label>
-      <div className="mt-1 grid sm:grid-cols-3 sm:gap-8 gap-6">
+      <div className={` grid sm:grid-cols-3 sm:gap-8 gap-6 ${overrideStyles}`}>
         <SelectInput
+          overrideStyles="border-[#D6DDEB] border-2"
           onChange={onChange}
           label=""
           name="day"
@@ -32,6 +39,7 @@ const CustomDatePicker = ({ onChange, dateValue }: customDateTypes) => {
           }
         />
         <SelectInput
+          overrideStyles="border-[#D6DDEB] border-2"
           onChange={onChange}
           label=""
           name="month"
@@ -48,6 +56,7 @@ const CustomDatePicker = ({ onChange, dateValue }: customDateTypes) => {
           }
         />
         <SelectInput
+          overrideStyles="border-[#D6DDEB] border-2"
           onChange={onChange}
           label=""
           name="year"

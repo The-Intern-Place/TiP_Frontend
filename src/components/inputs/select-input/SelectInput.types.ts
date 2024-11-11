@@ -15,6 +15,7 @@ export type SelectInputProps = Omit<
   name: string;
   optionsData?: ReactNode;
   placeholder: string;
+  overrideStyles?: string;
 };
 
 export type SelectCountryProps = {
