@@ -15,18 +15,33 @@ const JobDescriptionCard = (props: JobDescriptionCardProps) => {
 
   return (
     <section
-      className="flex flex-col md:flex-row justify-between p-[24px] ml-4 items-start bg-white
-            border-[1px] border-[#D6DDEB]  lg:h-[99px] md:h-[180px] w-[90%] sm:w-[100%]  my-[0.5rem]"
+      className="flex flex-col md:flex-row justify-between md:p-[24px]  py-[4rem] md:py-0 items-start  md:items-center md:bg-white  mx-auto
+            md:border-[1px] md:border-[#D6DDEB]  lg:h-[128px] md:h-[180px] h-full sm:w-[100%]  my-[0.5rem] lg:max-w-[1187px]  max-w-[327px] w-full md:max-w-[730px]"
     >
       {isModal && (
         <div className="bg-black opacity-[50%] fixed z-[50] inset-0"></div>
       )}
-      <div className="flex  flex-col md:flex-row gap-[15px]  md:gap-[24px] w-[356px] h-[101px] -ml-4">
+
+      <div className="flex  flex-col md:flex-row gap-[15px]  md:gap-[24px]  h-[101px]  items-center">
         {/* <Image src={<IC_Share/>} alt="jobs_image" className="w-[68px] h-[68px]" /> */}
-        <Logo />
+
+        <h1 className="md:hidden block">
+          .../ Urban Tech / Social Media Assistant
+        </h1>
+
+        <div className="flex items-center justify-between w-full">
+          <div className="w-[60px] h-[60px]">
+            <Logo />
+          </div>
+
+          <div className="md:hidden flex items-center cursor-pointer">
+            <IC_Share />
+            <div className="h-[50px] w-[1px] bg-[#D6DDEB] ml-2  hidden md:block"></div>
+          </div>
+        </div>
 
         <div className="flex flex-col gap-[8px]  lg:max-w-[288px]">
-          <h1 className="text-2xl font-epilogue text-[#002360] font-bold leading-[24px]">
+          <h1 className="md:text-2xl text-[32px] leading-[38px] font-epilogue text-[#002360] font-[600] md:leading-[24px] w-[300px]">
             {props.title}
           </h1>
 
@@ -57,15 +72,18 @@ const JobDescriptionCard = (props: JobDescriptionCardProps) => {
 
       {/* apply section */}
 
-      <div className="flex items-center justify-center ">
-        <div className="flex items-center  cursor-pointer">
+      <div className="flex md:flex-row flex-col items-center justify-center ">
+        <div className="hidden md:flex items-center  cursor-pointer">
           <IC_Share />
-          <div className="h-[50px] w-[1px] bg-[#D6DDEB] ml-2"></div>
+          <div className="h-[50px] w-[1px] bg-[#D6DDEB] ml-2  hidden md:block"></div>
         </div>
 
-        <div className="flex items-center" onClick={handleOpenModal}>
+        <div
+          className="flex items-center w-full mt-[8.5rem] md:mt-0 "
+          onClick={handleOpenModal}
+        >
           <Button
-            overrideStyles="w-[167px] h-[57px] bg-[#0046BF] rounded-[0px] flex text-center items-center justify-center ml-4 font-[700] 
+            overrideStyles="md:w-[167px] w-[335px] h-[57px] bg-[#0046BF] rounded-[0px] flex text-center items-center justify-center ml-0 md:ml-4 font-[700] 
             text-[16px] leading-[25px] text-[#FFFFFF]"
           >
             Apply

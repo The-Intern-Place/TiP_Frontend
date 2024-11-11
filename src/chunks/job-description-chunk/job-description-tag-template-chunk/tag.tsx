@@ -6,12 +6,13 @@ import JobDescriptionCard from "@/components/cards/job-description-card/Job-desc
 
 function Tag() {
   return (
-    <div className="w-full h-full sm:max-w-[1350px] md:pr-10 mt-10 mx-auto mb-6">
+    <div className="w-full h-[375px] sm:max-w-[1350px]  mb-6  
+     bg-[#F8F8FD] flex items-center justify-center">
       <JobDescriptionCard
         img={" "}
         title={"Social Media Assistant"}
         company={"Urban"}
-        location={"Port-Harcourt, Nigeria"}
+        location={"Nigeria"}
         duration={"Full-Time"}
       />
     </div>
