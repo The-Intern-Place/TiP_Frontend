@@ -21,10 +21,9 @@ export const metadata: Metadata = {
 function page() {
   return (
     <div className="w-full overflow-x-hidden">
-      <Navbar  bgcolor={"#F8F8FD"} />
+      <Navbar bgcolor={"#F8F8FD"} />
       <div className=" flex flex-col items-center justify-center  w-full">
-
-      <Tag  />
+        <Tag />
       </div>
       <div className="w-full h-full max-w-[1350px] mt-[2rem] px-6 mb-6 mx-auto grid sm:grid-cols-2 gap-x-8 gap-y-16">
         <div>

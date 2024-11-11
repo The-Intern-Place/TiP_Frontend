@@ -17,7 +17,6 @@ const JobDescriptionModalChunk = (props: JobDescriptionCardProps) => {
   };
 
   return (
-
     <section className="flex flex-col bg-white  w-full md:p-[15px]">
       <div className="flex flex-col items-center justify-center w-full gap-[24px]">
         <div
@@ -29,7 +28,6 @@ const JobDescriptionModalChunk = (props: JobDescriptionCardProps) => {
             alt="close_icon"
             className="w-[14px] h-[14px] cursor-pointer"
           />
-
         </div>
 
         <div className="w-full h-full flex flex-col gap-[24px] items-center justify-center md:items-start md:justify-start md:flex-row  mt-[4rem]">
@@ -38,16 +36,28 @@ const JobDescriptionModalChunk = (props: JobDescriptionCardProps) => {
           </div>
 
           <div className="flex flex-col text-center md:text-start gap-[8px]">
-            <h1 className="md:text-[24px] md:leading-[40px] text-[32px] leading-[38px] font-[600] text-[#25324B] ">{title}</h1>
+            <h1 className="md:text-[24px] md:leading-[40px] text-[32px] leading-[38px] font-[600] text-[#25324B] ">
+              {title}
+            </h1>
             <ul className="flex items-center justify-center gap-[16px]">
-              <li  className="md:text-[18px] md:leading-[32px] text-[18px] leading-[28px] font-[400] text-[#515B6F]" >   {company}</li>
-              <li className="md:text-[18px] md:leading-[32px] text-[18px] leading-[28px] font-[400] text-[#515B6F] flex items-center" >  <div className="w-[4px] h-[4px] min-w-[4px] min-h-[4px] bg-[#7C8493] mx-2 md:mx-1"></div> {location}</li>
-              <li className="md:text-[18px] md:leading-[32px] text-[18px] leading-[28px] font-[400] text-[#515B6F] flex items-center">  <div className="w-[4px] h-[4px] min-w-[4px] min-h-[4px] bg-[#7C8493] mx-2 md:mx-1"></div> {duration}</li>
+              <li className="md:text-[18px] md:leading-[32px] text-[18px] leading-[28px] font-[400] text-[#515B6F]">
+                {" "}
+                {company}
+              </li>
+              <li className="md:text-[18px] md:leading-[32px] text-[18px] leading-[28px] font-[400] text-[#515B6F] flex items-center">
+                {" "}
+                <div className="w-[4px] h-[4px] min-w-[4px] min-h-[4px] bg-[#7C8493] mx-2 md:mx-1"></div>{" "}
+                {location}
+              </li>
+              <li className="md:text-[18px] md:leading-[32px] text-[18px] leading-[28px] font-[400] text-[#515B6F] flex items-center">
+                {" "}
+                <div className="w-[4px] h-[4px] min-w-[4px] min-h-[4px] bg-[#7C8493] mx-2 md:mx-1"></div>{" "}
+                {duration}
+              </li>
             </ul>
           </div>
         </div>
 
-  
         <hr className="bg-[#D6DDEB] max-w-[550px] w-full flex items-center justify-center" />
 
         <div className="flex flex-col p-[10px]">
@@ -140,15 +150,13 @@ const JobDescriptionModalChunk = (props: JobDescriptionCardProps) => {
                 <div className="flex flex-col gap-0">
                   <textarea
                     placeholder="Add a cover letter or anything else you want to share"
-
-
                     className="font-[400] text-[16px] leading-[30px] text-[#515B6F99] font-epilogue 
        border-[1px] h-[152px] border-[#D6DDEB] p-[10px] outline-none   w-full"
                   />
 
                   <ul className="flex items-center gap-[7px] border-[1px] h-[48px]  border-[#D6DDEB] p-[3px]">
                     {textarea_icon.map((t) => (
-                      <li key={t.id}  className="">
+                      <li key={t.id} className="">
                         {" "}
                         <Image
                           src={t.pics}
@@ -172,9 +180,7 @@ const JobDescriptionModalChunk = (props: JobDescriptionCardProps) => {
                       </h1>
                     </li>
                   </ul>
-                  
                 </div>
-
               </div>
 
               <div className="flex flex-col md:flex-row justify-between items-start md:items-center rounded-[4px] w-full gap-[16px]">
@@ -205,9 +211,10 @@ const JobDescriptionModalChunk = (props: JobDescriptionCardProps) => {
                 </Button>
               </div>
 
-              <h1   className=" font-[400] text-[16px] leading-[30px] text-[#515B6F]">
-                By sending the request you can confirm that you accept our <span  className="text-[#1976D2]">Terms
-                of Service </span> and <span  className="text-[#1976D2]">Privacy Policy</span>
+              <h1 className=" font-[400] text-[16px] leading-[30px] text-[#515B6F]">
+                By sending the request you can confirm that you accept our{" "}
+                <span className="text-[#1976D2]">Terms of Service </span> and{" "}
+                <span className="text-[#1976D2]">Privacy Policy</span>
               </h1>
             </form>
           </div>
