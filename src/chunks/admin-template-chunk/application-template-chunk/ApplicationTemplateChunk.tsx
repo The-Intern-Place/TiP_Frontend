@@ -6,7 +6,6 @@ import useApplicationTemplateChunk from "./useApplicationTemplateChunk";
 import searchicon from "public/images/searchicon.svg";
 import filtericon from "public/images/filter_icon.svg";
 import FindjobPagination from "@/components/pagination/FindjobPagination";
-import { getStatusClass } from "@/utils/helpers";
 
 const ApplicationTemplateChunk = () => {
   const {
@@ -22,6 +21,7 @@ const ApplicationTemplateChunk = () => {
     handleFilterClick,
     dateInputRef,
     handleDateChange,
+    getStatusClass,
   } = useApplicationTemplateChunk();
 
   return (
@@ -144,34 +144,38 @@ const ApplicationTemplateChunk = () => {
             </thead>
 
             <tbody>
-              {data.map((t) => (
-                <tr
-                  key={t.id}
-                  className="border-[1px] h-[88px] border-b text-[#25324B]"
-                >
-                  <td className="py-2 px-4 leading-[30px] text-left">{t.id}</td>
-                  <td className="h-[88px] px-4 flex items-center leading-[30px]">
-                    <Image
-                      src={t.img}
-                      alt="searchIcon"
-                      className="w-[40px] h-[40px] mr-[8px]"
-                    />
-                    {t.company}
-                  </td>
-                  <td className="px-4 leading-[30px]">{t.title}</td>
-                  <td className="px-4 leading-[30px]">{t.applied}</td>
-
-                  <td
-                    className={`px-4 text-[14px] leading-[22px] font-semibold`}
+              {data.map((t) => {
+                console.log(t);
+                const theme = getStatusClass(t.status);
+                return (
+                  <tr
+                    key={t.id}
+                    className="border-[1px] h-[88px] border-b text-[#25324B]"
                   >
-                    <h1
-                      className={`py-2 border-[1px] text-sm leading-[22px] text-center rounded-full ${getStatusClass(t.status)?.style}`}
-                    >
-                      {getStatusClass(t.status)?.text}
-                    </h1>
-                  </td>
-                </tr>
-              ))}
+                    <td className="py-2 px-4 leading-[30px] text-left">
+                      {t.id}
+                    </td>
+                    <td className="h-[88px] px-4 flex items-center leading-[30px]">
+                      <Image
+                        src={t.img}
+                        alt="searchIcon"
+                        className="w-[40px] h-[40px] mr-[8px]"
+                      />
+                      {t.company}
+                    </td>
+                    <td className="px-4 leading-[30px]">{t.title}</td>
+                    <td className="px-4 leading-[30px]">{t.applied}</td>
+
+                    <td className={`px-4 font-semibold`}>
+                      <div
+                        className={`py-2 px-3 border text-sm leading-[22px] w-fit text-center rounded-full ${theme?.style}`}
+                      >
+                        {theme?.text}
+                      </div>
+                    </td>
+                  </tr>
+                );
+              })}
             </tbody>
           </table>
 
