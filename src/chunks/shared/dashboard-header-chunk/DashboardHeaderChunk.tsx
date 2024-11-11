@@ -16,7 +16,7 @@ import IC_Search from "@assets/icons/IC_Search";
 const DashboardHeaderChunk = (props: DashboardHeaderChunkProps) => {
   return (
     <>
-      <div className="bg-[#FAFBFC] sm:flex items-center w-full md:py-8 sm:py-5 sm:px-4 md:px-7 hidden">
+      <div className="bg-[#FAFBFC] sm:flex items-center w-full py-5 sm:px-4 md:px-7 hidden">
         <h1 className="text-[#1976D2] lg:text-[32px] md:text-[28px] sm:text-[20px] font-bold">
           {props.title}
         </h1>
@@ -54,14 +54,25 @@ const DashboardHeaderChunk = (props: DashboardHeaderChunkProps) => {
               },
             ]}
           >
-            <div className="flex items-center gap-2.5">
-              <Image src={Tosin} alt="tosin" />
-              <div>
-                <h3 className="md:text-base sm:text-sm">Tosin Eme</h3>
-                <p className="md:text-base sm:text-sm">Product Designer</p>
+            {!props.company ? (
+              <div className="flex items-center gap-2.5">
+                <Image src={Tosin} alt="tosin" />
+                <div>
+                  <h3 className="md:text-base sm:text-sm">Tosin Eme</h3>
+                  <p className="md:text-base sm:text-sm">Product Designer</p>
+                </div>
+                <Image src={ArrowDown} alt="" />
               </div>
-              <Image src={ArrowDown} alt="" />
-            </div>
+            ) : (
+              <div className="flex items-center gap-2.5">
+                <Image src={Nomad} width={50} height={50} alt="nomad" />
+                <div>
+                  <h3 className="md:text-base sm:text-sm font-bold">Nomad</h3>
+                  <p className="md:text-base sm:text-sm">Company</p>
+                </div>
+                <Image src={ArrowDown} alt="" />
+              </div>
+            )}
           </DropDownController>
         </div>
       </div>

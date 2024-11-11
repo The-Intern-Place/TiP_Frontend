@@ -19,7 +19,7 @@ const JobOpeningTemplateChunk = (props: IJobOpeningTemplateChunkProps) => {
               {props.title ?? "Latest"}{" "}
               <span className="text-[#1976D2]">{props.styleSubtitle}</span>
             </h1>
-            <p className="flex gap-2 items-center text-blue md:flex hidden">
+            <p className=" gap-2 items-center text-blue md:flex hidden">
               Show all <IC_ArrowRight />{" "}
             </p>
           </div>
