@@ -20,6 +20,8 @@ export const DefaultStory: FindJobCardStory = {
     sector2: "Design",
     applied: "5",
     capacity: "10",
+    jobLevel: "$900",
+    salaryRange: "$1000",
   },
   name: "Find Job Card",
 };
