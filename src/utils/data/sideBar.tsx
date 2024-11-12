@@ -28,31 +28,37 @@ export const sideBarData: SideBarProps = {
       icon: <IC_HomeNav />,
       title: "Dashboard",
       link: "/dashboard",
+      notification: 0,
     },
     {
       icon: <IC_MessagesNav />,
       title: "Messages",
       link: "/messages",
+      notification: 30,
     },
     {
       icon: <IC_Applications />,
       title: "Applications",
       link: "/applications",
+      notification: 0,
     },
     {
       icon: <IC_Search color="#1B1B1B" />,
       title: "Find Jobs",
       link: "/find-jobs",
+      notification: 0,
     },
     {
       icon: <IC_Companies />,
       title: "Browse Companies",
       link: "/browse-companies",
+      notification: 0,
     },
     {
       icon: <IC_Profile />,
       title: "My Profile",
       link: "/profile",
+      notification: 0,
     },
   ],
   bottomNav: [
@@ -60,11 +66,13 @@ export const sideBarData: SideBarProps = {
       icon: <IC_HelpCenter />,
       title: "Help Center",
       link: "/help-center",
+      notification: 0,
     },
     {
       icon: <IC_Settings />,
       title: "Settings",
       link: "/settings",
+      notification: 0,
     },
   ],
 };

@@ -3,6 +3,7 @@ import React from "react";
 import { sideBarData } from "../../../../src/utils/data/sideBar";
 import Link from "next/link";
 import Image from "next/image";
+import { Divide } from "lucide-react";
 
 const SidebarChunk = (Props: { className: string }) => {
   return (
@@ -26,16 +27,15 @@ const SidebarChunk = (Props: { className: string }) => {
             >
               {item?.title}
             </Link>
-            {item?.notification && (
-              <div className="py-[10px] px-[10px] bg-[#1976D2]">
-                {item?.notification}
+            {item?.notification >= 1 ? (
+              <div className="flex items-center justify-center w-[30px] h-[30px] bg-[#1976D2] rounded-full">
+                <p className="font-epilogue font-semibold text-base text-white">
+                  {item?.notification}
+                </p>
               </div>
+            ) : (
+              <div>{""}</div>
             )}
-            {/* <div
-              className={`py-[10px] px-[10px] ${item?.notification && `bg-[#1976D2]`} `}
-            >
-              {item?.notification}
-            </div> */}
           </div>
         ))}
       </div>
@@ -52,16 +52,15 @@ const SidebarChunk = (Props: { className: string }) => {
             >
               {item?.title}
             </Link>
-            {item?.notification && (
-              <div className="py-[10px] px-[10px] bg-[#1976D2]">
-                {item?.notification}
+            {item?.notification >= 1 ? (
+              <div className="flex items-center justify-center w-[30px] h-[30px] bg-[#1976D2] rounded-full">
+                <p className="font-epilogue font-semibold text-base text-white">
+                  {item?.notification}
+                </p>
               </div>
+            ) : (
+              <div>{""}</div>
             )}
-            {/* <div
-              className={`py-[10px] px-[10px] ${item?.notification && `bg-[#1976D2]`} `}
-            >
-              {item?.notification}
-            </div> */}
           </div>
         ))}
       </div>
