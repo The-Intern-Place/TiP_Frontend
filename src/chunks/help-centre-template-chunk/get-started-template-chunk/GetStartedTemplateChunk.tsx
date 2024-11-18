@@ -55,13 +55,12 @@ const GetStartedTemplateChunk = () => {
             className="w-full border-b-[1px] border-[#D6DDEB] py-3"
             key={index}
           >
-            <Link
+            <div
               className={`font-semibold ${isActive === nav?.url ? `text-blue` : "text-[#515B6F]"}  text-[18px] font-epilogue`}
-              href={nav?.url}
               onClick={() => handleClick(nav?.url)}
             >
               {nav?.button}
-            </Link>
+            </div>
           </div>
         ))}
       </div>
