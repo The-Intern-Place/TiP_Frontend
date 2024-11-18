@@ -128,7 +128,7 @@ const FindAllJobsTemplateChunk = () => {
 
         <div className="flex my-1">
           <Button
-            overrideStyles="w-[100%] h-[50px] bg-[#0046BF] flex lg:hidden text-center items-center rounded-none
+            overrideStyles="w-[100%]   h-[50px] bg-[#0046BF] flex md:hidden text-center items-center rounded-none
           justify-center font-[700] text-[16px] leading-[25px] text-[#FFFFFF]"
           >
             Apply
