@@ -6,7 +6,7 @@ import IC_Options from "@assets/icons/IC_Options";
 
 const HelpCentreCard = (props: HelpCentreCardProps) => {
   return (
-    <div className="p-3 sm:p-6 border border-[#D6DDEB] flex flex-col sm:gap-6 gap-3">
+    <div className="p-3 sm:p-6 border border-[#D6DDEB] flex flex-col sm:gap-6 gap-3 w-full">
       {/* main */}
       <div className="w-[327px] md:w-[639px] border-b sm:pb-5 pb-2 flex flex-col items-start sm:gap-4 gap-2">
         <div className="flex flew-row w-full items-center justify-between">
@@ -17,7 +17,7 @@ const HelpCentreCard = (props: HelpCentreCardProps) => {
             <IC_Options />
           </div>
         </div>
-        <p className="font-epilogue font-normal text-base  text-[#25324B]">
+        <p className="font-epilogue font-normal text-base text-[#25324B]">
           {props?.paragraph}
         </p>
       </div>

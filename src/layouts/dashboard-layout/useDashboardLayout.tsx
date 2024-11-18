@@ -44,8 +44,8 @@ export default function useDashboardLayout() {
 
   const subMenuOptions: ListItem[] = [
     {
-      id: "",
-      name: "Help Center",
+      id: "help-centre",
+      name: "Help Centre",
       icon: <IC_HelpCenter />,
     },
     {

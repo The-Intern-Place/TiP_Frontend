@@ -16,7 +16,7 @@ import IC_Search from "@assets/icons/IC_Search";
 const DashboardHeaderChunk = (props: DashboardHeaderChunkProps) => {
   return (
     <>
-      <div className="bg-[#FAFBFC] sm:flex items-center w-full md:py-8 sm:py-5 sm:px-4 md:px-7 hidden">
+      <div className="bg-[#FAFBFC] sticky top-0 z-50 sm:flex items-center w-full md:py-8 sm:py-5 sm:px-4 md:px-7 hidden">
         <h1 className="text-[#1976D2] lg:text-[32px] md:text-[28px] sm:text-[20px] font-bold">
           {props.title}
         </h1>

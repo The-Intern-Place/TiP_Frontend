@@ -17,10 +17,6 @@ const GetStartedTemplateChunk = () => {
   };
 
   useEffect(() => {
-    console.log("useEffect triggered");
-    console.log("searchText:", searchText);
-    console.log("jobSearchFAQs:", jobSearchFAQs);
-
     const filtered: jobFaqs[] = jobSearchFAQs.filter((item: jobFaqs) =>
       item?.question.toLowerCase().includes(searchText.toLowerCase())
     );
@@ -28,7 +24,7 @@ const GetStartedTemplateChunk = () => {
     setFilteredSearch(filtered);
   }, [searchText]);
   return (
-    <div className="hidden sm:flex flex-col gap-3 px-4 border-t-[1px] border-r-[1px]  border-[#D6DDEB]">
+    <div className="hidden sm:flex flex-col gap-3 px-4 border-r-[1px] w-full border-[#D6DDEB]">
       <div className="">
         <h1 className="font-epilogue font-semibold text-base text-[#515B6F] my-6">
           Type your question or search keyword
