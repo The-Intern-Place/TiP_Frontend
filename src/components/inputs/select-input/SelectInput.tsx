@@ -7,8 +7,10 @@ const SelectInput = ({
   name,
   optionsData,
   placeholder,
+  overrideStyles,
   ...props
 }: SelectInputProps) => {
+  const hasBorder = overrideStyles?.includes("border-");
   return (
     <div className="w-full">
       <label
@@ -17,7 +19,9 @@ const SelectInput = ({
       >
         {label}
       </label>
-      <div className="bg-white flex rounded-lg h-[60px] border-2 border-athsSpecial mt-1 mb-5">
+      <div
+        className={` bg-white flex rounded-lg h-[60px] ${hasBorder ? overrideStyles : `border-2 border-athsSpecial ${overrideStyles}`} mt-1 mb-5 `}
+      >
         <select
           {...props}
           name={name}
