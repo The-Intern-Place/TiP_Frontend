@@ -35,9 +35,9 @@ const config: Config = {
         blueGray: "#25324B",
         grayishBlue: "#515B6F",
         coolGray: "#7C8493",
-        royalBlue:"#002360",
-        semiBlue:"#515B6F99",
-        pastelBlue: "#D6DDEB"
+        royalBlue: "#002360",
+        semiBlue: "#515B6F99",
+        pastelBlue: "#D6DDEB",
       },
       screens: {
         sm: "640px",

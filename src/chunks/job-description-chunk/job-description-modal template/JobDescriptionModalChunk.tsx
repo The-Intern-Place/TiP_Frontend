@@ -95,7 +95,7 @@ const JobDescriptionModalChunk = (props: JobDescriptionCardProps) => {
               </div>
 
               <div className="flex flex-col gap-[4px]">
-              <h1 className=" font-semibold text-base  text-grayishBlue">
+                <h1 className=" font-semibold text-base  text-grayishBlue">
                   Phone Number
                 </h1>
                 <input
@@ -106,7 +106,7 @@ const JobDescriptionModalChunk = (props: JobDescriptionCardProps) => {
               </div>
 
               <div className="flex flex-col gap-[4px]">
-              <h1 className=" font-semibold text-base  text-grayishBlue">
+                <h1 className=" font-semibold text-base  text-grayishBlue">
                   Current of previous job title
                 </h1>
                 <input
@@ -121,7 +121,7 @@ const JobDescriptionModalChunk = (props: JobDescriptionCardProps) => {
               </h1>
 
               <div className="flex flex-col gap-[4px]">
-              <h1 className=" font-semibold text-base text-grayishBlue">
+                <h1 className=" font-semibold text-base text-grayishBlue">
                   LinkedIn URL
                 </h1>
                 <input
@@ -132,7 +132,7 @@ const JobDescriptionModalChunk = (props: JobDescriptionCardProps) => {
               </div>
 
               <div className="flex flex-col gap-[4px]">
-              <h1 className=" font-semibold text-base  text-grayishBlue">
+                <h1 className=" font-semibold text-base  text-grayishBlue">
                   Current of previous job title
                 </h1>
                 <input
@@ -143,7 +143,7 @@ const JobDescriptionModalChunk = (props: JobDescriptionCardProps) => {
               </div>
 
               <div className="flex flex-col gap-[4px]">
-              <h1 className=" font-semibold text-base  text-grayishBlue">
+                <h1 className=" font-semibold text-base  text-grayishBlue">
                   Additional information
                 </h1>
 
@@ -217,7 +217,6 @@ const JobDescriptionModalChunk = (props: JobDescriptionCardProps) => {
                 <span className="text-light-blue">Privacy Policy</span>
               </h1>
             </form>
-
           </div>
         </div>
       </div>
