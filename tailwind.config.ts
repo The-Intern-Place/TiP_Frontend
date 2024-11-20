@@ -32,6 +32,12 @@ const config: Config = {
         "light-blue": "#1976D2",
         grey: "#1B1B1B",
         pictonBlue: "rgba(82,151,219,0.2)",
+        blueGray: "#25324B",
+        grayishBlue: "#515B6F",
+        coolGray: "#7C8493",
+        royalBlue:"#002360",
+        semiBlue:"#515B6F99",
+        pastelBlue: "#D6DDEB"
       },
       screens: {
         sm: "640px",

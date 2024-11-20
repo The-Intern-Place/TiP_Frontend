@@ -36,22 +36,22 @@ const JobDescriptionModalChunk = (props: JobDescriptionCardProps) => {
           </div>
 
           <div className="flex flex-col text-center md:text-start gap-[8px]">
-            <h1 className="md:text-[24px] md:leading-[40px] text-[32px] leading-[38px] font-[600] text-[#25324B] ">
+            <h1 className="md:text-[24px] md:leading-[40px] text-[32px] leading-8 font-[600] text-blueGray ">
               {title}
             </h1>
             <ul className="flex items-center justify-center gap-[16px]">
-              <li className="md:text-[18px] md:leading-[32px] text-[18px] leading-[28px] font-[400] text-[#515B6F]">
+              <li className=" md:leading-[32px] text-lg  font-[400] text-grayishBlue">
                 {" "}
                 {company}
               </li>
-              <li className="md:text-[18px] md:leading-[32px] text-[18px] leading-[28px] font-[400] text-[#515B6F] flex items-center">
+              <li className=" md:leading-[32px] text-lg  font-normal text-grayishBlue flex items-center">
                 {" "}
-                <div className="w-[4px] h-[4px] min-w-[4px] min-h-[4px] bg-[#7C8493] mx-2 md:mx-1"></div>{" "}
+                <div className="w-[4px] h-[4px] min-w-[4px] min-h-[4px] bg-coolGray mx-2 md:mx-1"></div>{" "}
                 {location}
               </li>
-              <li className="md:text-[18px] md:leading-[32px] text-[18px] leading-[28px] font-[400] text-[#515B6F] flex items-center">
+              <li className=" md:leading-[32px] text-lg  font-normal text-grayishBlue flex items-center">
                 {" "}
-                <div className="w-[4px] h-[4px] min-w-[4px] min-h-[4px] bg-[#7C8493] mx-2 md:mx-1"></div>{" "}
+                <div className="w-[4px] h-[4px] min-w-[4px] min-h-[4px] bg-coolGray mx-2 md:mx-1"></div>{" "}
                 {duration}
               </li>
             </ul>
@@ -62,10 +62,10 @@ const JobDescriptionModalChunk = (props: JobDescriptionCardProps) => {
 
         <div className="flex flex-col p-[10px]">
           <div className="flex flex-col gap-[2px]">
-            <h1 className="font-clash font-[600] md:text-[34px] md:leading-[40px] text-[20px] leading-[24px] text-[#002360] ">
+            <h1 className="font-clash font-semibold md:text-[34px] md:leading-[40px] text-xl text-royalBlue ">
               Submit your application
             </h1>
-            <p className="font-epilogue font-[400] text-[16px] leading-[30px] text-[#515B6F99]">
+            <p className="font-epilogue  text-base leading-[30px] text-semiBlue">
               The following is required and will only be shared with Nomad
             </p>
           </div>
@@ -73,18 +73,18 @@ const JobDescriptionModalChunk = (props: JobDescriptionCardProps) => {
           <div className="flex flex-col pt-[1.5rem]">
             <form className="w-full h-full flex flex-col gap-[25px]">
               <div className="flex flex-col gap-[4px]">
-                <h1 className=" font-[600] text-16[px] leading-[25px] text-[#515B6F]">
+                <h1 className=" font-semibold text-base  text-grayishBlue">
                   Full name
                 </h1>
                 <input
                   type="text"
                   placeholder="Enter your full name"
-                  className="font-[400] text-[16px] leading-[30px] text-[#515B6F99] font-epilogue border-[1px] h-[49px] border-[#D6DDEB] px-[16px] "
+                  className="text-base leading-[30px] text-semiBlue font-epilogue border-[1px] h-[49px] border-pastelBlue px-4 "
                 />
               </div>
 
               <div className="flex flex-col gap-[4px]">
-                <h1 className=" font-[600] text-16[px] leading-[25px] text-[#515B6F]">
+                <h1 className=" font-semibold text-base  text-grayishBlue">
                   Email address
                 </h1>
                 <input
@@ -95,7 +95,7 @@ const JobDescriptionModalChunk = (props: JobDescriptionCardProps) => {
               </div>
 
               <div className="flex flex-col gap-[4px]">
-                <h1 className=" font-[600] text-16[px] leading-[25px] text-[#515B6F]">
+              <h1 className=" font-semibold text-base  text-grayishBlue">
                   Phone Number
                 </h1>
                 <input
@@ -106,7 +106,7 @@ const JobDescriptionModalChunk = (props: JobDescriptionCardProps) => {
               </div>
 
               <div className="flex flex-col gap-[4px]">
-                <h1 className=" font-[600] text-16[px] leading-[25px] text-[#515B6F]">
+              <h1 className=" font-semibold text-base  text-grayishBlue">
                   Current of previous job title
                 </h1>
                 <input
@@ -121,7 +121,7 @@ const JobDescriptionModalChunk = (props: JobDescriptionCardProps) => {
               </h1>
 
               <div className="flex flex-col gap-[4px]">
-                <h1 className=" font-[600] text-16[px] leading-[25px] text-[#515B6F]">
+              <h1 className=" font-semibold text-base text-grayishBlue">
                   LinkedIn URL
                 </h1>
                 <input
@@ -132,7 +132,7 @@ const JobDescriptionModalChunk = (props: JobDescriptionCardProps) => {
               </div>
 
               <div className="flex flex-col gap-[4px]">
-                <h1 className=" font-[600] text-16[px] leading-[25px] text-[#515B6F]">
+              <h1 className=" font-semibold text-base  text-grayishBlue">
                   Current of previous job title
                 </h1>
                 <input
@@ -143,15 +143,15 @@ const JobDescriptionModalChunk = (props: JobDescriptionCardProps) => {
               </div>
 
               <div className="flex flex-col gap-[4px]">
-                <h1 className=" font-[600] text-16[px] leading-[25px] text-[#515B6F]">
+              <h1 className=" font-semibold text-base  text-grayishBlue">
                   Additional information
                 </h1>
 
-                <div className="flex flex-col gap-0">
+                <div className="flex flex-col ">
                   <textarea
                     placeholder="Add a cover letter or anything else you want to share"
-                    className="font-[400] text-[16px] leading-[30px] text-[#515B6F99] font-epilogue 
-       border-[1px] h-[152px] border-[#D6DDEB] p-[10px] outline-none   w-full"
+                    className="font-normal text-base leading-[30px] text-semiBlue font-epilogue 
+       border-[1px] h-[152px] border-pastelBlue p-[10px] outline-none   w-full"
                   />
 
                   <ul className="flex items-center gap-[7px] border-[1px] h-[48px]  border-[#D6DDEB] p-[3px]">
@@ -169,13 +169,13 @@ const JobDescriptionModalChunk = (props: JobDescriptionCardProps) => {
 
                   <ul className="flex justify-between items-center  pt-[0.5rem]">
                     <li>
-                      <h1 className=" font-[400] text-[16px] leading-[30px] text-[#515B6F99] font-epilogue">
+                      <h1 className=" font-normal text-base leading-[30px] text-semiBlue font-epilogue">
                         Maximum 500 characters
                       </h1>
                     </li>
 
                     <li>
-                      <h1 className=" font-[400] text-[16px] leading-[30px] text-[#515B6F99] font-epilogue">
+                      <h1 className=" font-normal text-base leading-[30px] text-semiBlue font-epilogue">
                         0 / 500
                       </h1>
                     </li>
@@ -184,7 +184,7 @@ const JobDescriptionModalChunk = (props: JobDescriptionCardProps) => {
               </div>
 
               <div className="flex flex-col md:flex-row justify-between items-start md:items-center rounded-[4px] w-full gap-[16px]">
-                <h1 className=" font-[600] text-[16px] leading-[32px] text-[#1B1B1B] font-epilogue">
+                <h1 className=" font-semibold text-base leading-8 text-grey font-epilogue">
                   Attach your resume
                 </h1>
 
@@ -194,13 +194,13 @@ const JobDescriptionModalChunk = (props: JobDescriptionCardProps) => {
                     alt="emoji_icon"
                     className="w-[24px] h-[24px]"
                   />
-                  <h1 className=" font-[500] text-[16px] leading-[32px] text-[#515B6F] font-epilogue">
+                  <h1 className=" font-medium text-[16px] leading-8 text-grayishBlue font-epilogue">
                     Attach Resume/CV
                   </h1>
                   <input
                     type="file"
                     placeholder="Attach Resume/CV"
-                    className="font-[400] text-[16px] leading-[30px] text-[#515B6F99] font-epilogue border-[1px] h-[49px] border-[#D6DDEB] px-[16px] hidden "
+                    className="font-normal text-base leading-[30px] text-semiBlue font-epilogue border-[1px] h-[49px] border-pastelBlue px-4 hidden "
                   />
                 </div>
               </div>
@@ -211,12 +211,13 @@ const JobDescriptionModalChunk = (props: JobDescriptionCardProps) => {
                 </Button>
               </div>
 
-              <h1 className=" font-[400] text-[16px] leading-[30px] text-[#515B6F]">
+              <h1 className=" font-normal text-base leading-[30px] text-grayishBlue">
                 By sending the request you can confirm that you accept our{" "}
-                <span className="text-[#1976D2]">Terms of Service </span> and{" "}
-                <span className="text-[#1976D2]">Privacy Policy</span>
+                <span className="text-light-blue">Terms of Service </span> and{" "}
+                <span className="text-light-blue">Privacy Policy</span>
               </h1>
             </form>
+
           </div>
         </div>
       </div>
