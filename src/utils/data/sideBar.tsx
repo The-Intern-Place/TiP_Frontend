@@ -7,8 +7,6 @@ import IC_Companies from "@assets/icons/IC_Companies";
 import IC_Profile from "@assets/icons/IC_Profile";
 import IC_HelpCenter from "@assets/icons/IC_HelpCenter";
 import IC_Settings from "@assets/icons/IC_Settings";
-// import message from "../../chunks/settings-template-chunk/sidebar-template-chunk/useSidebarChunk";
-import useSidebarChunk from "../../chunks/settings-template-chunk/sidebar-template-chunk/useSidebarChunk";
 
 interface SideBarProps {
   topNav: Prop[];
@@ -20,7 +18,6 @@ interface Prop {
   link: string;
   notification?: any;
 }
-// const { messages } = useSidebarChunk();
 
 export const sideBarData: SideBarProps = {
   topNav: [

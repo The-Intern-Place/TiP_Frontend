@@ -13,6 +13,8 @@ const TextInput = (props: ITextInputProps) => {
     iconRight,
     iconLeft,
     overrideStyles,
+    helperText,
+    error,
     ...inputProps
   } = props;
   const { handleChange, onIconClick, isPasswordVisible } = useTextInput(props);
