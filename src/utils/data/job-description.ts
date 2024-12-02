@@ -128,3 +128,59 @@ export const textarea_icon = [
     pics: linkIcon,
   },
 ];
+
+import AIcon from "@assets/icons/AIcon";
+import CupIcon from "@assets/icons/CupIcon";
+import HolIcon from "@assets/icons/HolIcon";
+import MedIcon from "@assets/icons/MedIcon";
+import PalmsIcon from "@assets/icons/PalmsIcon";
+import TrainIcon from "@assets/icons/TrainIcon";
+import VidIcon from "@assets/icons/VidIcon";
+
+export const perksandbenefit = [
+  {
+    id: "1",
+    Icon: MedIcon,
+    title: "   Full Healthcare",
+    text: "We believe in thriving communities and that starts with our team being happy and healthy.",
+  },
+
+  {
+    id: "2",
+    Icon: HolIcon,
+    title: " Unlimited Vacation",
+    text: "  We believe you should have a flexible schedule that makes space for family, wellness, and fun.",
+  },
+
+  {
+    id: "3",
+    Icon: VidIcon,
+    title: "Skiill Development",
+    text: "     We believe in always learning and leveling up our skills. Whether it's a conference or online course..",
+  },
+  {
+    id: "4",
+    Icon: AIcon,
+    title: "Team Summit",
+    text: "   Every 6 months we have a full team summit where we have fun,reflect, and plan for the upcoming quarter.",
+  },
+  {
+    id: "5",
+    Icon: CupIcon,
+    title: "Remote Working",
+    text: "You know how you perform your best. Work from home, coffee shop or anywhere when you feel like it.",
+  },
+  {
+    id: "6",
+    Icon: TrainIcon,
+    title: "Commuter Benefits",
+    text: "   We’re grateful for all the time and energy each team member puts into getting to work every day.",
+  },
+
+  {
+    id: "7",
+    Icon: PalmsIcon,
+    title: "We Give Back",
+    text: "   We anonymously match any donation our employees make (up to $/€ 600) so they can support the organizations they care about most—times two.",
+  },
+];

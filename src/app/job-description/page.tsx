@@ -21,9 +21,11 @@ export const metadata: Metadata = {
 function page() {
   return (
     <div className="w-full overflow-x-hidden">
-      <Navbar />
-      <Tag />
-      <div className="w-full h-full max-w-[1350px] mt-10 px-6 mb-6 mx-auto grid sm:grid-cols-2 gap-x-8 gap-y-16">
+      <Navbar bgcolor={"#F8F8FD"} />
+      <div className=" flex flex-col items-center justify-center  w-full">
+        <Tag />
+      </div>
+      <div className="w-full h-full max-w-[1350px] mt-[2rem] px-6 mb-6 mx-auto grid sm:grid-cols-2 gap-x-8 gap-y-16">
         <div>
           <Title />
           <div className="h-[1px] w-[100%] mb-7 bg-[#D6DDEB] ml-2"></div>
@@ -56,7 +58,7 @@ function page() {
         </div>
       </div>
 
-      <div className="px-6">
+      <div className="px-6 flex items-center justify-center">
         <Perksandbenefits />
       </div>
 

@@ -18,11 +18,11 @@ const Navbar = (props: NavbarProps) => {
         <Link href={"/"}>
           <Image src={TIP_Logo} width={70} height={70} alt="TIP Logo" />
         </Link>
-        <div className="flex gap-10 w-fit md:flex hidden">
+        <div className=" gap-10 w-fit md:flex hidden">
           <Link href={"/find-job"}>Find Jobs</Link>
           <p>Find Talents</p>
         </div>
-        <div className="grid grid-flow-col w-fit gap-10 items-center text-[#1B1B1B] md:flex hidden">
+        <div className="lg:grid grid-flow-col w-fit gap-10 items-center text-[#1B1B1B] md:flex hidden">
           <Button variant="transparent" fit>
             <Link href={"/login"}>Log in</Link>{" "}
           </Button>
