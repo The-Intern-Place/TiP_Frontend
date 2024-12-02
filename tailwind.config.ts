@@ -12,6 +12,56 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+
+    extend: {
+      fontFamily: {
+        clash: ["var(--font-clash)"],
+        epilogue: ["var(--font-epilogue)"],
+      },
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-conic":
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "div-custom":
+          "linear-gradient(180deg, #0046BF 0%, #25324B 51.5%, #FFFFFF 100%)",
+      },
+      colors: {
+        prussianBlue: "rgba(0,35,96,1)",
+        cobaltBlue: "rgba(0,35,96,1)",
+        athsSpecial: "#DAD2B8",
+        lightBlue: "#B5CAEC80",
+        blue: "#0046BF",
+        "light-blue": "#1976D2",
+        grey: "#1B1B1B",
+        pictonBlue: "rgba(82,151,219,0.2)",
+        blueGray: "#25324B",
+        grayishBlue: "#515B6F",
+        coolGray: "#7C8493",
+        royalBlue: "#002360",
+        semiBlue: "#515B6F99",
+        pastelBlue: "#D6DDEB",
+      },
+      screens: {
+        sm: "640px",
+        // => @media (min-width: 640px) { ... }
+
+        md: "768px",
+        // => @media (min-width: 768px) { ... }
+
+        ssm: "840px",
+        // => @media (min-width: 768px) { ... }
+
+        lg: "1025px",
+        // => @media (min-width: 1024px) { ... }
+
+        xl: "1480px",
+        // => @media (min-width: 1280px) { ... }
+
+        "2xl": "1536px",
+        // => @media (min-width: 1536px) { ... }
+      },
+    },
+
   	extend: {
   		fontFamily: {
   			clash: ["var(--font-clash)"],
@@ -86,6 +136,7 @@ const config: Config = {
   			sm: 'calc(var(--radius) - 4px)'
   		}
   	}
+
   },
   plugins: [require("tailwindcss-animate")],
 };

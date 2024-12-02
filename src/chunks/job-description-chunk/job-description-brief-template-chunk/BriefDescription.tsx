@@ -10,8 +10,8 @@ import { Logo } from "@assets/icons/Logo";
 
 const BriefDescription = () => {
   return (
-    <section className="hidden lg:flex w-full  justify-center ">
-      <div className="flex w-full items-center  justify-between  max-w-[1180px]">
+    <section className="hidden md:flex w-full  justify-center ">
+      <div className="flex w-full items-center  justify-between  max-w-[1180px] p-[10px]">
         <div className="flex flex-col  max-w-[577px] w-full gap-[32px]">
           <div className="flex  md:items-center gap-3">
             <div className="">
@@ -51,7 +51,7 @@ const BriefDescription = () => {
 
         {/* image section */}
 
-        <div className="flex max-w-[492px] gap-[10px] w-full md:h-[276px] ">
+        <div className="flex max-w-[492px] gap-[10px] w-full md:h-[276px]  ">
           <div className="">
             <Image
               src={meetingOne}
